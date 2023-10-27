@@ -1,0 +1,36 @@
+State,RERA_Link_1,RERA_Link_2,Projects,Remarks
+Andaman and Nicobar Islands,https://rera.tn.gov.in/cms/reg_projects_andaman.php,,3,Only 2021 and 2018 data available
+Andhra Pradesh,https://rera.ap.gov.in/RERA/Views/Home.aspx,https://rera.ap.gov.in/RERA/Views/Reports/ApprovedProjects.aspx,3637,
+Arunchal Pradesh,,,,
+Assam,https://rera.assam.gov.in/,https://rera.assam.gov.in/admincontrol/registered_projects/1,645,
+Bihar,https://rera.bihar.gov.in/,,1575,took it from home webpage
+Chhattisgarh,https://rera.cgstate.gov.in/,https://rera.cgstate.gov.in/Approved_project_List.aspx,1645,
+Dadra and Nagar Haveli and Daman & Diu,,https://maharerait.mahaonline.gov.in/searchlist/search?MenuID=1069,199,
+Delhi,https://www.rera.delhi.gov.in/,https://www.rera.delhi.gov.in/registered_promoters_list?combine_1=&items_per_page=All,88,
+Goa,https://rera.goa.gov.in/reraApp/home,,1123,source - https://rera.goa.gov.in/reraApp/MIS
+Gujarat,https://gujrera.gujarat.gov.in/,https://gujrerar1.gujarat.gov.in/registeredProjectCountList,,
+Haryana,https://haryanarera.gov.in/login/loginview/2,https://haryanarera.gov.in/login/loginview/1,1272,Added Panchkula and Gurugram
+Himachal Pradesh,https://hprera.nic.in/,https://hprera.nic.in/PublicDashboard,161,
+Jammu & Kashmir,,,,
+Jharkhand,https://jharera.jharkhand.gov.in/Home/RegisteredProjectsList,https://jharera.jharkhand.gov.in/Home/OnlineRegisteredProjectsList,1170,
+Karnataka,https://rera.karnataka.gov.in/home?language=en,https://rera.karnataka.gov.in/viewAllProjects,5934,
+Kerala,https://rera.kerala.gov.in/,https://rera.kerala.gov.in/projects,1024,
+Ladakh,,,,
+Lakshadweep,,,,
+Madhya Pradesh,https://www.rera.mp.gov.in/,https://www.rera.mp.gov.in/all-projects/,8250,
+Maharashtra,https://maharera.mahaonline.gov.in/,https://maharerait.mahaonline.gov.in/searchlist/search?MenuID=1069,41104,summed all districts
+Manipur,,,,
+Meghalaya,,,,
+Mizoram,,https://udpa.mizoram.gov.in/page/registration,,
+Nagaland,,,,Yet to notify - https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1910165
+Odisha,https://rera.odisha.gov.in/online-registered-project/,https://rera.odisha.gov.in/registered-projects/,950,
+Puducherry,https://prera.py.gov.in/reraApp/,https://prera.py.gov.in/reraApp/viewDefaulterProjects,165,
+Punjab,https://rera.punjab.gov.in/,https://rera.punjab.gov.in/reraindex/publicview/projectinfo,1202,
+Rajasthan,https://rera.rajasthan.gov.in/,https://rera.rajasthan.gov.in/ProjectSearch?Out=Y,2480,
+Sikkim,,,,
+Tamil Nadu,https://rera.tn.gov.in/,https://rera.tn.gov.in/cms/reg_projects_building_tamilnadu.php,2583,Data from 2017 - 2023
+Telangana,http://rera.telangana.gov.in/,https://rerait.telangana.gov.in/SearchList/Search,6225,
+Tripura,https://rera.tripura.gov.in/,,,
+Uttar Pradesh,https://www.up-rera.in/index,https://www.up-rera.in/projects,3300,
+Uttarakhand,http://ukrera.org.in:8080/rerauk/,http://ukrera.org.in:8080/rerauk/viewRegisteredProjects,219,
+West Bengal,http://rera.wb.gov.in/,http://rera.wb.gov.in/district_project.php?dcode=0,188,
