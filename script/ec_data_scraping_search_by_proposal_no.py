@@ -415,6 +415,7 @@ for proposal_number in range(0,len(unique_proposals['Proposal.No.'])):
     print(f'Lat: {from_n_degrees} {from_n_mins} {from_n_secs} {to_n_degrees} {to_n_mins} {to_n_secs}')
     print(f'Long: {from_e_degrees} {from_e_mins} {from_e_secs} {to_e_degrees} {to_e_mins} {to_e_secs}')
 
+
     # Print the XPath
     #print(f"XPath: {xpath}")
     
@@ -437,9 +438,9 @@ for proposal_number in range(0,len(unique_proposals['Proposal.No.'])):
 
     print(state_name, dist_name, tehesil_name, village_name)
 
-    data_ec_form2.append([proposal_number,name_proj,name_company,reg_address,legal_status_of_company,name_applicant,designation_applicant,address_applicant,pincode_applicant,email_applicant,tel_applicant,major_activity,minor_activity,project_category,proposal_number2,master_proposal_number,EAC_concerned_proj_A,project_type,plot_no,pincode_proj,soi_topo_sheet_no,AMSL,nearest_hfl,seismic_zone,state_name,dist_name,tehesil_name,village_name])
+    data_ec_form2.append([proposal_number,name_proj,name_company,reg_address,legal_status_of_company,name_applicant,designation_applicant,address_applicant,pincode_applicant,email_applicant,tel_applicant,major_activity,minor_activity,project_category,proposal_number2,master_proposal_number,EAC_concerned_proj_A,project_type,plot_no,pincode_proj, from_n_degrees, from_n_mins, from_n_secs, to_n_degrees, to_n_mins, to_n_secs, from_e_degrees, from_e_mins, from_e_secs, to_e_degrees, to_e_mins, to_e_secs, soi_topo_sheet_no, AMSL, nearest_hfl, seismic_zone, state_name, dist_name, tehesil_name, village_name])
     data_ec_form2_df=pd.DataFrame(data_ec_form2)
-    data_ec_form2_df.columns = ['Proposal','Name of the project(s)','Name of the Company','Registered Address','Legal Status of Company','Name of the Applicant','Designation','Address','Pincode','Email','Telephone','Major Project/Activity','Minor Project/Activity','Project Category','Proposal Number','Master Proposal Number','EAC concerned Project Authority','Project Type','Plot/Survey/Khasra No.','Pincode','SOI/Topo Sheet No.','AMSL','Nearest HFL','Seismic Zone', 'State', 'District','Tehsil','Village']
+    data_ec_form2_df.columns = ['Proposal','Name of the project(s)','Name of the Company','Registered Address','Legal Status of Company','Name of the Applicant','Designation','Address','Pincode','Email','Telephone','Major Project/Activity','Minor Project/Activity','Project Category','Proposal Number','Master Proposal Number','EAC concerned Project Authority','Project Type','Plot/Survey/Khasra No.','Pincode', 'From N Degrees', 'From N Mins', 'From N Secs', 'To N Degrees', 'To N Mins', 'To N Secs', 'From E Degrees', 'From E Mins', 'From E Secs', 'To E Degrees', 'To E Mins', 'To E Secs', 'SOI/Topo Sheet No.', 'AMSL', 'Nearest HFL', 'Seismic Zone', 'State', 'District', 'Tehsil', 'Village']
     csvfile2 = 'C:/Users/Zahir/Desktop/Ashoka Research/Environment_Clearance/'+directory_name+'/'+directory_name+'_ec_form2data'+'.csv'
     data_ec_form2_df.to_csv(csvfile2,encoding='utf-8-sig')
 
