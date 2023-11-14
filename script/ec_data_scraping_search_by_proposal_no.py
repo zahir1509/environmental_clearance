@@ -13,6 +13,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
+import glob
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -26,20 +27,30 @@ import csv
 
 from webdriver_manager.chrome import ChromeDriverManager
 
+username = os.getlogin()
+print(username)
 
-driver = webdriver.Chrome('C:/chromedriver.exe')
+state_name='Orissa'
+directory_name='Orissa'
+
+chromeOptions = webdriver.ChromeOptions()
+prefs = {"download.default_directory" : "C:\\Users\\"+username+"\\Dropbox\\Environment_Clearance\\"+directory_name+"\\KML\\"}
+chromeOptions.add_experimental_option("prefs",prefs)
+
+driver = webdriver.Chrome('C:/chromedriver.exe', chrome_options=chromeOptions)
 
 #manually navigate to the page and search for "a"
-directory = "C:/Users/Zahir/Desktop/Ashoka Research/Environment_Clearance"
+# get the system username
+
+directory = "C:/Users/"+username+"/Dropbox/Environment_Clearance"
 os.chdir(directory)
 
 ##Name of State
 ##Make sure you create directory
-state_name='Orissa'
-directory_name='Orissa'
-unique_proposals=pd.read_csv('C:/Users/Zahir/Desktop/Ashoka Research/Environment_Clearance/'+directory_name+'/'+directory_name+'_ec_complete_unique.csv')
 
+unique_proposals=pd.read_csv(directory+'/'+directory_name+'/'+directory_name+'_ec_complete_unique.csv')
 
+print(unique_proposals)
 base_url='https://environmentclearance.nic.in/'  
 ##Get the url under "Track Proposal"
 url = 'https://environmentclearance.nic.in/proposal_status_state.aspx?pid=ClosedEC&statename='+state_name
@@ -65,10 +76,10 @@ for proposal_number in range(0,len(unique_proposals['Proposal.No.'])):
          
     ### Select the EC Radio Button   
     try:
-       next_button = WebDriverWait(driver, 10).until(
-           EC.element_to_be_clickable((By.XPATH, "//*[(@id = 'ctl00_ContentPlaceHolder1_RadioButtonList1_1')]"))
-       )
-       next_button.click()
+        next_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[(@id = 'ctl00_ContentPlaceHolder1_RadioButtonList1_1')]"))
+        )
+        next_button.click()
     except StaleElementReferenceException:
         print("Click_Exception1")
         pass
@@ -198,7 +209,7 @@ for proposal_number in range(0,len(unique_proposals['Proposal.No.'])):
     data_ec_closed_df=pd.DataFrame(data_ec_closed)
     data_ec_closed_df.columns=['Proposal','File_No','Proposal Name','State','District','Tehsil','Date_1','Date_2','Category','Company','Status']
     ##write to Dropbox
-    csvfile = 'C:/Users/Zahir/Desktop/Ashoka Research/Environment_Clearance/'+directory_name+'/'+directory_name+'_ec_maindata'+'.csv'
+    csvfile = directory+'/'+directory_name+'/'+directory_name+'_ec_maindata'+'.csv'
     data_ec_closed_df.to_csv(csvfile,encoding='utf-8-sig')
 
 
@@ -259,7 +270,7 @@ for proposal_number in range(0,len(unique_proposals['Proposal.No.'])):
     data_ec_timeline_df=pd.DataFrame(data_ec_timeline)
     data_ec_timeline_df.columns = ['Proposal Number','Project Name','Project Sector','Date of Submission','Submitted by Proponent','Query for Shortcoming(if any) by SEIAA','Resubmission of Proposal by Proponent 1','Accepted by SEIAA and forwarded to SEAC','Query for Shortcoming(if any) by SEAC','Resubmission of Proposal by Proponent 2','Accepted by SEAC','Forwarded to SEIAA for EC','EC Letter Uploaded On/EC Granted']
 
-    csvfile3 = 'C:/Users/Zahir/Desktop/Ashoka Research/Environment_Clearance/'+directory_name+'/'+directory_name+'_ec_timelinedata'+'.csv'
+    csvfile3 = directory+'/'+directory_name+'/'+directory_name+'_ec_timelinedata'+'.csv'
     data_ec_timeline_df.to_csv(csvfile3,encoding='utf-8-sig')
     
 
@@ -438,11 +449,33 @@ for proposal_number in range(0,len(unique_proposals['Proposal.No.'])):
 
     print(state_name, dist_name, tehesil_name, village_name)
 
-    data_ec_form2.append([proposal_number,name_proj,name_company,reg_address,legal_status_of_company,name_applicant,designation_applicant,address_applicant,pincode_applicant,email_applicant,tel_applicant,major_activity,minor_activity,project_category,proposal_number2,master_proposal_number,EAC_concerned_proj_A,project_type,plot_no,pincode_proj, from_n_degrees, from_n_mins, from_n_secs, to_n_degrees, to_n_mins, to_n_secs, from_e_degrees, from_e_mins, from_e_secs, to_e_degrees, to_e_mins, to_e_secs, soi_topo_sheet_no, AMSL, nearest_hfl, seismic_zone, state_name, dist_name, tehesil_name, village_name])
+
+    try:    
+        kml_download = driver.find_element_by_xpath("//a/img[contains(@src,'images/download.png')]")
+        kml_download.click()
+
+        time.sleep(2)
+
+        filepath = "C:\\Users\\"+username+"\\Dropbox\\Environment_Clearance\\"+directory_name+"\\KML\\"
+        list_of_files = glob.glob(directory+'/'+directory_name+'/KML/*.kml') 
+        latest_file = max(list_of_files, key=os.path.getctime)
+        print(latest_file)
+
+    except:
+        latest_file = ''
+
+    data_ec_form2.append([proposal_number,name_proj,name_company,reg_address,legal_status_of_company,name_applicant,designation_applicant,address_applicant,pincode_applicant,email_applicant,tel_applicant,major_activity,minor_activity,project_category,proposal_number2,master_proposal_number,EAC_concerned_proj_A,project_type,plot_no,pincode_proj, from_n_degrees, from_n_mins, from_n_secs, to_n_degrees, to_n_mins, to_n_secs, from_e_degrees, from_e_mins, from_e_secs, to_e_degrees, to_e_mins, to_e_secs, soi_topo_sheet_no, AMSL, nearest_hfl, seismic_zone, state_name, dist_name, tehesil_name, village_name, latest_file])
+
+
+
     data_ec_form2_df=pd.DataFrame(data_ec_form2)
-    data_ec_form2_df.columns = ['Proposal','Name of the project(s)','Name of the Company','Registered Address','Legal Status of Company','Name of the Applicant','Designation','Address','Pincode','Email','Telephone','Major Project/Activity','Minor Project/Activity','Project Category','Proposal Number','Master Proposal Number','EAC concerned Project Authority','Project Type','Plot/Survey/Khasra No.','Pincode', 'From N Degrees', 'From N Mins', 'From N Secs', 'To N Degrees', 'To N Mins', 'To N Secs', 'From E Degrees', 'From E Mins', 'From E Secs', 'To E Degrees', 'To E Mins', 'To E Secs', 'SOI/Topo Sheet No.', 'AMSL', 'Nearest HFL', 'Seismic Zone', 'State', 'District', 'Tehsil', 'Village']
-    csvfile2 = 'C:/Users/Zahir/Desktop/Ashoka Research/Environment_Clearance/'+directory_name+'/'+directory_name+'_ec_form2data'+'.csv'
+    data_ec_form2_df.columns = ['Proposal','Name of the project(s)','Name of the Company','Registered Address','Legal Status of Company','Name of the Applicant','Designation','Address','Pincode','Email','Telephone','Major Project/Activity','Minor Project/Activity','Project Category','Proposal Number','Master Proposal Number','EAC concerned Project Authority','Project Type','Plot/Survey/Khasra No.','Pincode', 'From N Degrees', 'From N Mins', 'From N Secs', 'To N Degrees', 'To N Mins', 'To N Secs', 'From E Degrees', 'From E Mins', 'From E Secs', 'To E Degrees', 'To E Mins', 'To E Secs', 'SOI/Topo Sheet No.', 'AMSL', 'Nearest HFL', 'Seismic Zone', 'State', 'District', 'Tehsil', 'Village', 'KML']
+    csvfile2 = directory+'/'+directory_name+'/'+directory_name+'_ec_form2data'+'.csv'
     data_ec_form2_df.to_csv(csvfile2,encoding='utf-8-sig')
+
+
+    # DOWNLOAD THE KML FILE
+
 
     driver.close()
     driver.switch_to.window(driver.window_handles[0])
