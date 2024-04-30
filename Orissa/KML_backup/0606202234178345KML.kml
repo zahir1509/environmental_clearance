@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<snippet>Created Wed Apr 21 13:06:28 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-03-27T06:12:16Z</begin>
+			<end>2021-03-27T06:56:33Z</end>
+		</gx:TimeSpan>
+		<longitude>83.44884500000001</longitude>
+		<latitude>20.624851</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="s_ylw-pushpin_hl207">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin204">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin213">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin204</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl207</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Basupali Cluster Stone Quarry</name>
+		<styleUrl>#m_ylw-pushpin213</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.44891729016393,20.62639255530352,0 83.44927164741539,20.62651470184245,0 83.44955865836774,20.62636364159269,0 83.44997506799965,20.62598896784316,0 83.45001081337793,20.6258935533528,0 83.4502940628263,20.62583237937995,0 83.45027230012906,20.62571062798104,0 83.45067989995175,20.62543868166329,0 83.45094939695797,20.62514049886075,0 83.45090400928962,20.6250980148996,0 83.45077353309647,20.62495148696882,0 83.45079023585895,20.62475437012813,0 83.45064373971972,20.62476548825553,0 83.4504928080441,20.62459521318137,0 83.4503175302914,20.62429652314416,0 83.45031253651698,20.62366145439358,0 83.45000932728,20.62355249851308,0 83.44987920439354,20.62341623750981,0 83.44970500172023,20.62319029420987,0 83.44964284445372,20.62335802985313,0 83.44944099836536,20.62344103017919,0 83.44874145015929,20.62344822530433,0 83.44846796396151,20.62337694916135,0 83.44848434289136,20.62361847501098,0 83.44819541410408,20.62368824482437,0 83.44751984939926,20.62406931411478,0 83.44737898852487,20.62392179870057,0 83.44722599155254,20.6239516837451,0 83.44729197881504,20.62427895672161,0 83.44689009674065,20.62432528432609,0 83.4467721438637,20.62428992158737,0 83.44672656704128,20.62452348900083,0 83.4468627857791,20.62482307925556,0 83.44696522716626,20.62489195324422,0 83.44696930923271,20.62510612439051,0 83.44697768594733,20.62535427047988,0 83.4470937920928,20.6253348375579,0 83.44716177031404,20.62550604098873,0 83.44724391652683,20.62556555753951,0 83.44741350330119,20.6257780356642,0 83.44768962775254,20.62577299682149,0 83.44783144248677,20.62582381381896,0 83.44809983103218,20.62582633544482,0 83.44843755254888,20.62588934001962,0 83.44846369076222,20.62596197370775,0 83.44854259323115,20.62590376161164,0 83.44866790831358,20.62619718132514,0 83.44891729016393,20.62639255530352,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.4489173164275,20.6263913410354,0 83.45089920068564,20.62509335356952,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.44845992879128,20.6259638534913,0 83.44854068279764,20.62590634516026,0 83.45048902576927,20.62458987352756,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.44783146402705,20.62583005591381,0 83.4503117749676,20.6242936536676,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.44724503483292,20.62555456556197,0 83.45031190920506,20.62366501759731,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.44695761820836,20.62509543427924,0 83.44987840493665,20.62340476412884,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Basupali Stone Quarry No-5</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-03-27T06:12:16Z</begin>
+				<end>2021-03-27T06:56:33Z</end>
+			</gx:TimeSpan>
+			<longitude>83.44896036586202</longitude>
+			<latitude>20.6247544730759</latitude>
+			<altitude>0</altitude>
+			<heading>0.001123220685343618</heading>
+			<tilt>22.43138362996438</tilt>
+			<range>434.9975835148321</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.44968127368129,20.62603615626198,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Basupali Stone Quarry No-5</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-03-27T06:12:16Z</begin>
+				<end>2021-03-27T06:56:33Z</end>
+			</gx:TimeSpan>
+			<longitude>83.4489103541144</longitude>
+			<latitude>20.62456539160431</latitude>
+			<altitude>0</altitude>
+			<heading>0.001105604613019205</heading>
+			<tilt>22.43139256036194</tilt>
+			<range>437.6029726597444</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.4492643960822,20.62511890998695,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Basupali Stone Quarry No-1</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-03-27T06:12:16Z</begin>
+				<end>2021-03-27T06:56:33Z</end>
+			</gx:TimeSpan>
+			<longitude>83.44923849020471</longitude>
+			<latitude>20.62490326517884</latitude>
+			<altitude>0</altitude>
+			<heading>0.001449969284013089</heading>
+			<tilt>19.97650642931918</tilt>
+			<range>316.9688209588202</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.44958066710498,20.62552143077576,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Basupali Stone Quarry No-3</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-03-27T06:12:16Z</begin>
+				<end>2021-03-27T06:56:33Z</end>
+			</gx:TimeSpan>
+			<longitude>83.44923849020471</longitude>
+			<latitude>20.62490326517884</latitude>
+			<altitude>0</altitude>
+			<heading>0.001449969284013089</heading>
+			<tilt>19.97650642931918</tilt>
+			<range>316.9688209588202</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.4489061094889,20.62419169146954,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Basupali Stone Quarry No-4</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-03-27T06:12:16Z</begin>
+				<end>2021-03-27T06:56:33Z</end>
+			</gx:TimeSpan>
+			<longitude>83.44909275020544</longitude>
+			<latitude>20.62495923149821</latitude>
+			<altitude>0</altitude>
+			<heading>0.001042660916571225</heading>
+			<tilt>24.39414417589619</tilt>
+			<range>486.3263283229556</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.44858738639795,20.62373290564761,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Basupali Stone Quarry No-2</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-03-27T06:12:16Z</begin>
+				<end>2021-03-27T06:56:33Z</end>
+			</gx:TimeSpan>
+			<longitude>83.44909275020544</longitude>
+			<latitude>20.62495923149821</latitude>
+			<altitude>0</altitude>
+			<heading>0.001042660916571225</heading>
+			<tilt>24.39414417589619</tilt>
+			<range>486.3263283229556</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.44910557347939,20.62467977951192,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

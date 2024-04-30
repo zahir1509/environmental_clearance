@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>SERA BRICKS_KML.kml</name>
+	<Style id="sh_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000aa</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff003f7e</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="failed7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed">
+	</Style>
+	<StyleMap id="msn_ylw-pushpin01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin02">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000aa</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff003f7e</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="failed0">
+	</Style>
+	<Style id="failed5">
+	</Style>
+	<Style id="sn_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed1">
+	</Style>
+	<Style id="failed2">
+	</Style>
+	<Style id="failed8">
+	</Style>
+	<Style id="sh_ylw-pushpin7">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin41">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin02</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>SERA BRICKS</name>
+		<Placemark>
+			<name>A</name>
+			<LookAt>
+				<longitude>86.93394274116937</longitude>
+				<latitude>22.82817514064096</latitude>
+				<altitude>0</altitude>
+				<heading>0.001427417376849154</heading>
+				<tilt>24.71481313282284</tilt>
+				<range>1150.556120537734</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin01</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.932,22.82722222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<LookAt>
+				<longitude>86.93310575998994</longitude>
+				<latitude>22.82779921095155</latitude>
+				<altitude>0</altitude>
+				<heading>0.001238384193654595</heading>
+				<tilt>27.37122841674088</tilt>
+				<range>666.1857972034189</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin01</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93169444444445,22.8278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<LookAt>
+				<longitude>86.93413725034</longitude>
+				<latitude>22.8277449003741</latitude>
+				<altitude>0</altitude>
+				<heading>0.001638284547617956</heading>
+				<tilt>27.37257707053</tilt>
+				<range>992.7639743653913</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93119444444444,22.82774444444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<LookAt>
+				<longitude>86.93413725034</longitude>
+				<latitude>22.8277449003741</latitude>
+				<altitude>0</altitude>
+				<heading>0.001638284547617956</heading>
+				<tilt>27.37257707053</tilt>
+				<range>992.7639743653913</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed4</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93208333333334,22.82641666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SERA BRICKS</name>
+			<styleUrl>#msn_ylw-pushpin41</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.93201419852568,22.82722596422226,0 86.93170098419287,22.8277967301023,0 86.93119897844228,22.82774192064489,0 86.93208886593438,22.82642628763351,0 86.93201419852568,22.82722596422226,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>SREA BRICKS MINING</name>
+			<LookAt>
+				<longitude>86.93295375409632</longitude>
+				<latitude>22.82744539673381</latitude>
+				<altitude>0</altitude>
+				<heading>0.001006090514435079</heading>
+				<tilt>28.19130053462673</tilt>
+				<range>433.501089852911</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed7</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93178454838036,22.82732049650211,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

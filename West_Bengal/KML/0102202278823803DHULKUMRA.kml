@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>DHULKUMRA.KMZ</name>
+	<Style id="point17">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point120">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point1">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point121">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point142</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point126">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point137">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point131">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point140">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point114</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point130</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point142">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point116</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point144</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="point129">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point123</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point112</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point138">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point112">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point128">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point118">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point135">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point131</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point114">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point144">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point127">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point119">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="line1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="point141">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point134</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point126</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point12">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point18">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point136">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point122">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point127</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point116">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point123">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point15">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point143">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point115">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point110">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point125">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point110</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point119</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="point117">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point136</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point132</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point130">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point124</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point132">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point19">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point139">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point115</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="point133">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point111</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point128</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point13">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point134">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="point16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point138</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point118</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="point113">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#point141</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#point137</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="point124">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="point111">
+		<IconStyle>
+			<Icon>
+				<href>C:/Users/RAVI/AppData/LocalLow/Google/GoogleEarth/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Point Features</name>
+		<description>Point Features</description>
+		<Placemark>
+			<name>1550</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T08:51:23Z</when>
+</TimeStamp>
+			<styleUrl>#point113</styleUrl>
+			<Point>
+				<coordinates>87.16038888888889,23.81233888888889,97.858</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1551</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:09:44Z</when>
+</TimeStamp>
+			<styleUrl>#point16</styleUrl>
+			<Point>
+				<coordinates>87.16014722222222,23.81222500000001,110.457</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1552</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:10:47Z</when>
+</TimeStamp>
+			<styleUrl>#point140</styleUrl>
+			<Point>
+				<coordinates>87.16007222222223,23.81206111111111,111.631</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1553</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:12:32Z</when>
+</TimeStamp>
+			<styleUrl>#point133</styleUrl>
+			<Point>
+				<coordinates>87.16003611111111,23.81206111111111,112.975</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1554</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:13:24Z</when>
+</TimeStamp>
+			<styleUrl>#point121</styleUrl>
+			<Point>
+				<coordinates>87.159925,23.811975,114.028</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1555</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:15:01Z</when>
+</TimeStamp>
+			<styleUrl>#point120</styleUrl>
+			<Point>
+				<coordinates>87.15975277777778,23.81183055555556,113.618</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1556</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:18:43Z</when>
+</TimeStamp>
+			<styleUrl>#point11</styleUrl>
+			<Point>
+				<coordinates>87.15982777777778,23.81175277777778,117.372</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1557</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:24:13Z</when>
+</TimeStamp>
+			<styleUrl>#point129</styleUrl>
+			<Point>
+				<coordinates>87.15940555555557,23.810875,117.797</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1558</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:27:31Z</when>
+</TimeStamp>
+			<styleUrl>#point117</styleUrl>
+			<Point>
+				<coordinates>87.15939166666668,23.81088333333333,119.269</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1559</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:36:49Z</when>
+</TimeStamp>
+			<styleUrl>#point14</styleUrl>
+			<Point>
+				<coordinates>87.16021666666667,23.81046111111111,129.081</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1560</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:42:23Z</when>
+</TimeStamp>
+			<styleUrl>#point10</styleUrl>
+			<Point>
+				<coordinates>87.16046111111112,23.81071944444444,124.961</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1561</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:44:33Z</when>
+</TimeStamp>
+			<styleUrl>#point135</styleUrl>
+			<Point>
+				<coordinates>87.16092500000001,23.81060833333333,121.446</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1562</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:48:48Z</when>
+</TimeStamp>
+			<styleUrl>#point122</styleUrl>
+			<Point>
+				<coordinates>87.16088611111111,23.8105,122.469</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1563</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T09:57:35Z</when>
+</TimeStamp>
+			<styleUrl>#point125</styleUrl>
+			<Point>
+				<coordinates>87.16103055555556,23.811025,115.841</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1564</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T10:07:25Z</when>
+</TimeStamp>
+			<styleUrl>#point139</styleUrl>
+			<Point>
+				<coordinates>87.16102222222223,23.81153611111111,120.599</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1565</name>
+			<description>Waypoint</description>
+			<TimeStamp><when>2022-01-28T10:15:53Z</when>
+</TimeStamp>
+			<styleUrl>#point143</styleUrl>
+			<Point>
+				<coordinates>87.160359,23.811748,119.347</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Line Features</name>
+		<description>Line Features</description>
+		<Placemark>
+			<name>DHULKUMRA</name>
+			<description>Unknown Line Type</description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					87.160388,23.812338,97.858 87.16014699999999,23.812224,110.457 87.160072,23.81206,111.631 87.16003499999999,23.81206,112.975 87.159925,23.811976,114.028 87.15975299999999,23.811831,113.618 87.159829,23.811754,117.372 87.15939299999999,23.810883,119.269 87.159406,23.810875,117.797 87.160217,23.810461,129.081 87.160461,23.810719,124.961 87.160887,23.8105,122.469 87.16103,23.811024,115.841 87.16102100000001,23.811537,120.599 87.160359,23.811748,119.347 87.160388,23.812338,118.199 87.160388,23.812338,118.199 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

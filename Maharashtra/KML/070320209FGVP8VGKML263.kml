@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML.KMZ</name>
+	<open>1</open>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="line1">
+		<LineStyle>
+			<color>ff000080</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Point Features</name>
+		<open>1</open>
+		<description>Point Features</description>
+		<Placemark>
+			<name>A</name>
+			<description>Unknown Point Feature</description>
+			<Point>
+				<coordinates>78.9928361111,20.5117,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<description>Unknown Point Feature</description>
+			<Point>
+				<coordinates>78.9926777778,20.5108388889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<description>Unknown Point Feature</description>
+			<Point>
+				<coordinates>78.9908888889,20.5107361111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<description>Unknown Point Feature</description>
+			<Point>
+				<coordinates>78.990875,20.5115972222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Placemark</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>78.99283611111112</longitude>
+				<latitude>20.5117</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>45</tilt>
+				<range>1000</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>78.99395277777778,20.51184722222222,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Line Features</name>
+		<description>Line Features</description>
+		<Placemark>
+			<name>Mine</name>
+			<description>Unclassified Line Feature</description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					78.9928361111,20.5117,0 78.9926777778,20.5108388889,0 78.9908888889,20.5107361111,0 78.990875,20.5115972222,0 78.9928361111,20.5117,0 78.9928361111,20.5117,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

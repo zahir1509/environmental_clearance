@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Wed May 25 10:48:47 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-04-24T11:23:39Z</begin>
+			<end>2022-04-24T11:25:05Z</end>
+		</gx:TimeSpan>
+		<longitude>84.49112</longitude>
+		<latitude>21.525227</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="waypoint_n253">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h253">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin163">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="waypoint253">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n253</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h253</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin168">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl171">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin176">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin168</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl176</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl176">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin175">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin163</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl171</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2022-04-24T11:23:39Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint253</styleUrl>
+			<Point>
+				<coordinates>84.49045700000001,21.525473,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2022-04-24T11:24:06Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint253</styleUrl>
+			<Point>
+				<coordinates>84.49185,21.525479,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2022-04-24T11:24:32Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint253</styleUrl>
+			<Point>
+				<coordinates>84.49182999999999,21.524975,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2022-04-24T11:25:05Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint253</styleUrl>
+			<Point>
+				<coordinates>84.49039,21.524982,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Banjari 3 Stone Quarry</name>
+		<styleUrl>#m_ylw-pushpin176</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				84.49046104318505,21.52546142224813,0 84.49186066127821,21.52547234658697,0 84.4918264083864,21.52496462626389,0 84.49038172620556,21.52498821891803,0 84.49046104318505,21.52546142224813,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Banjari 3 Stone Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-04-24T11:23:39Z</begin>
+				<end>2022-04-24T11:25:05Z</end>
+			</gx:TimeSpan>
+			<longitude>84.49162598645624</longitude>
+			<latitude>21.52544325710098</latitude>
+			<altitude>0</altitude>
+			<heading>0.0001770440267351676</heading>
+			<tilt>17.64124954597871</tilt>
+			<range>435.974159844798</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin175</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>84.49122150336142,21.52519070122887,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

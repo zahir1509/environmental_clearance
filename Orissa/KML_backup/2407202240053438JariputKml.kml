@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Sun Jul 24 11:33:49 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2020-08-05T19:05:55Z</begin>
+			<end>2020-08-05T19:17:36Z</end>
+		</gx:TimeSpan>
+		<longitude>85.305792</longitude>
+		<latitude>19.8632</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<StyleMap id="waypoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_h">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="waypoint_n">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2020-08-05T19:05:55Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305001,19.864821,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2020-08-05T19:06:16Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.306467,19.864825,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2020-08-05T19:06:30Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30644599999999,19.863446,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2020-08-05T19:06:50Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.306698,19.863436,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>005</name>
+			<TimeStamp><when>2020-08-05T19:07:05Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.306612,19.862875,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>006</name>
+			<TimeStamp><when>2020-08-05T19:07:18Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30675100000001,19.862753,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>007</name>
+			<TimeStamp><when>2020-08-05T19:07:31Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305885,19.861627,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>008</name>
+			<TimeStamp><when>2020-08-05T19:08:25Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30557,19.861575,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>009</name>
+			<TimeStamp><when>2020-08-05T19:13:50Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305385,19.861699,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>010</name>
+			<TimeStamp><when>2020-08-05T19:14:09Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305151,19.86168,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>011</name>
+			<TimeStamp><when>2020-08-05T19:14:27Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.304956,19.861975,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>012</name>
+			<TimeStamp><when>2020-08-05T19:14:47Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305042,19.862208,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>013</name>
+			<TimeStamp><when>2020-08-05T19:15:05Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.304833,19.862489,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>014</name>
+			<TimeStamp><when>2020-08-05T19:15:27Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30505100000001,19.862589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>015</name>
+			<TimeStamp><when>2020-08-05T19:15:43Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305132,19.862294,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>016</name>
+			<TimeStamp><when>2020-08-05T19:16:01Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30528,19.862561,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>017</name>
+			<TimeStamp><when>2020-08-05T19:16:18Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305423,19.862694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>018</name>
+			<TimeStamp><when>2020-08-05T19:16:32Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30517,19.862722,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>019</name>
+			<TimeStamp><when>2020-08-05T19:16:47Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.305308,19.863046,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>020</name>
+			<TimeStamp><when>2020-08-05T19:17:06Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30523700000001,19.863103,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>021</name>
+			<TimeStamp><when>2020-08-05T19:17:22Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.30533699999999,19.863565,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>022</name>
+			<TimeStamp><when>2020-08-05T19:17:36Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.304958,19.863585,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Jariput Black Stone Quarry No-11</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.30500837003514,19.86481871785708,0 85.30646517162786,19.86482098355086,0 85.30644269075957,19.86345000678912,0 85.30669975378859,19.86343542432817,0 85.30660747357842,19.86287739132695,0 85.30675341002004,19.86275394099273,0 85.30588305629735,19.86162586507204,0 85.30556480898032,19.86157364608965,0 85.30538645220265,19.8617005125576,0 85.30514683956804,19.86167883239931,0 85.30494998762407,19.86197898310331,0 85.30503914026782,19.86221230718955,0 85.30482743237314,19.86248705534655,0 85.30504347391373,19.862592208324,0 85.30513214840128,19.86229014257307,0 85.30527599818646,19.86256160768667,0 85.3054120081881,19.86269836540233,0 85.30516022302403,19.86272966720445,0 85.30530505378231,19.86304587589969,0 85.30523829565115,19.86310869449914,0 85.30532911601787,19.86356837930926,0 85.30495446375006,19.863593747078,0 85.30500837003514,19.86481871785708,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Jariput Black Stone Quarry No-11</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2020-08-05T19:05:55Z</begin>
+				<end>2020-08-05T19:17:36Z</end>
+			</gx:TimeSpan>
+			<longitude>85.30543361958472</longitude>
+			<latitude>19.86364812194732</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0005798482777661612</heading>
+			<tilt>23.87710983908137</tilt>
+			<range>353.5354826221071</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.30579097572679,19.86338728027201,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

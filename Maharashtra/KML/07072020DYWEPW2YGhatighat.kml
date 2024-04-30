@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ghatighat.kml</name>
+	<Style id="inline09">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin28">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline219">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline139</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline318</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin28">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin27</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin28</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_G5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="inline418">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline138">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline09</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline418</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline318">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_G5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin27">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_G5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_G5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_G5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline139">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Ghatighat</name>
+		<open>1</open>
+		<Placemark>
+			<name>Ghatighat</name>
+			<description>L  = 200 m
+W = 60 m
+D  = 1m
+A = 12000 sqm / 1.2 ha
+Q= 12000 cum/ 4240 Brass</description>
+			<LookAt>
+				<longitude>80.16452702775372</longitude>
+				<latitude>20.56254115305513</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002470988455389778</heading>
+				<tilt>30.00211718885471</tilt>
+				<range>471.347552103956</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_G5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.16419535478389,20.56304135308379,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Polygon Measure</name>
+			<styleUrl>#inline138</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1635895837871,20.56218377471938,0 80.16501895061676,20.56339091689401,0 80.16469528055868,20.56382507888676,0 80.16322464243068,20.56260276915918,0 80.1635895837871,20.56218377471938,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>80.16483509671969</longitude>
+				<latitude>20.56380228237096</latitude>
+				<altitude>0</altitude>
+				<heading>0.0004112184590013645</heading>
+				<tilt>30.00061501964561</tilt>
+				<range>136.2730861905787</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin28</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.16469722222223,20.563825,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>80.1636814868281</longitude>
+				<latitude>20.56227208394189</latitude>
+				<altitude>0</altitude>
+				<heading>-23.81229457619416</heading>
+				<tilt>30.0005955916853</tilt>
+				<range>132.1386764604013</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin28</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.16359166666668,20.56218611111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>80.16490951006799</longitude>
+				<latitude>20.5633640493716</latitude>
+				<altitude>0</altitude>
+				<heading>0.0004371377517557693</heading>
+				<tilt>30.00030081260666</tilt>
+				<range>66.84935523091454</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin28</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.16501944444445,20.56338888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>80.16341769679536</longitude>
+				<latitude>20.56265874600204</latitude>
+				<altitude>0</altitude>
+				<heading>-8.792541723603261e-005</heading>
+				<tilt>30.00060153746334</tilt>
+				<range>132.7514268544708</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin28</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.16322777777778,20.5626,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Haulage road</name>
+			<description>L = 682 m
+W = 3.1 m</description>
+			<styleUrl>#inline219</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.16384627027644,20.55604065059212,0 80.1638477072274,20.5561101550685,0 80.16386027604938,20.55618222183651,0 80.16388516304518,20.55626658303583,0 80.16393380213005,20.55638631367927,0 80.16396797080901,20.55650083078969,0 80.16402076133109,20.55663321236736,0 80.16403171502604,20.55673210119204,0 80.16404518937645,20.55685640320649,0 80.16405006653217,20.55702668811561,0 80.16405980368276,20.5571743051844,0 80.16407358263406,20.55740967342224,0 80.1640889425441,20.55762530031443,0 80.16409997769694,20.55780067653312,0 80.16411402850065,20.55791915069334,0 80.16413002395356,20.55806844817974,0 80.16415723625052,20.55832647350891,0 80.16419944452501,20.55867707160703,0 80.16421644262771,20.55893820441942,0 80.1642344718264,20.55945255012439,0 80.16424181387322,20.5598066424975,0 80.16426553542419,20.56003117416002,0 80.16427671684667,20.56021266483942,0 80.16426727596578,20.56039973814657,0 80.16427398946695,20.56059210862021,0 80.16425459677269,20.56074114942359,0 80.16424834255025,20.56090262426015,0 80.16423477559582,20.56104841166852,0 80.16420105652118,20.56121694765395,0 80.16415124941013,20.56135041030258,0 80.16410520035008,20.56145900955663,0 80.16404186010418,20.56159616133969,0 80.16397542477733,20.56172241939522,0 80.16389934855447,20.56182688960026,0 80.16383097203389,20.56192411571474,0 80.16372746740616,20.56203828234716,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

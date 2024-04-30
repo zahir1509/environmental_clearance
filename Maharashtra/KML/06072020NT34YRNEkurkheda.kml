@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>kurkheda.kml</name>
+	<StyleMap id="inline255">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline028</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline338</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1108">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin44">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline436">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin44">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline2530">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_K7">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="inline529">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin48">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin44</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin44</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_K7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_K7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_K6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline028">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_K6">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="inline338">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline725">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1108</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline529</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline625">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline2530</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline436</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>kurkheda</name>
+		<open>1</open>
+		<Placemark>
+			<name>kurkheda</name>
+			<description>L = 200 m
+W = 50 m
+D = ?
+A = 10000 sqm /  1 Ha</description>
+			<LookAt>
+				<longitude>80.20120833972807</longitude>
+				<latitude>20.61064947449141</latitude>
+				<altitude>0</altitude>
+				<heading>-14.00216189691394</heading>
+				<tilt>28.82851055337145</tilt>
+				<range>502.6211897673003</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_K7</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.20100155262027,20.61043868390402,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>200*50</name>
+			<styleUrl>#inline255</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.20164592573312,20.61108753383884,0 80.19999927172323,20.61011029278493,0 80.20034420891982,20.60977509932337,0 80.2019288181629,20.61072686972745,0 80.20164592573312,20.61108753383884,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<description>238</description>
+			<styleUrl>#inline725</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.20130789314497,20.61092110663315,0 80.20146700744834,20.61092120587424,0 80.20165298284934,20.61094297280233,0 80.20183120827474,20.61095278527043,0 80.20195330537426,20.61092538572818,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>80.20120525687965</longitude>
+				<latitude>20.61130931793922</latitude>
+				<altitude>0</altitude>
+				<heading>-14.00188684991314</heading>
+				<tilt>30.0012998208529</tilt>
+				<range>289.5088083619995</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin48</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.20164722222222,20.61109166666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>80.20138011558649</longitude>
+				<latitude>20.61065308953655</latitude>
+				<altitude>0</altitude>
+				<heading>-14.00186225265663</heading>
+				<tilt>29.82677613104529</tilt>
+				<range>207.9088275187049</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin48</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.20193333333333,20.610725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>80.20036565150558</longitude>
+				<latitude>20.60981730556699</latitude>
+				<altitude>0</altitude>
+				<heading>-14.00218294436287</heading>
+				<tilt>30.00061697369617</tilt>
+				<range>137.2778075982133</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin48</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.20034444444445,20.609775,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>80.20018329685973</longitude>
+				<latitude>20.61011600416549</latitude>
+				<altitude>0</altitude>
+				<heading>-14.00224784548144</heading>
+				<tilt>30.00059408814217</tilt>
+				<range>132.0745842619071</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin48</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.20000277777778,20.61011111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Haulage road</name>
+			<description>L = 835 m
+W = 2.8 m</description>
+			<styleUrl>#inline625</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.2015732186013,20.61122630539708,0 80.2015759381287,20.61135876918172,0 80.20157354148036,20.61146321885088,0 80.20157018029657,20.61164936485925,0 80.20157634473279,20.61175064388404,0 80.20157658548789,20.61185125980799,0 80.20159586697747,20.61193684217333,0 80.20163580428586,20.61197897097914,0 80.20173129590511,20.61204044303274,0 80.20186044013057,20.61211432242999,0 80.2022617615405,20.6122781028166,0 80.20307655144534,20.61250175150567,0 80.20420816096045,20.61292072775125,0 80.20518391038033,20.61337067619225,0 80.20534120911424,20.61346071307934,0 80.20543773128989,20.61353195266323,0 80.20555600063422,20.61366391506326,0 80.2057420481521,20.6138598862139,0 80.20587380597991,20.61402666238382,0 80.20599081849177,20.61416023672728,0 80.20611274283512,20.61429199186701,0 80.20623144426826,20.61443032339519,0 80.20632552994427,20.6145272269958,0 80.20642163778722,20.6146316982273,0 80.20656283337591,20.61477417105278,0 80.20667612673245,20.61489927747826,0 80.20678245734952,20.61503710168491,0 80.20685114140052,20.61515481934153,0 80.20691515067774,20.61528434195325,0 80.20696405418549,20.61540728549034,0 80.20700100099084,20.61554923740748,0 80.20704029372833,20.61576172499395,0 80.20705844221179,20.615880769706,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

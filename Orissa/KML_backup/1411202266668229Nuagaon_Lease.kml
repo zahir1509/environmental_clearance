@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Nuagaon_Lease">
+	<name>Nuagaon_Lease</name>
+	<Snippet maxLines="0"></Snippet>
+	<StyleMap id="PolyStyle00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#PolyStyle001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#PolyStyle000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="PolyStyle000">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cross-hairs_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="PolyStyle001">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cross-hairs.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Nuagaon_Lease</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.724698,21.989084,0 85.724711,21.989633,0 85.72522100000001,21.989615,0 85.725448,21.989592,0 85.72555800000001,21.989562,0 85.72588500000001,21.989554,0 85.726196,21.989582,0 85.726585,21.989663,0 85.72658,21.989805,0 85.726654,21.989826,0 85.72683000000001,21.98981,0 85.726823,21.98987,0 85.726893,21.989869,0 85.726905,21.989784,0 85.72707800000001,21.989797,0 85.727087,21.990046,0 85.727256,21.990139,0 85.727265,21.98984,0 85.72756099999999,21.98993,0 85.727789,21.989999,0 85.727834,21.990054,0 85.72785,21.990146,0 85.727959,21.99008,0 85.728205,21.990394,0 85.728407,21.990548,0 85.728656,21.99088,0 85.72896900000001,21.991167,0 85.72927799999999,21.991542,0 85.72954300000001,21.991942,0 85.729724,21.992184,0 85.729727,21.992272,0 85.729753,21.992356,0 85.72985300000001,21.992529,0 85.729935,21.992652,0 85.73013400000001,21.992842,0 85.730519,21.993129,0 85.73091100000001,21.993367,0 85.73137800000001,21.993614,0 85.731702,21.993749,0 85.73211499999999,21.993811,0 85.732173,21.993378,0 85.731911,21.993362,0 85.731514,21.993289,0 85.73104600000001,21.993062,0 85.730574,21.99274,0 85.730287,21.99237,0 85.73006599999999,21.99208,0 85.729713,21.991407,0 85.729288,21.990789,0 85.728819,21.990199,0 85.728545,21.98992,0 85.728255,21.989692,0 85.72792699999999,21.989518,0 85.727206,21.989256,0 85.72656600000001,21.989086,0 85.72568699999999,21.989038,0 85.725312,21.989021,0 85.724698,21.989084,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

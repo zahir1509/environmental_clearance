@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ruhr Ispat KML Final.kml</name>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Ruhr Ispat KML Final</name>
+		<styleUrl>#inline</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						87.38033776294665,23.50019840629743,0 87.38062535457559,23.50013495046049,0 87.38063517017508,23.50003046128981,0 87.3808844746081,23.49999575686788,0 87.38090604530915,23.50006551230112,0 87.38110361476002,23.50003313941051,0 87.38120378677856,23.50031611575202,0 87.38125665557678,23.50054455986638,0 87.38130821396496,23.50081462221396,0 87.38138060592075,23.501223366353,0 87.38133005296777,23.50125271237744,0 87.38133848504168,23.50137616895248,0 87.38080709664648,23.50139158013592,0 87.38058589749924,23.50141080779448,0 87.38019506413639,23.50141855233343,0 87.38020401710412,23.50116877598061,0 87.38015722147229,23.50110980721402,0 87.3801411878818,23.50098314391362,0 87.3801140284869,23.50098870268091,0 87.38008921345551,23.50088384260131,0 87.38005339363804,23.50085441299728,0 87.37999641040348,23.50071837438028,0 87.37998204208569,23.50070114263198,0 87.38037478613339,23.50042949897409,0 87.38036244849447,23.50039957692109,0 87.38039759187939,23.50035733138927,0 87.38033776294665,23.50019840629743,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

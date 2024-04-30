@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BOUNDARY DHANTALI.KMZ</name>
+	<Style id="area1">
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>bf000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Area Features</name>
+		<description>Area Features</description>
+		<Placemark>
+			<description><![CDATA[ML_BOUNDARY<BR><BR><B>LAYER</B> = ML_BOUNDARY<BR><B>GM_TYPE</B> = Unknown Area Type<BR><B>ELEVATION</B> = 0.0<BR><B>CLOSED</B> = YES<BR><B>BORDER_STY</B> = Solid<BR><B>BORDER_COL</B> = RGB(255,0,0)<BR><B>BORDER_WID</B> = 1<BR><B>FILL_STYLE</B> = No Fill]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							89.793515169,26.6088913921,0 89.7935472483,26.6091439782,0 89.7920486677,26.6091001383,0 89.7920421843,26.608833341,0 89.79214658799999,26.6086574612,0 89.79228637440001,26.6083428491,0 89.7933663651,26.6082503822,0 89.7934569234,26.6086154906,0 89.7935006479,26.6088284203,0 89.793515169,26.6088913921,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

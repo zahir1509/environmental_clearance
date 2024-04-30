@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Nu VISTA RAILWAY SIDING.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>RW SIDING EMAMI</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						86.0282636502856,20.91872105779685,0 86.0296432774897,20.91853411413358,0 86.03127815929921,20.91832355145084,0 86.03129126433609,20.91841715735237,0 86.03287744114944,20.9181572836132,0 86.03283209695904,20.91801731967777,0 86.03349213731214,20.91788440868137,0 86.03350543813647,20.91787792448632,0 86.03444480171002,20.91767310748357,0 86.03509346516095,20.91755137104287,0 86.03598459490996,20.91736327750004,0 86.03704839274825,20.9171594672281,0 86.03798735041978,20.91695111497843,0 86.03968050296419,20.91651097647059,0 86.04242864237938,20.9157410217128,0 86.04273624603469,20.91637798587787,0 86.04131525225097,20.91681479913619,0 86.04008275298884,20.91718754146201,0 86.03779796596577,20.91782199494965,0 86.03625203450883,20.91819343968695,0 86.03562467529063,20.91823182653797,0 86.03517851227818,20.91825773500218,0 86.03520709907605,20.91837118418662,0 86.0345008534087,20.91853220627889,0 86.03398874233494,20.91864277793455,0 86.03368802950041,20.91872854730099,0 86.03085475664062,20.91930380558064,0 86.02873430701966,20.91978305025691,0 86.02817149788117,20.91979855430497,0 86.0282636502856,20.91872105779685,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
+Error in page

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="DANGARAPADA(KALACHUA)(JHA)_LEASE_BND">
+	<name>DANGARAPADA(KALACHUA)(JHA)_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>DANGARAPADA(KALACHUA)(JHA)_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>DANGARAPADA(KALACHUA JHA)_9.500AC</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.512423,20.097486,0 85.51012,20.097339,0 85.51009500000001,20.09751,0 85.51015200000001,20.098892,0 85.512046,20.098901,0 85.512456,20.098903,0 85.512423,20.097486,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

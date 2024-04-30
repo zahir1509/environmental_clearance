@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>Temporary Places</name>
+	<open>1</open>
+	<Document>
+		<name>KML.kml</name>
+		<open>1</open>
+		<StyleMap id="inline061">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#inline184</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#inline183</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="inline183">
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<Style id="inline184">
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<Folder>
+			<name>Temporary Places</name>
+			<open>1</open>
+			<Placemark>
+				<name>Polygon Measure</name>
+				<styleUrl>#inline061</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.70483629354959,20.2351911242167,0 85.70469914544626,20.23506521594607,0 85.70469784863104,20.2344568561594,0 85.70469406168237,20.23376290115521,0 85.70478914783068,20.23364849308693,0 85.70664492854507,20.23359126229275,0 85.70860813937266,20.23351694424593,0 85.70873695081585,20.2336519484045,0 85.7087533193916,20.23444200798264,0 85.70877411476103,20.23505677964369,0 85.70863031851665,20.23518449349086,0 85.70679051093263,20.23518676271613,0 85.70483629354959,20.2351911242167,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+	</Document>
+</Folder>
+</kml>

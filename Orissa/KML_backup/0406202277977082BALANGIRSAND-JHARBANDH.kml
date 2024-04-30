@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BALANGIR SAND-JHARBANDH.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0055ff</color>
+			<width>8</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0055ff</color>
+			<width>8</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>BALANGIR SAND-JHARBANDH</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						82.64807944277743,21.11022268858582,0 82.64856157644918,21.10998300139292,0 82.64901278544374,21.10965859118452,0 82.6492398317522,21.10935985095362,0 82.64940418234961,21.10862193460466,0 82.64952309493989,21.10810965043201,0 82.65032445759782,21.10832361400914,0 82.65012616414532,21.10870268255804,0 82.64974085765938,21.10943515793035,0 82.64974873964167,21.10954666615432,0 82.64960979635808,21.1097482046708,0 82.6493285760324,21.11014612885717,0 82.64899570400145,21.11054834541038,0 82.64873613578729,21.11081753188006,0 82.64836138126449,21.11089504235062,0 82.64838791022608,21.11099023641951,0 82.64826750452943,21.11104363940593,0 82.6481472636403,21.11113730045484,0 82.64792389957307,21.11113774006805,0 82.6477226713331,21.11110512747102,0 82.64750690234521,21.11110286346716,0 82.64742245930742,21.11100616248287,0 82.64718263790097,21.11091289872493,0 82.64691914657885,21.11097755380948,0 82.64636105154651,21.11109860481354,0 82.64609402722449,21.1111839174605,0 82.64573653320049,21.11127931017613,0 82.64554882668716,21.11016093317738,0 82.64807944277743,21.11022268858582,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

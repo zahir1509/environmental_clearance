@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Chasikhanda.kml</name>
+	<StyleMap id="m_ylw-pushpin49">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin48</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl48</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl48">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin48">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Chasikhanda</name>
+		<styleUrl>#m_ylw-pushpin49</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				86.06248126538328,20.31561166381293,0 86.06504270039036,20.31457041544649,0 86.06495475198291,20.31382813766735,0 86.0673072801967,20.31296213005046,0 86.06746098701151,20.3113333453601,0 86.06600692086013,20.3117699278609,0 86.06349643568196,20.31323099144191,0 86.06177690376569,20.31386785531791,0 86.06248126538328,20.31561166381293,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<snippet>Created Tue Apr 20 14:46:01 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-04-20T09:00:42Z</begin>
+			<end>2021-04-20T09:15:37Z</end>
+		</gx:TimeSpan>
+		<longitude>85.31676400000001</longitude>
+		<latitude>20.825264</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="s_ylw-pushpin_hl206">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="waypoint153">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n153</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h153</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin231">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl24">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin209">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin611</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin611">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h153">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin11000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin231</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl206</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_n153">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2021-04-20T09:00:42Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.31791699999999,20.823361,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2021-04-20T09:02:08Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.317556,20.823611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2021-04-20T09:02:20Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.317528,20.823667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2021-04-20T09:02:39Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.31736100000001,20.824056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>005</name>
+			<TimeStamp><when>2021-04-20T09:03:07Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.317139,20.824306,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>006</name>
+			<TimeStamp><when>2021-04-20T09:03:27Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.31694400000001,20.824194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>007</name>
+			<TimeStamp><when>2021-04-20T09:03:55Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.31611100000001,20.824861,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>008</name>
+			<TimeStamp><when>2021-04-20T09:04:19Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.315944,20.824694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>009</name>
+			<TimeStamp><when>2021-04-20T09:04:40Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.315917,20.824861,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>010</name>
+			<TimeStamp><when>2021-04-20T09:04:56Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.315833,20.825,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>011</name>
+			<TimeStamp><when>2021-04-20T09:05:13Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.315861,20.825083,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>012</name>
+			<TimeStamp><when>2021-04-20T09:05:30Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.31572199999999,20.82525,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>013</name>
+			<TimeStamp><when>2021-04-20T09:05:49Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.315556,20.8255,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>014</name>
+			<TimeStamp><when>2021-04-20T09:06:10Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.315861,20.82575,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>015</name>
+			<TimeStamp><when>2021-04-20T09:06:24Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.31608300000001,20.825556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>016</name>
+			<TimeStamp><when>2021-04-20T09:15:37Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint153</styleUrl>
+			<Point>
+				<coordinates>85.317972,20.827167,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Khadagprasad Sand Quarry</name>
+		<styleUrl>#m_ylw-pushpin11000</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.31791491399622,20.82335916263312,0 85.31755661716254,20.82361601202899,0 85.31752911622263,20.82366093991382,0 85.31733094614522,20.82405698022816,0 85.31713176828644,20.82431254352608,0 85.31689474058436,20.82418132849824,0 85.31612591841046,20.82486483839319,0 85.31589268905766,20.82466260128601,0 85.31589396264445,20.82489044628747,0 85.31581258171975,20.82500054496318,0 85.31584639352299,20.82508821827163,0 85.3157224206788,20.82525031199273,0 85.31553884484673,20.82551879377146,0 85.3158798989159,20.8257225458194,0 85.31610223565241,20.82555062986141,0 85.31801374598717,20.82714462875544,0 85.31791491399622,20.82335916263312,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Khadagprasad Sand Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-04-20T09:00:42Z</begin>
+				<end>2021-04-20T09:15:37Z</end>
+			</gx:TimeSpan>
+			<longitude>85.31662469390933</longitude>
+			<latitude>20.82478067595251</latitude>
+			<altitude>0</altitude>
+			<heading>0.0009581247368288983</heading>
+			<tilt>24.90500654258545</tilt>
+			<range>692.3108899838195</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin209</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.31693243563333,20.82515139239717,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

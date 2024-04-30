@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="PARAHALGURA_LEASE_BND">
+	<name>PARAHALGURA_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>PARAHALGURA_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								82.56434400000001,19.27048,0 82.564663,19.270492,0 82.564983,19.270304,0 82.565445,19.270023,0 82.565888,19.269942,0 82.566422,19.269979,0 82.566726,19.270064,0 82.56680299999999,19.269989,0 82.56714100000001,19.269168,0 82.56720199999999,19.268996,0 82.56693199999999,19.268628,0 82.567092,19.268525,0 82.565622,19.267762,0 82.565169,19.268593,0 82.564941,19.269057,0 82.564667,19.269721,0 82.5645,19.270091,0 82.56434400000001,19.27048,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Reguntha mal.kml</name>
+	<Style id="inline3611">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline22010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline8201</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline17010</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline24011">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline5320</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline10201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline19020">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline18001">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin29">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline12030">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline26010</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2310</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1122">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin270">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_R30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="inline16010">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_R4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline4610">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline130300</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2820</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline2920">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1122</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3611</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline130300">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline14020">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline18001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline20101</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline20101">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline10201">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline11310">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline15020">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline8201">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline28000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline2501</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline7201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline2820">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline5320">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline633">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline16010</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline922</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin29">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin270</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin29</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline922">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline2501">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline7201">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline27001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline15020</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline19020</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline090">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline11310</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline210200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline210200">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline26010">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline17010">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_R4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_R4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_R30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline2310">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Reguntha mal</name>
+		<open>1</open>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline090</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88424311560505,19.04314495865789,0 79.88427014555326,19.04314379148431,0 79.88431187125066,19.04314524076856,0 79.8843740822775,19.0431342632687,0 79.88443270457917,19.04311187084759,0 79.88450346024111,19.04309596692423,0 79.88464657278111,19.0430579790569,0 79.8847181737046,19.04304081607575,0 79.88480897798105,19.043017902011,0 79.88489415637662,19.04300064873099,0 79.88503070691213,19.04296889893073,0 79.88516197895325,19.0428994002008,0 79.88543058022577,19.0427566100768,0 79.88557623315919,19.04265729798372,0 79.88567158078853,19.04255597155845,0 79.88581378944309,19.0425681164549,0 79.88589079739687,19.04259470982056,0 79.88603444058813,19.04266787857564,0 79.88618975580017,19.04274444583052,0 79.88631021773053,19.04278808583397,0 79.88640789601159,19.04281019800137,0 79.88646230750055,19.04282519915501,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Polygon Measure</name>
+			<description>225*220</description>
+			<styleUrl>#inline22010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							79.88400168790062,19.04125720682599,0 79.88613565019755,19.04117506146732,0 79.88640294715194,19.04314224877827,0 79.88426185430521,19.04323153358861,0 79.88400168790062,19.04125720682599,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Haulage Road</name>
+			<description>L= 2445 m
+W= 3 m</description>
+			<styleUrl>#inline4610</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88404741198791,19.04355306868172,0 79.88378872032634,19.04356013885418,0 79.88359813028471,19.04354202402395,0 79.88344774202574,19.04353463519473,0 79.88331375902213,19.04355073956734,0 79.88317782265666,19.04365027018653,0 79.8830452039611,19.04380366148221,0 79.88297774233502,19.04392901246416,0 79.88293044353948,19.04403655919257,0 79.88292038138594,19.04417821646717,0 79.88291528386593,19.0443424235443,0 79.88286330125209,19.04448013743181,0 79.88284742986211,19.04472234480634,0 79.88280200591828,19.04488109024174,0 79.88277873658217,19.04499098900567,0 79.88279165756886,19.04511956203233,0 79.88282581838456,19.04530245318266,0 79.88284058469955,19.04541570508649,0 79.88284843303963,19.04551541841969,0 79.88283415605852,19.04559695864386,0 79.88280879501838,19.04569190185104,0 79.88277005073438,19.04580520216489,0 79.88270107043947,19.04593898372308,0 79.88266400359161,19.04604485889417,0 79.88261847089889,19.04619421988253,0 79.88257692701619,19.04633808169234,0 79.88254996744463,19.04650279899753,0 79.88253148037097,19.04669576511359,0 79.88253691234657,19.04686499504272,0 79.88255191243695,19.04698170006101,0 79.88257513634682,19.04708753005899,0 79.88258053920752,19.04725146146289,0 79.88256276081501,19.04739887228921,0 79.88253251591277,19.04753136838353,0 79.88251070250396,19.04763481186937,0 79.88249599668293,19.04774761218291,0 79.88247828447285,19.04785804982149,0 79.88246232265328,19.04794172815747,0 79.88241602358961,19.04810085372765,0 79.88233204297897,19.04837870079486,0 79.88226649573642,19.04855423610212,0 79.88215819176659,19.04879264827907,0 79.88209617552768,19.04894649800091,0 79.88198355494198,19.04914127034072,0 79.88195054368119,19.04923689077624,0 79.88193920038032,19.04932115923396,0 79.88193331416044,19.04944359131967,0 79.88194218596992,19.04960454393384,0 79.88195023704613,19.04980156196863,0 79.88195799214493,19.04999184649088,0 79.88199864666854,19.05036612286533,0 79.88209098005059,19.05077375840521,0 79.88221880882168,19.05123567106581,0 79.88233457915109,19.05161497253535,0 79.88243218948668,19.05183153486923,0 79.88257966097547,19.05231052688849,0 79.88276368288631,19.05286563637158,0 79.88287552656141,19.05320477886696,0 79.88295459321688,19.0535197998181,0 79.88300108223643,19.05373724992954,0 79.88302479492998,19.05394639536312,0 79.88304366596171,19.05418497662823,0 79.88302740407637,19.0545068254511,0 79.88299485940786,19.05488170802148,0 79.88299982124889,19.05530801385879,0 79.88302456476997,19.05558195703559,0 79.88302689787278,19.05581759441316,0 79.88300878203279,19.05618749415948,0 79.88299221106287,19.05649690096245,0 79.88299836187875,19.05686192897286,0 79.8829722667309,19.0572588166289,0 79.88296223276348,19.05759303354498,0 79.8829447149763,19.05777527849667,0 79.8829015532733,19.0579818992205,0 79.88282949158798,19.05812291832611,0 79.88278082959526,19.05825666546823,0 79.88275432539703,19.05851368703641,0 79.88269021587206,19.05876791891157,0 79.88257058388986,19.05928254798501,0 79.88250698888761,19.05962026368147,0 79.8824253756888,19.06003232048962,0 79.88233351911751,19.06053257089512,0 79.88226840287373,19.06093295824664,0 79.88226576264198,19.06122381600062,0 79.88221852078891,19.06145042411144,0 79.88214092891818,19.06184661295786,0 79.88201532189784,19.06223380160665,0 79.8819158608476,19.06243344067107,0 79.88180116420617,19.06261430750476,0 79.881794516377,19.06277346004538,0 79.8817444643949,19.06298511519865,0 79.88162526616254,19.06325959487389,0 79.88157151468965,19.06345057602839,0 79.88152306222094,19.06384030241891,0 79.88149285010259,19.06409357009379,0 79.88146030826925,19.06429593053906,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Reguntha mal</name>
+			<description>L= 225 m
+W= 220 m
+D= 1.5m
+A= 49500 sqm / 4.95 ha
+Q= 74250 cum/ 26237 brass</description>
+			<LookAt>
+				<longitude>79.8849482463545</longitude>
+				<latitude>19.04233860935146</latitude>
+				<altitude>0</altitude>
+				<heading>-178.1612981402667</heading>
+				<tilt>0</tilt>
+				<range>419.114577675521</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_R4</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.8853130438323,19.04229642132013,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>79.88436589743326</longitude>
+				<latitude>19.04304529180402</latitude>
+				<altitude>0</altitude>
+				<heading>-178.6572015676227</heading>
+				<tilt>30.00040520157398</tilt>
+				<range>89.22032254881133</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin29</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.88426111111112,19.04323333333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>79.8862043572568</longitude>
+				<latitude>19.04303417954462</latitude>
+				<altitude>0</altitude>
+				<heading>-178.6566077532501</heading>
+				<tilt>30.00037726512868</tilt>
+				<range>82.22209116823072</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin29</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.88640277777779,19.04314166666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline2920</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88649344958667,19.04249831610652,0 79.8862555765725,19.04243003150632,0 79.88610629284567,19.04236957681192,0 79.88593688020099,19.0422926891676,0 79.88580852092771,19.04221645187187,0 79.88557141103854,19.04230312168057,0 79.88547084199551,19.0423919441459,0 79.88538430781293,19.04245842150284,0 79.88523604521205,19.04253378448683,0 79.88508348512754,19.04265428099731,0 79.88495191336898,19.04275232996033,0 79.88481459350989,19.04278573296309,0 79.88466700501301,19.04281580533321,0 79.88447134961793,19.04284207030592,0 79.88435112289915,19.04287570945061,0 79.88429636172921,19.04294833250257,0 79.88421100089494,19.04296932795057,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline12030</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88647286233294,19.04217276763696,0 79.88630983492907,19.04210873875572,0 79.88609929444812,19.0420050865062,0 79.88585080927703,19.04190733251118,0 79.88567810343454,19.04180749056079,0 79.88547283597771,19.04198881389772,0 79.88531287727905,19.04213856988438,0 79.88517304090249,19.04229506124436,0 79.8849719214051,19.04243133505018,0 79.88471290144281,19.0425407764428,0 79.8844958360697,19.04258954476758,0 79.8842877177343,19.04276059302989,0 79.88413003537021,19.04278052133574,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline24011</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88642575696355,19.04307820899834,0 79.8863356335259,19.04305862551505,0 79.88624288483045,19.04302819384822,0 79.88609761718499,19.04299527445997,0 79.88594844720265,19.04295585553757,0 79.88576185262313,19.04293010290928,0 79.88558421217469,19.04291907722358,0 79.88544673658728,19.04298365921763,0 79.88531412243988,19.04303815948756,0 79.88518142479055,19.04309045064909,0 79.88506129187816,19.04313933185606,0 79.88496795101747,19.04318075184061,0 79.88481724771509,19.04324325905903,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>79.88592131078622</longitude>
+				<latitude>19.04060528493888</latitude>
+				<altitude>0</altitude>
+				<heading>-175.6011554332143</heading>
+				<tilt>20.3543946707192</tilt>
+				<range>261.9017333047451</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin29</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.88613611111111,19.04117777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline14020</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88529987460797,19.04318527107955,0 79.88543901732241,19.04314180343348,0 79.88558791329216,19.04309647200629,0 79.88568523583064,19.04302506022978,0 79.88581687259779,19.04304343488434,0 79.8859274646523,19.04310063294591,0 79.88597515091476,19.04314726752398,0 79.88601469370668,19.04319772218639,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline28000</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88647094581761,19.0417700635522,0 79.8863510234997,19.04176497280162,0 79.88619433869023,19.04168783388251,0 79.88597979614745,19.0415805667837,0 79.88576486175843,19.04148953785462,0 79.88555572209754,19.04146678824426,0 79.8852401562888,19.04144560275157,0 79.88500026431025,19.041610774842,0 79.88497296212462,19.04179566130593,0 79.88507575013387,19.04200816519212,0 79.88500092893519,19.04215942480086,0 79.88479994652893,19.04226017837313,0 79.88456742664239,19.04236620147919,0 79.88436255932336,19.04248630512689,0 79.88418502040808,19.04242507382826,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline27001</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88649168671951,19.04143015036178,0 79.88637095176085,19.0414477875385,0 79.88619337258349,19.04136034865574,0 79.88596733897369,19.04128517852163,0 79.88578542134734,19.04124332274816,0 79.88566089649288,19.04108803764176,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline633</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.88468167637042,19.04114138905878,0 79.88477803217187,19.04134148705327,0 79.88475912631864,19.04162447515416,0 79.88475578707799,19.04181978041546,0 79.88462879581272,19.04200002996315,0 79.88447543571687,19.04210505339146,0 79.88432284973489,19.04216452717973,0 79.88415912472965,19.04206114805325,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>79.88391658647322</longitude>
+				<latitude>19.0403313728052</latitude>
+				<altitude>0</altitude>
+				<heading>-175.6020550113893</heading>
+				<tilt>28.21028674352085</tilt>
+				<range>371.3592550651563</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin29</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.88400277777778,19.04125833333334,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

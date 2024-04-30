@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Dumandigi IV.kml</name>
+	<Schema name="Dumangdiri Stone IV" id="S_Dumangdiri_Stone_IV_I">
+		<SimpleField type="int" name="Id"><displayName>&lt;b&gt;Id&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="falseColor">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor0">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Id</b></td><td>$[Dumangdiri Stone IV/Id]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor1">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Id</b></td><td>$[Dumangdiri Stone IV/Id]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Dumandigi IV</name>
+		<styleUrl>#falseColor</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Dumangdiri_Stone_IV_I">
+				<SimpleData name="Id">0</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						84.80784624676421,22.36044247271883,0 84.80744292812369,22.36031398182446,0 84.80747207652098,22.35730217905636,0 84.80758807524501,22.35727541012001,0 84.8077724834729,22.35734679395022,0 84.80804612148859,22.35754607380947,0 84.8082335040429,22.35768884146977,0 84.80846847581718,22.35764720090213,0 84.80848334744843,22.35753120217811,0 84.80827217028411,22.35752227919931,0 84.80817996617024,22.35744494671665,0 84.80810858234004,22.35737951153902,0 84.80805801879364,22.35735869125524,0 84.80800745524722,22.35726946146756,0 84.80792714843834,22.35712669380711,0 84.80793607141713,22.35701366940947,0 84.80785873893431,22.35695418288424,0 84.80929831284296,22.35699284912569,0 84.81143685342185,22.3570404383457,0 84.81142198179064,22.35740330614902,0 84.81140711015928,22.35842350005525,0 84.81139818718064,22.35902133963294,0 84.81101152476708,22.35914923566218,0 84.81074383540397,22.35927713169127,0 84.81026199455015,22.35953589807559,0 84.80979799965417,22.35987199694273,0 84.8094440548296,22.36057096361303,0 84.80792833816876,22.36052813331496,0 84.80784624676421,22.36044247271883,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

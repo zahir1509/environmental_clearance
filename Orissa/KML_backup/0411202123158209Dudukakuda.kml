@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Dudukakuda.kml</name>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Dudukakuda</name>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				84.07711721543366,21.39500987141449,0 84.07750800571704,21.39554750255651,0 84.07756556430336,21.39567900043288,0 84.07771609203118,21.39568774342417,0 84.07785274841289,21.39551693151965,0 84.07793573388631,21.39547808691201,0 84.07793338974884,21.39542565998742,0 84.07813736027103,21.39533136098088,0 84.07837313086127,21.39538908790127,0 84.07838531749394,21.39522365102218,0 84.0783676819872,21.39511255950967,0 84.07872470356922,21.39497544633,0 84.07873761631652,21.39429066834079,0 84.07867204692344,21.39437734989263,0 84.07848232129426,21.39436275619079,0 84.07811034174497,21.3943305618719,0 84.0781173634453,21.39428677504118,0 84.07797241307799,21.39430869104698,0 84.0776277498116,21.39456960303333,0 84.07772686168133,21.39473211798677,0 84.0776312191915,21.39479300099245,0 84.07753903644883,21.39462623495536,0 84.07718243714629,21.39490223330815,0 84.07711721543366,21.39500987141449,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Amiya Steel.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed">
+	</Style>
+	<Style id="failed0">
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="failed1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed3">
+	</Style>
+	<Style id="failed4">
+	</Style>
+	<Style id="failed5">
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed6">
+	</Style>
+	<Style id="failed7">
+	</Style>
+	<Style id="failed8">
+	</Style>
+	<Style id="failed9">
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="failed10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed12">
+	</Style>
+	<StyleMap id="failed13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Amiya Steel</name>
+		<open>1</open>
+		<Placemark>
+			<name>A_Amiya</name>
+			<open>1</open>
+			<styleUrl>#failed2</styleUrl>
+			<Point>
+				<coordinates>87.10095460369738,23.55389786979642,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<open>1</open>
+			<styleUrl>#failed1</styleUrl>
+			<Point>
+				<coordinates>87.10066944444444,23.55365833333334,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<open>1</open>
+			<styleUrl>#failed10</styleUrl>
+			<Point>
+				<coordinates>87.10092777777777,23.55321666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<open>1</open>
+			<styleUrl>#failed11</styleUrl>
+			<Point>
+				<coordinates>87.10309166666666,23.55255277777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>E</name>
+			<LookAt>
+				<longitude>87.10266136681963</longitude>
+				<latitude>23.55323142001468</latitude>
+				<altitude>0</altitude>
+				<heading>2.105220452174565</heading>
+				<tilt>15.05842218791559</tilt>
+				<range>362.6093162290075</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed13</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.10346003049155,23.55344184256109,0</coordinates>
+			</Point>
+		</Placemark>
+		<GroundOverlay>
+			<name>Amiya</name>
+			<visibility>0</visibility>
+			<color>36ffffff</color>
+			<Icon>
+				<href>layout.jpg</href>
+				<viewBoundScale>0.75</viewBoundScale>
+			</Icon>
+			<LatLonBox>
+				<north>23.55367603713743</north>
+				<south>23.55263712093712</south>
+				<east>87.10355522209248</east>
+				<west>87.10053643090059</west>
+				<rotation>-10.66775417327881</rotation>
+			</LatLonBox>
+		</GroundOverlay>
+		<Placemark>
+			<name>Amiya Project Boundary</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.10094693040358,23.55389808089897,0 87.10066986184626,23.55366260614854,0 87.10069118987396,23.55345821338744,0 87.10092815150347,23.55321584522475,0 87.10134946486794,23.55304000635725,0 87.10309878211353,23.55255524758939,0 87.10332140827093,23.55285567382491,0 87.10340074190351,23.55301588820652,0 87.1034421249024,23.55314734090025,0 87.10347239023861,23.55342739738074,0 87.10345376799197,23.55345308541709,0 87.10094693040358,23.55389808089897,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>10 Km Amiya</name>
+			<open>1</open>
+			<styleUrl>#inline1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.18018069323672,23.60812161430549,84.56331524770161 87.18509688008565,23.60167249256876,78.12719637040428 87.18938049339137,23.59485515849531,75.08196807928273 87.19299899907695,23.58772155063494,75.09374950208704 87.19592494416365,23.5803260084275,74.91799993663381 87.19813616305301,23.57272485721238,74.55606932718939 87.1996159430706,23.56497597835757,74.01057609501703 87.20035314810846,23.557138367816,73.28530517258039 87.2003422995346,23.54927168649638,72.13997349080762 87.19958361387036,23.54143580588886,71.4114776306222 87.1980829970727,23.53369035241269,75.31052776269488 87.19585199558735,23.52609425395222,79.41118908093334 87.19290770466746,23.51870529202191,83.68221543186954 87.18927263476942,23.51157966294814,88.09110983835745 87.18497453714856,23.50477155137844,91.22308620275996 87.18004619007438,23.4983327193272,94.41710666249307 87.17452514736856,23.49231211384164,97.77806650609153 87.16845345123969,23.48675549622497,101.2803868279475 87.16187731163909,23.48170509558576,104.8973894411522 87.1548467545978,23.47719928929476,108.6015728216008 87.14741524221849,23.4732723127254,112.0674362967506 87.13963926719241,23.46995400043218,112.9593746371409 87.13157792488337,23.46726956068444,112.4689805189566 87.12329246617458,23.46523938502369,111.0097846574505 87.11484583440176,23.46387889425147,109.3088732588284 87.10630218980379,23.46319842198432,107.572590492214 87.09772642500482,23.46320313663494,107.9665972939276 87.08918367510127,23.46389300239397,109.2486801816064 87.08073882596318,23.46526277950044,110.512269643628 87.07245602437089,23.46730206379842,111.4677554509959 87.06439819359646,23.46999536528878,111.953710928583 87.05662655800207,23.47332222509691,113.627499571237 87.04920018016895,23.47725736999394,118.0251225623476 87.04217551398627,23.48177090333101,122.2655984506998 87.03560597702224,23.48682853097577,126.097502669791 87.02954154537075,23.49239182057972,127.7226001421883 87.02402837401421,23.49841849225527,125.7964321483595 87.01910844556885,23.50486273850541,120.4602695899539 87.01481925008473,23.51167557102663,114.9644589966305 87.01119349835668,23.51880519180119,113.0561397742898 87.00825887096744,23.5261973857074,111.7707240618042 87.00603780503313,23.53379593170864,110.2500059832425 87.0045473203509,23.54154302953557,108.5055350960768 87.00379888636397,23.54937973865093,107.8587976853378 87.00379833106288,23.55724642618497,109.2441313086727 87.00454579263042,23.56508322045295,109.2175220610546 87.00603571431959,23.57283046661346,108.6267900841366 87.0082568827274,23.58042918100095,107.4764220570701 87.01119250929581,23.58782150066564,105.775179516742 87.01482035453634,23.59495112468097,104.3123796731853 87.01911289414245,23.60176374383207,99.8457888077952 87.0240375258222,23.60820745537934,92.09373383050881 87.02955681535848,23.61423315969698,84.38660905789186 87.0356287800892,23.61979493571871,93.5051224127415 87.04220720769395,23.6248503922797,93.42292706737486 87.04924200788489,23.62936099262427,93.11080785271122 87.05667959432694,23.63329234955227,93.33456296552301 87.06446329385976,23.63661448890085,98.42272840770437 87.07253377986621,23.63930207930236,103.5085858197125 87.08082952642575,23.6413346264193,108.5534750634447 87.08928727971727,23.64269663013378,113.4949247157064 87.09784254298661,23.64337770345787,118.2035312557905 87.10643007127892,23.64337265223058,115.5631615723547 87.11498437205223,23.64268151497534,110.0867893394746 87.12344020773737,23.64130956260433,104.6419285172882 87.13173309629352,23.63926725797221,99.12533023814802 87.13979980582487,23.63657017559703,93.54877290545392 87.14757883937602,23.63323888217953,92.35503674672189 87.15501090610742,23.62929877885923,94.91320070948304 87.16203937516848,23.6247799064453,97.09804048900514 87.16861070873456,23.61971671514917,96.446234230472 87.17467487085007,23.61414780062137,90.68126443462707 87.18018069323672,23.60812161430549,84.56331524770161 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
+804048900514 87.16861070873456,23.61971671514917,96.446234230472 87.17467487085007,23.61414780062137,90.68126443462707 87.18018069323672,23.60812161430

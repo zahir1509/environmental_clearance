@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Bandhona.kml</name>
+	<open>1</open>
+	<StyleMap id="inline527">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline329</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline9220</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline723">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1316</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1123</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_B">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/B.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/B-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline6220">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1104</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline819</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline205">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1104">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline025">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline232">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline205</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline025</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline1218">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline10210</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline427</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_B">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/B.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/B-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_B">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_B</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_B</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline427">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline9220">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1123">
+		<LineStyle>
+			<color>ff29e361</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline819">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline329">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin39">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin37">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin440">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin37</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin39</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline10210">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1316">
+		<LineStyle>
+			<color>ff29e361</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Bandhona</name>
+		<open>1</open>
+		<Placemark>
+			<name>b</name>
+			<description>200*20</description>
+			<styleUrl>#inline232</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.28122504008196,20.43878830037407,0 80.28118721717264,20.43896335015812,0 80.28313273559451,20.43907573947382,0 80.28314415984265,20.43889448000863,0 80.28122504008196,20.43878830037407,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>80.28135473959758</longitude>
+				<latitude>20.4388618517349</latitude>
+				<altitude>0</altitude>
+				<heading>0.004789889118308478</heading>
+				<tilt>23.72629322892296</tilt>
+				<range>53.93317088517352</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin440</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.28122547789755,20.43878713411662,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>80.2814914561626</longitude>
+				<latitude>20.43887277967987</latitude>
+				<altitude>0</altitude>
+				<heading>0.004837528767423543</heading>
+				<tilt>23.72645303412625</tilt>
+				<range>98.12474989627506</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin440</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.28118805913077,20.43896103500735,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>80.28307855214253</longitude>
+				<latitude>20.43908048538751</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1110820239393681</heading>
+				<tilt>0</tilt>
+				<range>72.05256234548679</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin440</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.28313286152529,20.43907589755755,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>80.28307889927011</longitude>
+				<latitude>20.43891274355901</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1110819027189114</heading>
+				<tilt>0</tilt>
+				<range>70.58529589728687</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin440</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.28314532089141,20.43889453005816,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bandhona</name>
+			<description>L= 200 m
+W= 20 m
+D= 0.50 m
+A= 4000 sqm / 0.4 ha
+Q= 2000cum/ 707 Brass</description>
+			<LookAt>
+				<longitude>80.28233783180036</longitude>
+				<latitude>20.43897013315899</latitude>
+				<altitude>0</altitude>
+				<heading>-6.208161007426969</heading>
+				<tilt>18.42783026477898</tilt>
+				<range>246.4251235818886</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_B</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.28233185978048,20.43893733361109,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline527</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.28219964133103,20.43882456073755,0 80.28228767736293,20.4388689545298,0 80.28237934482812,20.43891222734738,0 80.28247837844226,20.43895165920748,0 80.28265510761564,20.43899979116157,0 80.28275291336048,20.43898910972328,0 80.28280895352715,20.43897986550935,0 80.28289888434939,20.4389782705054,0 80.28296180536091,20.43898062383418,0 80.28301753379427,20.43897290978105,0 80.2830679810013,20.43895924296852,0 80.28310467801556,20.43896637680807,0 80.2831209932689,20.43896972094054,0 80.28315078820704,20.43897147539614,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline6220</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.28187028464188,20.43880745339769,0 80.28190082589647,20.43883179706909,0 80.2819839882453,20.43886527873146,0 80.28207401529021,20.43889499074057,0 80.2821687895043,20.43893724783988,0 80.28224382289882,20.43897230187936,0 80.28236304176873,20.43901132360465,0 80.28243991398503,20.43903884005778,0 80.28249720414699,20.43906745724066,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline1218</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.28120633044641,20.43884205604284,0 80.2812215261627,20.43884350019685,0 80.28124445910648,20.43884112235758,0 80.28126341971402,20.43884065806391,0 80.28128767279073,20.4388393548032,0 80.28131565635134,20.43883530994333,0 80.28133529513131,20.43883672822969,0 80.28135923479501,20.43883988659759,0 80.28138717279023,20.4388385477584,0 80.28141425059401,20.43883540260131,0 80.2814335260379,20.4388346115148,0 80.2814660957948,20.43883120573369,0 80.28149986587647,20.43883225341212,0 80.28152632220238,20.43882372497646,0 80.28155196769349,20.43882113006958,0 80.28158396929078,20.43881917840857,0 80.28161238431487,20.43881815859947,0 80.28164512189406,20.43881432401219,0 80.28166489279822,20.43881497373986,0 80.28168875859734,20.43881120046916,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Haulage Road</name>
+			<description>L= 418 m
+W= 2.5 m</description>
+			<styleUrl>#inline723</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.28103783261597,20.43852301291005,0 80.28087959534967,20.43828278082464,0 80.28081133528427,20.43815025944424,0 80.28072247806209,20.43801028439022,0 80.28058820931986,20.4378444681021,0 80.28042639881964,20.43768337051174,0 80.28024726226519,20.43752231238307,0 80.28001254374871,20.43738236660074,0 80.2797954597374,20.43726718713797,0 80.27959980157381,20.43716453464918,0 80.27953453598478,20.43714351284346,0 80.27946818854066,20.437128410793,0 80.27940853228432,20.43714760783925,0 80.2793555599783,20.43718301635501,0 80.27927665728345,20.43723036900772,0 80.27918512810545,20.43728864968652,0 80.27911975122665,20.43729831360441,0 80.27904670068593,20.43726374097476,0 80.27899481494538,20.43717679509219,0 80.27892586097707,20.43703024776214,0 80.27864429843518,20.43651668895741,0 80.27846000795499,20.43616301156773,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

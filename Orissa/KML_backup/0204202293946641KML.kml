@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Tue Feb 15 12:24:29 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-09-15T06:41:47Z</begin>
+			<end>2021-09-15T06:46:01Z</end>
+		</gx:TimeSpan>
+		<longitude>85.58056000000001</longitude>
+		<latitude>20.182921</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="waypoint_n">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="waypoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_h">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2021-09-15T06:41:47Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.579447,20.183361,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2021-09-15T06:42:06Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.579458,20.183894,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2021-09-15T06:42:40Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.58000800000001,20.183611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2021-09-15T06:43:02Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.57974400000001,20.183617,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>005</name>
+			<TimeStamp><when>2021-09-15T06:43:22Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.580011,20.18335,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>006</name>
+			<TimeStamp><when>2021-09-15T06:43:43Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.58001400000001,20.183353,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>007</name>
+			<TimeStamp><when>2021-09-15T06:44:18Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.580286,20.183081,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>008</name>
+			<TimeStamp><when>2021-09-15T06:44:36Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.580558,20.183056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>009</name>
+			<TimeStamp><when>2021-09-15T06:44:51Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.58112199999999,20.182794,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>010</name>
+			<TimeStamp><when>2021-09-15T06:45:11Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.58112800000001,20.182506,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>011</name>
+			<TimeStamp><when>2021-09-15T06:45:28Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.581672,20.182222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>012</name>
+			<TimeStamp><when>2021-09-15T06:45:45Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.581667,20.181953,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>013</name>
+			<TimeStamp><when>2021-09-15T06:46:01Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.58085,20.181947,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Haladipada Laterite Stone Quarry</name>
+		<styleUrl>#inline0</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.57944196940876,20.18336402736863,0 85.5794511359049,20.18390279237955,0 85.58000231363943,20.18361043116995,0 85.57974378649384,20.18362445527681,0 85.58001529867819,20.18335934785783,0 85.58000877738502,20.18334565683415,0 85.58028253405081,20.18308017566413,0 85.58056076279358,20.18305924112594,0 85.58112181402208,20.1828017718471,0 85.58113012074273,20.18251000684734,0 85.58167363620566,20.18222015310083,0 85.58166794019212,20.18195908143336,0 85.58085008678206,20.18194370190871,0 85.57944196940876,20.18336402736863,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Haladipada Laterite Stone Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-09-15T06:41:47Z</begin>
+				<end>2021-09-15T06:46:01Z</end>
+			</gx:TimeSpan>
+			<longitude>85.58046848124903</longitude>
+			<latitude>20.18291062001679</latitude>
+			<altitude>0</altitude>
+			<heading>0.0002363223432080279</heading>
+			<tilt>25.87754337386106</tilt>
+			<range>428.1550848331227</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.580454438071,20.18265058614206,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Jajpur 1.kml</name>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffd0f2c9</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="PolyStyle001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#PolyStyle00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#PolyStyle000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="PolyStyle000">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffd0f2c9</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark id="ID_00000">
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AdMapKey</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>STRING</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>X1</td>
+
+<td>429415.027119</td>
+
+</tr>
+
+<tr>
+
+<td>Y1</td>
+
+<td>2305747.385381</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ID</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>AREA</td>
+
+<td>92861.651428</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PERIMETER</td>
+
+<td>2055.998259</td>
+
+</tr>
+
+<tr>
+
+<td>LINKS_QTY</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ID1</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>START_NODE</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>END_NODE</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>LEFT_POLYG</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RIGHT_POLY</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>DIRECTION</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DIRECT_RES</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>REVERSE_RE</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ID2</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>RESISTANCE</td>
+
+<td>0</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+		<styleUrl>#PolyStyle001</styleUrl>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.3164535095846,20.85080861044729,0 86.31656508074158,20.8505976008733,0 86.31694601722134,20.85048167652142,0 86.31714117701853,20.85075921155207,0 86.31837728560367,20.85040659824879,0 86.31948560552955,20.85025093420425,0 86.32207883549628,20.8501011478933,0 86.32207475729223,20.84962115944675,0 86.32207630518272,20.84947564513726,0 86.32240774530871,20.84941560248658,0 86.32305663233026,20.84941949187056,0 86.32334576077579,20.84944237037121,0 86.32367813960823,20.84949530593104,0 86.32393818796166,20.84955338925623,0 86.32431670999324,20.84963639249466,0 86.32479895157921,20.84977098846561,0 86.32484231763472,20.84981207753782,0 86.32487462145508,20.84984791456886,0 86.32489190723673,20.84987774109499,0 86.3249107317171,20.84991798924536,0 86.32491849393936,20.84995298536575,0 86.32492235015678,20.84997606350214,0 86.32492060720016,20.85001176630133,0 86.32490840735755,20.8500901272037,0 86.32488963781201,20.85021503800756,0 86.32486354732231,20.85030123977285,0 86.32485734928642,20.85033374743909,0 86.32481516257717,20.8505474325747,0 86.32478869365012,20.8506656175564,0 86.32477252086962,20.85075449831635,0 86.32475604432352,20.85083512560673,0 86.32473925385489,20.85092766660855,0 86.32472568756121,20.85101239497564,0 86.32468548618898,20.85119291823137,0 86.32462705778694,20.85152233038674,0 86.32440396352247,20.85146439662863,0 86.32380096716611,20.85139648812677,0 86.32284688461594,20.85130344006262,0 86.32286175110426,20.85122916759835,0 86.32168634584363,20.85095712122004,0 86.32109195976841,20.85083603372869,0 86.32046350534415,20.85079202922463,0 86.319515799881,20.85087807051215,0 86.31828217717582,20.85093350584941,0 86.31773035178155,20.85103651300561,0 86.31708397435588,20.85095448804873,0 86.3164535095846,20.85080861044729,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

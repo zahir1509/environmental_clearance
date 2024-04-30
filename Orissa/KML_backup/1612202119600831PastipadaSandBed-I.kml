@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Pastipada Sand Bed-I.kml</name>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default02</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl2">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="default02">
+	</Style>
+	<Placemark>
+		<name>Pastipada Sand Bed-I</name>
+		<styleUrl>#default</styleUrl>
+		<Point>
+			<coordinates>83.10461944444444,20.03406111111111,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

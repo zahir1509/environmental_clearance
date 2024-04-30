@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>MGB 65.kml</name>
+	<Style id="sn_placemark_square">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_arrow-reverse0">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow-reverse.png</href>
+			</Icon>
+			<hotSpot x="54" y="42" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_placemark_square">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_arrow-reverse">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_arrow-reverse0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_arrow-reverse1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_arrow-reverse1">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow-reverse.png</href>
+			</Icon>
+			<hotSpot x="54" y="42" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>MGB 65</name>
+		<open>1</open>
+		<Placemark>
+			<name>Sand Lease Area (5.000 Hectare)</name>
+			<open>1</open>
+			<Camera>
+				<longitude>86.86781590416713</longitude>
+				<latitude>22.20869456974048</latitude>
+				<altitude>1493.724449075886</altitude>
+				<heading>85.73344680380491</heading>
+				<tilt>0.01461025685781541</tilt>
+				<roll>86.86628489566513</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_arrow-reverse</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.86844920837873,22.20741993302372,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<Camera>
+				<longitude>86.97649829668084</longitude>
+				<latitude>22.18319017734649</latitude>
+				<altitude>7415.668842015743</altitude>
+				<heading>-10.29770043095816</heading>
+				<tilt>2.100628061053862</tilt>
+				<roll>-8.684656153629296</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_placemark_square</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.86667499999999,22.21006111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<Camera>
+				<longitude>86.86865939486474</longitude>
+				<latitude>22.19681768129593</latitude>
+				<altitude>4195.490447468442</altitude>
+				<heading>-4.508608394054114</heading>
+				<tilt>6.343850328679828</tilt>
+				<roll>-2.874923076125335</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_placemark_square</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.86893055555555,22.20832222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<Camera>
+				<longitude>86.86788289767054</longitude>
+				<latitude>22.20300415568488</latitude>
+				<altitude>1600.383927612084</altitude>
+				<heading>-2.688599728690819</heading>
+				<tilt>17.07224148073304</tilt>
+				<roll>-1.078610463362806</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_placemark_square</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.86767777777777,22.20715,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<Camera>
+				<longitude>86.86788289767054</longitude>
+				<latitude>22.20300415568488</latitude>
+				<altitude>1600.383927612084</altitude>
+				<heading>-2.688599728690819</heading>
+				<tilt>17.07224148073304</tilt>
+				<roll>-1.078610463362806</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_placemark_square</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.86546388888888,22.20885,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lease Boundary</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					86.86667031170032,22.21006782324338,0 86.86893005994902,22.20833203324553,0 86.8676772264451,22.20715831179041,0 86.86546169600766,22.2088517869694,0 86.86667031170032,22.21006782324338,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

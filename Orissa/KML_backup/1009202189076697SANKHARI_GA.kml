@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="SANKHARI(EAST WEST)_9.2AC_(GA)NEW-LEASE BND">
+	<name>SANKHARI(EAST WEST)_9.2AC_(GA)NEW-LEASE BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>SANKHARI(EAST WEST)_9.2AC_(GA)NEW-LEASE BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>SANKHARI(E,W)_GA_NEW_9.84AC</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.552756,20.107693,0 85.55434,20.107672,0 85.55421800000001,20.105377,0 85.553404,20.10552,0 85.553247,20.105558,0 85.55306400000001,20.105583,0 85.55264,20.105675,0 85.552756,20.107693,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

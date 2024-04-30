@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>Temporary Places</name>
+	<open>1</open>
+	<Document>
+		<name>Dhunkapara Decorative Stone Mine.kml</name>
+		<open>1</open>
+		<StyleMap id="msn_ylw-pushpin">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#sn_ylw-pushpin</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#sh_ylw-pushpin</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="sh_ylw-pushpin">
+			<IconStyle>
+				<scale>1.3</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+			<LineStyle>
+				<color>667f55ff</color>
+				<width>3.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66a9e3ff</color>
+			</PolyStyle>
+		</Style>
+		<Style id="sn_ylw-pushpin">
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+			<LineStyle>
+				<color>667f55ff</color>
+				<width>3.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>66a9e3ff</color>
+			</PolyStyle>
+		</Style>
+		<Placemark>
+			<name>Dhunkapara DSM</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							84.80942204241542,19.77408433723715,0 84.81024229949195,19.77474625717072,0 84.81070227486508,19.77539038118202,0 84.80751733094448,19.77516275171001,0 84.80762289466564,19.77394632938292,0 84.80582712665736,19.77388241728351,0 84.8057796386757,19.77511687141325,0 84.80211696512644,19.77526165585261,0 84.80199200108549,19.77389191285354,0 84.80230505908014,19.77331781305272,0 84.80192454159261,19.77257636231761,0 84.801548088305,19.77168812324963,0 84.80226997038902,19.77062991879027,0 84.80265547814804,19.77101945174974,0 84.80325513223561,19.77060363204499,0 84.80403121644238,19.77116659783408,0 84.80500056653834,19.77181834298601,0 84.80612189864318,19.7727290910763,0 84.80725048268826,19.77352705835765,0 84.80870593917432,19.77371345127752,0 84.80942204241542,19.77408433723715,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Document>
+</Folder>
+</kml>

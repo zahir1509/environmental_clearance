@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Tigal Morrum Quarry.kml</name>
+	<Style id="default31">
+	</Style>
+	<Style id="hl3">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default31</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Tigal Morrum Quarry</name>
+		<open>1</open>
+		<styleUrl>#default5</styleUrl>
+		<Point>
+			<coordinates>81.6483388888889,18.03237777777778,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

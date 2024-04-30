@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Pallur hill SQ.kml</name>
+	<StyleMap id="failed">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed0">
+	</Style>
+	<Style id="failed1">
+	</Style>
+	<Placemark>
+		<name>19 11 09.17 84 44 15.30</name>
+		<styleUrl>#failed</styleUrl>
+		<Point>
+			<coordinates>84.73758333333333,19.18560277777778,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

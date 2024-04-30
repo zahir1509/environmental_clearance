@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Baby BF.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_grn-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_shaded_dot1">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_shaded_dot">
+		<IconStyle>
+			<color>ffff5500</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff5500</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_shaded_dot0">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_shaded_dot">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_grn-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_grn-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_shaded_dot0">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline7">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline11">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline8">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_shaded_dot2">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline12">
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline34">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_shaded_dot2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_shaded_dot1">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline14">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline15">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline16">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_shaded_dot2">
+		<IconStyle>
+			<color>ffff5500</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff5500</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline34</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_shaded_dot3">
+		<IconStyle>
+			<color>ff7f00ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff7f00ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_shaded_dot3">
+		<IconStyle>
+			<color>ff7f00ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff7f00ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>Baby BF</name>
+		<open>1</open>
+		<Placemark>
+			<name>Baby BF</name>
+			<open>1</open>
+			<styleUrl>#inline20</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.09249074105189,25.28972209662401,27.48712886785994 88.09320610301427,25.28191781407236,26.47934564079898 88.09316645747526,25.27408685502874,26.0598538281736 88.09237225193439,25.26628881758941,25.35642373771485 88.09082967403249,25.25858303786674,26.14406373516716 88.08855060011453,25.25102813878054,19.53443080023501 88.08555250071326,25.24368158461191,28.07024035384253 88.08185830379743,25.2365992446876,26.47721074202769 88.07749621693931,25.22983496948424,26.7050930903253 88.07249950985523,25.2234401823381,25.92534355000192 88.06690625905672,25.21746348982085,27.03964237826719 88.06075905661932,25.21195031369371,27.96421616212035 88.05410468532851,25.2069425471838,28.87688850326058 88.04699376269394,25.20247823813954,23.85410408403771 88.03948035653907,25.19859130141614,25.22013071792901 88.03162157506597,25.19531126262158,26.36303585082475 88.0234771344673,25.19266303511704,25.92292654793776 88.0151089073082,25.19066673191799,25.69031920280853 88.00658045502847,25.189337513882,25.7244572984731 87.99795654802108,25.18868547530091,24.42070518352146 87.98930267682408,25.18871556773898,25.51729908546058 87.98068455802185,25.18942756267666,25.76578699369022 87.972167638486,25.19081605323453,24.07381125188624 87.96381660159757,25.19287049496488,23.66051205640524 87.95569487907827,25.19557528541088,24.88343643207288 87.94786417202261,25.19890988184891,23.60630386640337 87.94038398466236,25.20284895634761,27.08217959873325 87.93331117431035,25.20736258700241,33.21173657288287 87.92669952082356,25.21241648393564,32.02679907753237 87.92059931879675,25.21797224839416,30.26545205514216 87.91505699554304,25.22398766302893,30.41921873215522 87.91011475774663,25.23041701120611,30.07039545917463 87.90581026947456,25.23721142297996,25.91013334991104 87.90217636402116,25.24431924515329,31.04385706261764 87.89924079182157,25.2516864326661,31.89243745829171 87.89702600641871,25.25925695838615,32.67494862348769 87.89554899019763,25.26697323822911,30.77699987553649 87.89482112131381,25.27477656841227,30.94265572928617 87.89484808294438,25.28260757154488,29.44982015370269 87.89562981567749,25.29040664818134,27.65252130265175 87.89716051353486,25.29811443041178,28.46558164874281 87.89942866379172,25.30567223403877,28.84012323685795 87.90241713042495,25.31302250588845,24.56267043913286 87.90610328068105,25.32010926283209,24.97966587703013 87.91045915391942,25.32687851914588,26.4051747535019 87.91545167155033,25.33327869891857,31.29629444385593 87.92104288655864,25.33926103032085,27.98593892433964 87.92719027078297,25.34477991868323,27.3726334425209 87.9338470378126,25.34979329548531,27.09612273380956 87.94096249906812,25.35426294053984,32.54354911785495 87.94848245035813,25.35815477485796,28.59805176832925 87.95634958594587,25.36143912190568,31.62476296857437 87.96450393692938,25.36409093520537,29.61103281650513 87.97288333052903,25.36608999049638,28.56756595243962 87.98142386670079,25.36742104094485,28.49465690143244 87.99006040834087,25.36807393418192,27.11495265169322 87.99872708123287,25.36804369024849,25.54011932328613 88.00735777980321,25.3673305398328,26.90588204678741 88.01588667469964,25.36593992249902,28.16146122437886 88.02424871819306,25.36388244492102,28.05975220907156 88.03238014342045,25.36117379945074,27.20140504852382 88.04021895354161,25.35783464366207,25.5631159625909 88.04770539696776,25.35389044181948,26.12266985859793 88.05478242494266,25.34937126951777,26.33888956196529 88.06139612790628,25.34431158302803,25.94624899542272 88.06749614725419,25.3387499551592,25.44826855570736 88.07303605931445,25.33272877970412,29.31568380440663 88.07797372859895,25.32629394678008,26.59796750286958 88.08227162764366,25.3194944915968,25.12317819784603 88.08589712103034,25.31238221938488,28.29358034103641 88.08882271147817,25.305011309397,25.02797483204384 88.09102624620321,25.29743790104781,26.83828979587402 88.09249074105189,25.28972209662401,27.48712886785994 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>A</name>
+			<LookAt>
+				<longitude>87.99356682820016</longitude>
+				<latitude>25.27915589845918</latitude>
+				<altitude>0</altitude>
+				<heading>4.612653124708349</heading>
+				<tilt>26.69965266236299</tilt>
+				<range>461.420345508614</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.99337082307277,25.27855461141279,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<LookAt>
+				<longitude>87.99356682820016</longitude>
+				<latitude>25.27915589845918</latitude>
+				<altitude>0</altitude>
+				<heading>4.612653124708349</heading>
+				<tilt>26.69965266236299</tilt>
+				<range>461.420345508614</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.9943,25.2787,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<LookAt>
+				<longitude>87.99356682820016</longitude>
+				<latitude>25.27915589845918</latitude>
+				<altitude>0</altitude>
+				<heading>4.612653124708349</heading>
+				<tilt>26.69965266236299</tilt>
+				<range>461.420345508614</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.99438055555555,25.27849166666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<LookAt>
+				<longitude>87.99356682820016</longitude>
+				<latitude>25.27915589845918</latitude>
+				<altitude>0</altitude>
+				<heading>4.612653124708349</heading>
+				<tilt>26.69965266236299</tilt>
+				<range>461.420345508614</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.99483888888889,25.27843055555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>E</name>
+			<LookAt>
+				<longitude>87.99356682820016</longitude>
+				<latitude>25.27915589845918</latitude>
+				<altitude>0</altitude>
+				<heading>4.612653124708349</heading>
+				<tilt>26.69965266236299</tilt>
+				<range>461.420345508614</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.99476111111112,25.27824444444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>F</name>
+			<LookAt>
+				<longitude>87.99356682820016</longitude>
+				<latitude>25.27915589845918</latitude>
+				<altitude>0</altitude>
+				<heading>4.612653124708349</heading>
+				<tilt>26.69965266236299</tilt>
+				<range>461.420345508614</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.99366111111111,25.27820555555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.99340017615054,25.27853150880837,0 87.99341425064766,25.2784847216032,0 87.99348383647211,25.27842210278662,0 87.99353405939992,25.27834959372731,0 87.99365674292203,25.27819833380078,0 87.99476766126858,25.27824137247947,0 87.99483352171751,25.27842335007215,0 87.99437558299701,25.27848053870342,0 87.99429443199109,25.2786983936669,0 87.99336730871812,25.27856749388418,0 87.99340017615054,25.27853150880837,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Baby Brick Field</name>
+			<LookAt>
+				<longitude>87.99342931076983</longitude>
+				<latitude>25.27942626984737</latitude>
+				<altitude>0</altitude>
+				<heading>4.612545833594263</heading>
+				<tilt>27.46038975213123</tilt>
+				<range>523.966726063019</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.99400249050456,25.27839845409095,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NH 34</name>
+			<styleUrl>#inline5</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.99464149011867,25.27847512139085,0 88.16100632593819,25.3023636818373,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH 34 at 22 Km Road Distance</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>88.11813905642994</longitude>
+				<latitude>25.29257060046274</latitude>
+				<altitude>0</altitude>
+				<heading>4.673888512312</heading>
+				<tilt>27.85163924712373</tilt>
+				<range>11388.29748319907</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.16094631259077,25.30125276768618,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NH 81</name>
+			<open>1</open>
+			<styleUrl>#inline13</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.99393019540277,25.27828964644925,27.47980546535721 87.9266182485251,25.19861187131581,33.79399901566108 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH 81 at 12.6 Km Road Distance</name>
+			<LookAt>
+				<longitude>88.04901652558037</longitude>
+				<latitude>25.25782390904716</latitude>
+				<altitude>0</altitude>
+				<heading>4.644133105012872</heading>
+				<tilt>23.61814927354371</tilt>
+				<range>30951.97372581262</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.92719151277586,25.19857010362758,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ganga River</name>
+			<open>1</open>
+			<styleUrl>#inline6</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.9935031150834,25.27820787623833,27.03020392830249 87.92450507914749,25.20945243086499,26.43314724096265 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Ganga River at 12 Km Aerial Distance</name>
+			<LookAt>
+				<longitude>87.9409909758748</longitude>
+				<latitude>25.21110017916109</latitude>
+				<altitude>0</altitude>
+				<heading>4.606711265866643</heading>
+				<tilt>20.23546530322191</tilt>
+				<range>14188.30851043386</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.92313100593067,25.20895112124613,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Samsi</name>
+			<open>1</open>
+			<styleUrl>#inline1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.99374307903608,25.27821303318332,27.21231478542323 88.00685758127248,25.27521284249944,30.67226089924484 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Samsi town at 1 Km Aerial Distance</name>
+			<LookAt>
+				<longitude>87.99352508335572</longitude>
+				<latitude>25.26930296606646</latitude>
+				<altitude>0</altitude>
+				<heading>4.628503613947258</heading>
+				<tilt>20.2717003134502</tilt>
+				<range>3406.756578539304</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.00671945268596,25.27510546179199,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Govt Hospital Samsi , Maldah at 2 Km aerial Distance</name>
+			<open>1</open>
+			<styleUrl>#inline0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.01488015841034,25.27878870259234,29.04747562504819 87.9947903164917,25.27829057273325,27.98561776422946 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Govt Hospital Samsi , Maldah at 2 Km aerial Distance</name>
+			<LookAt>
+				<longitude>88.01228971921901</longitude>
+				<latitude>25.27860850863706</latitude>
+				<altitude>0</altitude>
+				<heading>-12.29489782292312</heading>
+				<tilt>19.18979257940818</tilt>
+				<range>1238.91590603085</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.0148892280172,25.27873265809906,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Durga temple</name>
+			<open>1</open>
+			<styleUrl>#inline17</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.99457374288679,25.27850784059621,28.92332308793349 88.01062333298309,25.2839229684131,31.65681253995032 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Durga temple at 1.7 Km Aerial distence</name>
+			<Camera>
+				<longitude>88.01501887104742</longitude>
+				<latitude>25.27932382550146</latitude>
+				<altitude>2207.166443350143</altitude>
+				<heading>-6.964296457855371</heading>
+				<tilt>17.57890637737345</tilt>
+				<roll>-1.675532435746138</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_shaded_dot1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.01065226777287,25.28385159511591,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

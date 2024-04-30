@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GADDWAR STONE QUARRY.kml</name>
+	<Style id="failed">
+	</Style>
+	<StyleMap id="failed0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed1">
+	</Style>
+	<Placemark>
+		<name>GADDWAR STONE QUARRY</name>
+		<styleUrl>#failed0</styleUrl>
+		<Point>
+			<coordinates>83.390801475,20.59196350555555,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

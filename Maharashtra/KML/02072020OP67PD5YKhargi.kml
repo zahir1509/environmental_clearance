@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Khargi.kml</name>
+	<Style id="inline218">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline08">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline614</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline137</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin27">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin26</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin27</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline716">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline517">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline417">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline716</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline129</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_K4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_K6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_K5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_K5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="inline137">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline317">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline517</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline218</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline614">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_K6">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin26">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline129">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin27">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Khargi</name>
+		<open>1</open>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>80.45331156299227</longitude>
+				<latitude>20.07182798327073</latitude>
+				<altitude>0</altitude>
+				<heading>-90.97699311812787</heading>
+				<tilt>21.59280396736997</tilt>
+				<range>45.39791019475032</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin27</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.45336368663762,20.07175257903394,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>80.45306615455048</longitude>
+				<latitude>20.07235810628925</latitude>
+				<altitude>0</altitude>
+				<heading>-92.55783557430671</heading>
+				<tilt>0</tilt>
+				<range>175.1538438626139</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin27</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.45332219547458,20.0726585679727,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>80.45312053398769</longitude>
+				<latitude>20.07259084428078</latitude>
+				<altitude>0</altitude>
+				<heading>-91.60691584280866</heading>
+				<tilt>17.4639012404635</tilt>
+				<range>39.00650982675585</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin27</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.45313701403626,20.07266000515728,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>80.45317841084562</longitude>
+				<latitude>20.07175964902604</latitude>
+				<altitude>0</altitude>
+				<heading>-78.28451576414497</heading>
+				<tilt>24.10536798822602</tilt>
+				<range>20.71005766488036</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin27</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.45317711582311,20.07172828758382,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Haulage Road</name>
+			<description>L= 836 m
+W= 2.5 m</description>
+			<styleUrl>#inline317</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.45347871509563,20.07177446926832,0 80.45349153250126,20.07172165406384,0 80.45351844484077,20.07169547103545,0 80.4535806968477,20.07171040561576,0 80.45368508189608,20.0717398323203,0 80.45379996074782,20.07176351642045,0 80.45388507411383,20.07178396044476,0 80.45394983109772,20.0717743046401,0 80.45403473497251,20.07175109102321,0 80.45415523979179,20.07172502288622,0 80.45429409079345,20.07169013183201,0 80.45442585159611,20.07167472901918,0 80.45452689583917,20.07167387520374,0 80.4546350407997,20.0716983800517,0 80.45478957640553,20.07174668085771,0 80.45496285030937,20.07182983721273,0 80.45509979429419,20.07189187849839,0 80.45525267844788,20.071941326214,0 80.45543053912539,20.07197326386828,0 80.4556963732079,20.07198222018213,0 80.45587426737457,20.07201278947257,0 80.45609912839284,20.07205573537047,0 80.45635464210315,20.07210392938061,0 80.45657151545949,20.07213617398519,0 80.45674274299567,20.07217078413246,0 80.45687534569534,20.07222251500839,0 80.4570306510274,20.07228202413367,0 80.45710117923227,20.07229496308275,0 80.4571936817415,20.07229272330647,0 80.45728019876034,20.0722922563406,0 80.45734464846682,20.07230121412648,0 80.45741177073884,20.0723245440411,0 80.45751184844477,20.07232648586299,0 80.4576338150116,20.07231529705842,0 80.45777607550093,20.07230758932932,0 80.45796461537327,20.07232792328253,0 80.45817418562149,20.07234843528317,0 80.45836081166411,20.07239639748176,0 80.45846492383886,20.07245571916802,0 80.4585632728792,20.07256635945362,0 80.45865628614173,20.07272254546891,0 80.45878731958223,20.07295465635057,0 80.45897598442383,20.07317791685757,0 80.45915467194766,20.07341253684713,0 80.45938748082016,20.07360401171933,0 80.45955300618121,20.07367810430161,0 80.45967340464596,20.07371427701042,0 80.45976226548063,20.07379749741874,0 80.45985582390429,20.07386916431136,0 80.45998086871975,20.0739946767744,0 80.46007467812841,20.0741216891295,0 80.46016168179061,20.07425338072966,0 80.4602676488034,20.07439766158514,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Polygon Measure</name>
+			<styleUrl>#inline417</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.45336267245492,20.07175220497262,0 80.45332300460679,20.07265852176964,0 80.45313661854189,20.07266001784018,0 80.45317504410392,20.07172782099663,0 80.45336267245492,20.07175220497262,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<styleUrl>#inline08</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.45315723251402,20.07190512563509,0 80.45319155940032,20.07190794235691,0 80.45323202226517,20.07190794243484,0 80.45327092997346,20.07191217726314,0 80.45331519728558,20.07190935281933,0 80.45335414104235,20.07190653357347,0 80.45337362825944,20.07190723790559,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Khargi</name>
+			<description>L= 100 m
+W= 20 m
+D= 1m
+A= 2000 sqm / 0.2 ha
+Q= 2000 cum/ 707 brass</description>
+			<LookAt>
+				<longitude>80.45326315244604</longitude>
+				<latitude>20.07221018384091</latitude>
+				<altitude>0</altitude>
+				<heading>-92.29048624991798</heading>
+				<tilt>0</tilt>
+				<range>226.8393353680685</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_K4</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.45326315244604,20.07221018384091,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

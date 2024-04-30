@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>CHHIPRA.KMZ</name>
+	<Style id="area1">
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>bf000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="point1">
+		<IconStyle>
+			<Icon>
+				<href>kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Point Features</name>
+		<description>Point Features</description>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>Id</B> = 1<BR><B>LATITUDE</B> = 26° 30' 10.320" N<BR><B>LONGITUDE</B> = 89° 42' 19.020" E]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>89.7052833333,26.5028666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>Id</B> = 3<BR><B>LATITUDE</B> = 26° 30' 18.370" N<BR><B>LONGITUDE</B> = 89° 42' 18.100" E]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>89.7050277778,26.5051027778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>Id</B> = 2<BR><B>LATITUDE</B> = 26° 30' 15.460" N<BR><B>LONGITUDE</B> = 89° 42' 20.560" E]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>89.7057111111,26.5042944444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>Id</B> = 4<BR><B>LATITUDE</B> = 26° 30' 18.660" N<BR><B>LONGITUDE</B> = 89° 42' 20.610" E]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>89.705725,26.5051833333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>Id</B> = 5<BR><B>LATITUDE</B> = 26° 30' 16.110" N<BR><B>LONGITUDE</B> = 89° 42' 23.560" E]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>89.7065444444,26.504475,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>Id</B> = 6<BR><B>LATITUDE</B> = 26° 30' 12.440" N<BR><B>LONGITUDE</B> = 89° 42' 24.740" E]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>89.7068722222,26.5034555556,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Area Features</name>
+		<description>Area Features</description>
+		<Placemark>
+			<description><![CDATA[0<BR><BR><B>LAYER</B> = 0<BR><B>GM_TYPE</B> = Unknown Area Type<BR><B>ELEVATION</B> = 0.0<BR><B>CLOSED</B> = YES<BR><B>BORDER_STY</B> = Solid<BR><B>BORDER_COL</B> = RGB(255,0,0)<BR><B>BORDER_WID</B> = 1<BR><B>FILL_STYLE</B> = No Fill]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							89.70528333510001,26.502866664,0 89.70554030940001,26.5028462247,0 89.7057121958,26.5028311974,0 89.7058644154,26.5028363661,0 89.70595897690001,26.5028524656,0 89.7060963535,26.5028927066,0 89.7062528263,26.5029321758,0 89.7064703297,26.5030305212,0 89.7067212219,26.5032118908,0 89.7068043805,26.5033044216,0 89.70685525739999,26.5033760738,0 89.7068728789,26.5034546738,0 89.7068561323,26.5036153152,0 89.7068336096,26.5037661637,0 89.7068219388,26.5039568134,0 89.70679211549999,26.5040599081,0 89.7066669056,26.5042536683,0 89.7065429262,26.5044761765,0 89.70639767740001,26.5046341408,0 89.7062338521,26.5047768509,0 89.7060878874,26.5049095109,0 89.70591048119999,26.5050449713,0 89.7057241179,26.5051820437,0 89.7056647764,26.5051758049,0 89.70538234990001,26.5051523042,0 89.70502785399999,26.5051023931,0 89.705100636,26.5049843708,0 89.7051653043,26.5049219633,0 89.7053566905,26.504788979,0 89.7055231061,26.5046074318,0 89.7056633924,26.504416535,0 89.7057107573,26.5042937355,0 89.7056986452,26.50416504,0 89.705671807,26.5040952307,0 89.7056218268,26.5039625868,0 89.70555402860001,26.5038341284,0 89.70547206800001,26.503691208,0 89.7054265368,26.5035262437,0 89.7053636088,26.5033005357,0 89.7053100068,26.5030875697,0 89.70528345770001,26.5029424469,0 89.70528333510001,26.502866664,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

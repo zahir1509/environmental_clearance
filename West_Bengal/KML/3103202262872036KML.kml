@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Env Setting_Rina Dutta.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_shaded_dot">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_shaded_dot0">
+		<IconStyle>
+			<color>ffff00ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff00ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_grn-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline39</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline40</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_shaded_dot">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline5">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline36</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline7">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline59</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_shaded_dot">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_shaded_dot0">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline51</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline56</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_shaded_dot1">
+		<IconStyle>
+			<color>ffff00ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff00ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline34</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline12">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline57</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline45</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline14">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline27</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline42</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline60</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline17">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_shaded_dot1">
+		<IconStyle>
+			<color>ff0055ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_shaded_dot2">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline18">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline19">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline20">
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline58</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline22">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_shaded_dot2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline23">
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline24">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline25">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline55</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline26">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline27">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline28">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline26</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_shaded_dot3">
+		<IconStyle>
+			<color>ff0055ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_shaded_dot2">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline29">
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline30">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline31">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline48</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline35</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline32">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline33">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline46</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline34">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_shaded_dot4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline35">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline36">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline37">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline38">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_shaded_dot4">
+		<IconStyle>
+			<color>ffff5500</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff5500</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline39">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline40">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline41">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline29</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline42">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline43">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline44">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline23</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_shaded_dot3">
+		<IconStyle>
+			<color>ffff5500</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff5500</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline45">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_shaded_dot4">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline46">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline47">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline48">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline49">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline50">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline49</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline47</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline51">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline52">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline53">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline54">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline32</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline38</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline55">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_shaded_dot5">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline56">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline57">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline58">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline59">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_shaded_dot5">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline60">
+		<LineStyle>
+			<color>ffff00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_grn-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline61">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline43</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Bataliguri  Sand Mine_Rina Dutta</name>
+		<open>1</open>
+		<Placemark>
+			<name>A</name>
+			<LookAt>
+				<longitude>88.33498300479565</longitude>
+				<latitude>26.74068751996459</latitude>
+				<altitude>0</altitude>
+				<heading>4.578164158187224e-05</heading>
+				<tilt>26.59453012204348</tilt>
+				<range>187.355852149373</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33491325040148,26.74079726805172,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<LookAt>
+				<longitude>88.33674166703149</longitude>
+				<latitude>26.74030555558237</latitude>
+				<altitude>0</altitude>
+				<heading>1.641833138194944e-10</heading>
+				<tilt>0</tilt>
+				<range>1000.000008848868</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.3367416670315,26.74030555558237,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<LookAt>
+				<longitude>88.33693401112316</longitude>
+				<latitude>26.74013778543949</latitude>
+				<altitude>0</altitude>
+				<heading>6.377321547970601e-05</heading>
+				<tilt>23.48553403547785</tilt>
+				<range>213.690374767503</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33777499999999,26.74008611111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<LookAt>
+				<longitude>88.33693401112316</longitude>
+				<latitude>26.74013778543949</latitude>
+				<altitude>0</altitude>
+				<heading>6.377321547970601e-05</heading>
+				<tilt>23.48553403547785</tilt>
+				<range>213.690374767503</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33749166666666,26.73914444444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>E</name>
+			<LookAt>
+				<longitude>88.33703921250026</longitude>
+				<latitude>26.7393250792162</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001110996370331969</heading>
+				<tilt>23.48553405405233</tilt>
+				<range>213.6955638891636</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.3360861111111,26.739675,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>F</name>
+			<LookAt>
+				<longitude>88.33649081587291</longitude>
+				<latitude>26.73978289087574</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001356224876044857</heading>
+				<tilt>23.48594636968231</tilt>
+				<range>328.880361908472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33486111111111,26.73988055555555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bataliguri Sand Mine</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							88.33609227273732,26.73968262637135,0 88.33749582351078,26.73914868491851,0 88.3377735831431,26.74008850260131,0 88.33674566619074,26.74030960648648,0 88.33491037644369,26.74080769114957,0 88.33486104751962,26.73988462643212,0 88.33609227273732,26.73968262637135,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bataliguri Sand Mine</name>
+			<LookAt>
+				<longitude>88.33648889182039</longitude>
+				<latitude>26.74119269705187</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0007569154290874284</heading>
+				<tilt>30.00382415290539</tilt>
+				<range>851.419222222566</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33621687779544,26.74003026172056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bataliguri 10 Km</name>
+			<open>1</open>
+			<styleUrl>#inline15</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.24459574121673,26.77723767066343,230.0768939893887 88.24857294953925,26.78422669148233,234.240829582237 88.25321788922696,26.79087951360999,240.8358849856847 88.25849527793258,26.79714543953764,263.7511878438447 88.26436499407016,26.80297671191875,272.4785469481294 88.27078238080989,26.8083288791109,264.4177612331978 88.27769858541573,26.81316113563376,340.1744312812032 88.28506093136177,26.8174366348865,403.7405993081975 88.29281332038705,26.82112277167889,312.6106674272215 88.30089666139446,26.82419143236141,346.2911592691698 88.30924932287174,26.82661921059005,478.9087416917841 88.31780760530799,26.82838758702848,400.6998142193531 88.32650622990985,26.82948307157185,433.2764018258388 88.33527883977683,26.82989730697052,381.0850519951402 88.34405850958815,26.82962713303593,440.7757455214037 88.35277825978018,26.82867461092104,281.8341025201149 88.36137157115162,26.82704700728382,247.3293486646567 88.36977289583277,26.82475673845893,349.1414981560531 88.37791816058446,26.82182127507836,290.6191749364502 88.3857452584618,26.8182630078943,192.2441668174489 88.39319452497615,26.81410907586261,182.8718737422548 88.40020919502705,26.80939115784162,184.6841082527771 88.4067358370384,26.80414522954533,162.9519854748116 88.41272476093276,26.79841128766072,150.3055513587065 88.41813039679789,26.79223304329209,146.7276778472422 88.42291164135121,26.78565758713167,143.6992543458782 88.42703216957705,26.77873502897048,135.4940541695954 88.43046070920307,26.77151811435641,129.6434054741163 88.43317127598874,26.76406182137709,124.0531117378273 88.43514336811974,26.7564229406902,124.6153568847745 88.43636211833271,26.74865964204376,126.8952915694672 88.43681840273256,26.74083103062342,127.121731285431 88.43650890560748,26.732996696631,124.9782016486415 88.43543613988902,26.72521626153902,122.6397120623173 88.43360842324725,26.7175489244807,122.3485237045065 88.43103981014775,26.71005301222189,120.3344998870348 88.42774998052819,26.70278553612342,117.7593334017662 88.42376408607259,26.69580175943829,115.3913885171753 88.41911255537228,26.68915477820008,115.3853952642789 88.4138308595581,26.68289511884652,110.5782600381936 88.40795924027103,26.67707035558817,108.6155061379478 88.40154240210151,26.67172475037586,108.2911502218819 88.39462917187701,26.66689891814502,108.2661319752012 88.38727212740288,26.66262951982081,108.8128401890785 88.37952719847056,26.65894898535639,108.5920680098859 88.37145324313359,26.65588526885042,108.7718942230552 88.36311160241664,26.65346163754912,109.8957847870427 88.35456563676532,26.65169649628599,111.2010043792678 88.34588024766506,26.6506032486499,110.8588836685445 88.33712138795427,26.65019019590039,110.3137249883623 88.32835556442916,26.65046047437216,111.4821712588188 88.31964933638997,26.65141203182741,118.9342307741763 88.31106881380202,26.65303764292942,126.5069550137746 88.30267915874919,26.65532496372384,129.4305675461625 88.29454409383628,26.65825662472868,130.0570972006666 88.28672542114973,26.66181036194963,130.86062021838 88.27928255531995,26.66595918485957,133.0739196447359 88.27227207413517,26.67067158010748,134.9028992721244 88.26574729004163,26.67591174945793,136.882274591376 88.25975784572742,26.68163988020751,141.1291925078899 88.25434933682615,26.68781244608133,145.7239508047762 88.2495629645956,26.69438253638353,149.1930543486863 88.24543522122175,26.70130021096041,152.7437366025073 88.2419976101761,26.70851287833766,156.2642163347818 88.23927640381113,26.71596569421263,159.4975569953795 88.23729244011616,26.72360197732305,166.7744676679685 88.2360609602799,26.73136363957416,175.0568223577046 88.23559148841063,26.7391916271897,183.0522347270657 88.23588775445872,26.74702636955853,191.6540923030927 88.23694766106679,26.75480823237987,200.0762043642066 88.23876329474413,26.76247797166639,205.7498743544666 88.24132098142647,26.76997718514629,222.5685654555532 88.24459574121673,26.77723767066343,230.0768939893887 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>SH 12 at 8.1 Km Road Distance</name>
+			<LookAt>
+				<longitude>88.35840049875988</longitude>
+				<latitude>26.73052999921468</latitude>
+				<altitude>0</altitude>
+				<heading>-5.578041891500646e-10</heading>
+				<tilt>0</tilt>
+				<range>4790.534321334786</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.38054600960699,26.72288796686131,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NH 10 at 5.1 Km Road Distance</name>
+			<LookAt>
+				<longitude>88.35779238462628</longitude>
+				<latitude>26.71915772135827</latitude>
+				<altitude>0</altitude>
+				<heading>0.003070594033425882</heading>
+				<tilt>0.04779745541393568</tilt>
+				<range>5693.050362471323</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.36751222730032,26.71198347130244,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Military Road at 3.7 Km Road distance</name>
+			<LookAt>
+				<longitude>88.35862274543825</longitude>
+				<latitude>26.71753266232784</latitude>
+				<altitude>0</altitude>
+				<heading>0.003314355770725693</heading>
+				<tilt>17.90896351949316</tilt>
+				<range>515.7907962714966</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot4</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.35734511159274,26.71793736343246,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NH 27 at 5.9 Km Road Distance</name>
+			<LookAt>
+				<longitude>88.34392087570491</longitude>
+				<latitude>26.70319623841534</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0006735823378835391</heading>
+				<tilt>15.16139341230986</tilt>
+				<range>1744.468821794331</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33857955452184,26.70232310751863,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bagdogra railway Station at 7.6 Km Road Distance</name>
+			<LookAt>
+				<longitude>88.34115723028317</longitude>
+				<latitude>26.6893742310051</latitude>
+				<altitude>0</altitude>
+				<heading>0.004418582514177731</heading>
+				<tilt>5.598173457866007</tilt>
+				<range>4969.402052578081</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.32443889924392,26.69811859946047,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bagdogra Airport at 10.5 Km Road Distance</name>
+			<LookAt>
+				<longitude>88.34115723028317</longitude>
+				<latitude>26.6893742310051</latitude>
+				<altitude>0</altitude>
+				<heading>0.004418582514177731</heading>
+				<tilt>5.598173457866007</tilt>
+				<range>4969.402052578081</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33163336281923,26.69036908875784,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NH 110 at 19.4 km Road Distance</name>
+			<LookAt>
+				<longitude>88.35762252806255</longitude>
+				<latitude>26.78596368822683</latitude>
+				<altitude>0</altitude>
+				<heading>0.013294464042558</heading>
+				<tilt>11.77359040720556</tilt>
+				<range>4230.576987788706</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.36359063863858,26.78906719316582,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NH 327 at 12.8 Km Road Distance</name>
+			<LookAt>
+				<longitude>88.30304087423794</longitude>
+				<latitude>26.71022291414073</latitude>
+				<altitude>0</altitude>
+				<heading>-0.02668427449090385</heading>
+				<tilt>22.91164817207689</tilt>
+				<range>15586.80688175842</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.2706873259134,26.6922204575458,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dalkajhar Forest at 5.15 Km Distance</name>
+			<LookAt>
+				<longitude>88.2727279383904</longitude>
+				<latitude>26.73333342666323</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01305104201989821</heading>
+				<tilt>17.57988102392478</tilt>
+				<range>6313.924939249509</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.28414551296083,26.73076890228989,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mahananda Wildlife Sanctuary at 6.72  Km Distance</name>
+			<LookAt>
+				<longitude>88.35336294165324</longitude>
+				<latitude>26.79437196789205</latitude>
+				<altitude>0</altitude>
+				<heading>0.02873538793323958</heading>
+				<tilt>23.8983262843864</tilt>
+				<range>6638.541508777692</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.36306493387127,26.79587879868118,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sukna forest at 7.1 Km Distance</name>
+			<LookAt>
+				<longitude>88.35336294165324</longitude>
+				<latitude>26.79437196789205</latitude>
+				<altitude>0</altitude>
+				<heading>0.02873538793323958</heading>
+				<tilt>23.8983262843864</tilt>
+				<range>6638.541508777692</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.33867172740125,26.80422570767801,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mohanadi Forest at 9.42Km Distance</name>
+			<LookAt>
+				<longitude>88.37073540206458</longitude>
+				<latitude>26.79481541393652</latitude>
+				<altitude>0</altitude>
+				<heading>0.03655715970887919</heading>
+				<tilt>23.91867855595023</tilt>
+				<range>12236.57417760514</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.37624949025289,26.81663117487611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dalkajhar Forest</name>
+			<styleUrl>#inline50</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.28398730571685,26.73135098263811,0 88.33481611847965,26.74000004768838,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Mahananda Wildlife Sanctuary</name>
+			<styleUrl>#inline9</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.36312698762714,26.79593373597187,0 88.36294606658423,26.79588052618576,0 88.33497289462366,26.74083203038128,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Sukna Forest </name>
+			<styleUrl>#inline37</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.33840158359878,26.80474075320918,0 88.33490290844091,26.74077280508591,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Mohanadi Forest</name>
+			<styleUrl>#inline6</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.37583781855969,26.81743097266226,0 88.33501583917402,26.74075717529843,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>SH 12</name>
+			<styleUrl>#inline13</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.38076083835152,26.7237694529917,0 88.33746373016763,26.73916760577066,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH 10</name>
+			<styleUrl>#inline28</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.36744184200846,26.7126939703901,0 88.3374923860971,26.73914288258586,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Military Road</name>
+			<styleUrl>#inline11</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.35745136322413,26.71797952448399,0 88.33718846153842,26.73928708941949,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH 27</name>
+			<styleUrl>#inline31</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.33852269399257,26.70240860204967,0 88.33490879226001,26.73991830708308,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH110</name>
+			<styleUrl>#inline25</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.36360491595171,26.78873155258228,0 88.33778180905547,26.74010407512829,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH 327</name>
+			<styleUrl>#inline52</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.27044990971912,26.69215227869867,0 88.33471452037813,26.73980063560515,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Bagdogra station</name>
+			<styleUrl>#inline33</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.32453891256786,26.69805343471526,0 88.33497148169906,26.73994369880022,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Bagdogra Airport</name>
+			<styleUrl>#inline61</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.33118468321662,26.6907416407585,0 88.33489451336254,26.73996548958145,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Birsha Munda College at 9.52 Km Distance</name>
+			<LookAt>
+				<longitude>88.264443457723</longitude>
+				<latitude>26.69119362503375</latitude>
+				<altitude>0</altitude>
+				<heading>-0.04728599810940219</heading>
+				<tilt>16.29051840407972</tilt>
+				<range>1562.731418306624</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.25674444444445,26.69025534484496,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Birsha Munda College</name>
+			<styleUrl>#inline8</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.25676824426898,26.69031376423992,0 88.33487106449175,26.73994598557815,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Army Public School at 3.61 Km Distance</name>
+			<LookAt>
+				<longitude>88.30782382909666</longitude>
+				<latitude>26.71825352038712</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0289521343802271</heading>
+				<tilt>21.51402908255051</tilt>
+				<range>1424.681976552642</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.30643675224266,26.71964532485716,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Army Public School</name>
+			<styleUrl>#inline16</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.30650298272093,26.71980020378273,0 88.33499151999023,26.74003736103642,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>North Bengal Medical College &amp; Hospital at 7.24 Km Distance</name>
+			<LookAt>
+				<longitude>88.37893250104702</longitude>
+				<latitude>26.68962627407117</latitude>
+				<altitude>0</altitude>
+				<heading>-0.006160752591671119</heading>
+				<tilt>19.39417081194159</tilt>
+				<range>2411.992495325226</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.38540658489968,26.68990089402114,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>North Bengal Hospital</name>
+			<styleUrl>#inline21</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.3852578088045,26.69013144570979,0 88.33735534777165,26.73928829254761,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Medinova Clinic and Nursing Home at 6.29 Km Distance</name>
+			<LookAt>
+				<longitude>88.37648524970588</longitude>
+				<latitude>26.69044049163973</latitude>
+				<altitude>0</altitude>
+				<heading>-0.007267437636296116</heading>
+				<tilt>19.17274872709018</tilt>
+				<range>1730.358415292599</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.37277604680031,26.69271587617942,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Medinova Nursing Home</name>
+			<styleUrl>#inline2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.33679039031209,26.73955056681229,0 88.37283035675929,26.69290065714627,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Bholenath temple at 5.57 Km Distance</name>
+			<LookAt>
+				<longitude>88.30052593180173</longitude>
+				<latitude>26.69626805222009</latitude>
+				<altitude>0</altitude>
+				<heading>-0.03645812507944706</heading>
+				<tilt>16.09961630736113</tilt>
+				<range>11687.56379198929</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.2879828476411,26.71214313064527,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bholenath Temple</name>
+			<styleUrl>#inline53</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.28797245383591,26.71239664390367,0 88.33477788464835,26.74001490014012,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lama Gumba Forest at  9 Km Distance</name>
+			<LookAt>
+				<longitude>88.32437396913299</longitude>
+				<latitude>26.81237368631665</latitude>
+				<altitude>0</altitude>
+				<heading>-0.02043347284106634</heading>
+				<tilt>13.48554041826418</tilt>
+				<range>5540.512546864289</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.31134357772144,26.81908290669243,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lama Gumba Forest</name>
+			<styleUrl>#inline54</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.31128537693685,26.81933473768996,0 88.33491849908701,26.74078923910824,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Mahananda River at 8.44  Km Distance</name>
+			<LookAt>
+				<longitude>88.40853347851271</longitude>
+				<latitude>26.74979579056429</latitude>
+				<altitude>0</altitude>
+				<heading>0.04375998882340095</heading>
+				<tilt>8.061967729885694</tilt>
+				<range>17628.70004321906</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.42273929018261,26.7403733847199,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mahananda River</name>
+			<styleUrl>#inline41</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.42256240503947,26.74086134919059,0 88.33775873875142,26.7400250752882,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Panchai River at 6.1 Km Distance</name>
+			<LookAt>
+				<longitude>88.35904172829486</longitude>
+				<latitude>26.73497528901565</latitude>
+				<altitude>0</altitude>
+				<heading>0.02094202863260162</heading>
+				<tilt>14.51938009038426</tilt>
+				<range>30151.32881208961</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.35240669691815,26.79481900767792,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Panchai</name>
+			<styleUrl>#inline44</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.35207396307342,26.79513691789008,0 88.33499390390448,26.7408030953473,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

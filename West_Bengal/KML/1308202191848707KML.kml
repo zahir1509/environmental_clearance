@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KMZ.KMZ</name>
+	<Style id="line1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Line Features</name>
+		<description>Line Features</description>
+		<Placemark>
+			<name>AREA</name>
+			<description>Unknown Line Type</description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					88.1381749369,25.0585086423,0 88.1383134022,25.0588399919,0 88.13840282469999,25.0590537144,0 88.138132504,25.0592110278,0 88.1379024909,25.059351078,0 88.13768074470001,25.0595207917,0 88.137423986,25.0595115523,0 88.1372824769,25.059507662,0 88.1369518027,25.0595241957,0 88.13681029360001,25.0595334351,0 88.1366848319,25.0595874128,0 88.13665905880001,25.0593112026,0 88.1366415525,25.059107449,0 88.1366289091,25.0589630222,0 88.136863785,25.0589654536,0 88.1371944592,25.0589129348,0 88.137281018,25.0589012639,0 88.1376695602,25.0588117874,0 88.13774931099999,25.0587918497,0 88.13797057089999,25.0586989691,0 88.1381624736,25.0585192146,0 88.1381745767,25.0585082641,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

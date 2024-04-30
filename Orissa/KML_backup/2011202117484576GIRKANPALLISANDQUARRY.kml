@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GIRKANPALLI SAND QUARRY.kml</name>
+	<StyleMap id="default1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl0">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="default01">
+	</Style>
+	<Placemark>
+		<name>GIRKANPALLI SAND QUARRY</name>
+		<styleUrl>#default1</styleUrl>
+		<Point>
+			<coordinates>81.654775,18.05793333333333,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

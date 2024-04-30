@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Tue Feb 15 14:33:54 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-09-15T06:49:47Z</begin>
+			<end>2021-09-15T06:55:25Z</end>
+		</gx:TimeSpan>
+		<longitude>85.623361</longitude>
+		<latitude>20.152694</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="waypoint_h">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="waypoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_n">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2021-09-15T06:49:47Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622556,20.15375,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2021-09-15T06:50:05Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.62266700000001,20.153694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2021-09-15T06:50:22Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622889,20.153722,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2021-09-15T06:50:37Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.623639,20.153694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>005</name>
+			<TimeStamp><when>2021-09-15T06:50:53Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.623778,20.153639,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>006</name>
+			<TimeStamp><when>2021-09-15T06:51:09Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.624444,20.153806,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>007</name>
+			<TimeStamp><when>2021-09-15T06:51:42Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.624611,20.153417,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>008</name>
+			<TimeStamp><when>2021-09-15T06:51:59Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.62469400000001,20.153167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>009</name>
+			<TimeStamp><when>2021-09-15T06:52:15Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.624556,20.152806,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>010</name>
+			<TimeStamp><when>2021-09-15T06:52:31Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.624611,20.153194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>011</name>
+			<TimeStamp><when>2021-09-15T06:52:47Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.62425,20.153417,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>012</name>
+			<TimeStamp><when>2021-09-15T06:53:08Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.623722,20.153222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>013</name>
+			<TimeStamp><when>2021-09-15T06:53:28Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622944,20.15325,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>014</name>
+			<TimeStamp><when>2021-09-15T06:53:49Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.62275,20.151694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>015</name>
+			<TimeStamp><when>2021-09-15T06:54:06Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622556,20.151583,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>016</name>
+			<TimeStamp><when>2021-09-15T06:54:22Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622361,20.152139,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>017</name>
+			<TimeStamp><when>2021-09-15T06:54:40Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622556,20.152444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>018</name>
+			<TimeStamp><when>2021-09-15T06:54:56Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.6225,20.152611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>019</name>
+			<TimeStamp><when>2021-09-15T06:55:12Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622028,20.152917,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>020</name>
+			<TimeStamp><when>2021-09-15T06:55:25Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint</styleUrl>
+			<Point>
+				<coordinates>85.622083,20.153472,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Brahmapura Road Metal Quarry</name>
+		<styleUrl>#inline1</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.62255198272662,20.15375183375341,0 85.62266654404944,20.1536975243371,0 85.6228899126542,20.15372091479644,0 85.62363470769388,20.15369926467505,0 85.62377856380618,20.1536330961979,0 85.62445019651094,20.15380631888019,0 85.62461986079208,20.1534108423747,0 85.62470738170863,20.15316326377195,0 85.62454926906156,20.15279809826317,0 85.62460364108914,20.15318931589903,0 85.6242523077822,20.15341325635609,0 85.62371826548507,20.15321966362102,0 85.62294270302638,20.153251779777,0 85.62274082048971,20.15169980439991,0 85.62254934812303,20.1515808473581,0 85.62235008301155,20.15215136349649,0 85.62254348097839,20.15245586501561,0 85.62250700073535,20.15260829168431,0 85.62202816719869,20.15292621378316,0 85.62208659075657,20.15347432120011,0 85.62255198272662,20.15375183375341,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Brahmapura Road Metal Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-09-15T06:49:47Z</begin>
+				<end>2021-09-15T06:55:25Z</end>
+			</gx:TimeSpan>
+			<longitude>85.62332089081799</longitude>
+			<latitude>20.15254048705615</latitude>
+			<altitude>0</altitude>
+			<heading>-0.08343603520875599</heading>
+			<tilt>28.69592398304335</tilt>
+			<range>375.5969153209653</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.62256766444982,20.15326257739716,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

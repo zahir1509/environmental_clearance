@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="SAMALPUR_LEASE_BND_RIGHT">
+	<name>SAMALPUR_LEASE_BND_RIGHT</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>SAMALPUR_LEASE_BND_RIGHT</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								81.948401,20.058741,0 81.94852,20.059108,0 81.94829900000001,20.059186,0 81.948275,20.059394,0 81.948306,20.059679,0 81.948139,20.059688,0 81.94802,20.059736,0 81.947925,20.05979,0 81.94779200000001,20.060123,0 81.947903,20.060375,0 81.948154,20.060429,0 81.948221,20.060355,0 81.948284,20.060266,0 81.948245,20.060234,0 81.948176,20.060249,0 81.94808500000001,20.060188,0 81.94807400000001,20.060091,0 81.94829900000001,20.060069,0 81.948436,20.060197,0 81.94849000000001,20.060331,0 81.948245,20.060535,0 81.948137,20.060834,0 81.94834299999999,20.060778,0 81.948364,20.060736,0 81.948897,20.060735,0 81.948998,20.060834,0 81.94904200000001,20.060802,0 81.948975,20.06037,0 81.949083,20.060375,0 81.94908100000001,20.060287,0 81.949225,20.060209,0 81.94928400000001,20.060271,0 81.94940099999999,20.060236,0 81.94953099999999,20.059379,0 81.949637,20.059264,0 81.950014,20.059223,0 81.948401,20.058741,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>kml.kml</name>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="default0">
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>1.7</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>1.7</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>20 50 43.78 N 85 59 18.10E</name>
+			<LookAt>
+				<longitude>85.98836111111113</longitude>
+				<latitude>20.84549444444446</latitude>
+				<altitude>0</altitude>
+				<heading>1.272221872585407e-14</heading>
+				<tilt>0</tilt>
+				<range>999.9999999959316</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.98836111111113,20.84549444444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>20 50 43.71 N 85 59 21.96E</name>
+			<LookAt>
+				<longitude>85.98906393697992</longitude>
+				<latitude>20.8454816988979</latitude>
+				<altitude>0</altitude>
+				<heading>4.397792714993122e-11</heading>
+				<tilt>0</tilt>
+				<range>1011.003219825183</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.98906393697992,20.8454816988979,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>20 50 43.21 N 85 59 23.03E</name>
+			<LookAt>
+				<longitude>85.98973055555554</longitude>
+				<latitude>20.84533611111112</latitude>
+				<altitude>0</altitude>
+				<heading>1.3119788061037e-14</heading>
+				<tilt>0</tilt>
+				<range>999.9999999982466</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.98973055555555,20.84533611111112,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>20 50 43.78 N 85 59 18.10E</name>
+			<LookAt>
+				<longitude>85.98978055555554</longitude>
+				<latitude>20.84499166666667</latitude>
+				<altitude>0</altitude>
+				<heading>1.371614206381142e-14</heading>
+				<tilt>0</tilt>
+				<range>1000.000000001637</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.98978055555555,20.84499166666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>20 50 41.59 N 85 59 18.39E</name>
+			<LookAt>
+				<longitude>85.9890585849424</longitude>
+				<latitude>20.84499031504143</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001493101830994597</heading>
+				<tilt>21.01200586801096</tilt>
+				<range>253.8707720126934</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.9890585849424,20.84499031504143,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>bichakundi</name>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.98835987055492,20.84549777134332,0 85.9884442434778,20.84488469680556,0 85.989054374825,20.84498957677975,0 85.98978325741098,20.84499192142247,0 85.98973254412714,20.84533672050106,0 85.98906541650113,20.84548397223711,0 85.98835987055492,20.84549777134332,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Sankhari South ( Cha )">
+	<name>Sankhari South ( Cha )</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Sankhari South ( Cha )</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>SANKHARI SOUTH(CHA)_3.500AC</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.55378899999999,20.103012,0 85.55370600000001,20.103058,0 85.55359799999999,20.103142,0 85.553471,20.103234,0 85.55329399999999,20.103375,0 85.55314300000001,20.103523,0 85.553082,20.103612,0 85.553045,20.10377,0 85.552735,20.103893,0 85.55274900000001,20.103934,0 85.552797,20.104024,0 85.55280399999999,20.104083,0 85.552736,20.104375,0 85.55304700000001,20.104336,0 85.553366,20.104289,0 85.553799,20.104225,0 85.55412,20.104252,0 85.554114,20.103766,0 85.55378899999999,20.103012,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

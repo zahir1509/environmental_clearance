@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="DHANIA(DA)_LEASE_BND">
+	<name>DHANIA(DA)_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>DHANIA(DA)_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>DHANIA(DA)_11.250AC</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.56464,20.110706,0 85.56462500000001,20.110707,0 85.564295,20.110714,0 85.563856,20.110865,0 85.563395,20.11095,0 85.562974,20.110993,0 85.562974,20.112145,0 85.56349400000001,20.112131,0 85.56349,20.113794,0 85.564685,20.113434,0 85.564713,20.113114,0 85.56469800000001,20.112155,0 85.564673,20.111098,0 85.56464,20.110706,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

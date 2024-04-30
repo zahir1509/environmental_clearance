@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>OMC_MAHAPARBAT_BND.kml</name>
+    <Style id="PolyStyle10">
+      <LabelStyle>
+        <color>00000000</color>
+        <scale>0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ff000000</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>00ffffff</color>
+      </PolyStyle>
+    </Style>
+    <Folder id="FeatureLayer1">
+      <name>OMC_MAHAPARBAT_BND</name>
+      <Snippet maxLines="0">
+      </Snippet>
+      <Placemark id="ID_10000">
+        <name>OMC_MAHAPARBAT</name>
+        <Snippet maxLines="0">
+        </Snippet>
+        <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>OMC_MAHAPARBAT</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>66.798203</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBND_</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>UBND_ID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MINES_OWNE</td>
+
+<td>OMC_MAHAPARBAT</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+        <styleUrl>#PolyStyle10</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>
+								85.41819,21.87976,0 85.425876,21.87894,0 85.42617799999999,21.88058,0 85.426953,21.884558,0 85.426012,21.887145,0 85.42496300000001,21.888038,0 85.422692,21.889875,0 85.421666,21.887483,0 85.41819,21.87976,0 
+							</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+        <id>IA/OR/MIN/74030/2018</id>
+        <id2>18269</id2>
+        <id3>Pno_Inserted</id3>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

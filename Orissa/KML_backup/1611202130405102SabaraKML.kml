@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Thu Oct 28 10:45:34 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2020-01-11T07:52:11Z</begin>
+			<end>2020-01-18T06:38:32Z</end>
+		</gx:TimeSpan>
+		<longitude>84.95525499999999</longitude>
+		<latitude>21.685243</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="waypoint_h197">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin270">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin273">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin271</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl275</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl275">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin271">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="waypoint197">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n197</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h197</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_n197">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl274">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin274">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin270</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl274</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2020-01-18T06:36:35Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint197</styleUrl>
+			<Point>
+				<coordinates>84.954525,21.686139,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2020-01-11T07:52:11Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint197</styleUrl>
+			<Point>
+				<coordinates>84.955746,21.68603,129.45</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2020-01-18T06:38:02Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint197</styleUrl>
+			<Point>
+				<coordinates>84.955984,21.684347,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2020-01-18T06:38:32Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint197</styleUrl>
+			<Point>
+				<coordinates>84.954678,21.68443,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Sabara Sand Bed</name>
+		<styleUrl>#m_ylw-pushpin274</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				84.95451650841058,21.68613138802604,0 84.95572653333973,21.68602148584957,0 84.95596319191755,21.68434829577642,0 84.95466673663486,21.68442538317047,0 84.95451650841058,21.68613138802604,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Sabara Sand Bed</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2020-01-11T07:52:11Z</begin>
+				<end>2020-01-18T06:38:32Z</end>
+			</gx:TimeSpan>
+			<longitude>84.95555221305671</longitude>
+			<latitude>21.68556865597638</latitude>
+			<altitude>0</altitude>
+			<heading>0.0002443963303682169</heading>
+			<tilt>18.1680497166594</tilt>
+			<range>622.5704903044282</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin273</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>84.9550602804842,21.68511288292655,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Naranpur Mahanadi Sand Quarry.kml</name>
+	<open>1</open>
+	<Style id="s_ylw-pushpin_hl22">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin05">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl020">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin19">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin05</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl21</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin04</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline69">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl21">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline690">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin210">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin170</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl020</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin170">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin04">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline013">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline690</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline69</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>5</name>
+		<LookAt>
+			<longitude>85.4298700841879</longitude>
+			<latitude>20.38957805965816</latitude>
+			<altitude>0</altitude>
+			<heading>7.349183973833521e-05</heading>
+			<tilt>23.51687400071661</tilt>
+			<range>228.3083052971971</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin21</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.42971941108088,20.38932735157849,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2</name>
+		<LookAt>
+			<longitude>85.43074506822853</longitude>
+			<latitude>20.39068393792628</latitude>
+			<altitude>0</altitude>
+			<heading>0.0001664395357004602</heading>
+			<tilt>13.77651044089437</tilt>
+			<range>424.101186630354</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin21</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.43194633435027,20.39032427093881,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>1</name>
+		<LookAt>
+			<longitude>85.42987621637702</longitude>
+			<latitude>20.39075762055767</latitude>
+			<altitude>0</altitude>
+			<heading>-5.008525548974077e-05</heading>
+			<tilt>8.235753700638362</tilt>
+			<range>712.4689816070201</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin21</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.42971936844154,20.39080032631135,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>3</name>
+		<LookAt>
+			<longitude>85.43377527614064</longitude>
+			<latitude>20.39034611529697</latitude>
+			<altitude>0</altitude>
+			<heading>0.001162087884293414</heading>
+			<tilt>15.47819647818486</tilt>
+			<range>646.4548060720688</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin21</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.4340587373359,20.3902745149809,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Polygon Measure</name>
+		<styleUrl>#inline013</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						85.4297153799539,20.39084384749595,0 85.43198166909519,20.3903684849399,0 85.43403126604991,20.39029235999569,0 85.43409305266469,20.38937287901364,0 85.42986431269078,20.38931603231765,0 85.4297153799539,20.39084384749595,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>4</name>
+		<LookAt>
+			<longitude>85.43396019844299</longitude>
+			<latitude>20.39004405866199</latitude>
+			<altitude>0</altitude>
+			<heading>0.00106950868298301</heading>
+			<tilt>20.76704627019181</tilt>
+			<range>487.9088169397413</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin21</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.43410050213492,20.38935442860522,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Naranpur Mahanadi Sand Quarry</name>
+		<LookAt>
+			<longitude>85.42972044582396</longitude>
+			<latitude>20.3893420534623</latitude>
+			<altitude>0</altitude>
+			<heading>-1.758708608353459e-05</heading>
+			<tilt>0</tilt>
+			<range>1009.049003693429</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin210</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.42977047332293,20.38928578111249,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>sampling site 1</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<gx:TimeStamp><when>2022-02-27</when>
+</gx:TimeStamp>
+			<gx:ViewerOptions>
+				<gx:option name="historicalimagery"></gx:option>
+				<gx:option enabled="0" name="sunlight"></gx:option>
+				<gx:option enabled="0" name="streetview"></gx:option>
+			</gx:ViewerOptions>
+			<longitude>85.430738273299</longitude>
+			<latitude>20.3911642956166</latitude>
+			<altitude>0</altitude>
+			<heading>0.0002301899288844032</heading>
+			<tilt>29.14038788459453</tilt>
+			<range>801.8270057848207</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin19</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.43008154519244,20.39037169006241,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>sampling site 2</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<gx:TimeStamp><when>2022-02-27</when>
+</gx:TimeStamp>
+			<gx:ViewerOptions>
+				<gx:option name="historicalimagery"></gx:option>
+				<gx:option enabled="0" name="sunlight"></gx:option>
+				<gx:option enabled="0" name="streetview"></gx:option>
+			</gx:ViewerOptions>
+			<longitude>85.4315710830267</longitude>
+			<latitude>20.39053446255598</latitude>
+			<altitude>0</altitude>
+			<heading>0.0005064548118886729</heading>
+			<tilt>30.00177877157186</tilt>
+			<range>396.0229071266398</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin19</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.43171377565085,20.38999331188609,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>sampling site 3</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<gx:TimeStamp><when>2022-02-27</when>
+</gx:TimeStamp>
+			<gx:ViewerOptions>
+				<gx:option name="historicalimagery"></gx:option>
+				<gx:option enabled="0" name="sunlight"></gx:option>
+				<gx:option enabled="0" name="streetview"></gx:option>
+			</gx:ViewerOptions>
+			<longitude>85.43415416696183</longitude>
+			<latitude>20.3904434369513</latitude>
+			<altitude>0</altitude>
+			<heading>0.001406420631730217</heading>
+			<tilt>30.0035375130864</tilt>
+			<range>787.5807066309231</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin19</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.43376765847275,20.38997288567327,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="UDAYAPUR_LEASE_BND">
+	<name>UDAYAPUR_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffff00c5</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00d8e9ec</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>UDAYAPUR_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								86.432807,20.848159,0 86.432812,20.849025,0 86.43374900000001,20.849345,0 86.434271,20.849408,0 86.43498700000001,20.849365,0 86.43547,20.849268,0 86.436182,20.848971,0 86.436819,20.848667,0 86.437448,20.84841,0 86.437309,20.847533,0 86.43672599999999,20.847778,0 86.43617399999999,20.848071,0 86.435704,20.848286,0 86.43537999999999,20.848392,0 86.435289,20.848341,0 86.434658,20.848424,0 86.434181,20.848414,0 86.43396799999999,20.848355,0 86.43369,20.848293,0 86.432807,20.848159,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

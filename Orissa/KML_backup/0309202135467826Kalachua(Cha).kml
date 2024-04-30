@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Kalachua ( Cha )">
+	<name>Kalachua ( Cha )</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Kalachua ( Cha )</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>DANGARAPADA(KALACHUA)(CHA)_3.624AC</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.50971800000001,20.100438,0 85.50956600000001,20.100385,0 85.509511,20.100343,0 85.509418,20.10036,0 85.509338,20.100479,0 85.509264,20.100505,0 85.5091,20.10044,0 85.509094,20.100822,0 85.50891,20.100958,0 85.508791,20.101011,0 85.50882799999999,20.101153,0 85.508824,20.101562,0 85.508904,20.101745,0 85.509007,20.102019,0 85.50946,20.102185,0 85.510025,20.102411,0 85.509204,20.101302,0 85.51013500000001,20.100702,0 85.510024,20.100596,0 85.509961,20.100439,0 85.509862,20.100396,0 85.50971800000001,20.100438,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

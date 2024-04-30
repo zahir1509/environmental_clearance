@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Parsurampur Pillar Boundary.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Parsurampur Pillar Boundary</name>
+		<styleUrl>#inline0</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				84.09983605233855,18.80044124035242,0 84.10213155852037,18.80046273052476,0 84.10494739075347,18.80049248829892,0 84.10488915384519,18.80264781144968,0 84.10485958089448,18.80453988423643,0 84.10361608803862,18.80452415157233,0 84.10391731708111,18.80382872207435,0 84.10389339307976,18.80217919595061,0 84.1033660577325,18.80157407332766,0 84.10272634452927,18.80146097039215,0 84.10164069679284,18.80177741346329,0 84.10064379766439,18.80203805958383,0 84.10025351397134,18.8012573072084,0 84.09983605233855,18.80044124035242,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

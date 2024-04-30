@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ostapal.kml</name>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark id="ID_00000">
+		<name>0</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>AREA</td>
+
+<td>72.843</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+		<styleUrl>#PolyStyle00</styleUrl>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.784558,21.057416,0 85.78488400000001,21.057481,0 85.785571,21.057619,0 85.785828,21.057668,0 85.786207,21.057742,0 85.786738,21.057848,0 85.787291,21.057958,0 85.787308,21.057962,0 85.787375,21.057975,0 85.787916,21.058081,0 85.788054,21.058108,0 85.788636,21.058223,0 85.789581,21.058409,0 85.78983700000001,21.058692,0 85.78987600000001,21.058737,0 85.79027600000001,21.059188,0 85.79029199999999,21.059206,0 85.790328,21.059246,0 85.79074,21.059712,0 85.791245,21.060275,0 85.791634,21.060708,0 85.791678,21.060757,0 85.792632,21.06181,0 85.792641,21.062018,0 85.79269600000001,21.063142,0 85.792699,21.063206,0 85.792709,21.063423,0 85.79276900000001,21.064853,0 85.79279699999999,21.065496,0 85.7928,21.06556,0 85.792817,21.065948,0 85.792845,21.066575,0 85.79284199999999,21.066609,0 85.79271,21.066615,0 85.792625,21.06662,0 85.792025,21.066653,0 85.791764,21.066667,0 85.785014,21.066939,0 85.78499100000001,21.066453,0 85.78495700000001,21.065749,0 85.784944,21.065486,0 85.784924,21.065085,0 85.78491,21.064796,0 85.784871,21.064012,0 85.78482099999999,21.062904,0 85.784818,21.06284,0 85.784761,21.061636,0 85.78474900000001,21.061377,0 85.78473,21.060979,0 85.784704,21.060427,0 85.784689,21.060121,0 85.78468599999999,21.060057,0 85.784683,21.059992,0 85.784661,21.059539,0 85.78463000000001,21.058886,0 85.78461299999999,21.058552,0 85.784612,21.05852,0 85.78460699999999,21.058413,0 85.78459599999999,21.058202,0 85.784587,21.058018,0 85.78457899999999,21.057844,0 85.784571,21.057682,0 85.784565,21.057546,0 85.784558,21.057416,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

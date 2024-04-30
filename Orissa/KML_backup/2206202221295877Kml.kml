@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Mon May 23 16:49:46 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-05-23T10:47:48Z</begin>
+			<end>2022-05-23T10:48:41Z</end>
+		</gx:TimeSpan>
+		<longitude>85.242958</longitude>
+		<latitude>20.154625</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="waypoint_h262">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin174">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin161</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl168</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl170">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_n262">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin161">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin167">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin162</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl170</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin162">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl168">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="waypoint262">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n262</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h262</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2022-05-23T10:47:48Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint262</styleUrl>
+			<Point>
+				<coordinates>85.242806,20.154778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2022-05-23T10:48:03Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint262</styleUrl>
+			<Point>
+				<coordinates>85.243167,20.154667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2022-05-23T10:48:19Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint262</styleUrl>
+			<Point>
+				<coordinates>85.243111,20.154472,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2022-05-23T10:48:41Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint262</styleUrl>
+			<Point>
+				<coordinates>85.24275,20.154556,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Dauniapalli Boulder Quarry</name>
+		<styleUrl>#m_ylw-pushpin174</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.24281522949583,20.15478227790972,0 85.24317171365267,20.15466883460763,0 85.24310375310074,20.15447325478477,0 85.24274694536871,20.15456174620126,0 85.24274716201339,20.15455337127071,0 85.24281522949583,20.15478227790972,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Dauniapalli Boulder Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-05-23T10:47:48Z</begin>
+				<end>2022-05-23T10:48:41Z</end>
+			</gx:TimeSpan>
+			<longitude>85.24284297364659</longitude>
+			<latitude>20.15503492124408</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0002747365246583906</heading>
+			<tilt>30.00104651422873</tilt>
+			<range>233.0266963552902</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin167</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.24293565516679,20.15463886115434,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

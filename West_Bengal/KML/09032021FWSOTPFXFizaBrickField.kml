@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Fiza Brick Field.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<StyleMap id="mfailed">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed9">
+	</Style>
+	<Style id="failed13">
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline17">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+	</Style>
+	<Folder>
+		<name>Fiza Brick Field</name>
+		<open>1</open>
+		<Placemark>
+			<name>Fiza BF 10 Km</name>
+			<open>1</open>
+			<styleUrl>#inline21</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.16804980412591,25.42936552013081,31.13119236756724 88.16620523972946,25.42170668927221,28.30045174209959 88.16362889414901,25.41422215808365,28.54602992168815 88.16034049610792,25.40696885108107,28.16519206673363 88.15636517712267,25.40000192411102,27.2541172935938 88.15173327707818,25.39337434599978,28.13679756369137 88.14648011076014,25.38713649707226,27.62901499581536 88.14064569719687,25.38133578754563,29.36133554900745 88.13427445392691,25.37601629864711,29.87647583466227 88.12741485855312,25.37121844912798,26.65837016952707 88.12011908016937,25.36697868965203,26.69247884582598 88.11244258345289,25.36332922732349,31.08526586424729 88.10444370840075,25.36029778239284,29.4677088076708 88.09618322885125,25.35790737893721,26.50147146376464 88.08772389307472,25.35617617105899,29.02017487434101 88.07912994983465,25.35511730588253,28.97191225982043 88.07046666341846,25.35473882435688,28.95466966208996 88.06179982120727,25.35504360059376,28.67657792412334 88.05319523740449,25.35602932018637,27.84757445009691 88.04471825656753,25.3576884976683,26.82325829014027 88.03643326058811,25.36000853298432,25.91842990276931 88.02840318274453,25.36297180655831,30.12843882951451 88.02068903240243,25.36655581225921,28.71134083539365 88.0133494338716,25.37073332728735,28.44216503181287 88.00644018283133,25.37547261772987,31.69678781136254 88.00001382362323,25.38073767826976,25.5916428067511 87.99411925056781,25.3864885042785,28.8460413841943 87.98880133630313,25.39268139427967,27.60013328524821 87.98410058995805,25.39926928054159,28.52180667625475 87.98005284777132,25.4062020853437,29.72590684853064 87.97668899854096,25.41342710026425,32.27287893286126 87.97403474604826,25.42088938565821,31.43236884431773 87.97211041033758,25.42853218733611,31.01175260945969 87.97093076945822,25.43629736731675,30.25133800081668 87.97050494297989,25.4441258454118,29.58051336088159 87.97083631829007,25.45195804830891,29.80088987063714 87.97192252036407,25.45973436275311,29.49700878930481 87.97375542537246,25.46739558938431,31.80853625140838 87.97632121815828,25.47488339377358,31.40554507311548 87.97960049328009,25.48214075121083,29.24413934291015 87.9835683989761,25.48911238183457,30.73179000774011 87.98819482306916,25.49574517275789,31.71483991679401 87.99344461949704,25.50198858393561,32.6570612427112 87.99927787382578,25.50779503463364,32.55215723160999 88.00565020578703,25.51312026750387,31.11379310778461 88.01251310657595,25.51792368743414,31.97855485560321 88.01981430835788,25.52216867253259,30.31991939133311 88.02749818316303,25.52582285481742,32.18448968441253 88.03550616810037,25.52885836841532,32.9229067069705 88.04377721359855,25.5312520633227,31.61244495285549 88.05224825118546,25.53298568305092,32.07314490276255 88.06085467714959,25.53404600475868,31.57881686603422 88.06953084829017,25.53442494076852,30.15898060493792 88.0782105858577,25.53411960066755,28.77385437588049 88.08682768371645,25.53313231350295,30.16559427745922 88.09531641672244,25.5314706098971,30.94128016965049 88.1036120453099,25.52914716422355,29.86109915662248 88.11165131231196,25.52617969729954,31.27155957790842 88.11937292810674,25.52259084036175,30.72027487176135 88.1267180402849,25.51840796139629,29.43375016263071 88.13363068416369,25.51366295518859,30.93477702687417 88.14005821064107,25.50839199874225,30.39566717107484 88.14595168807426,25.50263527398483,30.8065072075448 88.15126627508931,25.49643665993113,31.41997009068826 88.15596156147275,25.48984339670897,31.22449277215809 88.1600018745638,25.4829057240662,31.03467915949443 88.16335654885192,25.4756764971703,30.50801630831326 88.16600015678694,25.46821078268041,29.37910994287824 88.16791269912528,25.46056543821675,28.50909435634549 88.16907975346089,25.45279867847099,28.11001486601931 88.16949257992422,25.44496963129514,28.38382994905308 88.1691481833688,25.43713788717267,30.82154806323532 88.16804980412591,25.42936552013081,31.13119236756724 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>A</name>
+			<open>1</open>
+			<styleUrl>#failed</styleUrl>
+			<Point>
+				<coordinates>88.06903055555556,25.44436111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<LookAt>
+				<longitude>88.07073055550784</longitude>
+				<latitude>25.44426111074209</latitude>
+				<altitude>0</altitude>
+				<heading>-2.049499740568191e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.0001241326</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#mfailed</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.07073055550784,25.44426111074209,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<LookAt>
+				<longitude>88.07073055550784</longitude>
+				<latitude>25.44426111074209</latitude>
+				<altitude>0</altitude>
+				<heading>-2.049499740568191e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.0001241326</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#mfailed</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.07077777777778,25.44456388888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<LookAt>
+				<longitude>88.07073055550784</longitude>
+				<latitude>25.44426111074209</latitude>
+				<altitude>0</altitude>
+				<heading>-2.049499740568191e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.0001241326</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#mfailed</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.07042777777778,25.44491111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>E</name>
+			<LookAt>
+				<longitude>88.07073055550784</longitude>
+				<latitude>25.44426111074209</latitude>
+				<altitude>0</altitude>
+				<heading>-2.049499740568191e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.0001241326</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#mfailed</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.06966666666666,25.44501944444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>F</name>
+			<LookAt>
+				<longitude>88.07073055547804</longitude>
+				<latitude>25.44426111079996</latitude>
+				<altitude>0</altitude>
+				<heading>-3.330527773927901e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.000124169799</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#mfailed</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.06937777777777,25.44481111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fiza Bf</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							88.0707305554285,25.44424716934213,0 88.07077173453533,25.44454464487862,0 88.07043207189841,25.44490705392974,0 88.06967112963794,25.44500878720978,0 88.06938237968396,25.44481404679584,0 88.06904300685585,25.44436795750308,0 88.0707305554285,25.44424716934213,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Fiza Brick Field</name>
+			<LookAt>
+				<longitude>88.07073055547804</longitude>
+				<latitude>25.44426111079996</latitude>
+				<altitude>0</altitude>
+				<heading>-3.330527773927901e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.000124169799</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.06989680463096,25.44463754706766,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

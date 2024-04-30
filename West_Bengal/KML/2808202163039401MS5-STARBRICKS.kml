@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>MS 5-STAR BRICKS.kmz</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="failed1">
+	</Style>
+	<Style id="failed5">
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>M/S 5-STAR BRICKS</name>
+		<open>1</open>
+		<Placemark>
+			<name>M/S 5-STAR BRICKS</name>
+			<LookAt>
+				<longitude>86.77663913423946</longitude>
+				<latitude>22.94273407583026</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001243726378637449</heading>
+				<tilt>30.94338343027023</tilt>
+				<range>162.0170724277841</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed8</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.77657572131028,22.94278567057907,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Star</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.77606945014375,22.94246692883675,0 86.77681747341191,22.94230264889349,0 86.77706613741219,22.94321700924588,0 86.77643830236208,22.94337994820348,0 86.77606945014375,22.94246692883675,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>22°56&apos;35.58&quot;N 86°46&apos;37.44&quot;E</name>
+			<Point>
+				<coordinates>86.77706666666667,22.94321666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>22°56&apos;36.16&quot;N 86°46&apos;35.16&quot;E</name>
+			<Point>
+				<coordinates>86.77643333333333,22.94337777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>22°56&apos;32.28&quot;N 86°46&apos;36.54&quot;E</name>
+			<Point>
+				<coordinates>86.77681666666666,22.9423,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>22°56&apos;32.88&quot;N 86°46&apos;33.84&quot;E</name>
+			<Point>
+				<coordinates>86.77606666666667,22.94246666666667,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

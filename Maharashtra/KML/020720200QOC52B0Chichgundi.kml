@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Chinchagundi.kml</name>
+	<open>1</open>
+	<StyleMap id="inline323">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline9121</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline21021</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_C20">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="inline9121">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline505">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline151000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline13030</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin510">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin420</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0010</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_C020">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin420">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin0010">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_C100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_C020</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_C20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline51101">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0600</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline324</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline21021">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline151000">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0600">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline324">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline13030">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Chinchagundi</name>
+		<open>1</open>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>79.97797421363799</longitude>
+				<latitude>19.38109303725761</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001403445713059421</heading>
+				<tilt>30.00099601925142</tilt>
+				<range>221.6882529437881</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin510</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.97815,19.38094722222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Polygon Measure</name>
+			<styleUrl>#inline323</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							79.97814519094028,19.38094751400468,0 79.97777272590999,19.38097469196654,0 79.97785633825333,19.38187797913797,0 79.97823354519443,19.38186541541942,0 79.97814519094028,19.38094751400468,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>79.97838593680615</longitude>
+				<latitude>19.3818026749604</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002767432746905318</heading>
+				<tilt>30.00088838033703</tilt>
+				<range>197.6265788490409</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin510</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.97823333333334,19.38185833333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>79.97817678463638</longitude>
+				<latitude>19.38191764628187</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002074824707135185</heading>
+				<tilt>30.00096910859916</tilt>
+				<range>215.6849859746515</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin510</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.97785833333333,19.38187222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>79.97809794906458</longitude>
+				<latitude>19.38108410452841</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001812544506520914</heading>
+				<tilt>30.00108779098617</tilt>
+				<range>242.0516352762997</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin510</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.97777777777777,19.38097777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chinchagundi</name>
+			<description>L= 100 m
+W = 40 m
+D = 0.50m
+A = 4000 sqm / 0.4 ha
+Q= 2000 sqm / 707 Brass</description>
+			<LookAt>
+				<longitude>79.97843879862704</longitude>
+				<latitude>19.38138834854999</latitude>
+				<altitude>0</altitude>
+				<heading>0.00029433655667212</heading>
+				<tilt>30.00128631190159</tilt>
+				<range>286.1617033397715</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_C100</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.97799355434658,19.38141899710496,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Path Measure</name>
+			<description>120</description>
+			<styleUrl>#inline505</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.97768327632093,19.38105853932477,0 79.97782916984417,19.38102808886051,0 79.97793007593906,19.38102357932012,0 79.9780210586236,19.38103259138703,0 79.9781089169865,19.38101461157029,0 79.97822136607407,19.38103731729868,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Haulage road</name>
+			<description>L = 989 m
+W = 2.5 m</description>
+			<styleUrl>#inline51101</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.97907684035769,19.38007456135653,0 79.97919493383387,19.3800442749483,0 79.97929484224825,19.38004207595381,0 79.97941786869033,19.38005743850529,0 79.97956771784388,19.3800783937908,0 79.9796875332581,19.38012750844479,0 79.97978617938769,19.38019273332404,0 79.97987454411363,19.38022379217359,0 79.97997350663384,19.38024818429506,0 79.98033041246944,19.3802569588803,0 79.98047765443982,19.3802664036028,0 79.98058183336833,19.38028838578673,0 79.98067123012078,19.38031350919712,0 79.98074107751252,19.38032410843583,0 79.98082237305452,19.38032322700976,0 79.98090746091208,19.38030048061868,0 79.98100491081372,19.38026144167533,0 79.98111159603326,19.38022803866354,0 79.98120730634287,19.38020626620467,0 79.98133410227642,19.38015990263892,0 79.981418412596,19.38011781129063,0 79.98148831778192,19.38005275490275,0 79.98152646271903,19.37995179735167,0 79.98154789639534,19.37982856602776,0 79.98155710096681,19.37973942745221,0 79.98156724766368,19.37965389787975,0 79.98157262035005,19.37958562987275,0 79.9815817066299,19.37952386418507,0 79.98160678070377,19.37945677944879,0 79.98163455162559,19.37936842867386,0 79.98166384764345,19.37931598369758,0 79.98171486385053,19.37926713367584,0 79.98181276356731,19.37922176706963,0 79.98190962794246,19.37917165267235,0 79.98197549462844,19.3791298721856,0 79.98207173967995,19.37908705516255,0 79.98215451776288,19.37904705672256,0 79.98223533255796,19.37900957094227,0 79.98231741549641,19.37896165384954,0 79.98237911558269,19.37894767560616,0 79.98241882415361,19.37890753304976,0 79.98247118069642,19.378847504377,0 79.9824880015358,19.37871622575921,0 79.98247884927577,19.37862948433251,0 79.98248264600326,19.37853189919903,0 79.9824898461506,19.37842995346931,0 79.98249027176061,19.37833808342619,0 79.98249479071941,19.3782429737861,0 79.98248661027411,19.3781631248271,0 79.98248565615403,19.37808434019441,0 79.98249508508609,19.37802704315911,0 79.9825219561678,19.37799240764977,0 79.9825589804379,19.37796615375666,0 79.98263063175949,19.37794241459821,0 79.98270423748384,19.37791242060679,0 79.98283155563141,19.37790240650146,0 79.98301816653473,19.37788585476198,0 79.9831571946815,19.37787318179097,0 79.98339962483765,19.37784228704694,0 79.98370584643631,19.37780807265485,0 79.98402914448529,19.37777414678869,0 79.98448075297249,19.3776824149184,0 79.98487668959635,19.37763269963308,0 79.98515550319544,19.3775761221669,0 79.98535093816325,19.37755855880274,0 79.98558677436931,19.37751443505199,0 79.98573473533114,19.37744878541258,0 79.98587874746285,19.37740895290845,0 79.98598912832991,19.37739159163396,0 79.98614349338403,19.37738516972267,0 79.98632955293587,19.37736283766138,0 79.98646830302074,19.37734625261037,0 79.98664540114359,19.37733443380511,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Tue Oct 12 10:43:36 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-07-03T07:37:04Z</begin>
+			<end>2021-07-03T07:39:32Z</end>
+		</gx:TimeSpan>
+		<longitude>83.811781</longitude>
+		<latitude>20.895865</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="s_ylw-pushpin214">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl251">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="waypoint185">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n185</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h185</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl219">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="waypoint_n185">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin248">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h185">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin250">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin214</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl219</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin222">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin248</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl251</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2021-07-03T07:37:04Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint185</styleUrl>
+			<Point>
+				<coordinates>83.81063899999999,20.895236,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2021-07-03T07:38:37Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint185</styleUrl>
+			<Point>
+				<coordinates>83.810644,20.897008,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2021-07-03T07:39:06Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint185</styleUrl>
+			<Point>
+				<coordinates>83.812876,20.896643,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2021-07-03T07:39:32Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint185</styleUrl>
+			<Point>
+				<coordinates>83.812924,20.894722,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Dhaurakhaman Sand Quarry</name>
+		<styleUrl>#m_ylw-pushpin250</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.81060685605145,20.89524716582015,0 83.81064511897782,20.89695083937434,0 83.81288031497192,20.89664724605188,0 83.81289944974026,20.89473114996455,0 83.81060685605145,20.89524716582015,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Dhaurakhaman Sand Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-07-03T07:37:04Z</begin>
+				<end>2021-07-03T07:39:32Z</end>
+			</gx:TimeSpan>
+			<longitude>83.81284609334953</longitude>
+			<latitude>20.89634972881931</latitude>
+			<altitude>0</altitude>
+			<heading>0.0003730134264481099</heading>
+			<tilt>14.73712594338729</tilt>
+			<range>834.0103697569908</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin222</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.81128697878601,20.89553303259405,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

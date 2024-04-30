@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Santosh Dorage.kml</name>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed0">
+	</Style>
+	<Style id="sh_red-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed1">
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Santosh Dorage</name>
+		<open>1</open>
+		<Placemark>
+			<name>18 21 34.8 74 30 12.4</name>
+			<styleUrl>#failed</styleUrl>
+			<Point>
+				<coordinates>74.5034261850341,18.3596350622934,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 21 36.1 74 30 24.5</name>
+			<Point>
+				<coordinates>74.50680555555556,18.36002777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 21 31.8 74 30 25.1</name>
+			<Point>
+				<coordinates>74.50697222222222,18.35883333333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 21 31.7 74 30 23.8</name>
+			<Point>
+				<coordinates>74.50661111111111,18.35880555555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 21 31.4 74 30 22.0</name>
+			<Point>
+				<coordinates>74.50611111111111,18.35872222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 21 31.6 74 30 20.1</name>
+			<Point>
+				<coordinates>74.50558333333333,18.35877777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 21 31.1 74 30 18.4</name>
+			<Point>
+				<coordinates>74.50511111111111,18.35863888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 21 30.7 74 30 13.4</name>
+			<Point>
+				<coordinates>74.50372222222222,18.35852777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Santosh Dorage</name>
+			<styleUrl>#inline</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							74.50342679975267,18.359643871848,0 74.5068125128154,18.36003946861538,0 74.50696952041007,18.35883486423776,0 74.50660937267446,18.35880392987128,0 74.50611031786202,18.35872346153075,0 74.5055829847055,18.35877623908345,0 74.50511220677856,18.35863837218974,0 74.50372432902168,18.3585279368885,0 74.50342679975267,18.359643871848,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Santosh Dorage</name>
+			<LookAt>
+				<longitude>74.50497886310085</longitude>
+				<latitude>18.35865399919459</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002522207340278142</heading>
+				<tilt>27.76369047808929</tilt>
+				<range>539.4892192774547</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>74.50494058817289,18.35929291830638,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

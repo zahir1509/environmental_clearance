@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>jahada kml.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Untitled Polygon</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						84.56032620004954,19.68070020472571,0 84.56039609445813,19.68058595776843,0 84.56047099074689,19.68054642971769,0 84.56083271831494,19.68011885345518,0 84.56091959138134,19.67999501820524,0 84.5608219868225,19.67990705409628,0 84.56106155489474,19.67966560504541,0 84.56175401165697,19.67921533643207,0 84.56170934370819,19.67915415496522,0 84.56177350484681,19.67907696051557,0 84.56187926362851,19.67903544668223,0 84.56185429541387,19.67897054128825,0 84.56230286387422,19.67824435118578,0 84.56441032606624,19.67824888146907,0 84.56428440347911,19.67842857900587,0 84.56445445318536,19.67855908442054,0 84.56459037293024,19.67838716303794,0 84.5645702789226,19.67825129328093,0 84.56472304886456,19.67836145027558,0 84.5644566069101,19.67866087512873,0 84.56334793289241,19.68045298704165,0 84.56278237883365,19.68108195591077,0 84.56129852734274,19.681081876943,0 84.56162962282022,19.68076736094004,0 84.56032620004954,19.68070020472571,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

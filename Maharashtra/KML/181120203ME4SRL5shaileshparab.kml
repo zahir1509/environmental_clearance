@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>shailesh parab.kml</name>
+	<Style id="inline38">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline114">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline05">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline114</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline38</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>shailesh parab</name>
+		<styleUrl>#inline05</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.65466597146629,16.3055573362343,0 73.65455629028608,16.30553090912937,0 73.65380201330211,16.30609060974362,0 73.65383501011183,16.30617064709621,0 73.6543900025066,16.30600588830978,0 73.65447371026767,16.30608810336623,0 73.65452556965623,16.30662272439096,0 73.65542034362601,16.30684548314183,0 73.65533157744629,16.30611975487504,0 73.65541704009765,16.30586696983151,0 73.65567077661373,16.30553481059328,0 73.6556134972183,16.30473102994868,0 73.65539419920296,16.30470316868484,0 73.65469120927291,16.30531472327171,0 73.65466597146629,16.3055573362343,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

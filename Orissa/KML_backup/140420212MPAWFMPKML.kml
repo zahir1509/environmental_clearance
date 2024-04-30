@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <ScreenOverlay>
+      <name>Trimble Business Center</name>
+      <Icon>
+        <href>C:\Program Files (x86)\Trimble\Trimble Business Center\Support\iv\TrimbleLogoWhite.jpg</href>
+      </Icon>
+      <overlayXY x="0" y="1" xunits="fraction" yunits="fraction" />
+      <screenXY x="0.01" y="0.99" xunits="fraction" yunits="fraction" />
+      <size x="0.15" y="0" xunits="fraction" yunits="fraction" />
+    </ScreenOverlay>
+    <Style id="featureStyle">
+      <IconStyle>
+        <color>ff7280fa</color>
+        <Icon>
+          <href>root://icons/palette-4.png</href>
+          <x>32</x>
+          <y>0</y>
+        </Icon>
+        <scale>0.5</scale>
+      </IconStyle>
+      <LabelStyle>
+        <color>ffffffff</color>
+        <scale>0.6</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<b>$[name]</b><br/>$[description]]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>1</width>
+      </LineStyle>
+    </Style>
+    <Folder>
+      <name>PolyLine</name>
+      <Placemark>
+        <name>PolyLine(1177)</name>
+        <styleUrl>#featureStyle</styleUrl>
+        <LineString>
+          <coordinates>85.421816,22.056935,-57.4588227329087 85.425054,22.056967,-57.4572120563874 85.425681,22.059132,-57.4518071138525 85.425213,22.059161,-57.4519555407316 85.425093,22.059956,-57.450134316976 85.420867,22.059328,-57.4536137404496 85.422771,22.05933,-57.4527010223603 85.422971,22.058641,-57.4542354802274 85.421694,22.057618,-57.4572643935943 85.421816,22.056935,-57.4588227329087</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

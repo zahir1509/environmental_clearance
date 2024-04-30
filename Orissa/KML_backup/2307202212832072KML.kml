@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Sat Feb 13 10:21:49 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-02-13T04:47:19Z</begin>
+			<end>2021-02-13T04:48:53Z</end>
+		</gx:TimeSpan>
+		<longitude>85.33030599999999</longitude>
+		<latitude>19.876944</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="s_ylw-pushpin166">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="waypoint116">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n116</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h116</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl166">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl167">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin171">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin167</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl166</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin167">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_n116">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h116">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin170">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin166</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl167</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>B3001</name>
+			<TimeStamp><when>2021-02-13T04:47:19Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint116</styleUrl>
+			<Point>
+				<coordinates>85.330556,19.877778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B3002</name>
+			<TimeStamp><when>2021-02-13T04:47:42Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint116</styleUrl>
+			<Point>
+				<coordinates>85.331278,19.876694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B3003</name>
+			<TimeStamp><when>2021-02-13T04:48:26Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint116</styleUrl>
+			<Point>
+				<coordinates>85.329972,19.876111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B3004</name>
+			<TimeStamp><when>2021-02-13T04:48:53Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint116</styleUrl>
+			<Point>
+				<coordinates>85.32933300000001,19.876583,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Brusabandha Black Stone Quarry No-3</name>
+		<styleUrl>#m_ylw-pushpin170</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.33055216249831,19.87777832712883,0 85.33125238751312,19.87669610447976,0 85.32994286021274,19.87609070761258,0 85.3293636451905,19.87658178231975,0 85.33055216249831,19.87777832712883,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Brusabandha Black Stone Quarry No-3</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-02-13T04:47:19Z</begin>
+				<end>2021-02-13T04:48:53Z</end>
+			</gx:TimeSpan>
+			<longitude>85.33073549852612</longitude>
+			<latitude>19.87705776482399</latitude>
+			<altitude>0</altitude>
+			<heading>4.457889553742202e-05</heading>
+			<tilt>18.78121111729584</tilt>
+			<range>485.6461704538813</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin171</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.33018818561607,19.87657903092768,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

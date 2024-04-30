@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML File.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Path Measure</name>
+		<styleUrl>#inline1</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.88337738693241,20.33425148000949,0 85.88301993181473,20.33388402314321,0 85.88272547622654,20.33411897126499,0 85.88328308999293,20.33464386578295,0 85.88325642714406,20.33474977794762,0 85.88294412527357,20.33442403742801,0 85.88264019485221,20.33467876875405,0 85.88235198565398,20.33436986018582,0 85.88214318754473,20.33452711891202,0 85.88175743713407,20.33408342076745,0 85.88210219192185,20.33384250191134,0 85.88225605232229,20.33401780575547,0 85.88314981997513,20.3333863474448,0 85.88335600355876,20.33364185981141,0 85.88343522272073,20.33373812951516,0 85.88337738693241,20.33425148000949,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
+.88225605232229,20.33401780575547,0 85.88314981997513,20.3333863474448,0 85.88335600355876,20.33364185981141,0 85.88343522272073,20.33373812951516,0 85.88337738693241,20.33425148000949,0 
+			</coordinates>
+		</LineString>
+	</

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>56Miregaav.kml</name>
+	<open>1</open>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>56Miregaav</name>
+		<open>1</open>
+		<Placemark>
+			<name>56mb</name>
+			<styleUrl>#inline0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							79.86517360815246,20.88276470650954,0 79.86394418778801,20.8793415043863,0 79.86430093807476,20.87921761358298,0 79.86553401389517,20.88262601178445,0 79.86517360815246,20.88276470650954,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.86423287513719</longitude>
+				<latitude>20.87923614730021</latitude>
+				<altitude>0</altitude>
+				<heading>-157.34754407895</heading>
+				<tilt>23.39326455244201</tilt>
+				<range>63.3936541748029</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.86430049747119,20.87921761928008,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>2</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.86397749655164</longitude>
+				<latitude>20.87931052366296</latitude>
+				<altitude>0</altitude>
+				<heading>-157.3476679896345</heading>
+				<tilt>23.03591493807736</tilt>
+				<range>37.72959937894939</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.86394507649888,20.87934240737039,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>56ar</name>
+			<styleUrl>#inline4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.86476290485035,20.87999694159179,0 79.86491080166084,20.87998507714752,0 79.86513436274907,20.88002967766003,0 79.865236636164,20.88005646690445,0 79.86530824700381,20.88008077426643,0 79.86552704519204,20.88007466335112,0 79.86573983081642,20.88003076389294,0 79.86585531051121,20.87999552989512,0 79.86603558282427,20.8799252314588,0 79.86616586681392,20.87986376572654,0 79.8663306080653,20.87979373999429,0 79.86658194709813,20.87966127718474,0 79.8666899740581,20.87957014904412,0 79.86681642514515,20.87948866177106,0 79.86705705408076,20.87924178177134,0 79.86713094188714,20.87918597262717,0 79.86725513868237,20.87917247392354,0 79.86739490211166,20.87918952945112,0 79.86756953408401,20.87925625531937,0 79.8678612347889,20.87938400478084,0 79.86814787725639,20.8796136446625,0 79.86831501937709,20.87966867731655,0 79.86845951394201,20.8796910844772,0 79.8686011950853,20.8796827488281,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>3</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.86513156534845</longitude>
+				<latitude>20.88269764629175</latitude>
+				<altitude>0</altitude>
+				<heading>-157.3471923992063</heading>
+				<tilt>23.77945485722407</tilt>
+				<range>63.89081152252202</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.86517357230694,20.88276550858333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>4</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.86552966229704</longitude>
+				<latitude>20.88261585476587</latitude>
+				<altitude>0</altitude>
+				<heading>-157.3473591312648</heading>
+				<tilt>20.37291099383843</tilt>
+				<range>69.40486541963685</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.86553441302529,20.88262815123829,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

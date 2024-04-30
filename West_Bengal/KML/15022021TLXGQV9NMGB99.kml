@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>MGB 99.kml</name>
+	<StyleMap id="m_ylw-pushpin52">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square350">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square80</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight71</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="ms_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin71</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight102</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_square_highlight71">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow-reverse.png</href>
+			</Icon>
+			<hotSpot x="54" y="42" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight102">
+		<IconStyle>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin21">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin71">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1200">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_placemark_square80">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow-reverse.png</href>
+			</Icon>
+			<hotSpot x="54" y="42" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Folder>
+		<name>MGB 99</name>
+		<open>1</open>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>86.91351445581726</longitude>
+				<latitude>22.21371051055469</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1025964328778878</heading>
+				<tilt>2.351608994370483</tilt>
+				<range>1992.603087931228</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#ms_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.9372,22.21507222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>86.9367697663872</longitude>
+				<latitude>22.2146263732573</latitude>
+				<altitude>0</altitude>
+				<heading>-0.09298077360304595</heading>
+				<tilt>17.09975596345764</tilt>
+				<range>651.9000363228494</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#ms_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93804722222222,22.21315555555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>86.93675845739031</longitude>
+				<latitude>22.2124348208224</latitude>
+				<altitude>0</altitude>
+				<heading>-0.09298509667394378</heading>
+				<tilt>17.10149768488048</tilt>
+				<range>1311.373133699841</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#ms_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93502222222223,22.21205277777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>86.93675845739031</longitude>
+				<latitude>22.2124348208224</latitude>
+				<altitude>0</altitude>
+				<heading>-0.09298509667394378</heading>
+				<tilt>17.10149768488048</tilt>
+				<range>1311.373133699841</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#ms_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93498333333334,22.21227222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP5</name>
+			<LookAt>
+				<longitude>86.93675845739031</longitude>
+				<latitude>22.2124348208224</latitude>
+				<altitude>0</altitude>
+				<heading>-0.09298509667394378</heading>
+				<tilt>17.10149768488048</tilt>
+				<range>1311.373133699841</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#ms_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93624444444445,22.21477222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lease Boundary</name>
+			<styleUrl>#m_ylw-pushpin52</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					86.93624412160401,22.21477740452528,0 86.93720253481463,22.21508293436284,0 86.93804534387206,22.21316040175154,0 86.93501631552508,22.2120592601551,0 86.93497857054689,22.21228934032367,0 86.93624412160401,22.21477740452528,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>MGB-99</name>
+			<Camera>
+				<longitude>86.94256626962991</longitude>
+				<latitude>22.20750802129953</latitude>
+				<altitude>1537.012120200569</altitude>
+				<heading>-0.58747447791547</heading>
+				<tilt>21.04757436372562</tilt>
+				<roll>-0.6016072395394979</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_placemark_square350</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.93696472962476,22.21346740994959,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

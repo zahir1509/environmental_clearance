@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Khanpur Chicharda.kml</name>
+	<open>1</open>
+	<StyleMap id="inline313">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline116</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline216</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_C">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_C</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_C</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin119">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin112</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin113</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline116">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin112">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_C">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin113">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline216">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_C">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/C-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>Khanpur Chicharda</name>
+		<Placemark>
+			<name>Kanapur Chicharda</name>
+			<description>L= 270 m
+W= 10m
+D= 0.5m
+A= 2700 sqm/ 0.27 Ha
+Q=1350 cum/ 477 Brass</description>
+			<LookAt>
+				<longitude>77.42429000780714</longitude>
+				<latitude>21.00699192354754</latitude>
+				<altitude>0</altitude>
+				<heading>-0.000328715236574743</heading>
+				<tilt>29.17769682608466</tilt>
+				<range>297.2850646650027</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_C</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42427516922756,21.00700756738235,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Haulage ROad</name>
+			<description>L= 282m
+W= 15m</description>
+			<styleUrl>#inline313</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.42434764373273,21.00679241735991,0 77.42455857556426,21.0064772349578,0 77.42470943818374,21.00629471024426,0 77.42479223521711,21.00621356855844,0 77.42492602191709,21.00611347572164,0 77.42499723940009,21.00602011493924,0 77.42514377510925,21.00593434858183,0 77.42522465758243,21.00581965822794,0 77.42538839935197,21.00547882992424,0 77.42549672029739,21.00529459663163,0 77.42555569036379,21.00500949052359,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Polygon Measure</name>
+			<styleUrl>#inline</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							77.42421788302944,21.00552100557024,0 77.4241210662432,21.00552476858669,0 77.42418449923602,21.00668776021288,0 77.42427564357585,21.00740216121129,0 77.42453856920614,21.00792161347357,0 77.42462756965159,21.00789573741199,0 77.42437083954782,21.00739834582292,0 77.42428344602482,21.00668232472324,0 77.42421788302944,21.00552100557024,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>77.42477076333348</longitude>
+				<latitude>21.00775270554028</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002983821669946759</heading>
+				<tilt>27.59042949857311</tilt>
+				<range>139.4489479063331</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42462512515968,21.00789201607343,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>77.42446304239694</longitude>
+				<latitude>21.00724620826195</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0004866261717109445</heading>
+				<tilt>26.73593339045818</tilt>
+				<range>146.8313003946709</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42436937796117,21.00739647358545,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>77.42436193700063</longitude>
+				<latitude>21.0064890111919</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0005228239678015396</heading>
+				<tilt>26.73614874093292</tilt>
+				<range>200.105590347968</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42428064380881,21.00667423041052,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>77.4244116175505</longitude>
+				<latitude>21.00573399789053</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0003148892935811324</heading>
+				<tilt>28.84724182128704</tilt>
+				<range>236.9426396916624</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42421851195086,21.00551745921083,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP5</name>
+			<LookAt>
+				<longitude>77.4244116175505</longitude>
+				<latitude>21.00573399789053</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0003148892935811324</heading>
+				<tilt>28.84724182128704</tilt>
+				<range>236.9426396916624</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42412124084163,21.00552316283307,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP6</name>
+			<LookAt>
+				<longitude>77.4243072012284</longitude>
+				<latitude>21.00663663769585</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002584053006808278</heading>
+				<tilt>30.00084832644048</tilt>
+				<range>188.8328762211187</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42418489072144,21.00669394393833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP7</name>
+			<LookAt>
+				<longitude>77.42444886756776</longitude>
+				<latitude>21.00736507435991</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002307522528729467</heading>
+				<tilt>29.71054422354782</tilt>
+				<range>145.5257364433266</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42427558563495,21.00740482444932,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP8</name>
+			<LookAt>
+				<longitude>77.42467397816375</longitude>
+				<latitude>21.00786209802812</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002209859044087462</heading>
+				<tilt>28.8498249685531</tilt>
+				<range>118.258232435952</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin119</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42453798550837,21.0079187364299,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

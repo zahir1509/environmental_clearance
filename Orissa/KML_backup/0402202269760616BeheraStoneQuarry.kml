@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Behera Stone Quarry.kml</name>
+	<Style id="default15">
+	</Style>
+	<Style id="hl3">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Behera Stone Quarry</name>
+		<styleUrl>#default0</styleUrl>
+		<Point>
+			<coordinates>82.66643333333334,19.73423333333334,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

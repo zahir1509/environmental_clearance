@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Rakesh V Kand.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Rakesh V Kand</name>
+		<open>1</open>
+		<Placemark>
+			<name>18 38 17.84 74 0 17.26</name>
+			<Point>
+				<coordinates>74.00479444444444,18.63828888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 38 17.41 74 0 21.94</name>
+			<Point>
+				<coordinates>74.00609444444444,18.63816944444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 38 16.67 74 0 24.25</name>
+			<Point>
+				<coordinates>74.00673611111111,18.63796388888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 38 14.31 74 0 23.72</name>
+			<Point>
+				<coordinates>74.00658888888889,18.63730833333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18 38 16.04 74 0 16.34</name>
+			<Point>
+				<coordinates>74.00453888888889,18.63778888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rakesh Kand</name>
+			<styleUrl>#inline1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							74.00479558814928,18.63828278306159,0 74.00454169003567,18.63779408072775,0 74.00658820131237,18.63731477562949,0 74.00673842349762,18.63796666144139,0 74.00609821361468,18.63818799511509,0 74.00479558814928,18.63828278306159,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Rakesh V Kand</name>
+			<LookAt>
+				<longitude>74.00686963744001</longitude>
+				<latitude>18.63785385934065</latitude>
+				<altitude>0</altitude>
+				<heading>0.0004467232078527989</heading>
+				<tilt>18.04332550036809</tilt>
+				<range>703.9649242330404</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>74.00569859851565,18.63785860414078,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

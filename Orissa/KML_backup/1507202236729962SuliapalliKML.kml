@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Sat Jul 2 10:36:32 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-07-02T05:03:01Z</begin>
+			<end>2022-07-02T05:04:01Z</end>
+		</gx:TimeSpan>
+		<longitude>85.186153</longitude>
+		<latitude>19.829208</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<StyleMap id="m_ylw-pushpin309">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin307</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl314</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl314">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_n283">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl315">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin312">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin306</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl315</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="waypoint283">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n283</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h283</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_h283">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin307">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin306">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2022-07-02T05:03:01Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint283</styleUrl>
+			<Point>
+				<coordinates>85.18594400000001,19.829611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2022-07-02T05:03:21Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint283</styleUrl>
+			<Point>
+				<coordinates>85.186528,19.829528,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2022-07-02T05:03:46Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint283</styleUrl>
+			<Point>
+				<coordinates>85.18638900000001,19.828806,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2022-07-02T05:04:01Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint283</styleUrl>
+			<Point>
+				<coordinates>85.185778,19.828889,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Suliapalli Stone Quarry Part-A</name>
+		<styleUrl>#m_ylw-pushpin312</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.18593556287426,19.82961338055415,0 85.18652161813694,19.8295344541172,0 85.18638938379009,19.82880791731347,0 85.18577502965013,19.8288903821715,0 85.18593556287426,19.82961338055415,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Suliapalli Stone Quarry Part-A</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-07-02T05:03:01Z</begin>
+				<end>2022-07-02T05:04:01Z</end>
+			</gx:TimeSpan>
+			<longitude>85.18606796517824</longitude>
+			<latitude>19.82929779143089</latitude>
+			<altitude>0</altitude>
+			<heading>1.053795542000706e-05</heading>
+			<tilt>26.20824171245497</tilt>
+			<range>264.6897501780468</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin309</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.18606142153692,19.82917658447158,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

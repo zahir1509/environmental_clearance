@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Wed Jun 29 16:10:30 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-06-29T10:23:36Z</begin>
+			<end>2022-06-29T10:24:55Z</end>
+		</gx:TimeSpan>
+		<longitude>85.29584800000001</longitude>
+		<latitude>19.920687</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="waypoint_n282">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="waypoint282">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n282</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h282</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl313">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin304">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin307">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin304</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl312</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl312">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin308">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin305</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl313</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin305">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h282">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2022-06-29T10:23:36Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint282</styleUrl>
+			<Point>
+				<coordinates>85.29567400000001,19.921249,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2022-06-29T10:24:10Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint282</styleUrl>
+			<Point>
+				<coordinates>85.296357,19.921011,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2022-06-29T10:24:30Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint282</styleUrl>
+			<Point>
+				<coordinates>85.295959,19.920124,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2022-06-29T10:24:55Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint282</styleUrl>
+			<Point>
+				<coordinates>85.295338,19.920349,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Naramanabi Laterite Stone Quarry</name>
+		<styleUrl>#m_ylw-pushpin307</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.29565871098166,19.92126086974953,0 85.29637947746863,19.92100182980243,0 85.29595584103835,19.92012610560117,0 85.29532300922367,19.92034859273904,0 85.29565871098166,19.92126086974953,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Naramanabi Laterite Stone Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-06-29T10:23:36Z</begin>
+				<end>2022-06-29T10:24:55Z</end>
+			</gx:TimeSpan>
+			<longitude>85.29670089781855</longitude>
+			<latitude>19.92069960429557</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0001130467350697021</heading>
+			<tilt>18.96284634546032</tilt>
+			<range>327.4417226557412</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin308</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.29580893356346,19.92064231607338,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

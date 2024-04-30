@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML FILE.kml</name>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>6</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>6</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>BOIRBHADI STONE</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						82.59764190714434,20.861759098885,0 82.59785491505929,20.86152359795322,0 82.59788612296032,20.86155320935941,0 82.5979459899435,20.86153688686651,0 82.59798709461839,20.86150312773627,0 82.59805958780584,20.86162449305086,0 82.59806802711445,20.86168739274266,0 82.59793797156613,20.8617861077461,0 82.59788582993754,20.86188900361046,0 82.59788101927229,20.86196047602219,0 82.59794156248603,20.86197047245764,0 82.5980883377472,20.86192689059888,0 82.59820075867479,20.86191117488487,0 82.59824896227369,20.86209559397136,0 82.59822488394768,20.86231082878375,0 82.59813586170711,20.8623135839715,0 82.59809131290609,20.8627125761946,0 82.5983380657119,20.86282961855038,0 82.59826820500747,20.8629074065628,0 82.59822112390896,20.86298588027886,0 82.59820884040523,20.86309444946654,0 82.59755335954581,20.86308278653106,0 82.59752976684894,20.8628829859131,0 82.59764038310752,20.86261833415239,0 82.59762593000789,20.86241010904509,0 82.59753311711965,20.8621951629956,0 82.59752919772639,20.86199891920695,0 82.5974664659429,20.86186795444962,0 82.59764190714434,20.861759098885,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

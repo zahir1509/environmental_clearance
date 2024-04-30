@@ -1,0 +1,365 @@
+---
+title: "Dataset of All-India Env Clearances"
+author: "Anutubh Agnihotri and Pranav Gupta"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+library(data.table)
+```
+
+## Change Username 
+
+```{r}
+user <- "agnihotri"
+#user <- "prana"
+#user <- "hp"
+```
+
+## Loading Files
+
+```{r}
+ec_files <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final"))
+```
+
+```{r}
+ec_main <- NULL
+
+ec_files_main_data<-ec_files[which(grepl("maindata",ec_files))]
+
+for(i in 1:length(ec_files_main_data)){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files_main_data[i]))
+  add$csv <- i
+  ec_main <- dplyr::bind_rows(ec_main,add)
+}
+
+table(duplicated(ec_main$Proposal.No.))
+
+ec_main$Proposal<-ec_main$Proposal.No.
+ec_main$st_code <- sub("^[^/]*/([^/]*)/.*$", "\\1", ec_main$Proposal.No.)
+table(ec_main$st_code)
+
+ec <- ec_main
+```
+
+## Adding variables
+
+```{r}
+table(ec$st_code)
+
+table(grepl("SIA/CG/", ec$Proposal))
+
+ec <- ec %>%
+  mutate(
+    state1 = case_when(st_code == 'AP' ~ "Andhra_Pradesh", 
+                    st_code =='BR' ~ "Bihar", 
+                    st_code =='CG' ~ "Chattisgarh", 
+                    st_code =='GJ' ~ "Gujarat",
+                    st_code =='HP' ~ "Himachal_Pradesh",
+                    st_code =='HR' ~ "Haryana",
+                    st_code =='JH' ~ "Jharkhand",
+                    st_code =='KA' ~ "Karnataka", 
+                    st_code =='KL' ~ "Kerala", 
+                    st_code =='MH' ~ "Maharashtra",
+                    st_code =='MP' ~ "Madhya_Pradesh",
+                    st_code =='OR' ~ "Odisha",
+                    st_code =='PB' ~ "Punjab",
+                    st_code =='RJ' ~ "Rajasthan",
+                    st_code =='TG' ~ "Telangana",  
+                    st_code =='UP' ~ "Uttar_Pradesh", 
+                    st_code =='WB' ~ "West_Bengal",
+                    st_code =='TN' ~ "Tamil_Nadu", 
+                    TRUE ~ "Other"))
+table(ec$state1)
+```
+
+```{r}
+ec <- ec %>% filter(state1 != "Other")
+```
+
+## Removing Duplication
+
+```{r}
+ec <- ec %>% select(Proposal,Proposal.Name,Date_1,Date_2,Category,Status,state1,District,Tehsil) %>% distinct()
+ec$duplicate <- duplicated(ec$Proposal)
+table(ec$duplicate)
+```
+
+## Add detailed Timeline 
+
+
+
+```{r}
+
+ec_detailed_timeline<-read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Detailed_Timeline_All_States.csv"))
+
+table(ec$Proposal%in%ec_detailed_timeline$Proposal.Number)
+
+ec$Proposal.Number<-ec$Proposal
+
+ec_detailed_timeline<-ec_detailed_timeline%>%
+  select(Proposal.Number,time_submit_seiaa,time_SEIAA_SEAC,time_SEAC_Grant,time_total_detailed)
+
+ec<-dplyr::left_join(ec,ec_detailed_timeline,by='Proposal.Number')
+
+```
+
+## Recoding
+
+```{r}
+#Category Simplified 
+
+ec$Category_Simplified <- ifelse(grepl('INFRA',ec$Category),'Infrastructure',
+                                    ifelse(grepl('Industrial',ec$Category),'Industrial',
+                                    ifelse(ec$Category=='Non-Coal Mining','Non-Coal Mining','Other')))
+
+table(ec$Category_Simplified)
+
+#Status Simplified
+
+ec$Status_Simplified <- ifelse(grepl('EC Granted',ec$Status),'EC Granted',
+                                    ifelse(grepl('Delisted',ec$Status),'Delisted',
+                                           ifelse(grepl('Rejected',ec$Status),'Rejected',
+                                    ifelse(ec$Status=='WithdrawEC','Withdrawn','Other'))))
+
+table(ec$Status_Simplified)
+
+ec$Delisted<-ifelse(ec$Status_Simplified=='Delisted',1,0)
+ec$Rejected<-ifelse(ec$Status_Simplified=='Rejected',1,0)
+ec$Withdrawn<-ifelse(ec$Status_Simplified=='Withdrawn',1,0)
+
+table(ec$Delisted)
+
+ec%>%
+  group_by(state1)%>%
+  summarise(Delisted=sum(Delisted),
+            Total=n(),
+            Percent=Delisted/Total)
+
+
+
+ec$Sand<-ifelse(grepl('sand',tolower(ec$Proposal.Name)),1,0)
+
+table(ec$Sand)
+```
+
+## Dates
+
+```{r}
+extract_after_colon <- function(input) {
+  split_string <- strsplit(input, ":")
+  extracted_text <- sapply(split_string, function(x) trimws(x[2]))
+  return(extracted_text)
+}
+
+#For the projects that were delisted or withdrawn 
+#Date 2 is when EC was filed
+#Date 1 is actually the date on which TOR was submitted
+index_with_tor<-which(grepl('TOR',ec$Date_1))
+
+ec$Date_1[index_with_tor]<-ec$Date_2[index_with_tor]
+
+ec$Date_2[index_with_tor]<-"NA"
+
+
+# Applying the function to the input vector
+ec$submit <- extract_after_colon(ec$Date_1) %>% dmy()
+
+sum(is.na(ec$submit))
+
+ec$grant <- extract_after_colon(ec$Date_2) %>% dmy()
+
+sum(is.na(ec$grant))
+
+ec$submit_date <- ifelse(!is.na(ec$submit), ec$submit, ec$grant) %>% as.Date()
+
+table(ec$submit==ec$submit_date)
+```
+
+## Time Calculation
+
+```{r}
+#Time taken to Grant 
+ec$time <- as.duration(ec$grant - ec$submit)/ddays(1)
+ec$time2 <- as.numeric(ec$grant - ec$submit_date)
+ec$time2[ec$time2<=0] <- NA
+summary(ec$time)
+summary(ec$time2)
+
+ec$year <- year(ec$submit_date)
+table(ec$year)
+
+ec <- ec %>% filter(year>2014)
+```
+
+## Election Dates
+
+```{r}
+elec <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/election_date.csv"))
+colnames(elec)[1]='state1'
+
+ec <- left_join(ec,elec,by='state1')
+```
+
+```{r}
+ec$elec1 <- ymd(ec$elec1)
+ec$elec2 <- ymd(ec$elec2)
+ec$elec3 <- ymd(ec$elec3)
+
+ec$res1 <- ymd(ec$res1)
+ec$res2 <- ymd(ec$res2)
+ec$res3 <- ymd(ec$res3)
+
+ec$elecyear1 <- year(ec$res1)
+ec$elecyear2 <- year(ec$res2)
+ec$elecyear3 <- year(ec$res3)
+```
+
+#Dataframes for Cycles
+
+## Electoral Cyles in Submission of Applications
+
+```{r}
+#Distance - days/weeks from all elections
+ec$submit_diff1 <- as.duration(ec$submit_date - ec$res1)/ddays(1) 
+ec$submit_week1 <- as.duration(ec$submit_date - ec$res1)/dweeks(1) 
+ec$submit_diff2 <- as.duration(ec$submit_date - ec$res2)/ddays(1) 
+ec$submit_week2 <- as.duration(ec$submit_date - ec$res2)/dweeks(1) 
+ec$submit_diff3 <- as.duration(ec$submit_date - ec$res3)/ddays(1) 
+ec$submit_week3 <- as.duration(ec$submit_date - ec$res3)/dweeks(1) 
+
+summary(ec$submit_diff3)
+
+#Identifying closest election
+
+ec$submit_diff_abs <- with(ec,pmin(abs(ec$submit_diff1),abs(ec$submit_diff2),abs(ec$submit_diff3),na.rm = T))
+
+summary(ec$submit_diff_abs)
+
+ec <- ec %>% mutate(
+  submit_diff = case_when(submit_diff_abs == abs(submit_diff1) ~ submit_diff1,
+                         submit_diff_abs == abs(submit_diff2) ~ submit_diff2,
+                         submit_diff_abs == abs(submit_diff3) ~ submit_diff3)
+  )
+
+summary(ec$submit_diff)
+
+
+ec$submit_week_abs <- with(ec,pmin(abs(ec$submit_week1),abs(ec$submit_week2),abs(ec$submit_week3),na.rm = T))
+
+summary(ec$submit_week_abs)
+
+ec <- ec %>% mutate(
+  submit_week = case_when(submit_week_abs == abs(submit_week1) ~ submit_week1,
+                         submit_week_abs == abs(submit_week2) ~ submit_week2,
+                         submit_week_abs == abs(submit_week3) ~ submit_week3)
+  )
+
+summary(ec$submit_week)
+
+#Round off week
+ec$submit_week <- round(ec$submit_week,0)
+
+##Adding election year for the closest delta
+
+ec <- ec %>% mutate(
+  elec_date = case_when(submit_week_abs == abs(submit_week1) ~ as.Date(res1),
+                         submit_week_abs == abs(submit_week2) ~ as.Date(res2),
+                         submit_week_abs == abs(submit_week3) ~ as.Date(res3))
+  )
+
+table(ec$elec_date)
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+
+#Identifying Pre-Post
+## aa - aren't there two pre posts here because there are two cycles. 
+ec$submit_pre <- ifelse(ec$submit_week<0,"Before","After")
+```
+
+
+## Electoral Cyles in No. of Licenses Granted
+
+```{r}
+ec$grant_diff1 <- as.duration(ec$grant - ec$res1)/ddays(1) 
+ec$grant_week1 <- as.duration(ec$grant - ec$res1)/dweeks(1) 
+
+ec$grant_diff2 <- as.duration(ec$grant - ec$res2)/ddays(1) 
+ec$grant_week2 <- as.duration(ec$grant - ec$res2)/dweeks(1) 
+
+ec$grant_diff3 <- as.duration(ec$grant - ec$res3)/ddays(1) 
+ec$grant_week3 <- as.duration(ec$grant - ec$res3)/dweeks(1) 
+
+#Identifying closest election
+
+ec$grant_diff_abs <- with(ec,pmin(abs(ec$grant_diff1),abs(ec$grant_diff2),abs(ec$grant_diff3),na.rm = T))
+
+summary(ec$grant_diff_abs)
+
+ec <- ec %>% mutate(
+  grant_diff = case_when(grant_diff_abs == abs(grant_diff1) ~ grant_diff1,  grant_diff_abs == abs(grant_diff2) ~ grant_diff2, grant_diff_abs == abs(grant_diff3) ~ grant_diff3))
+
+summary(ec$grant_diff)
+
+ec$grant_week_abs <- with(ec,pmin(abs(ec$grant_week1),abs(ec$grant_week2),abs(ec$grant_week3),na.rm = T))
+
+summary(ec$grant_week_abs)
+
+ec <- ec %>% mutate(
+  grant_week = case_when(grant_week_abs == abs(grant_week1) ~ grant_week1,
+                         grant_week_abs == abs(grant_week2) ~ grant_week2,
+                         grant_week_abs == abs(grant_week3) ~ grant_week3)
+  )
+
+summary(ec$grant_week)
+
+#Round off week
+ec$grant_week <- round(ec$grant_week,0)
+
+##Adding election year for the closest delta
+
+ec <- ec %>% mutate(
+  elec_date = case_when(grant_week_abs == abs(grant_week1) ~ as.Date(res1),
+                         grant_week_abs == abs(grant_week2) ~ as.Date(res2),
+                         grant_week_abs == abs(grant_week3) ~ as.Date(res3)))
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+```
+
+
+```{r save-file}
+
+write.csv(ec,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/EC_All_States.csv"))
+
+saveRDS(ec, file = paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/EC_All_States.rds"))
+
+
+```
+

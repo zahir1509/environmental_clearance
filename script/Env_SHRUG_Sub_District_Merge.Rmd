@@ -1,0 +1,471 @@
+---
+title: "Environment Clearance"
+author: "Anustubh Agnihotri"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+library(data.table)
+```
+
+
+#Change Username 
+
+```{r}
+user <- "agnihotri"
+#user <- "prana"
+#user <- "hp"
+```
+
+#Loading Files
+
+```{r}
+ec_files <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final"))
+```
+
+
+
+
+
+#Load Main Data Files
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+ec_main <- NULL
+
+ec_files_main_data<-ec_files[which(grepl("maindata",ec_files))]
+
+for(i in 1:length(ec_files_main_data)){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files_main_data[i]))
+  add$csv <- i
+  ec_main <- dplyr::bind_rows(ec_main,add)
+}
+
+table(duplicated(ec_main$Proposal.No.))
+
+ec_main$Proposal<-ec_main$Proposal.No.
+ec_main$st_code <- sub("^[^/]*/([^/]*)/.*$", "\\1", ec_main$Proposal.No.)
+table(ec_main$st_code)
+
+```
+
+
+#Bind main and Additional
+
+
+# Adding variables
+
+## State 
+
+```{r}
+ec<-ec_main
+table(ec$st_code)
+
+table(grepl("SIA/CG/", ec$Proposal))
+
+ec <- ec %>%
+  mutate(
+    state1 = case_when(st_code == 'AP' ~ "Andhra_Pradesh", 
+                    st_code =='BR' ~ "Bihar", 
+                    st_code =='CG' ~ "Chattisgarh", 
+                    st_code =='GJ' ~ "Gujarat",
+                    st_code =='HP' ~ "Himachal_Pradesh",
+                    st_code =='HR' ~ "Haryana",
+                    st_code =='JH' ~ "Jharkhand",
+                    st_code =='KA' ~ "Karnataka", 
+                    st_code =='KL' ~ "Kerala", 
+                    st_code =='MH' ~ "Maharashtra",
+                    st_code =='MP' ~ "Madhya_Pradesh",
+                    st_code =='OR' ~ "Odisha",
+                    st_code =='PB' ~ "Punjab",
+                    st_code =='RJ' ~ "Rajasthan",
+                    st_code =='TG' ~ "Telangana",  
+                    st_code =='UP' ~ "Uttar_Pradesh", 
+                    st_code =='WB' ~ "West_Bengal",
+                    st_code =='TN' ~ "Tamil_Nadu", 
+                    TRUE ~ "Other"))
+
+table(ec$state1)
+```
+
+
+
+
+```{r}
+ec <- ec %>% filter(state1 != "Other")
+```
+
+## Duplicates
+
+```{r}
+ec$duplicate <- duplicated(ec$Proposal,ec$Proposal.Name)
+table(ec$duplicate)
+table(ec$duplicate,ec$state1)
+
+```
+
+## Remove Rows Where Tehsil and District Cannot Be identified
+
+```{r}
+ec_dis_teh <- ec %>% filter(District!="")
+
+ec_dis_teh <- ec_dis_teh %>% filter(Tehsil!="")
+
+
+
+```
+
+
+
+##Merge with SHRUG Sub-district
+
+1. Load the SHRUG Sub-district shp file
+2. Use string matching to assign sub-district code 
+3. Check the distribution of string distance 
+4. Analysis? 
+
+
+```{r sub-district-shp}
+
+sub_district_shp<-st_read('C:/Users/agnihotri/Downloads/shrug-pc11subdist-poly-shp/subdistrict.shp')
+
+state_keys<-read.csv('C:/Users/agnihotri/Downloads/shrug-shrid-keys-csv/state_key.csv',
+                    stringsAsFactors = F)
+
+glimpse(state_keys)
+
+state_district_keys<-read.csv('C:/Users/agnihotri/Downloads/shrug-shrid-keys-csv/state_dis_key.csv',
+                    stringsAsFactors = F)
+
+glimpse(state_district_keys)
+
+
+table(sub_district_shp$pc11_d_id%in%state_district_keys$pc11_district_id)
+table(state_district_keys$pc11_district_id%in%as.numeric(sub_district_shp$pc11_d_id))
+
+sub_district_shp$pc11_district_id<-as.numeric(sub_district_shp$pc11_d_id)
+
+state_district_keys$district_name[which(!state_district_keys$pc11_district_id%in%as.numeric(sub_district_shp$pc11_d_id))]
+
+state_district_keys<-ungroup(state_district_keys)
+table(duplicated(state_district_keys$district_name))
+table(duplicated(state_district_keys$pc11_district_id))
+
+state_district_keys<-state_district_keys%>%
+  filter(!duplicated(pc11_district_id))
+
+sub_district_shp<-dplyr::left_join(sub_district_shp,state_district_keys,by='pc11_district_id')
+
+```
+
+Match with state names first. 
+Assign the state id to all the rows in EC dataframe 
+
+```{r state-name-matching}
+ec_state_names<-ec_dis_teh %>%
+  group_by(state1)%>%
+  summarise(N=n())%>%
+  ungroup()
+
+
+#match state district tehsil 
+
+matrix_state_list<-stringdist::stringdistmatrix(tolower(ec_state_names$state1),
+                                                            tolower(state_keys$state_name),method='lcs')
+
+min_values_state_list<-apply(matrix_state_list,1,min)
+table(min_values_state_list)
+
+min_index_state_list<-apply(matrix_state_list,1,which.min)
+
+ec_state_names$state_matched<-NA
+ec_state_names$Matched_distance<-NA
+
+ec_state_names$state_matched=
+  sapply(1:length(min_index_state_list), 
+         function(x){state_keys$state_name[min_index_state_list[x]]})
+
+
+ec_state_names$Matched_distance=
+  sapply(1:length(min_index_state_list), 
+         function(x){min_values_state_list[x]})
+
+ec_state_names$pc11_state_id=
+  sapply(1:length(min_index_state_list), 
+         function(x){state_keys$pc11_state_id[min_index_state_list[x]]})
+
+ec_state_names$state_matched[which(ec_state_names$state1=='Telangana')]=state_keys$state_name[which(state_keys$state_name=='andhra pradesh')]
+ec_state_names$pc11_state_id[which(ec_state_names$state1=='Telangana')]=state_keys$pc11_state_id[which(state_keys$state_name=='andhra pradesh')]
+
+#Assign State ID to EC
+
+ec_dis_teh <-dplyr::left_join(ec_dis_teh ,ec_state_names,by='state1')
+
+```
+
+
+Match with district names second 
+Assign the state id to all the rows in EC dataframe 
+
+```{r state-name-matching}
+ec_district_names<-ec_dis_teh %>%
+  group_by(District)%>%
+  summarise(N=n())%>%
+  ungroup()
+
+
+
+matrix_state_district_list<-stringdist::stringdistmatrix(tolower(ec_district_names$District),
+                                                            tolower(state_district_keys$district_name),method='lcs')
+
+min_values_state_district_list<-apply(matrix_state_district_list,1,min)
+table(min_values_state_district_list)
+
+min_index_state_district_list<-apply(matrix_state_district_list,1,which.min)
+
+ec_district_names$district_matched<-NA
+ec_district_names$Matched_distance_district<-NA
+
+ec_district_names$district_matched=
+  sapply(1:length(min_index_state_district_list), 
+         function(x){state_district_keys$district_name[min_index_state_district_list[x]]})
+
+
+ec_district_names$Matched_distance_district=
+  sapply(1:length(min_index_state_district_list), 
+         function(x){min_values_state_district_list[x]})
+
+ec_district_names$pc11_district_id=
+  sapply(1:length(min_index_state_district_list), 
+         function(x){state_district_keys$pc11_district_id[min_index_state_district_list[x]]})
+
+ec_district_names$state_matched_district=
+  sapply(1:length(min_index_state_district_list), 
+         function(x){state_district_keys$state_name[min_index_state_district_list[x]]})
+
+
+```
+
+
+
+
+```{r match-manual}
+
+write.csv(ec_district_names,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Manual_Match/district_match.csv"))
+
+
+##Remove Matches greater than string distance of 6
+table(ec_district_names$Matched_distance_district)
+ec_district_names<-ec_district_names%>%
+  filter(Matched_distance_district<6)
+
+#Assign State ID to EC
+
+colnames(ec_district_names)
+
+ec_district_names<-ec_district_names%>%
+  select(state_id_district,district_matched,district_matched,Matched_distance_district,pc11_district_id,state_matched_district)
+
+ec_dis_teh <-dplyr::left_join(ec_dis_teh ,ec_district_names,by='state_id_district')
+
+
+```
+
+
+###########################################################
+
+Match district tehsil names third 
+Assign the state id to all the rows in EC dataframe 
+
+```{r state-name-matching}
+ec_district_tehsil_names<-ec_dis_teh %>%
+  group_by(District,Tehsil)%>%
+  summarise(N=n())%>%
+  ungroup()
+
+ec_district_tehsil_names$District_Tehsil<-paste(tolower(ec_district_tehsil_names$District),
+                                                tolower(ec_district_tehsil_names$Tehsil),sep=' ')
+
+sub_district_shp$District_Tehsil<-paste(tolower(sub_district_shp$district_name),
+                                                tolower(sub_district_shp$sd_name),sep=' ')
+
+
+matrix_state_district_tehsil_list<-stringdist::stringdistmatrix(tolower(ec_district_tehsil_names$District_Tehsil),
+                                                            tolower(sub_district_shp$District_Tehsil),method='lcs')
+
+min_values_state_district_tehsil_list<-apply(matrix_state_district_tehsil_list,1,min)
+table(min_values_state_district_tehsil_list)
+
+min_index_state_district_tehsil_list<-apply(matrix_state_district_tehsil_list,1,which.min)
+
+sub_district_shp$district_tehsil_matched<-NA
+ec_district_tehsil_names$Matched_distance<-NA
+
+ec_district_tehsil_names$district_tehsil_matched=
+  sapply(1:length(min_index_state_district_tehsil_list), 
+         function(x){sub_district_shp$District_Tehsil[min_index_state_district_tehsil_list[x]]})
+
+
+ec_district_tehsil_names$Matched_distance=
+  sapply(1:length(min_index_state_district_tehsil_list), 
+         function(x){min_values_state_district_tehsil_list[x]})
+
+ec_district_tehsil_names$pc11_district_id=
+  sapply(1:length(min_index_state_district_tehsil_list), 
+         function(x){sub_district_shp$pc11_district_id[min_index_state_district_tehsil_list[x]]})
+
+
+ec_district_tehsil_names$pc11_sd_id=
+  sapply(1:length(min_index_state_district_tehsil_list), 
+         function(x){sub_district_shp$pc11_sd_id[min_index_state_district_tehsil_list[x]]})
+
+
+write.csv(ec_district_tehsil_names,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Manual_Match/ec_district_tehsil_names.csv"))
+
+
+data_frame_sub_dist<-sub_district_shp%>%
+  st_set_geometry(NULL)
+
+
+write.csv(data_frame_sub_dist,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Manual_Match/sub_district_shp.csv"))
+
+
+#Assign State ID to EC
+data_frame_sub_dist_select<-data_frame_sub_dist%>%
+  select(pc11_sd_id,sd_name,District_Tehsil)
+
+ec_district_tehsil_names_select<-ec_district_tehsil_names%>%
+  select(pc11_sd_id,Matched_distance,district_tehsil_matched,District_Tehsil)
+
+ec_dis_teh$District_Tehsil<-paste(tolower(ec_dis_teh$District),
+                                                tolower(ec_dis_teh$Tehsil),sep=' ')
+
+table(ec_dis_teh$District_Tehsil%in%ec_district_tehsil_names_select$District_Tehsil)
+
+ec_dis_teh <-dplyr::left_join(ec_dis_teh ,ec_district_tehsil_names_select,by='District_Tehsil')
+
+
+```
+
+
+To do: Create interaction with another variable and run duplication accordingly.
+
+## Simplify the Categories of Projects 
+
+```{r}
+
+ec<-ec_dis_teh
+ec$Category_Simplified <- ifelse(grepl('INFRA',ec$Category),'Infrastructure',
+                                    ifelse(grepl('Industrial',ec$Category),'Industrial',
+                                    ifelse(ec$Category=='Non-Coal Mining','Non-Coal Mining','Other')))
+
+table(ec$Category_Simplified)
+
+ec$Status_Simplified <- ifelse(grepl('EC Granted',ec$Status),'EC Granted',
+                                    ifelse(grepl('Delisted',ec$Status),'Delisted',
+                                           ifelse(grepl('Rejected',ec$Status),'Rejected',
+                                    ifelse(ec$Status=='WithdrawEC','Withdrawn','Other'))))
+
+table(ec$Status_Simplified)
+
+ec$Deslisted<-ifelse(ec$Status_Simplified=='Delisted',1,0)
+ec$Rejected<-ifelse(ec$Status_Simplified=='Rejected',1,0)
+ec$Withdrawn<-ifelse(ec$Status_Simplified=='Withdrawn',1,0)
+
+
+table(ec$Deslisted)
+
+
+```
+## Dates
+
+```{r}
+extract_after_colon <- function(input) {
+  split_string <- strsplit(input, ":")
+  extracted_text <- sapply(split_string, function(x) trimws(x[2]))
+  return(extracted_text)
+}
+
+#For the projects that were delisted or withdrawn 
+#Date 2 is when EC was filed
+#Date 1 is actually the date on which TOR was submitted
+index_with_tor<-which(grepl('TOR',ec$Date_1))
+
+ec$Date_1[index_with_tor]<-ec$Date_2[index_with_tor]
+
+ec$Date_2[index_with_tor]<-"NA"
+
+
+# Applying the function to the input vector
+ec$submit <- extract_after_colon(ec$Date_1) %>% dmy()
+
+sum(is.na(ec$submit))
+
+ec$grant <- extract_after_colon(ec$Date_2) %>% dmy()
+
+ec$submit_date <- ifelse(!is.na(ec$submit), ec$submit, ec$grant) %>% as.Date()
+
+table(ec$submit==ec$submit_date)
+
+
+
+```
+
+
+
+##Merge PCA and NL and (alignment?)
+
+- Run a regression with state effects where ? 
+- Non-coal mining locations are very different (more rural more remote?)
+- If so make maps 
+- Concentration of projects or clustering? 
+- Sand Mining? 
+- Alignment variable can be created by aggregating the TCPD to District Level
+
+```{r merge-with-sub-dist-id-pca}
+
+
+sub_dist_nl<-read.csv("C:/Users/agnihotri/Downloads/shrug-viirs-annual-csv/viirs_annual_pc11subdist.csv",stringsAsFactors = F)
+
+sub_dist_nl_2014<-sub_dist_nl%>%
+  filter(category=='average-masked')%>%
+           filter(year==2014)
+
+table(duplicated(sub_dist_nl_2014$pc11_subdistrict_id))
+
+sub_dist_nl_2014<-sub_dist_nl_2014%>%
+  filter(!duplicated(pc11_subdistrict_id))
+
+ec$pc11_subdistrict_id<-as.numeric(ec$pc11_sd_id)
+
+table(ec$pc11_subdistrict_id%in%sub_dist_nl_2014$pc11_subdistrict_id)
+
+ec_nl<-dplyr::left_join(ec,sub_dist_nl_2014,by='pc11_subdistrict_id')
+
+
+summary()
+```

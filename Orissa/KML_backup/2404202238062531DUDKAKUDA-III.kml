@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>DUDKAKUDA-III.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>458</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					84.07639253475929,21.3925018393093,0 84.07647736881331,21.39263548077353,0 84.07681399365207,21.39265234091554,0 84.07718881263763,21.39249525759846,0 84.07720878632685,21.39219904840398,0 84.07712328864392,21.3921146215069,0 84.07700584128196,21.39211009829772,0 84.07690816279936,21.39217835334235,0 84.07654421051116,21.39216463795784,0 84.07646960102737,21.3922696957716,0 84.07639253475929,21.3925018393093,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>460</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					84.07728963917494,21.39245162368104,0 84.07763557973652,21.39242836230856,0 84.07781198870036,21.39217791989062,0 84.07799236450808,21.39216498130661,0 84.07791894430602,21.39201655311127,0 84.07834308908238,21.39203276219224,0 84.07808000361211,21.39165445663711,0 84.07791440066943,21.39173963468237,0 84.0776083791056,21.39180731876859,0 84.07763492228641,21.39194087182404,0 84.07767026717437,21.39209024687092,0 84.07738786982152,21.39208529593076,0 84.07732149158971,21.39221770951367,0 84.07728963917494,21.39245162368104,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>471</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					84.07684498202337,21.39015914336141,0 84.07698524541203,21.39020241764434,0 84.07714096879141,21.3901624507573,0 84.07733695959931,21.39032730707196,0 84.07738844950229,21.39029059698084,0 84.0774857575102,21.39038836006333,0 84.07761039189056,21.39034901631188,0 84.07762884755182,21.39023879803112,0 84.07836436474336,21.39041661682336,0 84.07870005736959,21.39011343940312,0 84.07865708444567,21.39003050986951,0 84.07884418358083,21.38964608132353,0 84.07876497335596,21.38939688476799,0 84.07881768430985,21.38938327315879,0 84.07862672476712,21.38904666375364,0 84.07820877056223,21.38925646225754,0 84.07791513701787,21.38931931044253,0 84.07793835609229,21.38939969660146,0 84.07786365857754,21.38948214728563,0 84.07784268739745,21.38966515174814,0 84.07777630549481,21.38968262648128,0 84.07760921448518,21.38963634403553,0 84.07758478833451,21.38952887944992,0 84.0774635712109,21.38974468083624,0 84.07684498202337,21.39015914336141,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

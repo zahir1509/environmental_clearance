@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KAMTA.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				82.64483285733677,19.11471301265245,0 82.64530229776155,19.11470948713587,0 82.6459203327291,19.11515989059467,0 82.64634701299133,19.11555220285271,0 82.64689522299028,19.11601827643012,0 82.64749046414958,19.11615521201902,0 82.6474968099326,19.1159381411123,0 82.64685722484141,19.11566026565595,0 82.64644632985632,19.11539568119966,0 82.64603942079884,19.11511138736731,0 82.64578309064366,19.11482669952593,0 82.64545358365673,19.11461808023697,0 82.64511940169545,19.1144775654578,0 82.64475432685275,19.11447768133823,0 82.64483285733677,19.11471301265245,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

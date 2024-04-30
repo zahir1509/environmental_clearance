@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>MLB.kml</name>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>MLB</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FID_</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Entity</td>
+
+<td>LWPolyline</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Layer</td>
+
+<td>Joda_all_ML_Boundaries</td>
+
+</tr>
+
+<tr>
+
+<td>Color</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Linetype</td>
+
+<td>Continuous</td>
+
+</tr>
+
+<tr>
+
+<td>Elevation</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LineWt</td>
+
+<td>25</td>
+
+</tr>
+
+<tr>
+
+<td>RefName</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Area_Ha</td>
+
+<td>65.71</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.41608425687505,21.94051019919714,0 85.41622148217863,21.9409315158385,0 85.417007355853,21.94233681065522,0 85.4178541992426,21.94397526673296,0 85.41862500617002,21.94540524822951,0 85.41886128621086,21.94647331383975,0 85.41872415241205,21.94773875015637,0 85.41872395579627,21.94874131453367,0 85.41818225671455,21.94869771274374,0 85.41653455768822,21.94866829024507,0 85.41539015762859,21.94862564269646,0 85.41442878550778,21.94858475389576,0 85.41273487856759,21.94852097693169,0 85.41200246153835,21.94750681845152,0 85.41133109700984,21.94758839040683,0 85.41117081940435,21.94679201505124,0 85.41091921055046,21.94555669902237,0 85.41072838554807,21.94481422046359,0 85.41049957440501,21.94362428493672,0 85.41021742560321,21.94246996149156,0 85.4099501525294,21.94128416921307,0 85.40978232598744,21.94051481595641,0 85.41065210549822,21.9405164568726,0 85.41247550985578,21.94051601888393,0 85.41384119840424,21.94051340106946,0 85.41435245923002,21.94051607734058,0 85.41608425687505,21.94051019919714,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

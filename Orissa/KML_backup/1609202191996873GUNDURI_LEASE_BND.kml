@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="GUNDURI_LEASE_BND">
+	<name>GUNDURI_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>GUNDURI_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								84.66327800000001,20.835722,0 84.663168,20.835936,0 84.662918,20.836175,0 84.66291699999999,20.836472,0 84.663229,20.836662,0 84.663191,20.836923,0 84.66327800000001,20.837056,0 84.663512,20.837035,0 84.66355,20.836945,0 84.66436299999999,20.836782,0 84.66461099999999,20.836861,0 84.66461099999999,20.835722,0 84.66417800000001,20.83573,0 84.66417300000001,20.83583,0 84.663872,20.835776,0 84.663653,20.835777,0 84.66365,20.835715,0 84.66327800000001,20.835722,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

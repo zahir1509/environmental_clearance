@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Wed Jun 22 13:53:23 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-05-23T07:35:55Z</begin>
+			<end>2022-05-23T07:38:07Z</end>
+		</gx:TimeSpan>
+		<longitude>85.25218099999999</longitude>
+		<latitude>21.205347</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<StyleMap id="waypoint60">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n60</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h60</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin86">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin83</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl86</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin87">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin84</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl85</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin84">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl85">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h60">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin83">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl86">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="waypoint_n60">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2022-05-23T07:35:55Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint60</styleUrl>
+			<Point>
+				<coordinates>85.254694,21.206722,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2022-05-23T07:36:13Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint60</styleUrl>
+			<Point>
+				<coordinates>85.254722,21.206111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2022-05-23T07:36:40Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint60</styleUrl>
+			<Point>
+				<coordinates>85.25030599999999,21.204833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2022-05-23T07:36:59Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint60</styleUrl>
+			<Point>
+				<coordinates>85.250722,21.204472,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>005</name>
+			<TimeStamp><when>2022-05-23T07:37:21Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint60</styleUrl>
+			<Point>
+				<coordinates>85.25022199999999,21.203972,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>006</name>
+			<TimeStamp><when>2022-05-23T07:37:41Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint60</styleUrl>
+			<Point>
+				<coordinates>85.24972200000001,21.204194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>007</name>
+			<TimeStamp><when>2022-05-23T07:38:07Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint60</styleUrl>
+			<Point>
+				<coordinates>85.249639,21.2055,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Kunjam Sand Quarry</name>
+		<styleUrl>#m_ylw-pushpin86</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.2546941676276,21.2067114649405,0 85.25472704156772,21.2061100064767,0 85.25027403012172,21.20482904213844,0 85.25070183577095,21.20447925839093,0 85.25021704848677,21.20394499464443,0 85.24967816904699,21.2041893604031,0 85.24959936341395,21.2055681174037,0 85.2546941676276,21.2067114649405,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Kunjam Sand Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-05-23T07:35:55Z</begin>
+				<end>2022-05-23T07:38:07Z</end>
+			</gx:TimeSpan>
+			<longitude>85.25131392424282</longitude>
+			<latitude>21.20596742250573</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0002420440382593334</heading>
+			<tilt>19.11512730988023</tilt>
+			<range>879.630593661768</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin87</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.25166670246658,21.20553955369763,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

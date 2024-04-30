@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Polygon Measure.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Polygon Measure</name>
+		<styleUrl>#inline1</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						84.56738545787924,19.21136463132228,0 84.56734891317379,19.21153525054828,0 84.56727166724576,19.21165250480732,0 84.56712031056217,19.21184520303786,0 84.56692944964948,19.21207603166627,0 84.56664830235371,19.21239350501533,0 84.56624546700847,19.21275019900849,0 84.56581890636822,19.21304016279294,0 84.56555451389579,19.21320873734622,0 84.565159093601,19.2133866097234,0 84.56482324118873,19.21359435848077,0 84.56459692133582,19.21371189027759,0 84.56429564758527,19.21386694353357,0 84.5640478796027,19.21399716470325,0 84.56380134462779,19.21413974516624,0 84.56347563188837,19.21424065074139,0 84.56331558149651,19.21431008437855,0 84.56343991632276,19.21477906780693,0 84.56413603688975,19.21469066207773,0 84.56501795262687,19.21433392161162,0 84.56562466318108,19.21400705171645,0 84.56617239524869,19.21372191155038,0 84.56688287914776,19.21331852683599,0 84.56734534891163,19.2129610716476,0 84.56774607248087,19.2125781188644,0 84.56809661022149,19.21142924425227,0 84.56738545787924,19.21136463132228,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

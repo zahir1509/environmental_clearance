@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hijal05 kml.kml</name>
+	<Style id="inline73400010">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline6420004">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline2712090</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline73400010</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline2712090">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Hijal_05</name>
+		<styleUrl>#inline6420004</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						88.15099188435416,23.9633394106298,0 88.15124884083656,23.96330288618369,0 88.15152290868761,23.96332944625397,0 88.15179169377292,23.96342698924915,0 88.15188058122423,23.96354488123953,0 88.1520138103142,23.96390389648902,0 88.15201947813989,23.96411414929526,0 88.15199947440863,23.96435700453188,0 88.15187899953402,23.96457222592384,0 88.15174775369196,23.96472703172526,0 88.15149046604306,23.96483842125091,0 88.15168016134065,23.96462318757293,0 88.15180250131058,23.96441417228145,0 88.15188622536941,23.96419445236431,0 88.15190377216018,23.96404239982504,0 88.15183522843212,23.96386523557957,0 88.1517299117983,23.96374558995011,0 88.15152992554512,23.96360241982288,0 88.1513284526166,23.96352028840053,0 88.15119179886449,23.96348198148676,0 88.15102932431179,23.96346125867754,0 88.15090317940601,23.96347851863618,0 88.15074323451876,23.96354840592354,0 88.15079786835254,23.96342017246708,0 88.15099188435416,23.9633394106298,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

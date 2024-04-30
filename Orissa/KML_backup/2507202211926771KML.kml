@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Wed Jun 29 16:08:04 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-06-29T10:31:04Z</begin>
+			<end>2022-06-29T10:36:33Z</end>
+		</gx:TimeSpan>
+		<longitude>85.452169</longitude>
+		<latitude>19.948345</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<StyleMap id="m_ylw-pushpin306">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin303</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl311</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_n281">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin305">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin302</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl309</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl309">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin303">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h281">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="waypoint281">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n281</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h281</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl311">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin302">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2022-06-29T10:31:04Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45129300000001,19.947911,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2022-06-29T10:31:23Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45232799999999,19.948966,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2022-06-29T10:31:42Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45281900000001,19.948723,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2022-06-29T10:32:07Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.453045,19.948589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>005</name>
+			<TimeStamp><when>2022-06-29T10:32:29Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.453001,19.948247,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>006</name>
+			<TimeStamp><when>2022-06-29T10:33:01Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.452783,19.9483,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>007</name>
+			<TimeStamp><when>2022-06-29T10:33:21Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.452727,19.948172,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>008</name>
+			<TimeStamp><when>2022-06-29T10:33:45Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45298,19.947955,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>009</name>
+			<TimeStamp><when>2022-06-29T10:34:05Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45290799999999,19.947723,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>010</name>
+			<TimeStamp><when>2022-06-29T10:34:47Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45201,19.948172,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>011</name>
+			<TimeStamp><when>2022-06-29T10:35:13Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45181700000001,19.947973,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>012</name>
+			<TimeStamp><when>2022-06-29T10:36:33Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint281</styleUrl>
+			<Point>
+				<coordinates>85.45191800000001,19.947842,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Sundarpur Laterite Stone Quarry</name>
+		<styleUrl>#m_ylw-pushpin305</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.45128903044723,19.94791209030331,0 85.45231559392671,19.94897842293314,0 85.45281871086067,19.94872707012919,0 85.45304786239682,19.94858968722211,0 85.45300207398371,19.94824865477457,0 85.45278039419466,19.94830294789569,0 85.45272972485989,19.9481718567423,0 85.45298138170642,19.94795774214622,0 85.45289974624335,19.94772650614183,0 85.45201531410565,19.94817851440634,0 85.45182185069655,19.94797144313987,0 85.45191690821797,19.94783964593566,0 85.45128903044723,19.94791209030331,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Sundarpur Laterite Stone Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-06-29T10:31:04Z</begin>
+				<end>2022-06-29T10:36:33Z</end>
+			</gx:TimeSpan>
+			<longitude>85.4522096858563</longitude>
+			<latitude>19.94860552119871</latitude>
+			<altitude>0</altitude>
+			<heading>-7.837344517094925e-05</heading>
+			<tilt>30.00144393459331</tilt>
+			<range>321.4125534251964</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin306</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.45224069130489,19.94833347554649,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

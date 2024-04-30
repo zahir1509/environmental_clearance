@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hijal_04 kmz.kmz</name>
+	<Style id="inline8001000">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline25400">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline8001000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline286000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline286000">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Hijal_04</name>
+		<styleUrl>#inline25400</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						88.14911015175095,23.96741062455981,0 88.14902191898594,23.9671469800571,0 88.14902333912028,23.9668774356502,0 88.14911105538751,23.96643477088702,0 88.14926858311696,23.96613521830707,0 88.14947195217054,23.96591342936073,0 88.14969847059787,23.96575748586291,0 88.15015254792014,23.96568544965598,0 88.1499035655437,23.96584580038274,0 88.14969543356536,23.96604452957602,0 88.1495153613222,23.96625816227471,0 88.14935073351283,23.96651186204495,0 88.14922645629458,23.96682726517702,0 88.14916927213409,23.96705576512475,0 88.14911015175095,23.96741062455981,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

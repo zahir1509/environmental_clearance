@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>12_Shivnala.kml</name>
+	<open>1</open>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>12_Shivnala</name>
+		<open>1</open>
+		<Placemark>
+			<name>12_MB</name>
+			<styleUrl>#inline0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							79.67305073841818,20.78419912042194,0 79.67514249004313,20.78307429146754,0 79.67410727751248,20.78154490993494,0 79.67205851427657,20.78264054298247,0 79.67305073841818,20.78419912042194,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.67289240853192</longitude>
+				<latitude>20.78397745046976</latitude>
+				<altitude>0</altitude>
+				<heading>175.3160964222665</heading>
+				<tilt>30.001103793396</tilt>
+				<range>245.7598091149578</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.67305008711591,20.78420033881999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>2</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.67472809452217</longitude>
+				<latitude>20.78268774452191</latitude>
+				<altitude>0</altitude>
+				<heading>175.3167477960747</heading>
+				<tilt>30.00113060756137</tilt>
+				<range>251.7297530042663</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.67514025071061,20.783080518031,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>3</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.67377130206518</longitude>
+				<latitude>20.78137584217637</latitude>
+				<altitude>0</altitude>
+				<heading>175.3164083075411</heading>
+				<tilt>30.00111847152494</tilt>
+				<range>249.027772696138</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.67410758724883,20.78154698625541,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>12_AR</name>
+			<styleUrl>#inline4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					79.67462675503755,20.78365499755031,0 79.67481644469233,20.78382403188844,0 79.67497638970646,20.78413164107262,0 79.67512424489439,20.78430197478695,0 79.67522604338052,20.78438782586467,0 79.67538999744373,20.78445467050721,0 79.67558118108266,20.78438620787253,0 79.67584392369552,20.78430820100221,0 79.6761654562645,20.7843638233152,0 79.6763731703213,20.78446425754908,0 79.67653209615143,20.78460783178981,0 79.67664929691294,20.7846736418717,0 79.67683052275696,20.78467917918458,0 79.67709381056997,20.78467416202061,0 79.67734555197869,20.78468650406996,0 79.67752160422008,20.78470533458685,0 79.67776209496492,20.78476560138087,0 79.67791825858319,20.78472063921307,0 79.67805761092274,20.78468506919463,0 79.67820356479302,20.78466876159373,0 79.67840836658397,20.78470985207272,0 79.67857586844572,20.7847692589935,0 79.67871360151533,20.78481046185664,0 79.67879764158566,20.78490890080843,0 79.67886031622695,20.78502128517655,0 79.6789249642256,20.78511960639307,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>4</name>
+			<LookAt>
+				<gx:TimeStamp><when>2020-02-05T10:39:11Z</when>
+</gx:TimeStamp>
+				<longitude>79.67206119769619</longitude>
+				<latitude>20.78246801737569</latitude>
+				<altitude>0</altitude>
+				<heading>175.3158015217103</heading>
+				<tilt>30.00111026202889</tilt>
+				<range>247.2000213938872</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.67206216415461,20.78264630817065,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

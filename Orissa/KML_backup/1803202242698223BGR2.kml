@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BGR2.kml</name>
+	<StyleMap id="m_ylw-pushpin175">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin158</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl174</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin157">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin176">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin157</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl175</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin158">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0055ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl174">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0055ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl175">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>B2</name>
+		<open>1</open>
+		<Placemark>
+			<name>Bautiragada Road Metal Quarry No.II</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2021-11-17T06:22:32Z</begin>
+					<end>2021-11-17T06:52:18Z</end>
+				</gx:TimeSpan>
+				<longitude>85.38851216266063</longitude>
+				<latitude>20.75350146239982</latitude>
+				<altitude>0</altitude>
+				<heading>0.0008205982126359685</heading>
+				<tilt>27.33020553484778</tilt>
+				<range>1020.415706185168</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin176</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.38851216266062,20.75350146239982,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin175</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.38867008709215,20.75260631276023,0 85.38893277891765,20.75239036026259,0 85.38897582337123,20.75246522171726,0 85.38887617763021,20.75278794762357,0 85.38919738958724,20.75253891179394,0 85.38932055278988,20.7527047224482,0 85.39054570835354,20.75278767754291,0 85.38911312211926,20.75329915720344,0 85.38873740258765,20.75314372336952,0 85.38863713097489,20.75326562024957,0 85.38844100993441,20.75314720515679,0 85.38867008709215,20.75260631276023,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin175</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.38749525034325,20.75280399597741,0 85.38790533891097,20.75247909046521,0 85.38836166612519,20.75264474500869,0 85.38815587042869,20.75319378150155,0 85.387905711141,20.75357683560813,0 85.38773688945506,20.75348463567347,0 85.38800681829595,20.75324771933783,0 85.38797203256752,20.75296843423605,0 85.38757410942232,20.75278423852307,0 85.38757020464276,20.75294269788816,0 85.38750107132776,20.75293664761296,0 85.38746923169501,20.75338209672326,0 85.3874412475935,20.75338614156218,0 85.38715951172583,20.7530308083872,0 85.38749525034325,20.75280399597741,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin175</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.38798714232118,20.75371527077009,0 85.38824494334429,20.75355238532556,0 85.38825878204437,20.75354187627865,0 85.388262254626,20.75353170740396,0 85.38853202308447,20.75359815269236,0 85.38800381490981,20.75405171865343,0 85.38807890770282,20.75419918389953,0 85.38786778555027,20.75431884697901,0 85.38777734452925,20.75395460266746,0 85.38798714232118,20.75371527077009,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

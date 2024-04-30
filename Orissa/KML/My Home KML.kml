@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>My Home KML.kml</name>
+	<Schema name="Rev_area" id="S_Rev_area_DD">
+		<SimpleField type="double" name="Shape_Leng"><displayName>&lt;b&gt;Shape_Leng&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Shape_Area"><displayName>&lt;b&gt;Shape_Area&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="falseColor">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Shape_Leng</b></td><td>$[Rev_area/Shape_Leng]</td></tr>
+  <tr><td><b>Shape_Area</b></td><td>$[Rev_area/Shape_Area]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor0">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Shape_Leng</b></td><td>$[Rev_area/Shape_Leng]</td></tr>
+  <tr><td><b>Shape_Area</b></td><td>$[Rev_area/Shape_Area]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="falseColor1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>FINAL OGU BOUNDARY</name>
+		<styleUrl>#falseColor1</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Rev_area_DD">
+				<SimpleData name="Shape_Leng">4413.96</SimpleData>
+				<SimpleData name="Shape_Area">287128</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						86.02391970228662,20.61873280722072,0 86.02401035128189,20.61232708798028,0 86.02482151382137,20.61221329091397,0 86.0248540003887,20.61863846672755,0 86.0248386715372,20.61969739101738,0 86.0254798315263,20.61947798667792,0 86.02626503682177,20.62062742498167,0 86.02482637190288,20.62096220783413,0 86.02606207554305,20.62342830688241,0 86.02464119120251,20.62328162666078,0 86.02488315261529,20.62407776595466,0 86.02517482211333,20.62446521546601,0 86.02545708175874,20.62480863614335,0 86.02580520318587,20.62507280556201,0 86.02651085319776,20.62537219634305,0 86.02726354708271,20.62545144667115,0 86.0263414974105,20.62546905756933,0 86.02569229842936,20.62528414009428,0 86.02593292116143,20.62575388941424,0 86.02509109643394,20.62567460729569,0 86.02464793594471,20.62506399966987,0 86.024356267345,20.62476460744198,0 86.02419268682671,20.62431604766378,0 86.02403120656955,20.62387324734761,0 86.02390072717282,20.6235154545166,0 86.02379288224407,20.62316243465729,0 86.02234139024586,20.62308721634036,0 86.02222076972362,20.61880774878408,0 86.02391970228662,20.61873280722072,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

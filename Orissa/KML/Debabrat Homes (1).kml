@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Debabrat Homes.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3.9</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3.9</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>debabreat homes </name>
+		<styleUrl>#inline1</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						85.84799547403321,20.35815428103925,0 85.84812766690911,20.35807638192981,0 85.8481935686347,20.35805246924235,0 85.84829833045768,20.35802308686172,0 85.84845395664965,20.35797571340596,0 85.84857790514685,20.35793906446966,0 85.84860117469609,20.35797194726888,0 85.84867609973486,20.35806324744939,0 85.84877980040339,20.35817752758787,0 85.84882798766077,20.35822099980357,0 85.84886309417834,20.35826226905746,0 85.84893522507252,20.35830203581616,0 85.84902330327273,20.35837828755532,0 85.84906699775992,20.35842332578287,0 85.84905821763601,20.35851276618124,0 85.84900984580958,20.35857559695496,0 85.84889275892917,20.35864007576728,0 85.84879755847751,20.35867972401525,0 85.84868931632656,20.35869886956364,0 85.84859609433002,20.35865515628172,0 85.8484710254921,20.35863793681496,0 85.84840244595088,20.35866264664264,0 85.84799547403321,20.35815428103925,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Tue Oct 12 13:09:41 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-04-29T08:54:59Z</begin>
+			<end>2021-04-29T09:06:11Z</end>
+		</gx:TimeSpan>
+		<longitude>82.69109400000001</longitude>
+		<latitude>19.091684</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<scale>0.72</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<open>1</open>
+		<Folder>
+			<name>CHARMULA</name>
+			<open>1</open>
+			<Placemark>
+				<name>N</name>
+				<TimeStamp><when>2021-04-29T09:06:11Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69119681391922,19.08889077938675,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>A</name>
+				<TimeStamp><when>2021-04-29T08:54:59Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69143207214951,19.08866275752955,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>B</name>
+				<TimeStamp><when>2021-04-29T08:56:29Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69147003041033,19.08959296068713,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>C</name>
+				<TimeStamp><when>2021-04-29T08:57:14Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.6916444646459,19.08992563480431,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>D</name>
+				<TimeStamp><when>2021-04-29T08:58:11Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69150431850925,19.09016181818625,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>E</name>
+				<TimeStamp><when>2021-04-29T08:59:13Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69117650483166,19.09250475854139,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>F</name>
+				<TimeStamp><when>2021-04-29T09:00:09Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69129231880638,19.09361493613846,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>G</name>
+				<TimeStamp><when>2021-04-29T09:00:44Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69144109599715,19.09422791445867,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>H</name>
+				<TimeStamp><when>2021-04-29T09:02:26Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69125582078475,19.09469940868144,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>I</name>
+				<TimeStamp><when>2021-04-29T09:03:03Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69081513055568,19.09435111011211,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>J</name>
+				<TimeStamp><when>2021-04-29T09:03:55Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69053433140529,19.09383872221807,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>K</name>
+				<TimeStamp><when>2021-04-29T09:04:26Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69055184588257,19.09088428564902,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>L</name>
+				<TimeStamp><when>2021-04-29T09:05:03Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.6908634533772,19.08975211529275,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>M</name>
+				<TimeStamp><when>2021-04-29T09:05:40Z</when>
+</TimeStamp>
+				<styleUrl>#msn_placemark_circle</styleUrl>
+				<Point>
+					<coordinates>82.69053423529776,19.08914982618683,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+	<Folder>
+		<name>Routes</name>
+		<open>1</open>
+		<Folder>
+			<name>A to A</name>
+		</Folder>
+	</Folder>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				82.69144181112742,19.08866901072696,0 82.69146224206941,19.08958314802791,0 82.69164629334854,19.08994255286039,0 82.69150673499701,19.09017596045937,0 82.69117547157634,19.09251079952298,0 82.69128410151039,19.09361022564453,0 82.69143423277238,19.09423934214229,0 82.69124303114623,19.09470785432727,0 82.69082124209892,19.09435509897085,0 82.69053626182378,19.09384001592374,0 82.69055090865562,19.0908970157665,0 82.69086123607711,19.08975629757609,0 82.69053747577891,19.08914845181866,0 82.69120006859703,19.08889117611221,0 82.69143191250618,19.08866570566193,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>DGPS_LEASE_BOUNDARY_28HECT.kml</name>
+	<Style id="PolyStyle40">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer4">
+		<name>DGPS_LEASE_BOUNDARY_28HECT</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>MG MOHANTY PATABEDA IRON MINE-28</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle40</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.375308,21.936056,0 85.375338,21.935525,0 85.37564500000001,21.935565,0 85.37603300000001,21.935608,0 85.376153,21.934528,0 85.376271,21.933827,0 85.375126,21.933808,0 85.37498600000001,21.934865,0 85.373437,21.934843,0 85.37148999999999,21.934763,0 85.36988100000001,21.934699,0 85.369809,21.936044,0 85.369744,21.937685,0 85.369668,21.939358,0 85.369613,21.940729,0 85.370773,21.940992,0 85.371489,21.940399,0 85.372417,21.939605,0 85.373139,21.938603,0 85.37369,21.937819,0 85.374079,21.937344,0 85.374951,21.936689,0 85.37534700000001,21.936503,0 85.375308,21.936056,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
+21.937819,0 85.374079,21.937344,0 85.374951,21.936689,0 85.37534700000001,21.936503,0 85.375308,21.936056,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundar

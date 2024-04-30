@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Tue Oct 12 10:45:37 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-06-24T10:58:38Z</begin>
+			<end>2021-06-24T11:03:54Z</end>
+		</gx:TimeSpan>
+		<longitude>83.886225</longitude>
+		<latitude>20.86819</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<StyleMap id="m_ylw-pushpin253">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin252</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl255</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl254">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl255">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h187">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_n187">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin252">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin251">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin254">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin251</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl254</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="waypoint187">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n187</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h187</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2021-06-24T10:58:38Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint187</styleUrl>
+			<Point>
+				<coordinates>83.885239,20.868217,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2021-06-24T11:02:10Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint187</styleUrl>
+			<Point>
+				<coordinates>83.88598,20.867007,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2021-06-24T11:02:36Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint187</styleUrl>
+			<Point>
+				<coordinates>83.887371,20.867078,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2021-06-24T11:03:02Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint187</styleUrl>
+			<Point>
+				<coordinates>83.887338,20.869122,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>005</name>
+			<TimeStamp><when>2021-06-24T11:03:32Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint187</styleUrl>
+			<Point>
+				<coordinates>83.885473,20.869373,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>006</name>
+			<TimeStamp><when>2021-06-24T11:03:54Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint187</styleUrl>
+			<Point>
+				<coordinates>83.885079,20.868464,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Panisiali  Sand Quarry</name>
+		<styleUrl>#m_ylw-pushpin254</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.88527138395271,20.86822916197381,0 83.88596264830139,20.86704426754538,0 83.88734845841952,20.86706180441149,0 83.88736386781824,20.86909468442435,0 83.88539594169011,20.86939621676469,0 83.88504239958139,20.86850153853248,0 83.88527138395271,20.86822916197381,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Panisiali  Sand Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-06-24T10:58:38Z</begin>
+				<end>2021-06-24T11:03:54Z</end>
+			</gx:TimeSpan>
+			<longitude>83.88604194041235</longitude>
+			<latitude>20.86793588465069</latitude>
+			<altitude>0</altitude>
+			<heading>4.06800244257333e-05</heading>
+			<tilt>17.59301240055088</tilt>
+			<range>578.2722184455153</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin253</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.88604194041235,20.8679358846507,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Podapodar Decorative Stone Mines.kml</name>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Podapodar Decorative Stone Mines</name>
+		<styleUrl>#inline0</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				82.69140782773584,19.08866521851869,0 82.69096959913956,19.08840809416597,0 82.69074065513648,19.0863354560142,0 82.69083673248392,19.08613263876398,0 82.69038403855276,19.08563968425129,0 82.68980705215257,19.0834719589233,0 82.69061303714511,19.08330788336135,0 82.6907538422395,19.08422575649217,0 82.69106247528786,19.08509171864736,0 82.69128417352717,19.08517687084133,0 82.69141472820935,19.08588653922468,0 82.69138928186233,19.08674802042884,0 82.69113739850421,19.08686361651968,0 82.69153010016952,19.08805038231661,0 82.69140782773584,19.08866521851869,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

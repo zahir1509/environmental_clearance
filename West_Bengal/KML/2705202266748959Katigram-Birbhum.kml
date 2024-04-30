@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Mouza-Katigram-Birbhum-Dwarka River-3.10 Acre.kml</name>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Mouza-Katigram-Birbhum-Dwarka River-3.10 Acre</name>
+		<styleUrl>#inline</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						87.74711630854361,24.03647997267785,0 87.74733196223525,24.03663060893874,0 87.74762284354017,24.03681990834356,0 87.74775114246718,24.03689464911452,0 87.74793552735319,24.03695831391246,0 87.74825674418173,24.03705605669058,0 87.7486164923521,24.03708276853179,0 87.74902533812856,24.03708291836233,0 87.74942874789723,24.03707343250072,0 87.74971358934577,24.03706705802101,0 87.74967243936527,24.03677439481743,0 87.74885776280649,24.03671816692951,0 87.74835913859184,24.03659736424829,0 87.74794231323747,24.03645589624279,0 87.74734047549134,24.03601659555479,0 87.74711630854361,24.03647997267785,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

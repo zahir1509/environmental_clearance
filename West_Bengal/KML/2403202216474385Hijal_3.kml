@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hijal.kmz</name>
+	<open>1</open>
+	<StyleMap id="inline254000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline800100</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline28600</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline28600">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline800100">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>Hijal_03</name>
+			<styleUrl>#inline254000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							88.15153241965122,23.97079652102767,0 88.15114898784766,23.97066261193606,0 88.15056757104745,23.9702886230106,0 88.14999737216152,23.96971564969016,0 88.14964433943689,23.96921034941877,0 88.14938043593142,23.96873517045566,0 88.14929664849279,23.96839591823084,0 88.14937584147289,23.96826237463827,0 88.1495892317198,23.96867831650457,0 88.14971650445743,23.96891463001013,0 88.14991321710907,23.9692288314804,0 88.15017608209581,23.96955680054522,0 88.15060016884399,23.96995726586583,0 88.15114116986284,23.97035381408182,0 88.15157079967348,23.97061724436968,0 88.15186550094801,23.97076427457227,0 88.15153241965122,23.97079652102767,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

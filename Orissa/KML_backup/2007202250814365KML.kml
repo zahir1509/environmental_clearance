@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML.kml</name>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default1">
+	</Style>
+	<Style id="hl7">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Sindhikaguda Sand Bed</name>
+		<open>1</open>
+		<styleUrl>#default</styleUrl>
+		<Point>
+			<coordinates>82.84272138888889,19.50734972222222,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

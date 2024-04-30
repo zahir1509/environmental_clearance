@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ayubhkhan Ibrahimkhan Pathan Area 2.40 Ha, Gut No 14112, Yartenhatti, Chandgad, Kolhapur.kml</name>
+	<Style id="inline1200">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0000">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1200</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Ayubhkhan Ibrahimkhan Pathan Area 2.4046 Ha, Gut No 141/1/2, Yartenhatti, Chandgad, Kolhapur</name>
+		<styleUrl>#inline1100</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						74.44202511847629,16.04711692838634,0 74.4434219288288,16.04735254485819,0 74.44335356340275,16.04884418473921,0 74.442522262596,16.04886210762058,0 74.44235073850045,16.04851831323063,0 74.44204891308732,16.04831202449809,0 74.44202511847629,16.04711692838634,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

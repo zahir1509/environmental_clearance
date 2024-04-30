@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KHOSLA_4.11 HA.kml</name>
+	<Style id="sn_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin61">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaa00</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaa00</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaa00</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaa00</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin61</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>KHOSLA_4.11 HA</name>
+		<open>1</open>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>77.91919444443693</longitude>
+				<latitude>20.79097222214656</latitude>
+				<altitude>0</altitude>
+				<heading>-2.666099961736792e-012</heading>
+				<tilt>0</tilt>
+				<range>1000.000032518871</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.91919444443693,20.79097222214656,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>77.92030555584704</longitude>
+				<latitude>20.79053611101502</latitude>
+				<altitude>0</altitude>
+				<heading>1.034682146200304e-010</heading>
+				<tilt>0</tilt>
+				<range>1000.00020135457</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.92030555555556,20.79053611111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>KHOSLA - 5 KM RADIUS</name>
+			<open>1</open>
+			<styleUrl>#inline1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.87271149341925,20.77807696572513,321.6849018014661 77.87186136014441,20.78193336105595,322.9460203271 77.87137394239781,20.78584435588488,324.3274512866919 77.87125297796924,20.78978018528412,325.9848126543607 77.87149941617044,20.79371089299121,327.7535011631067 77.87211140974051,20.79760655939237,329.606951815448 77.87308432804038,20.8014375292976,331.5310138285254 77.87441079146262,20.80517463777306,333.5110730032189 77.87608072681992,20.80878943230787,335.5320415980958 77.87808144331457,20.81225438961917,337.5785178564987 77.88039772853199,20.81554312543796,339.6349615356257 77.88301196374621,20.81863059566962,341.4835476385694 77.88590425767461,20.82149328738825,341.022196164357 77.88905259767424,20.82410939819907,340.5200263916771 77.8924330172355,20.82645900259225,339.9809038960165 77.89601977850003,20.82852420400891,339.4088857726066 77.89978556841058,20.83028927145004,339.0043533965541 77.90370170699224,20.83174075957624,339.7357307839736 77.90773836616826,20.83286761137311,340.1447924252421 77.91186479742855,20.83366124259079,340.2284130626107 77.91604956659906,20.83411560730651,340.1468382246753 77.92026079390251,20.834227244104,340.3240990969176 77.92446639745882,20.83399530251353,340.4104290011003 77.92863433834579,20.83342154950836,340.1983680301952 77.93273286532826,20.83251035600751,339.6895145991089 77.93673075736622,20.83126866348891,338.8877787147418 77.94059756203053,20.82970593097087,338.122639378351 77.94430382798784,20.82783406277092,338.3759337747578 77.94782132976361,20.82566731759945,338.616392694395 77.9511232830544,20.8232221996891,338.8420898549763 77.95418454893607,20.82051733279914,336.4473498382055 77.95698182540315,20.81757331806533,333.4999945337309 77.95949382477546,20.81441257678917,330.8257808902217 77.96170143562055,20.81105917937587,329.0424782120963 77.96358786796294,20.80753866173517,327.1605297879839 77.96513878068234,20.80387783055446,325.1942524141687 77.96634239014385,20.80010455893737,323.1586159025314 77.96718955924942,20.79624757397319,321.0691018639122 77.96767386625203,20.79233623786235,318.4881213398611 77.96779165283121,20.78840032427076,315.6002247501221 77.96754205108888,20.78446979161991,313.3433644940519 77.9669269892853,20.78057455504105,311.932892839222 77.96595117629823,20.7767442587298,310.60510679351 77.96462206495009,20.77300805043225,309.37013656914 77.96294979450661,20.76939435977539,308.237365363242 77.96094711280918,20.76593068212342,307.215412834686 77.95862927865358,20.76264336959753,306.4253253182249 77.95601394517665,20.75955743084091,306.4814665006155 77.95312102515233,20.75669634104239,306.7575725907264 77.94997253923256,20.75408186365371,307.2515195692725 77.94659244829407,20.75173388514508,306.2070127158315 77.94300647116849,20.74967026404476,303.6482717154321 77.9392418891392,20.74790669539921,301.3659435664337 77.93532733868619,20.7464565916741,299.3774024514173 77.93129259404363,20.74533098099133,297.6977612244228 77.92716834121006,20.74453842346716,296.3398073335794 77.92298594511141,20.74408494627979,295.3138920973364 77.91877721166804,20.74397399795375,294.6278016659967 77.91457414655172,20.74420642220452,294.5090780505643 77.910408712444,20.7447804515395,296.5073497882403 77.90631258661709,20.74569172066334,298.8201140830763 77.90231692065646,20.74693329958716,301.4296807177207 77.89845210412885,20.74849574619302,304.3162460418634 77.89474753397141,20.75036717785916,307.4577910135204 77.89123139133567,20.75253336160811,310.8304722784663 77.88793042756711,20.75497782210035,314.4085528145717 77.88486976093536,20.75768196666196,317.1103253834428 77.88207268565043,20.76062522640556,317.4854263912831 77.87956049461397,20.76378521238273,318.0223834046649 77.87735231725159,20.76713788559128,318.7170827031944 77.87546497366455,20.77065773955585,319.5642819380394 77.87391284621762,20.77431799410381,320.5575410453502 77.87271149341925,20.77807696572513,321.6849018014661 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>77.91983333324332</longitude>
+				<latitude>20.78764999988621</latitude>
+				<altitude>0</altitude>
+				<heading>-3.194151552726773e-011</heading>
+				<tilt>0</tilt>
+				<range>1000.000072293359</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.91983333333334,20.78765,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>77.91872222230387</longitude>
+				<latitude>20.78755555551908</latitude>
+				<altitude>0</altitude>
+				<heading>2.896928717744008e-011</heading>
+				<tilt>0</tilt>
+				<range>1000.000124008972</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.91872222222223,20.78755555555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>KHOSLA - 4.11 HA.</name>
+			<styleUrl>#msn_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							77.91872123957324,20.78755866466509,0 77.91983118813144,20.78764144924134,0 77.92031351148889,20.79053751355495,0 77.91919174315704,20.79097980361789,0 77.91872123957324,20.78755866466509,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

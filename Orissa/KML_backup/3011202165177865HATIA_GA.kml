@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="HATIA_GA__LEASE_BND" id="HATIA_GA__LEASE_BND">
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+</Schema>
+<Folder><name>HATIA_GA__LEASE_BND</name>
+  <Placemark>
+	<name>13313.3869060963</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#HATIA_GA__LEASE_BND">
+		<SimpleData name="altitudeMode">clampToGround</SimpleData>
+		<SimpleData name="tessellate">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>85.583873,20.094789 85.583358,20.094811 85.583035,20.095088 85.582863,20.095287 85.582754,20.095452 85.582702,20.095608 85.582649,20.095802 85.582633,20.095983 85.583875,20.095923 85.583873,20.094789</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ramen Chakraborty.kml</name>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline17">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline131">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline51</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline5">
+		<LineStyle>
+			<color>ff00a135</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00a135</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline00">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline18">
+		<LineStyle>
+			<color>ff00aa55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ff00aa55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline51">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Ramen Chakraborty</name>
+		<open>1</open>
+		<Placemark>
+			<name>SH6</name>
+			<open>1</open>
+			<styleUrl>#inline14</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.04365282608511,22.16257379789393,37.68735067481348 87.00713370891644,22.09397647793693,85.68836564677686 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH6</name>
+			<open>1</open>
+			<styleUrl>#inline13</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.04421622308134,22.16386256536156,57.3522326865952 86.9927223166336,22.32246828019799,67.71390901036028 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Gopiballavpue hospial</name>
+			<open>1</open>
+			<styleUrl>#inline15</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					86.89960104548673,22.19795596414987,39.38572012581156 87.04351871598269,22.16256905863028,27.38092529632485 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Tantia Rural Hospital</name>
+			<open>1</open>
+			<styleUrl>#inline9</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.0435346745155,22.16280416666168,27.10731681872791 86.91252464375785,22.26059203173743,46.34950501316333 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Document>
+			<name>circle.kml</name>
+			<Placemark>
+				<name>Circle</name>
+				<description><![CDATA[radius 10 km<P>Generated by <a href='http://kml4earth.appspot.com/'>Kml4Earth</a>]]></description>
+				<Style>
+					<IconStyle>
+						<Icon>
+						</Icon>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>2</width>
+					</LineStyle>
+				</Style>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						87.14227215201075,22.16319417598493,0 87.14119840060336,22.17665445599,0 87.13798228268959,22.18981527312762,0 87.13269508662859,22.20238251548825,0 87.12545446755033,22.21407526111569,0 87.11642185955873,22.224632070218,0 87.10579889733128,22.23381684690732,0 87.09382292452681,22.24142413760742,0 87.08076168816692,22.24728374559179,0 87.06690733780752,22.25126455632809,0 87.05256986529632,22.25327748607232,0 87.03807013470369,22.25327748607232,0 87.02373266219249,22.25126455632809,0 87.00987831183308,22.24728374559179,0 86.99681707547319,22.24142413760742,0 86.98484110266872,22.23381684690732,0 86.97421814044127,22.224632070218,0 86.96518553244967,22.21407526111569,0 86.95794491337141,22.20238251548825,0 86.9526577173104,22.18981527312762,0 86.94944159939665,22.17665445599,0 86.94836784798926,22.16319417598493,0 86.94945984164845,22.14973515434062,0 86.9526925809173,22.13657800047515,0 86.95799330056107,22.12401650080227,0 86.96524314382074,22.11233106701769,0 86.97427985697949,22.10178248922625,0 86.9849014405908,22.09260613192881,0 86.99687067348427,22.08500670060132,0 87.00992040750333,22.07915369362879,0 87.02375951512383,22.07517763901222,0 87.0380793588851,22.07316719789111,0 87.05256064111491,22.07316719789111,0 87.06688048487617,22.07517763901222,0 87.08071959249666,22.07915369362879,0 87.09376932651573,22.08500670060132,0 87.10573855940918,22.0926061319288,0 87.11636014302049,22.10178248922624,0 87.12539685617925,22.11233106701769,0 87.13264669943891,22.12401650080227,0 87.13794741908271,22.13657800047515,0 87.14118015835155,22.14973515434062,0 87.14227215201075,22.16319417598493,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>center point</name>
+				<visibility>0</visibility>
+				<Style>
+					<IconStyle>
+						<Icon>
+							<href>http://maps.google.com/mapfiles/kml/shapes/cross-hairs_highlight.png</href>
+						</Icon>
+					</IconStyle>
+				</Style>
+				<Point>
+					<coordinates>87.04532,22.163223,0</coordinates>
+				</Point>
+			</Placemark>
+		</Document>
+		<Placemark>
+			<name>A</name>
+			<LookAt>
+				<longitude>87.04363888886405</longitude>
+				<latitude>22.16372222226257</latitude>
+				<altitude>0</altitude>
+				<heading>-9.366534752242463e-012</heading>
+				<tilt>0</tilt>
+				<range>1000.000186263677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<coordinates>87.04363888888889,22.16372222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<LookAt>
+				<longitude>87.04363888886405</longitude>
+				<latitude>22.16372222226257</latitude>
+				<altitude>0</altitude>
+				<heading>-9.366534752242463e-012</heading>
+				<tilt>0</tilt>
+				<range>1000.000186263677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<coordinates>87.04597777777778,22.16406666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<LookAt>
+				<longitude>87.04363888886405</longitude>
+				<latitude>22.16372222226257</latitude>
+				<altitude>0</altitude>
+				<heading>-9.366534752242463e-012</heading>
+				<tilt>0</tilt>
+				<range>1000.000186263677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<coordinates>87.04581944444445,22.16246388888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<LookAt>
+				<longitude>87.04363888886405</longitude>
+				<latitude>22.16372222226257</latitude>
+				<altitude>0</altitude>
+				<heading>-9.366534752242463e-012</heading>
+				<tilt>0</tilt>
+				<range>1000.000186263677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<coordinates>87.04356388888888,22.16263888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mining Area Ramen</name>
+			<styleUrl>#m_ylw-pushpin10</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.04357073552265,22.16264430902764,0 87.04582931753755,22.16246933714051,0 87.04596994977543,22.16405620696063,0 87.04362716978564,22.16373559520804,0 87.04357073552265,22.16264430902764,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sankrail</name>
+			<styleUrl>#inline131</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.04601639174855,22.16358919342028,0 87.13568789475509,22.1988063091418,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Ramen Chakraborty</name>
+			<LookAt>
+				<longitude>87.05033549090298</longitude>
+				<latitude>22.15763740367213</latitude>
+				<altitude>0</altitude>
+				<heading>14.32744312583855</heading>
+				<tilt>10.13257658462562</tilt>
+				<range>4998.076113270708</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>87.04456036538504,22.16327561183639,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

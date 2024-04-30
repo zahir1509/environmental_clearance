@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="ML_Boundary_Line" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>ML_Boundary_Line</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>ML_Boundary_Line</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>SHRI METALIKS  Ltd. KHANDBAND IRON MINE</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>SHRI METALIKS  Ltd. KHANDBAND IRON MINE</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>35.757</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>2921.69</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBND_</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>UBND_ID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MINE_OWNER</td>
+
+<td>SHRI METALIKS  Ltd. KHANDBAND IRON MINE</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.37280475555554,21.96332448333333,0 85.37420395000001,21.96151550000002,0 85.37323263055554,21.95849704444447,0 85.3744236111111,21.95851361111112,0 85.3755260361111,21.95850590277779,0 85.3758309472222,21.95852898055558,0 85.37708446944443,21.95855289166668,0 85.37900111111111,21.958570525,0 85.38061889444445,21.9585912888889,0 85.38173823055556,21.95860181388891,0 85.38164563333334,21.95982885000004,0 85.38161194444444,21.96091516944447,0 85.38092286666667,21.96090602222225,0 85.37937175555555,21.96086896944447,0 85.37867398055556,21.96084858611113,0 85.378655125,21.96159888888887,0 85.37863863888887,21.96233597777778,0 85.37863093055555,21.96342333333334,0 85.3769808361111,21.96339950277782,0 85.3755675111111,21.96338811388892,0 85.37280475555554,21.96332448333333,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,136 @@
+---
+title: "Guj Fix"
+author: "Anustubh Agnihotri"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+#Rajasthan Fix
+#Since there was a lot of data to be downloaded in Rajasthan and the script
+#hanged in the middle the data was downloaded in two trances 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+library(data.table)
+```
+
+
+#Change Username 
+
+```{r}
+user <- "agnihotri"
+#user <- "prana"
+#user <- "hp"
+```
+
+
+#Loading Tranch1/2 
+
+```{r}
+rajasthan_main_1 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_maindata_0_2532.csv")))
+rajasthan_main_2 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_maindata_2532_onwards.csv")))
+                       
+```
+
+#Load All Unique files
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+rajasthan_unique <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_complete_unique.csv")))
+
+
+table(duplicated(rajasthan_unique$Proposal.No.))
+
+
+```
+
+
+
+#bind the two files
+```{r}
+
+rajasthan_main_all<-rbind(rajasthan_main_1,rajasthan_main_2)
+
+table(duplicated(rajasthan_main_all$Proposal.No.))
+
+table(rajasthan_main_all$Proposal.No.%in%rajasthan_unique$Proposal.No.)
+
+table(rajasthan_unique$Proposal.No.%in%rajasthan_main_all$Proposal.No.)
+
+
+```
+
+
+#write 
+
+```{r}
+write.csv(rajasthan_main_all,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_maindata.csv"))
+                       
+```
+
+
+
+#Loading Tranch1/2 
+
+```{r}
+rajasthan_timeline_1 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_timelinedata_0_2532.csv")))
+rajasthan_timeline_2 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_timelinedata_2532_onwards.csv")))
+                       
+```
+
+#Load All Unique files
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by timeline data as
+#more data is added based on the new script.
+
+rajasthan_unique <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_complete_unique.csv")))
+
+
+table(duplicated(rajasthan_unique$Proposal.No.))
+
+
+```
+
+
+
+#bind the two files
+```{r}
+
+rajasthan_timeline_all<-rbind(rajasthan_timeline_1,rajasthan_timeline_2)
+
+table(duplicated(rajasthan_timeline_all$Proposal.Number))
+
+table(rajasthan_timeline_all$Proposal.Number%in%rajasthan_unique$Proposal.No.)
+
+table(rajasthan_unique$Proposal.No.%in%rajasthan_timeline_all$Proposal.Number)
+
+
+```
+
+
+#write 
+
+```{r}
+write.csv(rajasthan_timeline_all,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Rajasthan/Rajasthan_ec_timelinedata.csv"))
+                       
+```

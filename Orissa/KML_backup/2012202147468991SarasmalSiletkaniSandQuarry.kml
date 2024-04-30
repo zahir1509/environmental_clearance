@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Sarasmal Siletkani Sand Quarry.kml</name>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="default1">
+	</Style>
+	<Placemark>
+		<name>Sarasmal Siletkani Sand Quarry</name>
+		<open>1</open>
+		<styleUrl>#default</styleUrl>
+		<Point>
+			<coordinates>83.35750555555555,20.58017777777778,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

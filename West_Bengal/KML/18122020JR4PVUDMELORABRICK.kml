@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ELORA BRICK.kml</name>
+	<Style id="s_ylw-pushpin_hl8">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>ELORA</name>
+		<styleUrl>#m_ylw-pushpin00</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				88.26579695541621,25.14648404585074,0 88.26576209802433,25.14616341171274,0 88.26570615615458,25.14583880573668,0 88.26586913067133,25.1456078819749,0 88.26598078541107,25.14567295182173,0 88.26597342001328,25.14582553274546,0 88.26596712564719,25.14598635766463,0 88.26600616377432,25.14609976904984,0 88.26618205755986,25.14609419728883,0 88.26628604611979,25.14623495314119,0 88.26639156436974,25.14619493582469,0 88.26639305838721,25.14633446656583,0 88.26631954960015,25.1463423904204,0 88.26632047320945,25.14637818334294,0 88.26608472428433,25.14639649387865,0 88.26591370602583,25.14647453829092,0 88.26579695541621,25.14648404585074,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

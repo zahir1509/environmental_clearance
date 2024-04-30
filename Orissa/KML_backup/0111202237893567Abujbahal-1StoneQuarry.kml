@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Abujbahal-1 Stone Quarry.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Untitled Polygon</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						83.48708479593715,20.39639724814755,0 83.48772837756928,20.3961334926457,0 83.4879550514496,20.39590548646062,0 83.48825859351578,20.39603685732645,0 83.48831479822616,20.39640583196844,0 83.4886286720435,20.39655412158334,0 83.48882163728294,20.3970192852773,0 83.48910827549732,20.3970092798156,0 83.48941431640817,20.39725597303228,0 83.48915223656331,20.39748353327406,0 83.48988100479392,20.39801997164722,0 83.49056216851228,20.39932739747957,0 83.49085038173413,20.39918455629969,0 83.49179605278488,20.39999261943792,0 83.49161049657806,20.40022881258436,0 83.49151833222952,20.40030170197838,0 83.49147373308037,20.4003913791318,0 83.49016189381187,20.39950987922571,0 83.48954541753454,20.39890298979462,0 83.488843463188,20.39821244577683,0 83.48862641062408,20.3980028617936,0 83.48834507169848,20.39771595569654,0 83.48813662452415,20.39763240520117,0 83.4878776075405,20.39752019645493,0 83.48663389269369,20.39701140815189,0 83.48708479593715,20.39639724814755,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

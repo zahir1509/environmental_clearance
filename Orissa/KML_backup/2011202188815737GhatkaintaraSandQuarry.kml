@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ghatkaintara Sand Quarry.kml</name>
+	<StyleMap id="default0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl6">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="default2">
+	</Style>
+	<Placemark>
+		<name>Ghatkaintara Sand Quarry</name>
+		<styleUrl>#default0</styleUrl>
+		<Point>
+			<coordinates>83.70407777777778,20.77141666666667,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

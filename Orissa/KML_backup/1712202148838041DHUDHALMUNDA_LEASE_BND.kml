@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="DHUDHALMUNDA_LEASE_BND">
+	<name>DHUDHALMUNDA_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>DHUDHALMUNDA_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								84.094088,21.356004,0 84.09405099999999,21.355976,0 84.093979,21.356029,0 84.093898,21.356157,0 84.09374099999999,21.356305,0 84.09369700000001,21.356502,0 84.09363,21.35648,0 84.09357199999999,21.356593,0 84.093699,21.356611,0 84.093693,21.356669,0 84.093644,21.356772,0 84.093598,21.356837,0 84.09340400000001,21.356893,0 84.093163,21.356955,0 84.093197,21.35705,0 84.09312,21.357121,0 84.09315100000001,21.357524,0 84.093042,21.357528,0 84.092989,21.357911,0 84.092983,21.358217,0 84.09322299999999,21.35837,0 84.093521,21.358261,0 84.093721,21.358225,0 84.093975,21.358157,0 84.093975,21.357977,0 84.093836,21.357955,0 84.093799,21.357919,0 84.093807,21.35783,0 84.093912,21.35776,0 84.093997,21.357745,0 84.094084,21.357804,0 84.094196,21.357745,0 84.094202,21.357699,0 84.094174,21.357637,0 84.09405700000001,21.357574,0 84.093975,21.357504,0 84.09396099999999,21.357359,0 84.094047,21.357324,0 84.094116,21.357068,0 84.09390999999999,21.356722,0 84.09394399999999,21.356552,0 84.093926,21.356504,0 84.094053,21.356268,0 84.093975,21.356254,0 84.093969,21.356186,0 84.09401099999999,21.356184,0 84.094088,21.356004,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Rahadpur-10.kmz</name>
+	<Schema name="Quary_Boundary" id="S_Quary_Boundary_SSDSSDDSSSIDDDDD">
+		<SimpleField type="long" name="Id"><displayName>&lt;b&gt;Id&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Village_Na"><displayName>&lt;b&gt;Village_Na&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="CLSTR_NAME"><displayName>&lt;b&gt;CLSTR_NAME&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LEASE_NO"><displayName>&lt;b&gt;LEASE_NO&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="CL_No"><displayName>&lt;b&gt;CL_No&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="BSQ"><displayName>&lt;b&gt;BSQ&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Geo_Area_H"><displayName>&lt;b&gt;Geo_Area_H&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Area_AC"><displayName>&lt;b&gt;Area_AC&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Q_NO"><displayName>&lt;b&gt;Q_NO&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DoLA"><displayName>&lt;b&gt;DoLA&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DoClosure"><displayName>&lt;b&gt;DoClosure&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="T_SL_No"><displayName>&lt;b&gt;T_SL_No&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="VOL_CUM"><displayName>&lt;b&gt;VOL_CUM&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Wat_Log_Ar"><displayName>&lt;b&gt;Wat_Log_Ar&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="WTR_DPTH"><displayName>&lt;b&gt;WTR_DPTH&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="WAT_Log_Vo"><displayName>&lt;b&gt;WAT_Log_Vo&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="TOT_VOL"><displayName>&lt;b&gt;TOT_VOL&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="falseColor32">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor34</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor33</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor33">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Id</b></td><td>$[Quary_Boundary/Id]</td></tr>
+  <tr><td><b>Village_Na</b></td><td>$[Quary_Boundary/Village_Na]</td></tr>
+  <tr><td><b>CLSTR_NAME</b></td><td>$[Quary_Boundary/CLSTR_NAME]</td></tr>
+  <tr><td><b>LEASE_NO</b></td><td>$[Quary_Boundary/LEASE_NO]</td></tr>
+  <tr><td><b>CL_No</b></td><td>$[Quary_Boundary/CL_No]</td></tr>
+  <tr><td><b>BSQ</b></td><td>$[Quary_Boundary/BSQ]</td></tr>
+  <tr><td><b>Geo_Area_H</b></td><td>$[Quary_Boundary/Geo_Area_H]</td></tr>
+  <tr><td><b>Area_AC</b></td><td>$[Quary_Boundary/Area_AC]</td></tr>
+  <tr><td><b>Q_NO</b></td><td>$[Quary_Boundary/Q_NO]</td></tr>
+  <tr><td><b>DoLA</b></td><td>$[Quary_Boundary/DoLA]</td></tr>
+  <tr><td><b>DoClosure</b></td><td>$[Quary_Boundary/DoClosure]</td></tr>
+  <tr><td><b>T_SL_No</b></td><td>$[Quary_Boundary/T_SL_No]</td></tr>
+  <tr><td><b>VOL_CUM</b></td><td>$[Quary_Boundary/VOL_CUM]</td></tr>
+  <tr><td><b>Wat_Log_Ar</b></td><td>$[Quary_Boundary/Wat_Log_Ar]</td></tr>
+  <tr><td><b>WTR_DPTH</b></td><td>$[Quary_Boundary/WTR_DPTH]</td></tr>
+  <tr><td><b>WAT_Log_Vo</b></td><td>$[Quary_Boundary/WAT_Log_Vo]</td></tr>
+  <tr><td><b>TOT_VOL</b></td><td>$[Quary_Boundary/TOT_VOL]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor34">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Id</b></td><td>$[Quary_Boundary/Id]</td></tr>
+  <tr><td><b>Village_Na</b></td><td>$[Quary_Boundary/Village_Na]</td></tr>
+  <tr><td><b>CLSTR_NAME</b></td><td>$[Quary_Boundary/CLSTR_NAME]</td></tr>
+  <tr><td><b>LEASE_NO</b></td><td>$[Quary_Boundary/LEASE_NO]</td></tr>
+  <tr><td><b>CL_No</b></td><td>$[Quary_Boundary/CL_No]</td></tr>
+  <tr><td><b>BSQ</b></td><td>$[Quary_Boundary/BSQ]</td></tr>
+  <tr><td><b>Geo_Area_H</b></td><td>$[Quary_Boundary/Geo_Area_H]</td></tr>
+  <tr><td><b>Area_AC</b></td><td>$[Quary_Boundary/Area_AC]</td></tr>
+  <tr><td><b>Q_NO</b></td><td>$[Quary_Boundary/Q_NO]</td></tr>
+  <tr><td><b>DoLA</b></td><td>$[Quary_Boundary/DoLA]</td></tr>
+  <tr><td><b>DoClosure</b></td><td>$[Quary_Boundary/DoClosure]</td></tr>
+  <tr><td><b>T_SL_No</b></td><td>$[Quary_Boundary/T_SL_No]</td></tr>
+  <tr><td><b>VOL_CUM</b></td><td>$[Quary_Boundary/VOL_CUM]</td></tr>
+  <tr><td><b>Wat_Log_Ar</b></td><td>$[Quary_Boundary/Wat_Log_Ar]</td></tr>
+  <tr><td><b>WTR_DPTH</b></td><td>$[Quary_Boundary/WTR_DPTH]</td></tr>
+  <tr><td><b>WAT_Log_Vo</b></td><td>$[Quary_Boundary/WAT_Log_Vo]</td></tr>
+  <tr><td><b>TOT_VOL</b></td><td>$[Quary_Boundary/TOT_VOL]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<styleUrl>#falseColor32</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Quary_Boundary_SSDSSDDSSSIDDDDD">
+				<SimpleData name="Id">0</SimpleData>
+				<SimpleData name="Village_Na">Rahadpur</SimpleData>
+				<SimpleData name="CLSTR_NAME">Rahadpur-7</SimpleData>
+				<SimpleData name="LEASE_NO">8</SimpleData>
+				<SimpleData name="CL_No">7</SimpleData>
+				<SimpleData name="BSQ">R-10</SimpleData>
+				<SimpleData name="Geo_Area_H">30881.1</SimpleData>
+				<SimpleData name="Area_AC">7</SimpleData>
+				<SimpleData name="Q_NO"></SimpleData>
+				<SimpleData name="DoLA"></SimpleData>
+				<SimpleData name="DoClosure"></SimpleData>
+				<SimpleData name="T_SL_No">0</SimpleData>
+				<SimpleData name="VOL_CUM">0</SimpleData>
+				<SimpleData name="Wat_Log_Ar">0</SimpleData>
+				<SimpleData name="WTR_DPTH">0</SimpleData>
+				<SimpleData name="WAT_Log_Vo">0</SimpleData>
+				<SimpleData name="TOT_VOL">0</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						86.02908611111137,20.76497222222223,0 86.02742777777803,20.76479444444429,0 86.02732078369324,20.76478352319826,0 86.02715833333319,20.76326666666772,0 86.02902499999959,20.76351111111125,0 86.02904444444469,20.76395277777737,0 86.02908611111137,20.76497222222223,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

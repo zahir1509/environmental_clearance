@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Utkal Signature.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Utkal Signature</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.88401379447136,20.33718912129192,0 85.88403677442815,20.33718039793613,0 85.88420231474449,20.33705461406531,0 85.88441115987946,20.3373782121787,0 85.88465397549435,20.33773800989667,0 85.88499409183011,20.33749846524962,0 85.88528840941821,20.33784343034203,0 85.88532062775866,20.33732073287133,0 85.885286354147,20.33688325470246,0 85.8851507298979,20.33672691265318,0 85.88468006707576,20.33671013436967,0 85.88463517719681,20.33669756571715,0 85.8846168241154,20.33664325529815,0 85.88457198749902,20.33661411445485,0 85.88393323960048,20.33710650284553,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
+.88468006707576,20.33671013436967,0 85.8846

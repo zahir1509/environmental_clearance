@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Boundary Points 34 with kml.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline8">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Boundary Points 34</name>
+		<open>1</open>
+		<Placemark>
+			<name>BP-03</name>
+			<Camera>
+				<longitude>79.20818692668021</longitude>
+				<latitude>20.93442042859726</latitude>
+				<altitude>17.1744772579883</altitude>
+				<heading>-87.92545283008504</heading>
+				<tilt>0.1746503230162843</tilt>
+				<roll>-90.180951063854</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.20821111111111,20.93442222222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>4.99 Ha Kh. No. 34 Rank Silicon</name>
+			<styleUrl>#inline16</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							79.20712937499569,20.93687799972608,0 79.2068230796862,20.93631616773488,0 79.20671100937565,20.9361165099989,0 79.20668306138227,20.93606509869837,0 79.20661913819032,20.93585030157019,0 79.20650798254049,20.9354690002037,0 79.20647178775245,20.93534443296584,0 79.20642592856147,20.9351106396328,0 79.20634072667936,20.93466371131152,0 79.20658490621793,20.93463667058093,0 79.20680233811913,20.93461079177828,0 79.20703749582594,20.93458241420679,0 79.20724470674381,20.93455290814042,0 79.2076747022527,20.93450551080034,0 79.20821068286176,20.93442286523125,0 79.20850144524594,20.93549340417444,0 79.20882422476487,20.93667589885548,0 79.20712937499569,20.93687799972608,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP-05</name>
+			<Camera>
+				<longitude>79.20655153221981</longitude>
+				<latitude>20.93539229717541</latitude>
+				<altitude>61.15497218198077</altitude>
+				<heading>-110.2872954037136</heading>
+				<tilt>0.1891013915397506</tilt>
+				<roll>-112.5421071161604</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.20647222222223,20.93534577278483,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-06</name>
+			<Camera>
+				<longitude>79.2066364686511</longitude>
+				<latitude>20.93604176393355</latitude>
+				<altitude>85.90232851386384</altitude>
+				<heading>-88.06805718644574</heading>
+				<tilt>0.1746660822328998</tilt>
+				<roll>-90.32302267474579</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.20668333333333,20.93606012533672,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-04</name>
+			<Camera>
+				<longitude>79.20639017317824</longitude>
+				<latitude>20.93465558939985</latitude>
+				<altitude>14.61819359151989</altitude>
+				<heading>-87.91391429856505</heading>
+				<tilt>0.1746530356490695</tilt>
+				<roll>-90.1687781732436</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.20634166666667,20.93466388888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-02</name>
+			<Camera>
+				<longitude>79.20880156910413</longitude>
+				<latitude>20.9366655671869</latitude>
+				<altitude>9.942661053009417</altitude>
+				<heading>-89.62706773561023</heading>
+				<tilt>0.1746453071036225</tilt>
+				<roll>-90.18421044427633</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.208825,20.9366756273403,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-01</name>
+			<Camera>
+				<longitude>79.20711963117033</longitude>
+				<latitude>20.93687163084737</latitude>
+				<altitude>6.671074222459218</altitude>
+				<heading>-89.76676452252522</heading>
+				<tilt>0.1746317825574274</tilt>
+				<roll>-90.3233017101076</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>79.2071293754162,20.93687787837065,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

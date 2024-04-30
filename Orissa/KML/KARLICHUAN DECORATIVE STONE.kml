@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KARLICHUAN DECORATIVE STONE.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>karlichua decorative stone</name>
+		<styleUrl>#inline1</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						82.71186153803986,19.27430815382158,0 82.7118604526251,19.27389183287242,0 82.71316658795425,19.27383051413913,0 82.71313785885512,19.27274985784962,0 82.71436023134365,19.272639035517,0 82.71439076054457,19.27339224449162,0 82.71636122162336,19.27427830730223,0 82.71658558925427,19.27419322836987,0 82.71700060094766,19.27436280404494,0 82.71702832432045,19.27483401287012,0 82.71627729855476,19.27497104361381,0 82.71577783048266,19.27492046379855,0 82.71580118992358,19.27441825017205,0 82.71502624535213,19.27386494265002,0 82.71447386019577,19.27544664528112,0 82.71186153803986,19.27430815382158,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

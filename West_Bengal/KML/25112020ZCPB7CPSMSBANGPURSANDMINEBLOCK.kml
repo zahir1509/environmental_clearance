@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>MS BANGPUR SAND MINE BLOCK.kml</name>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="default0">
+	</Style>
+	<Placemark>
+		<name>M/S BANGPUR SAND MINE BLOCK</name>
+		<description>0</description>
+		<styleUrl>#default</styleUrl>
+		<Point>
+			<coordinates>87.83301455680312,23.21460958903646,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

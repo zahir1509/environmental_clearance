@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>javkheda theng.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>javkheda theng</name>
+		<open>1</open>
+		<Placemark>
+			<name>1</name>
+			<LookAt>
+				<longitude>75.76568885865072</longitude>
+				<latitude>19.39039011678325</latitude>
+				<altitude>0</altitude>
+				<heading>-0.004855988928298178</heading>
+				<tilt>14.75869586132557</tilt>
+				<range>5348.91592571851</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.74058055555555,20.11737777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>2</name>
+			<Camera>
+				<longitude>75.76536956326501</longitude>
+				<latitude>20.08363659623137</latitude>
+				<altitude>22317.65230791492</altitude>
+				<heading>0.5573516576846331</heading>
+				<tilt>3.856751060971699</tilt>
+				<roll>0.742183620172701</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.74040277777777,20.117075,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>3</name>
+			<Camera>
+				<longitude>75.76536956326501</longitude>
+				<latitude>20.08363659623137</latitude>
+				<altitude>22317.65230791492</altitude>
+				<heading>0.5573516576846331</heading>
+				<tilt>3.856751060971699</tilt>
+				<roll>0.742183620172701</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.74146388888889,20.11616111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>4</name>
+			<LookAt>
+				<longitude>75.74105061242837</longitude>
+				<latitude>20.11641379630618</latitude>
+				<altitude>0</altitude>
+				<heading>-0.06403895363033581</heading>
+				<tilt>21.91389788013634</tilt>
+				<range>698.1198661984203</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.74516666666666,20.11439444444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>5</name>
+			<LookAt>
+				<longitude>75.74163147415919</longitude>
+				<latitude>20.11703603648016</latitude>
+				<altitude>0</altitude>
+				<heading>-0.06383917979488507</heading>
+				<tilt>21.9156269560862</tilt>
+				<range>1213.916301810483</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.74535,20.11470277777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>6</name>
+			<LookAt>
+				<longitude>75.74163147415919</longitude>
+				<latitude>20.11703603648016</latitude>
+				<altitude>0</altitude>
+				<heading>-0.06383917979488507</heading>
+				<tilt>21.9156269560862</tilt>
+				<range>1213.916301810483</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.74163055555556,20.11651111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Javkheda theng_polygon</name>
+			<styleUrl>#inline1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							75.74040531853997,20.11707680967569,0 75.74057786975956,20.11736944691708,0 75.74163101762763,20.11650911109765,0 75.74535166357695,20.11470245592231,0 75.74516391901987,20.11440187623079,0 75.74146438145614,20.11616576891706,0 75.74040531853997,20.11707680967569,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

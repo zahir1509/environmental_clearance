@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Badaraghunathpur KML.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Badaraghunathpur KML</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						85.72750389034086,20.22816376775836,0 85.72756474610061,20.22815332266372,0 85.72768183063485,20.22812281115694,0 85.72785885467687,20.22800578022618,0 85.72788628202736,20.22799180944959,0 85.72794213555224,20.22798766357093,0 85.72811567202207,20.22815728218033,0 85.72825203889438,20.22825231202022,0 85.72837260856878,20.22835199615174,0 85.72830889782645,20.22838603576434,0 85.72852031652538,20.2287011026753,0 85.72863507179351,20.22885816491956,0 85.72868586449597,20.2289553796087,0 85.72875628419293,20.22908430529171,0 85.72904207312952,20.22944008784142,0 85.7288741402112,20.22957373920699,0 85.72854022303741,20.22923741227694,0 85.72829543290601,20.22946500765631,0 85.72819625871124,20.22936205169544,0 85.72827395444874,20.22928388383883,0 85.72819816866824,20.22921539836119,0 85.72812041138759,20.22914724647329,0 85.7280804889087,20.22909750225503,0 85.72798990577022,20.22894224403244,0 85.72798656018995,20.22893785602651,0 85.72798154182327,20.22893127402276,0 85.7278847813903,20.22877601556948,0 85.72782416944739,20.22869139086827,0 85.72782000952408,20.22868593479389,0 85.72778702693834,20.22865293807043,0 85.72775866786071,20.22860036139362,0 85.72772092866312,20.22853301193312,0 85.72768866638783,20.22849044971203,0 85.72750389034086,20.22816376775836,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
+2775866786071,20.22860036139362,0 85.72772092866312,20.22853301193312,0 85.72768866638783,20.22849044971203,0 85.72750389034086,20.22816376775836,0 
+					</coo

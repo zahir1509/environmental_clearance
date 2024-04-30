@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PS Magnum.kml</name>
+	<Style id="failed">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/M.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/M-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/M.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/M-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Placemark id="1.2.1">
+		<name>PS Magnum</name>
+		<address>VIP ROAD (KAVI NAZRUL ISLAM AVENUE), Kaikhali, Kolkata, West Bengal 700052</address>
+		<snippet>VIP ROAD (KAVI NAZRUL ISLAM AVENUE), Kaikhali, Kolkata, West Bengal 700052</snippet>
+		<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=22.630709799999998&lng=88.4350879&fid=0x39f89e36a9f5923d:0x3238174e471b1f9e&hl=en&gl=in&client=earth-client&cv=7.3.2.5776&useragent=GoogleEarth/7.3.2.5776(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+		<styleUrl>#failed0</styleUrl>
+		<ExtendedData>
+			<Data name="placepageUri">
+				<value>https://www.google.com/earth/rpc/entity?lat=22.630709799999998&amp;lng=88.4350879&amp;fid=0x39f89e36a9f5923d:0x3238174e471b1f9e&amp;hl=en&amp;gl=in&amp;client=earth-client&amp;cv=7.3.2.5776&amp;useragent=GoogleEarth/7.3.2.5776(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>88.4350879,22.6307098,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					88.43104940707895,22.62768093030921,0 88.43104940707895,22.63373866969079,0 88.43912639292105,22.63373866969079,0 88.43912639292105,22.62768093030921,0 88.43104940707895,22.62768093030921,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>
+68093030921,0 88.43104940707895,22.63373866969079,0 88.43912639292105,22.63373866969079,0 88.43912639292105,22.62768093030921,0 88.43104940

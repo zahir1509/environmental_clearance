@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="BADAMASINGAM_LEASE_BND">
+	<name>BADAMASINGAM_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>BADAMASINGAM_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								82.435867,19.213833,0 82.435889,19.214133,0 82.435894,19.214381,0 82.435958,19.214867,0 82.435969,19.215047,0 82.43596100000001,19.215331,0 82.43597200000001,19.215492,0 82.43602799999999,19.215783,0 82.436261,19.216094,0 82.436386,19.216275,0 82.43644399999999,19.216572,0 82.436525,19.216881,0 82.43661899999999,19.217556,0 82.436556,19.217636,0 82.436547,19.217867,0 82.436581,19.21795,0 82.436628,19.218019,0 82.436933,19.218011,0 82.436894,19.217897,0 82.43691699999999,19.217239,0 82.436836,19.216867,0 82.43670299999999,19.216417,0 82.436403,19.2158,0 82.436311,19.215492,0 82.43624699999999,19.215122,0 82.436111,19.214653,0 82.43606699999999,19.214261,0 82.43607799999999,19.213825,0 82.435867,19.213833,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

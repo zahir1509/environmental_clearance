@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>RATAN BRICK FIELD.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>RATAN</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				88.05329210706547,25.4006780897593,0 88.05361270431497,25.40064366337231,0 88.05382103728257,25.40056874350368,0 88.05393665418447,25.40083519775364,0 88.05423999216413,25.40068497812735,0 88.05429059502531,25.40061553632442,0 88.05416370486776,25.40041617354919,0 88.05421295528159,25.40035160475682,0 88.05437522412413,25.40044502436828,0 88.05445550258094,25.40051688571327,0 88.05450803450132,25.40045440095458,0 88.05437931887377,25.40034241779895,0 88.05423266003368,25.40026667266685,0 88.05405155014627,25.4002522708614,0 88.0538352746518,25.40017188270251,0 88.05382632958779,25.40016579465397,0 88.05349525629204,25.40006822786546,0 88.05339782932623,25.40040595030365,0 88.05329210706547,25.4006780897593,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

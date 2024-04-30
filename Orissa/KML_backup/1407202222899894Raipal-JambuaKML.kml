@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<snippet>Created Wed Jun 22 13:54:49 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-05-23T06:50:56Z</begin>
+			<end>2022-05-23T06:52:54Z</end>
+		</gx:TimeSpan>
+		<longitude>85.27825</longitude>
+		<latitude>21.302722</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Raiipal</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.33092547509646,21.34177261692581,0 85.33141272635272,21.34185990871733,0 85.3314272018692,21.34141664293996,0 85.33145976367919,21.34110909157684,0 85.33145893812426,21.34080487861743,0 85.33145722521958,21.34057479621163,0 85.33149072707424,21.34022681605842,0 85.33153549576546,21.34003900093556,0 85.33157666919564,21.33978676561838,0 85.33159198359893,21.33943794024014,0 85.33144835376336,21.33905726931712,0 85.33137003161751,21.33882726182117,0 85.3312826048912,21.33860120004102,0 85.33122095878066,21.33833173859692,0 85.33120758867584,21.3380572087918,0 85.33117805026866,21.33764096028252,0 85.33088299018296,21.33715507956071,0 85.33064056912838,21.33672517943159,0 85.33034647043435,21.33631424061846,0 85.33001648376242,21.33563676117259,0 85.32981759730789,21.33518692836544,0 85.3297797084236,21.3348936352404,0 85.32972903885076,21.33444927069075,0 85.3296519273441,21.33405347658402,0 85.32962526965714,21.33386571547983,0 85.32917886320828,21.333972131213,0 85.32920485986965,21.33451113114319,0 85.32920395642269,21.3345250691184,0 85.32920244490552,21.33454838810909,0 85.32937583784818,21.33534748832098,0 85.32969445966013,21.33630210358925,0 85.32969961017609,21.33632818603953,0 85.3297209045314,21.33638730504206,0 85.33022874879008,21.3369624559952,0 85.33045887456822,21.33712706182948,0 85.33046213659625,21.33714556693088,0 85.33073023951059,21.3374787519053,0 85.33087002755235,21.33795440604486,0 85.33090369697487,21.33825214843098,0 85.33089978831838,21.33827542090139,0 85.33101866175737,21.33863913931071,0 85.33117912564629,21.3389607202336,0 85.33130712380026,21.33920267002852,0 85.33133007651858,21.33954532477529,0 85.33127865304225,21.33984740471356,0 85.33111673265799,21.34000420979423,0 85.33095966594843,21.34029053644041,0 85.33090289330235,21.34060764370424,0 85.33092010945822,21.34087994587358,0 85.3309708824187,21.34122243124869,0 85.33094782885001,21.34144231754415,0 85.33092547509646,21.34177261692581,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Raipal</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-05-23T06:46:14Z</begin>
+				<end>2022-05-23T06:48:50Z</end>
+			</gx:TimeSpan>
+			<longitude>85.33173610832567</longitude>
+			<latitude>21.33673676713173</latitude>
+			<altitude>0</altitude>
+			<heading>0.006088722035763449</heading>
+			<tilt>26.33466156311063</tilt>
+			<range>1329.282711275612</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.33079898740634,21.33733810903634,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Jambua</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.27543153101293,21.30414734310265,0 85.27536322224294,21.30354678923452,0 85.27664751620766,21.30299945330699,0 85.27711422232368,21.30260205467785,0 85.2775118532365,21.3023282015896,0 85.27827126088047,21.30205335895349,0 85.27918075333925,21.30182896215445,0 85.28057480134501,21.30113729203625,0 85.2813243169396,21.30126776900575,0 85.28124085730552,21.30163430168387,0 85.28090931667711,21.30202560713676,0 85.28051652125231,21.30226362075488,0 85.27994025500138,21.30247154861232,0 85.27868838823548,21.30286386246205,0 85.2778399857168,21.30307622103577,0 85.27710834057221,21.30340351117801,0 85.27629141705179,21.30376318193619,0 85.27543153101293,21.30414734310265,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Jambua</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-05-23T06:46:14Z</begin>
+				<end>2022-05-23T06:48:50Z</end>
+			</gx:TimeSpan>
+			<longitude>85.29409882695784</longitude>
+			<latitude>21.30334804519506</latitude>
+			<altitude>0</altitude>
+			<heading>-0.003647360229861861</heading>
+			<tilt>29.34580941540189</tilt>
+			<range>5459.005424200508</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>85.27900379671716,21.30208073382436,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

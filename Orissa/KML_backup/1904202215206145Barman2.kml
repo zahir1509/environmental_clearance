@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Barman2.kml</name>
+	<Style id="PolyStyle0076">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffe65c00</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="PolyStyle0075">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffe65c00</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="PolyStyle0077">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#PolyStyle0075</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#PolyStyle0076</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="ID_00018">
+		<name>Barman</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>18</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>area_ac</td>
+
+<td>8.114204</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+		<styleUrl>#PolyStyle0077</styleUrl>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.0413055555556,20.78831111111123,0 86.04149444444448,20.78856666666678,0 86.03997222222227,20.78870277777776,0 86.03840000000014,20.78885000000008,0 86.03837222222222,20.78885555555559,0 86.03827777777792,20.78883333333329,0 86.03825555555568,20.78881388888902,0 86.03823611111119,20.78875555555567,0 86.03818333333334,20.78875,0 86.03834166666678,20.78854722222213,0 86.03826388888899,20.78845555555569,0 86.03836388888891,20.78841944444446,0 86.03833055555549,20.78831388888904,0 86.0384194444444,20.788263888889,0 86.03851666666668,20.7882722222223,0 86.03859444444453,20.7882666666668,0 86.03877777777791,20.78824444444433,0 86.03879444444453,20.78810277777785,0 86.03891111111108,20.78800833333343,0 86.03903888888897,20.78792499999991,0 86.03903611111116,20.78786666666673,0 86.03924166666684,20.78779166666675,0 86.03937500000001,20.7877416666667,0 86.03946944444442,20.78772500000008,0 86.03948611111105,20.78775277777788,0 86.03969722222223,20.78768888888902,0 86.03968611111111,20.78763055555567,0 86.03981111111113,20.78757777777775,0 86.04002222222232,20.78750833333328,0 86.03983888888888,20.78716111111106,0 86.03966666666662,20.78690555555567,0 86.03970555555571,20.78688888888889,0 86.03974166666683,20.78682500000008,0 86.03978888888901,20.78671388888898,0 86.04010833333342,20.78708611111108,0 86.0405833333333,20.78770833333329,0 86.04096388888888,20.78800277777793,0 86.0413055555556,20.78831111111123,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KHATANGA.KMZ</name>
+	<Style id="area1">
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>bf000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="point1">
+		<IconStyle>
+			<Icon>
+				<href>kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Point Features</name>
+		<description>Point Features</description>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34677222200e+001<BR><B>LONG</B> = 8.60623027800e+001<BR><B>ID</B> = P1]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06230278,23.46772222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34677888900e+001<BR><B>LONG</B> = 8.60620638900e+001<BR><B>ID</B> = P2]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06206389,23.46778889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34677416700e+001<BR><B>LONG</B> = 8.60618194400e+001<BR><B>ID</B> = P3]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06181943999999,23.46774167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34678388900e+001<BR><B>LONG</B> = 8.60616805600e+001<BR><B>ID</B> = P4]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06168056,23.46783889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34679527800e+001<BR><B>LONG</B> = 8.60616166700e+001<BR><B>ID</B> = P5]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06161667000001,23.46795278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34680527800e+001<BR><B>LONG</B> = 8.60614916700e+001<BR><B>ID</B> = P6]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06149167,23.46805278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34680444400e+001<BR><B>LONG</B> = 8.60612777800e+001<BR><B>ID</B> = P7]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06127778,23.46804444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34680250000e+001<BR><B>LONG</B> = 8.60611722200e+001<BR><B>ID</B> = P8]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06117222,23.468025,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34681416700e+001<BR><B>LONG</B> = 8.60610527800e+001<BR><B>ID</B> = P9]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06105278,23.46814167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34682222200e+001<BR><B>LONG</B> = 8.60609111100e+001<BR><B>ID</B> = P10]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06091111000001,23.46822222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34682888900e+001<BR><B>LONG</B> = 8.60609416700e+001<BR><B>ID</B> = P11]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06094167000001,23.46828889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34682027800e+001<BR><B>LONG</B> = 8.60611361100e+001<BR><B>ID</B> = P12]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06113611000001,23.46820278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34682472200e+001<BR><B>LONG</B> = 8.60611972200e+001<BR><B>ID</B> = P13]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06119722,23.46824722,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34684333300e+001<BR><B>LONG</B> = 8.60612527800e+001<BR><B>ID</B> = P14]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06125278,23.46843333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34685805600e+001<BR><B>LONG</B> = 8.60608972200e+001<BR><B>ID</B> = P15]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06089722,23.46858056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34685777800e+001<BR><B>LONG</B> = 8.60606527800e+001<BR><B>ID</B> = P16]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06065278,23.46857778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34686277800e+001<BR><B>LONG</B> = 8.60605194400e+001<BR><B>ID</B> = P17]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06051943999999,23.46862778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34686305600e+001<BR><B>LONG</B> = 8.60603972200e+001<BR><B>ID</B> = P18]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06039722,23.46863056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34688833300e+001<BR><B>LONG</B> = 8.60604055600e+001<BR><B>ID</B> = P19]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06040556000001,23.46888333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34689444400e+001<BR><B>LONG</B> = 8.60605416700e+001<BR><B>ID</B> = P20]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06054167000001,23.46894444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34688583300e+001<BR><B>LONG</B> = 8.60607666700e+001<BR><B>ID</B> = P21]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06076667000001,23.46885833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34687500000e+001<BR><B>LONG</B> = 8.60610222200e+001<BR><B>ID</B> = P22]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06102222,23.46875,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34686638900e+001<BR><B>LONG</B> = 8.60612388900e+001<BR><B>ID</B> = P23]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06123889,23.46866388999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34685833300e+001<BR><B>LONG</B> = 8.60614638900e+001<BR><B>ID</B> = P24]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06146389,23.46858333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34685500000e+001<BR><B>LONG</B> = 8.60616444400e+001<BR><B>ID</B> = P25]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06164443999999,23.46855,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34683722200e+001<BR><B>LONG</B> = 8.60617305600e+001<BR><B>ID</B> = P26]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06173056,23.46837222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34681638900e+001<BR><B>LONG</B> = 8.60618777800e+001<BR><B>ID</B> = P27]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06187778,23.46816389,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34679444400e+001<BR><B>LONG</B> = 8.60620500000e+001<BR><B>ID</B> = P28]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06205,23.46794444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34677833300e+001<BR><B>LONG</B> = 8.60631027800e+001<BR><B>ID</B> = P29]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06310277999999,23.46778333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34675250000e+001<BR><B>LONG</B> = 8.60628527800e+001<BR><B>ID</B> = P30]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06285278,23.467525,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34674750000e+001<BR><B>LONG</B> = 8.60628583300e+001<BR><B>ID</B> = P31]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06285833,23.467475,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34674750000e+001<BR><B>LONG</B> = 8.60629250000e+001<BR><B>ID</B> = P32]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06292500000001,23.467475,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34674250000e+001<BR><B>LONG</B> = 8.60630138900e+001<BR><B>ID</B> = P33]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06301388999999,23.467425,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34673444400e+001<BR><B>LONG</B> = 8.60630333300e+001<BR><B>ID</B> = P34]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06303333,23.46734444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34673166700e+001<BR><B>LONG</B> = 8.60630944400e+001<BR><B>ID</B> = P35]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06309444,23.46731667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34673750000e+001<BR><B>LONG</B> = 8.60631888900e+001<BR><B>ID</B> = P36]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06318889000001,23.467375,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34672444400e+001<BR><B>LONG</B> = 8.60633777800e+001<BR><B>ID</B> = P37]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06337778,23.46724444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34672277800e+001<BR><B>LONG</B> = 8.60634416700e+001<BR><B>ID</B> = P3]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06344167,23.46722778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34672666700e+001<BR><B>LONG</B> = 8.60635194400e+001<BR><B>ID</B> = P39]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06351943999999,23.46726667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34672666700e+001<BR><B>LONG</B> = 8.60635972200e+001<BR><B>ID</B> = P40]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06359722000001,23.46726667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>LAT</B> = 2.34675277800e+001<BR><B>LONG</B> = 8.60637083300e+001<BR><B>ID</B> = P41]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>86.06370833,23.46752778,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Area Features</name>
+		<description>Area Features</description>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.06370833,23.46752778,0 86.06310277999999,23.46778333,0 86.06285278,23.467525,0 86.06285833,23.467475,0 86.06292500000001,23.467475,0 86.06301388999999,23.467425,0 86.06303333,23.46734444,0 86.06309444,23.46731667,0 86.06318889000001,23.467375,0 86.06337778,23.46724444,0 86.06344167,23.46722778,0 86.06351943999999,23.46726667,0 86.06359722000001,23.46726667,0 86.06370833,23.46752778,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.06230278,23.46772222,0 86.06205,23.46794444,0 86.06187778,23.46816389,0 86.06173056,23.46837222,0 86.06164443999999,23.46855,0 86.06146389,23.46858333,0 86.06123889,23.46866388999999,0 86.06102222,23.46875,0 86.06076667000001,23.46885833,0 86.06054167000001,23.46894444,0 86.06040556000001,23.46888333,0 86.06039722,23.46863056,0 86.06051943999999,23.46862778,0 86.06065278,23.46857778,0 86.06089722,23.46858056,0 86.06125278,23.46843333,0 86.06119722,23.46824722,0 86.06113611000001,23.46820278,0 86.06094167000001,23.46828889,0 86.06091111000001,23.46822222,0 86.06105278,23.46814167,0 86.06117222,23.468025,0 86.06127778,23.46804444,0 86.06149167,23.46805278,0 86.06161667000001,23.46795278,0 86.06168056,23.46783889,0 86.06181943999999,23.46774167,0 86.06206389,23.46778889,0 86.06230278,23.46772222,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

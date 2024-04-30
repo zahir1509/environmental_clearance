@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Jagtap K S.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline5">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline7">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline8">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Document>
+			<name>Abhijit jagtap.kml</name>
+			<Style id="inline48">
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>2</width>
+				</LineStyle>
+			</Style>
+			<Style id="inline920">
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>2</width>
+				</LineStyle>
+			</Style>
+			<StyleMap id="inline73">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#inline920</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#inline48</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Placemark>
+				<name>Untitled Path</name>
+				<styleUrl>#inline73</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						74.45836972190277,17.25825459843992,0 74.45860408664875,17.25823978690107,0 74.45837573426732,17.2606840313195,0 74.45807644533198,17.26069683796698,0 74.45836972190277,17.25825459843992,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Document>
+		<Placemark>
+			<name>Line Measure</name>
+			<styleUrl>#inline2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					74.45843683829096,17.26072294528962,0 74.45996915204984,17.26606906944469,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Line Measure</name>
+			<styleUrl>#inline1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					74.45808204139202,17.26065779473223,-7.081154781429788e-010 74.44897096044754,17.26558605316107,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Circle Measure</name>
+			<styleUrl>#inline4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					74.46265473046823,17.25810834484117,-7.081154781429788e-010 74.46255664662753,17.25775856196198,0 74.46242701369174,17.25741827374298,-7.081154781429788e-010 74.46226681839448,17.25709006992341,0 74.46207728004357,17.2567764482615,-7.081154781429788e-010 74.46185984123736,17.2564797955272,-7.081154781429788e-010 74.46161615688294,17.25620236933982,0 74.46134808159908,17.25594628098887,0 74.46105765560066,17.25571347936865,0 74.46074708917116,17.25550573614874,-7.081154781429788e-010 74.46041874584229,17.25532463229338,-7.081154781429788e-010 74.46007512440802,17.25517154603195,0 74.45971883991022,17.25504764237233,0 74.45935260374033,17.25495386423658,0 74.45897920300868,17.25489092528656,0 74.45860147933787,17.25485930449395,-7.081154781429788e-010 74.45822230724195,17.25485924249594,-7.081154781429788e-010 74.45784457225543,17.25489073976437,0 74.45747114897839,17.25495355660204,0 74.45710487920498,17.25504721496658,0 74.45674855030121,17.25517100210759,0 74.45640487399643,17.25532397598974,-7.081154781429788e-010 74.45607646575,17.2555049724604,0 74.45576582484978,17.25571261410741,0 74.45547531539417,17.25594532073954,0 74.45520714830167,17.2562013214101,0 74.45496336448572,17.25647866789211,-7.081154781429788e-010 74.45474581932197,17.25677524950268,-7.081154781429788e-010 74.45455616852679,17.2570888091638,0 74.45439585555423,17.25741696057743,0 74.4542661006075,17.25775720638421,-7.081154781429788e-010 74.45416789134882,17.25810695716774,0 74.45410197537798,17.25846355115978,0 74.45406885453778,17.25882427449646,0 74.45406878108899,17.25918638187155,0 74.45410175578481,17.25954711742934,-7.081154781429788e-010 74.45416752785911,17.25990373573833,0 74.45426559692922,17.26025352268622,0 74.45439521679846,17.26059381613681,-7.081154781429788e-010 74.45455540113028,17.2609220261919,-7.081154781429788e-010 74.45474493095001,17.26123565490379,0 74.45496236391851,17.26153231528832,0 74.4552060453061,17.26180974949374,0 74.45547412058411,17.26206584598691,0 74.45576454953788,17.26229865562615,0 74.45607512179412,17.2625064064982,0 74.45640347364405,17.26268751740635,-7.081154781429788e-010 74.45674710603481,17.26284060990686,0 74.45710340359165,17.26296451880234,-7.081154781429788e-010 74.45746965452628,17.26305830101162,0 74.45784307127984,17.26312124274907,-7.081154781429788e-010 74.45822081174283,17.2631528649583,0 74.45860000089101,17.26315292695909,-7.081154781429788e-010 74.45897775267174,17.26312142827953,0 74.4593511919747,17.26305860865967,0 74.45971747651871,17.26296494622643,0 74.46007381848899,17.26284115385383,0 74.46041750575924,17.26268817373617,0 74.46074592253684,17.26250717021553,0 74.46105656927476,17.26229952091829,0 74.46134708169724,17.26206680626811,0 74.4616152487956,17.26181079745533,0 74.46185902965618,17.2615334429543,0 74.4620765689932,17.26123685369159,0 74.46226621126732,17.2609232869777,-7.081154781429788e-010 74.46242651328336,17.26059512932497,-7.081154781429788e-010 74.46255625517105,17.26025487828233,0 74.46265444966501,17.25990512342527,0 74.46272034961393,17.25954852664581,-7.081154781429788e-010 74.46275345366193,17.25918780189248,0 74.46275351005845,17.2588256945146,0 74.46272051856842,17.25846496036796,0 74.46265473046823,17.25810834484117,-7.081154781429788e-010 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Jagtap</name>
+			<LookAt>
+				<longitude>74.46660725926708</longitude>
+				<latitude>17.26507468490635</latitude>
+				<altitude>0</altitude>
+				<heading>2.634402471453232</heading>
+				<tilt>22.47831697682898</tilt>
+				<range>6533.590296393237</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>74.45839293145401,17.25950423527679,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Line Measure</name>
+			<styleUrl>#inline6</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					74.45831956060714,17.26068530077905,0 74.4654694289481,17.28291422422069,-7.081154781429788e-010 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

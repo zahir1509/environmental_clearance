@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Lease_Boundary">
+	<name>Lease_Boundary</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Lease_Boundary</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								83.547943,21.808093,0 83.547636,21.808429,0 83.547726,21.808489,0 83.54759300000001,21.808638,0 83.54790800000001,21.808782,0 83.548242,21.808799,0 83.548258,21.808899,0 83.54848699999999,21.808758,0 83.54875,21.80866,0 83.549133,21.808611,0 83.549294,21.808356,0 83.549429,21.808253,0 83.549712,21.808185,0 83.549942,21.808215,0 83.55010299999999,21.808074,0 83.550256,21.807996,0 83.55067200000001,21.808159,0 83.550811,21.808113,0 83.55105500000001,21.808116,0 83.55117799999999,21.807977,0 83.55133499999999,21.807942,0 83.551506,21.807986,0 83.551609,21.808067,0 83.55168,21.80807,0 83.552378,21.807899,0 83.552487,21.807858,0 83.55266899999999,21.807844,0 83.552691,21.807893,0 83.552764,21.807836,0 83.55302500000001,21.807787,0 83.55306,21.807714,0 83.55318200000001,21.807766,0 83.55315,21.807638,0 83.55296,21.80723,0 83.55235399999999,21.807304,0 83.55142499999999,21.807323,0 83.550797,21.807499,0 83.550585,21.807505,0 83.550371,21.807651,0 83.549088,21.807795,0 83.547943,21.808093,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

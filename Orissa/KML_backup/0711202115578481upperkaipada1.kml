@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>upper kaipada1.kml</name>
+	<Style id="inline103">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline811">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline115">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline103</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline811</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>upper kaipada</name>
+		<styleUrl>#inline115</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						86.40533760308777,20.62672360872793,0 86.40587086524481,20.62686603078443,0 86.40668665634774,20.62709121009803,0 86.40689484116494,20.62892596724542,0 86.4061956829272,20.62869178336209,0 86.40606196613328,20.62931769881687,0 86.40587782281114,20.62936896152929,0 86.40586527541475,20.62937570799648,0 86.40583403317511,20.62939594920423,0 86.40580883310857,20.62940950226411,0 86.40577709440969,20.62942312123492,0 86.40500532821007,20.62945170819143,0 86.40533760308777,20.62672360872793,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

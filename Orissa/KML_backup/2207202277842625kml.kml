@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Baligorad Sand Quarry</name>
+	<Schema name="Book2" id="S_Book2_SDD">
+		<SimpleField type="string" name="BP"><displayName>&lt;b&gt;BP&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Longitude"><displayName>&lt;b&gt;Longitude&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Latitude"><displayName>&lt;b&gt;Latitude&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="normPointStyle6">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>BP</b></td><td>$[Book2/BP]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[Book2/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[Book2/Latitude]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle6">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>BP</b></td><td>$[Book2/BP]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[Book2/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[Book2/Latitude]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>Co-ordinates</name>
+		<open>1</open>
+		<Placemark>
+			<name>1.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">1.</SimpleData>
+					<SimpleData name="Longitude">85.6085</SimpleData>
+					<SimpleData name="Latitude">20.9067</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60853056000002,20.90672778000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>2.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">2.</SimpleData>
+					<SimpleData name="Longitude">85.6082</SimpleData>
+					<SimpleData name="Latitude">20.9061</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60823888999998,20.90609166999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>3.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">3.</SimpleData>
+					<SimpleData name="Longitude">85.6075</SimpleData>
+					<SimpleData name="Latitude">20.9069</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60745832999999,20.90691388999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>4.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">4.</SimpleData>
+					<SimpleData name="Longitude">85.6067</SimpleData>
+					<SimpleData name="Latitude">20.9076</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60667222000002,20.90758611000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>5.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">5.</SimpleData>
+					<SimpleData name="Longitude">85.6061</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60613889000001,20.90765832999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>6.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">6.</SimpleData>
+					<SimpleData name="Longitude">85.6052</SimpleData>
+					<SimpleData name="Latitude">20.9076</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60522778000001,20.90759443999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>7.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">7.</SimpleData>
+					<SimpleData name="Longitude">85.6045</SimpleData>
+					<SimpleData name="Latitude">20.9075</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60453889,20.90750556000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>8.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">8.</SimpleData>
+					<SimpleData name="Longitude">85.6033</SimpleData>
+					<SimpleData name="Latitude">20.9075</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60327499999998,20.90746389000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">9.</SimpleData>
+					<SimpleData name="Longitude">85.6019</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60188889,20.9077,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>10.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">10.</SimpleData>
+					<SimpleData name="Longitude">85.6005</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60048332999997,20.90797778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>11.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">11.</SimpleData>
+					<SimpleData name="Longitude">85.6</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60002778,20.90802222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>12.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">12.</SimpleData>
+					<SimpleData name="Longitude">85.5988</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59884721999997,20.90783333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>13.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">13.</SimpleData>
+					<SimpleData name="Longitude">85.5979</SimpleData>
+					<SimpleData name="Latitude">20.9075</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59785277999998,20.90753889000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>14.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">14.</SimpleData>
+					<SimpleData name="Longitude">85.5974</SimpleData>
+					<SimpleData name="Latitude">20.9072</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59735277999998,20.90716389000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>15.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">15.</SimpleData>
+					<SimpleData name="Longitude">85.5972</SimpleData>
+					<SimpleData name="Latitude">20.9075</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59720556000003,20.90753889000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>16.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">16.</SimpleData>
+					<SimpleData name="Longitude">85.5976</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59759722000003,20.90776389000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>17.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">17.</SimpleData>
+					<SimpleData name="Longitude">85.5982</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59817778000001,20.90803333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">18.</SimpleData>
+					<SimpleData name="Longitude">85.5988</SimpleData>
+					<SimpleData name="Latitude">20.9083</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59880833,20.90830555999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>19.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">19.</SimpleData>
+					<SimpleData name="Longitude">85.5991</SimpleData>
+					<SimpleData name="Latitude">20.9084</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59905000000005,20.90842222000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>20.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">20.</SimpleData>
+					<SimpleData name="Longitude">85.5994</SimpleData>
+					<SimpleData name="Latitude">20.9084</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59944722000002,20.90842778000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>21.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">21.</SimpleData>
+					<SimpleData name="Longitude">85.5996</SimpleData>
+					<SimpleData name="Latitude">20.9085</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.59956110999997,20.90846110999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>22.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">22.</SimpleData>
+					<SimpleData name="Longitude">85.6003</SimpleData>
+					<SimpleData name="Latitude">20.9085</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60028333000001,20.90846389000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>23.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">23.</SimpleData>
+					<SimpleData name="Longitude">85.6008</SimpleData>
+					<SimpleData name="Latitude">20.9085</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60080556000001,20.90846943999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>24.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">24.</SimpleData>
+					<SimpleData name="Longitude">85.6015</SimpleData>
+					<SimpleData name="Latitude">20.9083</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60154444,20.90833889000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>25.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">25.</SimpleData>
+					<SimpleData name="Longitude">85.6016</SimpleData>
+					<SimpleData name="Latitude">20.9082</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60155832999999,20.90823055999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>26.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">26.</SimpleData>
+					<SimpleData name="Longitude">85.6017</SimpleData>
+					<SimpleData name="Latitude">20.9081</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60173333,20.90812777999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>27.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">27.</SimpleData>
+					<SimpleData name="Longitude">85.6019</SimpleData>
+					<SimpleData name="Latitude">20.9081</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60189444000002,20.90814444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>28.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">28.</SimpleData>
+					<SimpleData name="Longitude">85.6025</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60245832999999,20.90795556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>29.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">29.</SimpleData>
+					<SimpleData name="Longitude">85.6025</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60250277999999,20.90802777999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>30.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">30.</SimpleData>
+					<SimpleData name="Longitude">85.6026</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60256944000004,20.90799722000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>31.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">31.</SimpleData>
+					<SimpleData name="Longitude">85.6026</SimpleData>
+					<SimpleData name="Latitude">20.9079</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60259722000002,20.90793610999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>32.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">32.</SimpleData>
+					<SimpleData name="Longitude">85.6027</SimpleData>
+					<SimpleData name="Latitude">20.9079</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60271666999999,20.90790555999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>33.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">33.</SimpleData>
+					<SimpleData name="Longitude">85.6029</SimpleData>
+					<SimpleData name="Latitude">20.9079</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60286388999998,20.90789444000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>34.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">34.</SimpleData>
+					<SimpleData name="Longitude">85.6032</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60318332999999,20.90779444000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>35.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">35.</SimpleData>
+					<SimpleData name="Longitude">85.6034</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60344166999998,20.90773610999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>36.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">36.</SimpleData>
+					<SimpleData name="Longitude">85.6035</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60347499999999,20.90768332999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>37.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">37.</SimpleData>
+					<SimpleData name="Longitude">85.6039</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60386111000004,20.9077,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>38.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">38.</SimpleData>
+					<SimpleData name="Longitude">85.604</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60402221999998,20.90767221999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>39.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">39.</SimpleData>
+					<SimpleData name="Longitude">85.6046</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60459722000003,20.90773610999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>40.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">40.</SimpleData>
+					<SimpleData name="Longitude">85.6051</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60513332999999,20.90782777999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>41.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">41.</SimpleData>
+					<SimpleData name="Longitude">85.6055</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60545555999998,20.90775278000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>42.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">42.</SimpleData>
+					<SimpleData name="Longitude">85.6058</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60583056,20.90784721999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>43.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">43.</SimpleData>
+					<SimpleData name="Longitude">85.606</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60599999999999,20.90784444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>44.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">44.</SimpleData>
+					<SimpleData name="Longitude">85.606</SimpleData>
+					<SimpleData name="Latitude">20.9079</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60604166999997,20.90794444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>45.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">45.</SimpleData>
+					<SimpleData name="Longitude">85.6062</SimpleData>
+					<SimpleData name="Latitude">20.9079</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60620556000005,20.90793333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>46.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">46.</SimpleData>
+					<SimpleData name="Longitude">85.6064</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60639999999999,20.90798889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>47.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">47.</SimpleData>
+					<SimpleData name="Longitude">85.6065</SimpleData>
+					<SimpleData name="Latitude">20.908</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60652777999998,20.908,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>48.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">48.</SimpleData>
+					<SimpleData name="Longitude">85.6068</SimpleData>
+					<SimpleData name="Latitude">20.9079</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60679443999997,20.90791111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>49.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">49.</SimpleData>
+					<SimpleData name="Longitude">85.607</SimpleData>
+					<SimpleData name="Latitude">20.9078</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60699167000003,20.90780555999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>50.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">50.</SimpleData>
+					<SimpleData name="Longitude">85.6072</SimpleData>
+					<SimpleData name="Latitude">20.9076</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60723333,20.90761388999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>51.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">51.</SimpleData>
+					<SimpleData name="Longitude">85.6073</SimpleData>
+					<SimpleData name="Latitude">20.9077</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60732222,20.90766110999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>52.</name>
+			<styleUrl>#pointStyleMap6</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Book2_SDD">
+					<SimpleData name="BP">52.</SimpleData>
+					<SimpleData name="Longitude">85.6079</SimpleData>
+					<SimpleData name="Latitude">20.9072</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>85.60792500000004,20.90716943999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Baligorad Sand Quarry</name>
+			<styleUrl>#m_ylw-pushpin2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					85.59733284149964,20.90715781008018,0 85.59718583167998,20.90749284494029,0 85.59760450045145,20.90775421192899,0 85.59815746891043,20.90798755699396,0 85.59879839481462,20.90826909787083,0 85.59902531419981,20.90838435400229,0 85.59943109455672,20.90840792551649,0 85.59954555818203,20.90843570489764,0 85.60027058561717,20.90845079879284,0 85.60079668810094,20.90845764018637,0 85.60152346409212,20.90832997839182,0 85.60154161347594,20.90821798018892,0 85.60171605021392,20.90810542403224,0 85.60188207753299,20.90812222377786,0 85.60245522209962,20.90794849381285,0 85.60249118052054,20.90801933434137,0 85.60256431593588,20.90798740583883,0 85.60259226690754,20.9079322591259,0 85.60271208945773,20.90789936972571,0 85.60285745279617,20.9078892745361,0 85.60316463764309,20.90777838003913,0 85.60341835633729,20.90772310309843,0 85.60346827679658,20.9076663804425,0 85.60384755303154,20.90769063953855,0 85.60401365144703,20.90765623700073,0 85.60458499011531,20.90772998717506,0 85.60512276672858,20.90781953309355,0 85.60544943003381,20.90774657389681,0 85.60581412519664,20.90781061639923,0 85.60599327303642,20.90779878787275,0 85.60603173222094,20.90790951916005,0 85.60619175035488,20.90790668519541,0 85.60637753024619,20.90795169683289,0 85.60651210175654,20.90796972754336,0 85.60678775904309,20.90788720215957,0 85.60698809709308,20.90777692209028,0 85.60722683633593,20.90759488734364,0 85.60731737104685,20.90763842419849,0 85.60792770182617,20.90714877614955,0 85.60850594624938,20.9067124466259,0 85.60817024131195,20.90604402304364,0 85.60742108683172,20.90689815301918,0 85.60665732868863,20.90753619073439,0 85.60610883448949,20.90758949230273,0 85.60521183998178,20.90756675705295,0 85.60452060260502,20.90748651445764,0 85.60326918807942,20.90744613676314,0 85.60188236405136,20.90768544772218,0 85.60047854560028,20.90796132368506,0 85.60002362670939,20.90801300503369,0 85.59884132985803,20.90780513295323,0 85.59784525691018,20.90752003783055,0 85.59734626354964,20.90715269127515,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Baligorad Sand Quarry</name>
+			<LookAt>
+				<longitude>85.60319009824339</longitude>
+				<latitude>20.90741115380555</latitude>
+				<altitude>0</altitude>
+				<heading>3.448562133850365e-10</heading>
+				<tilt>45.00415752431443</tilt>
+				<range>1180.809910577185</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.60319009824337,20.90741115380555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>10km radius circle</name>
+			<styleUrl>#inline</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					85.6995429752062,20.90720155086039,46.50345196787973 85.6991455042608,20.89937931368687,46.89539225353381 85.69801985556703,20.89161919985435,36.82747038619009 85.69617470597906,20.88398025493882,33.9878429822833 85.69362420122079,20.87652059365066,31.8925803970659 85.69038784511326,20.8692969582462,37.74011815572322 85.68649034833572,20.86236428762572,40.74904482188391 85.68196143795397,20.85577530036815,43.34254343826604 85.67683562923854,20.84958009484048,40.8152966470192 85.67115196156719,20.8438257693848,40.13596326742282 85.66495370046191,20.83855606542886,38.76188459436408 85.65828800805454,20.8338110361893,37.51792547988672 85.65120558449425,20.82962674344019,36.55044288488918 85.64376028301575,20.82603498460677,39.78285117408546 85.63600870156833,20.82306305221453,43.02908326957012 85.62800975406887,20.82073352748106,46.02567281505633 85.61982422448088,20.81906410958238,48.74983289663294 85.61151430703949,20.81806748185933,48.0904394739113 85.60314313603577,20.8177512159552,47.11092225242546 85.59477430864594,20.81811771459417,51.64152271228411 85.58647140433615,20.81916419342403,56.19117841803649 85.57829750439872,20.82088270205749,60.72527453527238 85.570314715173,20.82326018415632,65.20927103206822 85.56258369848051,20.82627857611392,69.60906808498478 85.55516321275422,20.82991494360553,73.89118764129211 85.54810966827021,20.83414165499475,92.07631313890313 85.54147669979301,20.83892659031066,112.5976654865635 85.53531475982764,20.84423338424462,104.4097597831349 85.52967073553016,20.8500217013613,96.00626826715256 85.52458759216393,20.85624754147589,87.93351789179063 85.52010404580638,20.8628635729219,80.25296322924936 85.51625426780403,20.86981949122141,74.07610062749079 85.51306762325184,20.87706240047534,69.8865029297145 85.51056844552978,20.88453721461506,65.70667692671184 85.50877584867112,20.89218707550237,61.56841017863446 85.50770357906367,20.8999537847302,57.50322252841519 85.50735990769752,20.90777824586674,53.56605458830593 85.50774756387347,20.91560091379825,58.61365693400566 85.50886371097805,20.92336224776412,62.68279164964094 85.51069996461423,20.9310031646413,65.85735254512085 85.51324245305503,20.93846548902444,68.20097926139854 85.51647191966221,20.94569239666439,69.69583039280307 85.52036386658797,20.95262884786974,72.9670542117951 85.52488873875245,20.95922200754489,77.01895191106611 85.53001214677435,20.96542164863354,80.7737168326895 85.5356951272195,20.9711805358563,84.20275200924549 85.54189443823246,20.97645478677738,87.27995616966778 85.54856288833106,20.9812042074042,88.95399135263911 85.55564969587094,20.98539259971614,89.42448466282097 85.56310087643595,20.98898803873217,89.51885997537779 85.57085965517967,20.99196311696028,89.23639813814358 85.57886690093386,20.9942951543229,88.57925714578406 85.58706157871981,20.99596637191937,87.55242582904438 85.59538121714199,20.99696402826775,86.16372193433995 85.6037623870188,20.99728051696015,84.42371941162669 85.61214118751063,20.99691342496732,82.17463330330189 85.62045373594029,20.995865551136,79.56126137220889 85.6286366574718,20.99414488473413,76.64724196061714 85.63662757081241,20.99176454421185,73.45474181915067 85.64436556613876,20.98874267665802,70.00806269350859 85.65179167151152,20.98510231873895,66.33344175344729 85.65884930414242,20.98087122020707,62.45884033502495 85.66548470300401,20.97608163135859,59.87720839571823 85.67164733942955,20.9707700560995,64.44088421719677 85.67729030253409,20.96497697254448,68.86791587433748 85.68237065649842,20.9587465233242,73.12461216315405 85.68684976698913,20.95212617800751,77.17857283932348 85.69069359424232,20.94516637025726,80.99893388814415 85.69387295061048,20.93792011252938,84.04134151172454 85.69636372065982,20.93044259129195,84.81002419423751 85.69814704220623,20.92279074588502,85.97371785135876 85.69920944698929,20.91502283426054,96.77916438688096 85.6995429752062,20.90720155086039,46.50345196787973 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

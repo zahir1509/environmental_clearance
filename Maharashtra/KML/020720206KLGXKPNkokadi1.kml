@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>kokadi 1.kml</name>
+	<Style id="s_ylw-pushpin500">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin400">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin500</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl700</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_K20">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline070">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline2190</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline4160</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl700">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_K40">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_K30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_K20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_K30">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/K-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline128000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline129000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3170</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline3170">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline4160">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline129000">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline2190">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>kokadi 1</name>
+		<open>1</open>
+		<Placemark>
+			<name>Haulage road</name>
+			<description>L = 763 m
+W = 3 m</description>
+			<styleUrl>#inline128000</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.02368261781402,20.59076076461463,0 80.02379515344451,20.59066544682188,0 80.02390424147002,20.59057749805695,0 80.02401287483046,20.59047863473256,0 80.0241462191333,20.59038195499928,0 80.02423233121942,20.59031333794827,0 80.02436002522205,20.59022290964987,0 80.02446256449449,20.59015278126012,0 80.02455336684872,20.59009096085461,0 80.02462925700823,20.59004799534329,0 80.02473825566723,20.58997467922342,0 80.02480612868911,20.58993315044924,0 80.02488790069438,20.58988194338093,0 80.02494676932167,20.58984600243097,0 80.02499458952052,20.58980858095453,0 80.02510120660712,20.58971112004058,0 80.02518779642684,20.58963092434825,0 80.02540950273721,20.58942666893555,0 80.02545905214552,20.58938090433143,0 80.0255418448851,20.58929216424552,0 80.02563397876722,20.58918024906527,0 80.02573977001259,20.58905255083153,0 80.02581309882542,20.58897671396385,0 80.02589842856318,20.58888903225211,0 80.02598529098763,20.58879288040845,0 80.0260842822841,20.58868660058365,0 80.02624659915452,20.5885797785796,0 80.02665504280772,20.5883350721128,0 80.02718408589669,20.58800300972915,0 80.02758670062008,20.58771736726856,0 80.02781920811759,20.5875347900754,0 80.02790417722096,20.58743100816078,0 80.02795846886478,20.58738126410247,0 80.02804160265114,20.5873775183732,0 80.02811318716077,20.58737931132411,0 80.02820477562904,20.58736595212643,0 80.02831731803119,20.58731230269383,0 80.02838816549652,20.58728441362074,0 80.0284754077332,20.58731902655035,0 80.02859456150749,20.58736911769846,0 80.02873196543941,20.58741192934921,0 80.02880749693141,20.58742001129296,0 80.02896058308437,20.58746697532463,0 80.02906193290313,20.58752921391713,0 80.02919922827741,20.58757658391042,0 80.02936423063514,20.58764403361987,0 80.02945692441527,20.58767670655188,0 80.02954385609102,20.5877209447558,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>100*40</name>
+			<styleUrl>#inline070</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.03005697422331,20.5873477266923,0 80.02978484420531,20.58759976491949,0 80.03056878430569,20.5881877184488,0 80.03081045226807,20.58793242413698,0 80.03005697422331,20.5873477266923,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>80.02983590572751</longitude>
+				<latitude>20.58760131894646</latitude>
+				<altitude>0</altitude>
+				<heading>-15.7106975222062</heading>
+				<tilt>30.00067378571958</tilt>
+				<range>150.2870599843814</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin400</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.02978611111111,20.5876,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>80.03058188541503</longitude>
+				<latitude>20.58812932899695</latitude>
+				<altitude>0</altitude>
+				<heading>-15.71051169011286</heading>
+				<tilt>29.52513225039966</tilt>
+				<range>167.7755860488712</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin400</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.03056666666667,20.58819166666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>80.03081059068187</longitude>
+				<latitude>20.58790009409773</latitude>
+				<altitude>0</altitude>
+				<heading>-15.7103598404065</heading>
+				<tilt>30.00040236265841</tilt>
+				<range>89.05886333542894</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin400</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.03080833333333,20.58794444444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>80.03003832607844</longitude>
+				<latitude>20.58751165719738</latitude>
+				<altitude>0</altitude>
+				<heading>-15.71063236875473</heading>
+				<tilt>30.0004214410642</tilt>
+				<range>91.84061165986704</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin400</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.03005833333333,20.58734722222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kokadi 1</name>
+			<description>L = 100 m
+W = 40 m
+D = ?
+A = 4000 sqm / 0.4 ha</description>
+			<LookAt>
+				<longitude>80.03018576888987</longitude>
+				<latitude>20.58763256068878</latitude>
+				<altitude>0</altitude>
+				<heading>-15.7103392698301</heading>
+				<tilt>30.0011451127039</tilt>
+				<range>254.9005718887306</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_K40</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.03030422239161,20.58776583539795,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

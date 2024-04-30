@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Tue Oct 12 10:44:52 2021</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2021-07-03T09:22:27Z</begin>
+			<end>2021-07-03T09:23:50Z</end>
+		</gx:TimeSpan>
+		<longitude>83.659226</longitude>
+		<latitude>20.804713</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<StyleMap id="waypoint186">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n186</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h186</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin249">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="waypoint_n186">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl252">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin252">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin249</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl252</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin250">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h186">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl253">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin251">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin250</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl253</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2021-07-03T09:22:27Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint186</styleUrl>
+			<Point>
+				<coordinates>83.65763699999999,20.805599,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2021-07-03T09:23:05Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint186</styleUrl>
+			<Point>
+				<coordinates>83.660991,20.804957,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2021-07-03T09:23:31Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint186</styleUrl>
+			<Point>
+				<coordinates>83.66045,20.803826,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2021-07-03T09:23:50Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint186</styleUrl>
+			<Point>
+				<coordinates>83.657461,20.804515,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Motikod Sand Quarry</name>
+		<styleUrl>#m_ylw-pushpin252</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				83.65758288577727,20.80561811138399,0 83.66093202685606,20.80489612353023,0 83.66046608652186,20.80380313845954,0 83.65744165417556,20.80440322030127,0 83.65758288577727,20.80561811138399,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Motikod Sand Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2021-07-03T09:22:27Z</begin>
+				<end>2021-07-03T09:23:50Z</end>
+			</gx:TimeSpan>
+			<longitude>83.65861611414311</longitude>
+			<latitude>20.80502118985025</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0002068224743936051</heading>
+			<tilt>9.246244910401177</tilt>
+			<range>752.8513015480039</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin251</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>83.65874681774396,20.8044689030996,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

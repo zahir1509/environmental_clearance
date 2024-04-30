@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="NILAKANTHAPUR_LEASE_BND">
+	<name>NILAKANTHAPUR_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>NILAKANTHAPUR_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.258965,19.8375,0 85.258641,19.83745,0 85.258306,19.837409,0 85.258162,19.837395,0 85.25791099999999,19.837375,0 85.257818,19.837368,0 85.257684,19.837342,0 85.257638,19.837345,0 85.25757,19.837425,0 85.257525,19.837506,0 85.25749999999999,19.837582,0 85.257508,19.837633,0 85.257527,19.837684,0 85.25760699999999,19.837786,0 85.257723,19.837905,0 85.257898,19.83805,0 85.25806900000001,19.838183,0 85.258183,19.838277,0 85.25828799999999,19.838396,0 85.258351,19.83848,0 85.258398,19.838559,0 85.258453,19.838677,0 85.258501,19.838796,0 85.258537,19.838905,0 85.258565,19.838961,0 85.258672,19.839071,0 85.25872200000001,19.83912,0 85.25874,19.83917,0 85.25875499999999,19.839287,0 85.258757,19.839406,0 85.25833,19.839479,0 85.258391,19.839642,0 85.258444,19.83981,0 85.25849700000001,19.840029,0 85.258375,19.840158,0 85.258385,19.840234,0 85.25833900000001,19.840318,0 85.258454,19.840684,0 85.258787,19.840667,0 85.258995,19.840656,0 85.259131,19.84069,0 85.259299,19.840751,0 85.259542,19.840856,0 85.25976,19.840977,0 85.259852,19.840881,0 85.259552,19.840347,0 85.259289,19.839858,0 85.259261,19.839713,0 85.259122,19.838324,0 85.259107,19.838176,0 85.258965,19.8375,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

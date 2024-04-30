@@ -1,0 +1,136 @@
+---
+title: "Guj Fix"
+author: "Anustubh Agnihotri"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+#Gujarat Fix
+#Since there was a lot of data to be downloaded in Gujarat and the script
+#hanged in the middle the data was downloaded in two trances 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+library(data.table)
+```
+
+
+#Change Username 
+
+```{r}
+user <- "agnihotri"
+#user <- "prana"
+#user <- "hp"
+```
+
+
+#Loading Tranch1/2 
+
+```{r}
+guj_main_1 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_maindata_0_9432.csv")))
+guj_main_2 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_maindata_9432_onwards.csv")))
+                       
+```
+
+#Load All Unique files
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+guj_unique <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_complete_unique.csv")))
+
+
+table(duplicated(guj_unique$Proposal.No.))
+
+
+```
+
+
+
+#bind the two files
+```{r}
+
+guj_main_all<-rbind(guj_main_1,guj_main_2)
+
+table(duplicated(guj_main_all$Proposal.No.))
+
+table(guj_main_all$Proposal.No.%in%guj_unique$Proposal.No.)
+
+table(guj_unique$Proposal.No.%in%guj_main_all$Proposal.No.)
+
+
+```
+
+
+#write 
+
+```{r}
+write.csv(guj_main_all,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_maindata.csv"))
+                       
+```
+
+
+
+#Loading Tranch1/2 
+
+```{r}
+guj_timeline_1 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_timelinedata_0_9432.csv")))
+guj_timeline_2 <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_timelinedata_9432_onwards.csv")))
+                       
+```
+
+#Load All Unique files
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by timeline data as
+#more data is added based on the new script.
+
+guj_unique <- read.csv((paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_complete_unique.csv")))
+
+
+table(duplicated(guj_unique$Proposal.No.))
+
+
+```
+
+
+
+#bind the two files
+```{r}
+
+guj_timeline_all<-rbind(guj_timeline_1,guj_timeline_2)
+
+table(duplicated(guj_timeline_all$Proposal.Number))
+
+table(guj_timeline_all$Proposal.Number%in%guj_unique$Proposal.No.)
+
+table(guj_unique$Proposal.No.%in%guj_timeline_all$Proposal.Number)
+
+
+```
+
+
+#write 
+
+```{r}
+write.csv(guj_timeline_all,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Gujarat/Gujarat_ec_timelinedata.csv"))
+                       
+```

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Bajabati.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Bajabati</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				86.10836213202096,20.76766724294303,0 86.1086529479261,20.76875371250165,0 86.10956901705514,20.76843549148699,0 86.10944261582024,20.76838266635492,0 86.10967145399161,20.76819541709775,0 86.11007567564604,20.76796166293255,0 86.11010396894535,20.76774895073637,0 86.11005197518135,20.76774423421199,0 86.11003136055193,20.7675420336798,0 86.10988643941862,20.76729947316169,0 86.10980047475833,20.76719253282743,0 86.10970895934393,20.76728128646644,0 86.10943757654462,20.76715722233843,0 86.10918219144236,20.76721074692862,0 86.10918360293836,20.76726688253839,0 86.10890038054993,20.76744600827255,0 86.10884435392158,20.76741921736824,0 86.10867654417635,20.76750691685005,0 86.10867824697283,20.76759862989704,0 86.10836213202096,20.76766724294303,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

@@ -68,7 +68,7 @@ links_documents_df=[]
 links_proposal_df=[]
 
 #exception proposal = 1695 Odisha 
-for proposal_number in range(0,len(unique_proposals['Proposal.No.'])): 
+for proposal_number in range(2382,len(unique_proposals['Proposal.No.'])): 
     print(proposal_number)                     
     driver.get(url)
     time.sleep(1)
@@ -227,7 +227,7 @@ for proposal_number in range(0,len(unique_proposals['Proposal.No.'])):
     timeline_icon = driver.find_element_by_xpath("//a/img[contains(@src,'images/tme.png')]")
     timeline_icon.click()
 
-    time.sleep(1)
+    time.sleep(2)
     driver.switch_to.window(driver.window_handles[1])
 
     time.sleep(5)

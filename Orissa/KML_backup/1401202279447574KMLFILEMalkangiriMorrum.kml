@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML FILE Malkangiri Morrum.kml</name>
+	<Style id="s_ylw-pushpin_hl103">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin019">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1140</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl103</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin1140">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Malkangiri Morrum</name>
+		<LookAt>
+			<longitude>81.8734738826206</longitude>
+			<latitude>18.3677879263782</latitude>
+			<altitude>0</altitude>
+			<heading>-6.190154548798369e-13</heading>
+			<tilt>0</tilt>
+			<range>273.7858773056482</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin019</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>81.8734738826206,18.3677879263782,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

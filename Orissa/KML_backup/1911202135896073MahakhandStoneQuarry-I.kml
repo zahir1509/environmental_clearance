@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Mahakhand Stone Quarry-I.kml</name>
+	<Style id="failed1">
+	</Style>
+	<StyleMap id="failed0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed">
+	</Style>
+	<Placemark>
+		<name>Mahakhand Stone Quarry-I</name>
+		<styleUrl>#failed0</styleUrl>
+		<Point>
+			<coordinates>82.79494444444444,20.37775,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

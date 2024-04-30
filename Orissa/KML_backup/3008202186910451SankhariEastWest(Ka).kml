@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Sankhari East West ( Ka )">
+	<name>Sankhari East West ( Ka )</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Sankhari East West ( Ka )</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>SANKHARI(EAST WEST)_11.900AC</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.55490500000001,20.107661,0 85.55434,20.107672,0 85.552757,20.107693,0 85.551174,20.107712,0 85.551378,20.107985,0 85.55157800000001,20.108243,0 85.55183599999999,20.10834,0 85.55197200000001,20.108401,0 85.552053,20.108465,0 85.55221,20.108627,0 85.552291,20.108731,0 85.552378,20.108835,0 85.55249499999999,20.108994,0 85.55261900000001,20.109087,0 85.55289399999999,20.109221,0 85.55306899999999,20.109343,0 85.553513,20.10935,0 85.55373400000001,20.109397,0 85.554446,20.109013,0 85.55446999999999,20.108987,0 85.55493199999999,20.108707,0 85.55490500000001,20.107661,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

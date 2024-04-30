@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>P Thappa Salbari.kmz</name>
+	<Style id="failed17">
+	</Style>
+	<Style id="failed8">
+	</Style>
+	<Style id="failed15">
+	</Style>
+	<Style id="failed1">
+	</Style>
+	<Style id="failed2">
+	</Style>
+	<Style id="failed">
+	</Style>
+	<StyleMap id="failed4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed13">
+	</Style>
+	<Style id="failed11">
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="failed16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed10">
+	</Style>
+	<Style id="failed3">
+	</Style>
+	<StyleMap id="failed9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed25</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed22">
+	</Style>
+	<StyleMap id="failed19">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed23</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed25">
+	</Style>
+	<Style id="failed6">
+	</Style>
+	<Style id="failed20">
+	</Style>
+	<Style id="failed0">
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="failed24">
+	</Style>
+	<StyleMap id="failed18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed23">
+	</Style>
+	<StyleMap id="failed12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed5">
+	</Style>
+	<Folder>
+		<name>P Thappa Salbari</name>
+		<Placemark>
+			<name>A</name>
+			<description>26° 35&apos; 16.9204&quot; N	88° 13&apos; 26.9486&quot; E</description>
+			<styleUrl>#failed21</styleUrl>
+			<Point>
+				<coordinates>88.2241523888889,26.58803344444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<description>26° 35&apos; 15.8387&quot; N 88° 13&apos; 31.5899&quot; E</description>
+			<styleUrl>#failed14</styleUrl>
+			<Point>
+				<coordinates>88.2254416388889,26.58773297222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<description>26° 35&apos; 14.6757&quot; N 88° 13&apos; 28.7819&quot; E</description>
+			<styleUrl>#failed7</styleUrl>
+			<Point>
+				<coordinates>88.22466163888889,26.58740991666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SALBARI PART I</name>
+			<description>26° 35&apos; 11.0873&quot; N 88° 13&apos; 23.3638&quot; E</description>
+			<styleUrl>#failed19</styleUrl>
+			<Point>
+				<coordinates>88.22388092466197,26.58695825915909,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>E</name>
+			<description>26° 35&apos; 08.4744&quot; N	88° 13&apos; 23.2475&quot; E</description>
+			<styleUrl>#failed4</styleUrl>
+			<Point>
+				<coordinates>88.22312430555556,26.58568733333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>F</name>
+			<description>26° 35&apos; 08.6826&quot; N 88° 13&apos; 21.5002&quot; E</description>
+			<styleUrl>#failed16</styleUrl>
+			<Point>
+				<coordinates>88.22263894444444,26.58574516666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>G</name>
+			<description>26° 35&apos; 12.7315&quot; N 88° 13&apos; 20.7411&quot; E</description>
+			<styleUrl>#failed9</styleUrl>
+			<Point>
+				<coordinates>88.22242808333334,26.58686986111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>H</name>
+			<description>26° 35&apos; 12.6914&quot; N 88° 13&apos; 23.2117&quot; E</description>
+			<styleUrl>#failed12</styleUrl>
+			<Point>
+				<coordinates>88.22311436111112,26.58685872222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>I</name>
+			<description>26° 35&apos; 15.5186&quot; N	88° 13&apos; 26.3883&quot; E</description>
+			<styleUrl>#failed18</styleUrl>
+			<Point>
+				<coordinates>88.22399675,26.58764405555555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							88.22416101650077,26.58804252112803,0 88.22399486443878,26.58764484383056,0 88.22311134451478,26.58687271724846,0 88.22242937082467,26.58687910375259,0 88.22262590257979,26.58573954901552,0 88.22312717026072,26.58568630972076,0 88.22466368394404,26.58742693578665,0 88.22544781873755,26.58774076403491,0 88.22416101650077,26.58804252112803,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

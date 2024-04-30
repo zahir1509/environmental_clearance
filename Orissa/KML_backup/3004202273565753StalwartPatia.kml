@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Stalwart Patia.kml</name>
+	<StyleMap id="inline4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Path Measure</name>
+		<styleUrl>#inline4</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.82826423034383,20.35947392734883,0 85.82924355579431,20.35936591937562,0 85.829298514917,20.35976729071502,0 85.82996184759079,20.35968722100355,0 85.82991260158794,20.35914118962645,0 85.82924677335457,20.35926317899791,0 85.82917405534513,20.35884912352941,0 85.82877756692864,20.35886898058989,0 85.82881533918146,20.35902927618655,0 85.82873537619911,20.35931289547744,0 85.82870357275534,20.35916363366695,0 85.82824070523969,20.3592412878275,0 85.8282458611624,20.35946704931572,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

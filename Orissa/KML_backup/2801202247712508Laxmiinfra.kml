@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Laxmi infra .kml</name>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>0.590909</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed">
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>3.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="failed0">
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>3.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.89298354864114,20.37340159933603,0 85.89214055487696,20.37276053633546,0 85.89166952352488,20.3733474785635,0 85.89097882499075,20.37228195208079,0 85.89105486204812,20.37206696233558,0 85.89120768138771,20.37227947102873,0 85.89130639204312,20.3724339697987,0 85.8916331401561,20.37258382661952,0 85.89170957949696,20.37254111309606,0 85.89178608944327,20.37249602607593,0 85.89269684847321,20.37209778034448,0 85.89312509288813,20.37191968468626,0 85.89320631182225,20.37208826461907,0 85.8930623152103,20.37216823018529,0 85.89326824698514,20.37291086888186,0 85.8931725852885,20.37294040071887,0 85.89321638486892,20.37300998066523,0 85.89336124964673,20.37297293891103,0 85.89342751582647,20.37308737196589,0 85.89329230810316,20.37317058449905,0 85.89353534850549,20.37382800232321,0 85.89302076181001,20.37407073208314,0 85.89292844372905,20.37407444735136,0 85.89263966911318,20.37381726504163,0 85.89298354864114,20.37340159933603,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M/s Laxmi Infra Venture Pvt. Ltd.</name>
+			<LookAt>
+				<longitude>85.89240740715992</longitude>
+				<latitude>20.37214337127264</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002085982701145486</heading>
+				<tilt>12.60422169092702</tilt>
+				<range>706.9276712807693</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.89146388888889,20.37265555555556,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

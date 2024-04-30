@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Placemark>
+	<name>19°29&apos;52.34&quot;N 82°22&apos;34.07&quot;E</name>
+	<Point>
+		<coordinates>82.37613055555555,19.49787222222222,0</coordinates>
+	</Point>
+</Placemark>
+</kml>

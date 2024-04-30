@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>barada-3.kml</name>
+	<Style id="PolyStyle00741">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffe65c00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark id="ID_00019">
+		<name>0</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>19</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>area_ac</td>
+
+<td>4.968877</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+		<styleUrl>#PolyStyle00741</styleUrl>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.05000277777782,20.78554444444444,0 86.0500833333333,20.78548333333339,0 86.050275,20.78553888888894,0 86.05040277777789,20.78552222222231,0 86.0504111111112,20.78557222222219,0 86.05043611111114,20.78563888888903,0 86.05048611111118,20.78569722222221,0 86.05065833333344,20.78564999999998,0 86.05116388888888,20.78581111111112,0 86.05117777777787,20.78583333333341,0 86.05121944444443,20.78587777777778,0 86.05136666666675,20.78598888888888,0 86.05162222222231,20.78620555555568,0 86.05175833333334,20.78634444444452,0 86.05179166666676,20.78639722222221,0 86.05180833333338,20.78644722222231,0 86.05171944444442,20.78656111111115,0 86.05154444444452,20.78672499999993,0 86.05125000000004,20.78678333333329,0 86.05115555555557,20.78683055555553,0 86.05114166666681,20.78671388888898,0 86.05009444444443,20.78686388888895,0 86.04999444444451,20.78689166666675,0 86.04997222222221,20.78693333333331,0 86.05000277777782,20.78554444444444,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

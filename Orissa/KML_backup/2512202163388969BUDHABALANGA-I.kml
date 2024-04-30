@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BUDHABALANGA - I</name>
+	<open>1</open>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[<style type='text/css'>*{font-family:Verdana,Arial,Helvetica,Sans-Serif;}</style><table style="width: 300px;"><tr><td style="vertical-align: top;">Source</td><td style="width: 100%;">BUDHABALANGA - I.xlsx</td></tr><tr><td>DateTime</td><td>2021-11-06 07:29:02 UTC <br/></td></tr><tr><td colspan="2" style="vertical-align: top;"><br/>Created with <a target='_blank' href='https://www.earthpoint.us/ExcelToKml.aspx'>Earth Point Excel To KML</a><br/>&copy;2021 Earth Point<br/><br/>For illustration only.&nbsp; User to verify all information. </td></tr></table>]]></description>
+	<Style>
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+			<textColor>ff000000</textColor>
+			<displayMode>default</displayMode>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="0_0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Normal0_0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Highlight0_0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Highlight0_0">
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ccffffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="Normal0_0">
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>BALIAPAL</name>
+		<Placemark>
+			<name>1</name>
+			<LookAt>
+				<longitude>86.8522777777778</longitude>
+				<latitude>21.6356944444444</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<range>1000</range>
+				<altitudeMode>relativeToGround</altitudeMode>
+			</LookAt>
+			<styleUrl>#0_0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.8522777777778,21.6356944444444,0 86.8534166666667,21.6353055555556,0 86.85391666666671,21.63525,0 86.8543055555556,21.6350277777778,0 86.8542777777778,21.6347777777778,0 86.8556944444444,21.6343611111111,0 86.8555555555556,21.6338611111111,0 86.85505555555559,21.6339166666667,0 86.8546111111111,21.6340833333333,0 86.8530277777778,21.6345,0 86.85225,21.6346944444444,0 86.85219444444439,21.6346388888889,0 86.85091666666671,21.6347777777778,0 86.8506944444444,21.6348055555556,0 86.85063888888889,21.6349444444444,0 86.8502777777778,21.6349722222222,0 86.85025,21.6348055555556,0 86.84999999999999,21.6348055555556,0 86.8500277777778,21.6356944444444,0 86.8522222222222,21.6354444444444,0 86.8522777777778,21.6356944444444,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -3,12 +3,12 @@ library(dplyr)
 
 ##Preliminary Analysis 
 user_name='anust'
-state_name='Tamil_Nadu'
+state_name='Haryana'
 ##EC Complete 1
 ec_complete<-NA
 
 
-for (attempt in 1:4){
+for (attempt in 1:5){
   print(attempt)
   
 
@@ -27,13 +27,15 @@ print(length(unique(ec_complete_temp$Proposal.No.)))
 ##Combined 
 
 ec_complete_all_unique<-ec_complete%>%
-  select(!c('Sno.','ï..'))%>%
+  select(!c('Sno.'))%>%
   filter(!is.na(Proposal.No.))
 
-ec_complete_all_unique<-distinct(ec_complete_all_unique)
+ec_complete_all_unique<-ec_complete_all_unique%>%
+  filter(!duplicated(Proposal.No.))
 
 ##Duuplicates 
 print(length(unique(ec_complete_all_unique$Proposal.No.)))
 
+table(duplicated(ec_complete_all_unique$Proposal.No.))
 
 write.csv(ec_complete_all_unique,paste('C:/Users/',user_name,'/Dropbox/agnihotri_gupta/Environment_Clearance/',state_name,'/',state_name,'_ec_complete_unique','.csv',sep = ''))

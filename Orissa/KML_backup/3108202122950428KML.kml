@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> <kml xmlns="http://www.opengis.net/kml/2.2"      xmlns:gx="http://www.google.com/kml/ext/2.2">      xmlns:kml="http://www.opengis.net/kml/2.2">      xmlns:atom="http://www.w3.org/2005/Atom"> <Document><name><![CDATA[kotagarh sujit]]></name><Snippet maxLines='0'></Snippet><open>1</open><Style><IconStyle><Icon></Icon></IconStyle><BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle></Style><description><![CDATA[<style type='text/css'>*{font-family:Verdana,Arial,Helvetica,Sans-Serif;}</style><table style="width: 300px;"><tr><td style="vertical-align: top;">Source</td><td style="width: 100%;">kotagarh sujit.csv</td></tr><tr><td>DateTime</td><td>2021-08-28 07:53:31 UTC <br/></td></tr><tr><td colspan="2" style="vertical-align: top;"><br/>Created with <a target='_blank' href='https://www.earthpoint.us/ExcelToKml.aspx'>Earth Point Excel To KML</a><br/>&copy;2021 Earth Point<br/><br/>For illustration only.&nbsp; User to verify all information. </td></tr></table>]]></description><Folder><name><![CDATA[Sheet1]]></name><visibility>1</visibility><open>0</open><Placemark><name><![CDATA[1]]></name><styleUrl>#0_1</styleUrl><LookAt><longitude>85.3317777777778</longitude><latitude>20.1414722222222</latitude><range>1000</range><altitudeMode>relativeToGround</altitudeMode><tilt>0</tilt><heading>0</heading></LookAt><Polygon><altitudeMode>clampToGround</altitudeMode><tessellate>1</tessellate><outerBoundaryIs><LinearRing><coordinates>85.3317777777778,20.1414722222222,0 85.3318611111111,20.1426388888889,0 85.3325,20.1425555555556,0 85.3324444444444,20.1414444444444,0 85.3317777777778,20.1414722222222,0 </coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark><Placemark><name><![CDATA[1]]></name><Snippet maxLines='0'></Snippet><styleUrl>#0_0</styleUrl><ExtendedData></ExtendedData><LookAt><longitude>85.3317777777778</longitude><latitude>20.1414722222222</latitude><range>1000</range><altitudeMode>relativeToGround</altitudeMode><tilt>0</tilt><heading>0</heading></LookAt><Point><altitudeMode>clampToGround</altitudeMode><extrude>0</extrude><coordinates>85.3317777777778,20.1414722222222,0</coordinates></Point><description><![CDATA[<table border="0" width="300px">
+    <tr>
+        <td>
+            <font size="+2"><b>Boise Art Museum</b></font>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" align="right"
+                border="0">
+                <tr>
+                    <td>
+                        <img src="http://www.earthpoint.us/images/BAM.jpg" />
+                    </td>
+                </tr>
+            </table>
+            BAM's Permanent Collection of 2,300 works of art focuses on 20th century American
+            art with a long-standing emphasis on artists of the Pacific Northwest, American
+            Realism and ceramics. BAM's Collection also includes a survey of European and non-Western
+            artwork designed to provide a broader context for the overall Collection.
+        </td>
+    </tr>
+</table>
+<br />
+Web site: <a href="http://boiseartmuseum.org/">http://boiseartmuseum.org/</a><br />
+<br />
+For illustration only. User to verify all information.]]></description></Placemark></Folder><StyleMap id="0_0"><Pair><key>normal</key><styleUrl>#Normal0_0</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#Highlight0_0</styleUrl></Pair></StyleMap><Style id="Normal0_0"><IconStyle><scale>1</scale><Icon><href><![CDATA[http://www.earthpoint.us/Dots/GoogleEarth/pal5/icon57.png]]></href></Icon></IconStyle><LabelStyle></LabelStyle><LineStyle><color>FF00FFFF</color><width>2</width></LineStyle><BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle></Style><Style id="Highlight0_0"><IconStyle><scale>1.1</scale><Icon><href><![CDATA[http://www.earthpoint.us/Dots/GoogleEarth/pal5/icon57.png]]></href></Icon></IconStyle><LabelStyle></LabelStyle><LineStyle><color>FF00FFFF</color><width>3</width></LineStyle><BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle></Style><StyleMap id="0_1"><Pair><key>normal</key><styleUrl>#Normal0_1</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#Highlight0_1</styleUrl></Pair></StyleMap><Style id="Normal0_1"><LineStyle><color>FF0000FF</color><width>2</width></LineStyle><PolyStyle><fill>0</fill><outline>1</outline><color>FFffffff</color></PolyStyle><BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle></Style><Style id="Highlight0_1"><LineStyle><color>FF0000FF</color><width>3</width></LineStyle><PolyStyle><fill>0</fill><outline>1</outline><color>CCffffff</color></PolyStyle><BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle></Style></Document></kml>

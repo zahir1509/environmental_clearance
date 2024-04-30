@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>MS GURU BRicks</name>
+	<open>1</open>
+	<Placemark>
+		<name>23°15&apos;51.96&quot;N 86°56&apos;42.05&quot;E</name>
+		<Point>
+			<coordinates>86.94501388888889,23.26443333333334,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>23°15&apos;49.50&quot;N 86°56&apos;45.80&quot;E</name>
+		<Point>
+			<coordinates>86.94605555555556,23.26375,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>23°15&apos;52.85&quot;N 86°56&apos;47.65&quot;E</name>
+		<Point>
+			<coordinates>86.94656944444445,23.26468055555555,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>23°15&apos;55.19&quot;N 86°56&apos;44.78&quot;E</name>
+		<Point>
+			<coordinates>86.94577222222223,23.26533055555555,0</coordinates>
+		</Point>
+	</Placemark>
+</Folder>
+</kml>

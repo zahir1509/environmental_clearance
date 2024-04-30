@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Jagendra Prasad Nagendra Prasad.kml</name>
+	<StyleMap id="m_ylw-pushpin130">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin412</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl244</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin2111">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin133</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin203</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_arrow-reverse">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow-reverse.png</href>
+			</Icon>
+			<hotSpot x="54" y="42" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl244">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_arrow-reverse">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_arrow-reverse</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_arrow-reverse</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin133">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin412">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_arrow-reverse">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.933333</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow-reverse.png</href>
+			</Icon>
+			<hotSpot x="54" y="42" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin203">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Jagendra Prasad Nagendra Prasad</name>
+		<open>1</open>
+		<Placemark>
+			<name>BP6</name>
+			<LookAt>
+				<longitude>88.2407145866971</longitude>
+				<latitude>26.47794308886673</latitude>
+				<altitude>0</altitude>
+				<heading>0.1399312207667377</heading>
+				<tilt>1.314625742537931</tilt>
+				<range>340.619227718355</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin130</styleUrl>
+			<Point>
+				<coordinates>88.2405,26.479,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP5</name>
+			<LookAt>
+				<longitude>88.2407145866971</longitude>
+				<latitude>26.47794308886673</latitude>
+				<altitude>0</altitude>
+				<heading>0.1399312207667377</heading>
+				<tilt>1.314625742537931</tilt>
+				<range>340.619227718355</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin130</styleUrl>
+			<Point>
+				<coordinates>88.24033333333334,26.47866682076872,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lease Boundary</name>
+			<styleUrl>#msn_ylw-pushpin2111</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.2416650653154,26.47901720292701,0 88.24109205171835,26.47907162705253,0 88.24108584642333,26.47898414144879,0 88.24059096227947,26.47906406535933,0 88.24051700694899,26.4789858571767,0 88.24053048490899,26.4786531070699,0 88.24034435701158,26.47865437129221,0 88.24036328541462,26.47806243204256,0 88.24061370972638,26.47802011956124,0 88.24054787713102,26.47725160809138,0 88.2407665482625,26.47723649022154,0 88.24107892904382,26.47723619373831,0 88.2414228599896,26.47718246684435,0 88.2415618144618,26.47825632919797,0 88.24159441509835,26.47867441188298,0 88.24160983311131,26.47885453155015,0 88.2416650653154,26.47901720292701,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>88.24086152157308</longitude>
+				<latitude>26.47775614688369</latitude>
+				<altitude>0</altitude>
+				<heading>0.1399881072832576</heading>
+				<tilt>1.314630727788479</tilt>
+				<range>316.1142747695635</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin130</styleUrl>
+			<Point>
+				<coordinates>88.24166666666667,26.479,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>88.24086152157308</longitude>
+				<latitude>26.47775614688369</latitude>
+				<altitude>0</altitude>
+				<heading>0.1399881072832576</heading>
+				<tilt>1.314630727788479</tilt>
+				<range>316.1142747695635</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin130</styleUrl>
+			<Point>
+				<coordinates>88.24144444444444,26.47719444444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>88.2408615209384</longitude>
+				<latitude>26.47775592751581</latitude>
+				<altitude>0</altitude>
+				<heading>0.1399881046350719</heading>
+				<tilt>1.314655773043934</tilt>
+				<range>484.7653390016504</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin130</styleUrl>
+			<Point>
+				<coordinates>88.24055555555556,26.47725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>88.2407145866971</longitude>
+				<latitude>26.47794308886673</latitude>
+				<altitude>0</altitude>
+				<heading>0.1399312207667377</heading>
+				<tilt>1.314625742537931</tilt>
+				<range>340.619227718355</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin130</styleUrl>
+			<Point>
+				<coordinates>88.24036111111111,26.47805555555555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Brick Earth Area of M/s Jogendra Prasad Nagendra Prasad (2.0477 Hectare)</name>
+			<LookAt>
+				<longitude>88.24160393577145</longitude>
+				<latitude>26.47808296533146</latitude>
+				<altitude>0</altitude>
+				<heading>0.1403264173640853</heading>
+				<tilt>1.316223265785888</tilt>
+				<range>2302.920734827048</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_arrow-reverse</styleUrl>
+			<Point>
+				<coordinates>88.24264064469807,26.47873272895797,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

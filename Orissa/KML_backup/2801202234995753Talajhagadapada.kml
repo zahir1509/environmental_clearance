@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Talajhagadapada.kml</name>
+	<Style id="s_ylw-pushpin_hl47">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin39">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin38</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl47</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin38">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Talajhagadapada</name>
+		<styleUrl>#m_ylw-pushpin39</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.59290700083422,20.74931912871217,0 85.59172594187734,20.75074605738066,0 85.5919813923128,20.75116826254629,0 85.59204161056374,20.75129149539648,0 85.59236791671559,20.75152532955827,0 85.59279488807265,20.75191015027358,0 85.59319759196563,20.75223147493445,0 85.5931077851874,20.75238300808824,0 85.59311870445038,20.75248620446904,0 85.59315748414825,20.75253664504778,0 85.59365175015849,20.75191170361385,0 85.59453061647031,20.75078302644718,0 85.59290700083422,20.74931912871217,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

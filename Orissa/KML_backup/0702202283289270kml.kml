@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>kml.kml</name>
+	<visibility>0</visibility>
+	<open>1</open>
+	<StyleMap id="failed0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed">
+	</Style>
+	<Style id="failed1">
+	</Style>
+	<Placemark>
+		<name>Jojananuapada Stone Quarry-II</name>
+		<visibility>0</visibility>
+		<styleUrl>#failed0</styleUrl>
+		<Point>
+			<coordinates>83.20820000000001,20.01966111111111,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

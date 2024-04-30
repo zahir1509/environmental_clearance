@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Mon Aug 15 12:12:59 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2020-02-23T10:12:07Z</begin>
+			<end>2020-02-23T10:13:32Z</end>
+		</gx:TimeSpan>
+		<longitude>82.602109</longitude>
+		<latitude>18.868375</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<StyleMap id="waypoint299">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n299</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h299</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl333">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin323">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin322">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h299">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_n299">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin327">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin323</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl333</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin322</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl332</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl332">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2020-02-23T10:12:07Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint299</styleUrl>
+			<Point>
+				<coordinates>82.60169500000001,18.869363,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2020-02-23T10:12:35Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint299</styleUrl>
+			<Point>
+				<coordinates>82.60278599999999,18.869138,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2020-02-23T10:13:05Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint299</styleUrl>
+			<Point>
+				<coordinates>82.602396,18.867387,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2020-02-23T10:13:32Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint299</styleUrl>
+			<Point>
+				<coordinates>82.60143100000001,18.868219,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Balijodi Stone Quarry</name>
+		<styleUrl>#m_ylw-pushpin327</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				82.60168953003264,18.869374086567,0 82.60277061190317,18.8691301774704,0 82.60238493989419,18.86740450438305,0 82.60141003519065,18.86821760942437,0 82.60168953003264,18.869374086567,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Balijodi Stone Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2020-02-23T10:12:07Z</begin>
+				<end>2020-02-23T10:13:32Z</end>
+			</gx:TimeSpan>
+			<longitude>82.60129004718073</longitude>
+			<latitude>18.86876949593581</latitude>
+			<altitude>0</altitude>
+			<heading>0.000377586720078912</heading>
+			<tilt>28.4703829052866</tilt>
+			<range>680.0935780665716</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>82.60195913323288,18.86828539823784,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

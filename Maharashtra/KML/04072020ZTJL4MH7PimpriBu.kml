@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>12. Pimpri Bu..kml</name>
+	<StyleMap id="msn_P">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_P</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_P</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_P">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_P">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Pimpri Bu.</name>
+		<Placemark>
+			<name>Pimpri Bu.</name>
+			<description>L-560M
+W-18M
+D-0.50M
+AREA-10080SQM/1.01HA</description>
+			<LookAt>
+				<longitude>77.42590767879175</longitude>
+				<latitude>19.55596420097699</latitude>
+				<altitude>0</altitude>
+				<heading>11.41339112500416</heading>
+				<tilt>27.0275929071288</tilt>
+				<range>1145.333256077988</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_P</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42634332645675,19.55689657263645,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Polygon Measure</name>
+			<styleUrl>#inline4</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							77.42364368563457,19.5568321759142,0 77.42365824440442,19.55667127423473,0 77.42702827013834,19.55687758029266,0 77.42825291805998,19.55669029035681,0 77.42890486374492,19.55639746525517,0 77.42898703252261,19.55653764742291,0 77.4282911120562,19.55684531252518,0 77.42703097081402,19.55703963580536,0 77.42364368563457,19.5568321759142,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP-1</name>
+			<LookAt>
+				<longitude>77.42885342997629</longitude>
+				<latitude>19.55642813757518</latitude>
+				<altitude>0</altitude>
+				<heading>11.41556915288897</heading>
+				<tilt>28.45113526989055</tilt>
+				<range>62.70446271242854</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42890555555556,19.55639722222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-2</name>
+			<LookAt>
+				<longitude>77.42898576500465</longitude>
+				<latitude>19.5565871439684</latitude>
+				<altitude>0</altitude>
+				<heading>11.42142892945507</heading>
+				<tilt>36.9476917689023</tilt>
+				<range>68.20536609482338</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42898611111112,19.55653611111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-3</name>
+			<LookAt>
+				<longitude>77.42839245986654</longitude>
+				<latitude>19.55677870103368</latitude>
+				<altitude>0</altitude>
+				<heading>11.41558451724131</heading>
+				<tilt>28.60441525791924</tilt>
+				<range>83.2197575509668</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42829166666667,19.55684444444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-4</name>
+			<LookAt>
+				<longitude>77.42723838572597</longitude>
+				<latitude>19.55695993416632</latitude>
+				<altitude>0</altitude>
+				<heading>11.41025902879709</heading>
+				<tilt>23.78267761609674</tilt>
+				<range>118.6965610635153</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42703333333334,19.55703888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-5</name>
+			<LookAt>
+				<longitude>77.42390451393727</longitude>
+				<latitude>19.55681331482476</latitude>
+				<altitude>0</altitude>
+				<heading>11.41560662486684</heading>
+				<tilt>30.00052268944496</tilt>
+				<range>116.3331037081228</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42364444444445,19.55683055555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-6</name>
+			<LookAt>
+				<longitude>77.4238976519302</longitude>
+				<latitude>19.55662584455161</latitude>
+				<altitude>0</altitude>
+				<heading>11.41473576675601</heading>
+				<tilt>29.02768690097017</tilt>
+				<range>96.52326566199234</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42365833333334,19.55666944444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-7</name>
+			<LookAt>
+				<longitude>77.42723301347226</longitude>
+				<latitude>19.55680228843621</latitude>
+				<altitude>0</altitude>
+				<heading>11.41634663717975</heading>
+				<tilt>29.58458655330409</tilt>
+				<range>134.2828400970918</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42703055555556,19.55688055555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP-8</name>
+			<LookAt>
+				<longitude>77.42830999725992</longitude>
+				<latitude>19.55670395376964</latitude>
+				<altitude>0</altitude>
+				<heading>11.41706273251515</heading>
+				<tilt>30.00046062746901</tilt>
+				<range>102.588449007651</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.42825555555557,19.55668888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Haulage Road</name>
+			<description>Haulage Road-277m</description>
+			<styleUrl>#inline</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.42700254875392,19.55681895011161,0 77.42692769195304,19.55637535770404,0 77.42703454459272,19.55557199527396,0 77.42719147126799,19.55433376312073,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

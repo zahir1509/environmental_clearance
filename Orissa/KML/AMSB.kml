@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>AMSB.kml</name>
+	<Style id="area1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>6</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>bf000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="area1_hlt">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>6</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>bf000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="area1_rollover">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#area1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#area1_hlt</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Area Features</name>
+		<description>Area Features</description>
+		<Placemark>
+			<description>Unknown Area Type</description>
+			<styleUrl>#area1_rollover</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.81089444440001,20.2191666666,0 85.8106194444,20.2193222222,0 85.8103444444,20.2194777778,0 85.8100388889,20.2196444444,0 85.809825,20.2198388889,0 85.8096694444,20.2195833333,0 85.8095138889,20.2193333333,0 85.8097722222,20.2191861111,0 85.8100277778,20.219025,0 85.8102861111,20.2188555555,0 85.81054444439999,20.2186888889,0 85.8107666667,20.2189027778,0 85.81089444440001,20.2191666666,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Cluster kml.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>Circle Measure</name>
+			<styleUrl>#inline1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					82.62055341960712,20.88888508411215,319.1653781934775 82.62616635974777,20.88303542100691,314.3176297179238 82.63121179350176,20.87675078285813,307.4752602676856 82.63565135005948,20.8700790563933,300.8884540753278 82.63945128884049,20.86307107122943,296.4042129883646 82.64258275474124,20.85578021152656,304.6023929035485 82.64502199567974,20.84826200834782,307.4643184375765 82.64675054084498,20.84057371586832,312.318450011922 82.64775533837368,20.83277387469261,311.7858120695901 82.64802885149541,20.82492186563087,315.4055823351464 82.6475691125124,20.81707745734987,314.2778602517779 82.64637973430627,20.80930035135208,307.5373432456371 82.6444698793901,20.80164972774909,307.8317725814285 82.64185418684566,20.79418379528004,307.4054669063712 82.63855265780225,20.78695934898563,314.804134239928 82.63459050042256,20.78003133888166,318.7024154619763 82.62999793565827,20.77345245288581,320.8391762526512 82.62480996532499,20.76727271713588,323.9982150883187 82.61906610431852,20.76153911670075,326.0267167289505 82.61281007905046,20.75629523952593,336.1757519468752 82.60608949442212,20.75158094627641,338.1695476058887 82.59895547187645,20.74743206854101,346.3890205889061 82.59146226127048,20.74388013764712,354.3607417993015 82.58366682949183,20.74095214610362,363.4217337328977 82.57562842890405,20.73867034344426,368.9220162751541 82.56740814884333,20.73705206798665,384.6510385306908 82.55906845350512,20.73610961575422,445.2402563443124 82.55067270965193,20.73585014753202,445.2640607210295 82.54228470764198,20.73627563474461,380.3969478830693 82.53396817932429,20.73738284455648,411.7171403363357 82.52578631636671,20.73916336430526,470.8140945716461 82.51780129257989,20.74160366508692,453.9047139755429 82.51007379377467,20.74468520402249,462.0525309972006 82.50266255863724,20.7483845644488,484.9116334022883 82.49562393403383,20.75267363299486,500.7930034611947 82.4890114480569,20.75751981223057,478.2498804320066 82.48287540400422,20.76288626730933,428.5007588615885 82.47726249833845,20.7687322047714,369.9060273985691 82.47221546550885,20.77501318143294,353.6112447366554 82.46777275233029,20.78168144105815,371.1816059000207 82.46396822440737,20.78868627630036,343.7883968267766 82.46083090686584,20.79597441320422,337.5366595318336 82.45838476140882,20.80349041538663,333.7797389353308 82.45664850145515,20.81117710485972,328.0915282044341 82.45563544684076,20.81897599632767,322.1319124020518 82.45535341927535,20.82682774167939,321.1993732240411 82.45580467944505,20.83467258131498,323.0212456323336 82.4569859063416,20.8424507988828,322.0622622259358 82.45888821908072,20.85010317597071,322.8068635197891 82.46149724114872,20.85757144328583,323.1821282595065 82.46479320669052,20.86479872487603,328.0535121285158 82.46875110812671,20.87172997199072,328.8772760054466 82.47334088406251,20.87831238325019,322.5058789310033 82.47852764613421,20.88449580789013,318.2778630369397 82.4842719431266,20.89023312897091,313.7641153799005 82.49053006039709,20.89548062358979,311.6534121030041 82.49725435235338,20.9001982973059,316.2018806885632 82.50439360546376,20.9043501901825,320.0427783622741 82.51189342902646,20.90790465206751,317.993796168168 82.51969667069523,20.9108345849686,316.7467539543046 82.52774385355174,20.91311765063271,316.5871068895049 82.53597363133531,20.91473644170935,320.6353837394146 82.54432325828817,20.91567861515981,316.5859069538377 82.55272906995012,20.91593698686868,307.7341626880063 82.56112697114528,20.91550958671694,312.4437975109008 82.56945292734132,20.91439967368566,318.5404955022772 82.57764345553373,20.91261571087163,323.8270606385723 82.58563611081198,20.9101713006109,326.5089528951353 82.59336996479975,20.90708508021808,327.438260493274 82.60078607223176,20.90338057915749,333.0471149063634 82.60782792202922,20.89908603876315,331.997446555299 82.61444186936653,20.89423419591657,321.237596253789 82.62055341960712,20.88888508411215,319.1653781934775 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Document>
+			<name>Padampur 4.85 Ha.kml</name>
+			<Style id="inline10">
+				<LineStyle>
+					<color>ffffff00</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="inline2">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#inline10</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#inline00</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="inline00">
+				<LineStyle>
+					<color>ffffff00</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Placemark>
+				<name>Padampur 4.85 Ha</name>
+				<styleUrl>#inline2</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								82.54796027217188,20.82922696655974,0 82.55172188337392,20.8294142184552,0 82.55202894047187,20.82842599655564,0 82.55200877756128,20.82819311134646,0 82.54834478533716,20.82819652749357,0 82.54825282727072,20.82837403324908,0 82.54839641342286,20.828433532941,0 82.54825017051078,20.82886176719592,0 82.54807915307906,20.82883586916802,0 82.54796027217188,20.82922696655974,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Padampur 5 Acres.kml</name>
+			<Style id="inline11">
+				<LineStyle>
+					<color>ff7fff00</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="m_ylw-pushpin">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#s_ylw-pushpin</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="inline3">
+				<LineStyle>
+					<color>ff7fff00</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="inline01">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#inline3</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#inline11</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="s_ylw-pushpin">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Style id="s_ylw-pushpin_hl">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Folder>
+				<name>Padampur 5 Acres</name>
+				<open>1</open>
+				<Placemark>
+					<name>2</name>
+					<LookAt>
+						<longitude>82.54834166666666</longitude>
+						<latitude>20.82815555555556</latitude>
+						<altitude>0</altitude>
+						<heading>3.975693351829395e-16</heading>
+						<tilt>0</tilt>
+						<range>1000.000000000169</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.54834166666666,20.82815555555556,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>1</name>
+					<LookAt>
+						<longitude>82.54878333333335</longitude>
+						<latitude>20.8275861111111</latitude>
+						<altitude>0</altitude>
+						<heading>6.361109362927034e-15</heading>
+						<tilt>0</tilt>
+						<range>1000.000000001235</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.54878333333336,20.8275861111111,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>3</name>
+					<LookAt>
+						<longitude>82.55187499999998</longitude>
+						<latitude>20.82814444444445</latitude>
+						<altitude>0</altitude>
+						<heading>-3.975693351829395e-15</heading>
+						<tilt>0</tilt>
+						<range>1000.000000000748</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55187499999998,20.82814444444445,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>4</name>
+					<LookAt>
+						<longitude>82.55204587889166</longitude>
+						<latitude>20.82768417388694</latitude>
+						<altitude>0</altitude>
+						<heading>5.780260564224758e-12</heading>
+						<tilt>0</tilt>
+						<range>1000.524678912091</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55204587889165,20.82768417388694,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Untitled Polygon</name>
+					<styleUrl>#inline01</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									82.55204058921072,20.82768079947752,0 82.55186706181283,20.82813768956322,0 82.54833470677923,20.82816849830021,0 82.54878082254469,20.82760265291178,0 82.55204058921072,20.82768079947752,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+		</Document>
+		<Document>
+			<name>Padampuri 1.214 Ha.kml</name>
+			<Style id="s_ylw-pushpin_hl0">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Style id="s_ylw-pushpin0">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Style id="inline4">
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>2</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="inline02">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#inline4</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#inline12</styleUrl>
+				</Pair>
+			</StyleMap>
+			<StyleMap id="m_ylw-pushpin0">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#s_ylw-pushpin0</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="inline12">
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>2</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Padampuri 1.214 Ha</name>
+				<open>1</open>
+				<Placemark>
+					<name>Padampuri 1.214 Ha</name>
+					<open>1</open>
+					<styleUrl>#inline02</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									82.55262249044846,20.82679143232602,0 82.55058880853352,20.826912099442,0 82.55072971098755,20.82664860678924,0 82.55075266253145,20.82653350882904,0 82.55075086234466,20.82632699059588,0 82.55241293137294,20.82620875531208,0 82.55248582510161,20.82650253386136,0 82.55262249044846,20.82679143232602,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>1</name>
+					<LookAt>
+						<longitude>82.55058611111114</longitude>
+						<latitude>20.82691944444445</latitude>
+						<altitude>0</altitude>
+						<heading>5.565970692561154e-15</heading>
+						<tilt>0</tilt>
+						<range>999.999999999286</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55058611111114,20.82691944444445,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>2</name>
+					<LookAt>
+						<longitude>82.55262222222223</longitude>
+						<latitude>20.82678611111111</latitude>
+						<altitude>0</altitude>
+						<heading>1.590277340731758e-15</heading>
+						<tilt>0</tilt>
+						<range>999.9999999985909</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55262222222221,20.82678611111111,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>3</name>
+					<LookAt>
+						<longitude>82.55156929471465</longitude>
+						<latitude>20.82655252294267</latitude>
+						<altitude>0</altitude>
+						<heading>0.0001472363342382699</heading>
+						<tilt>17.11180785661283</tilt>
+						<range>356.1182667133471</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55241319170874,20.82621200407302,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>4</name>
+					<LookAt>
+						<longitude>82.55075555555557</longitude>
+						<latitude>20.82631944444445</latitude>
+						<altitude>0</altitude>
+						<heading>-9.14409470920761e-15</heading>
+						<tilt>0</tilt>
+						<range>1000.000000000269</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55075555555557,20.82631944444445,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Document>
+		<Document>
+			<name>Padampuri 2.02 Ha.kml</name>
+			<StyleMap id="m_ylw-pushpin1">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#s_ylw-pushpin00</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="s_ylw-pushpin00">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Style id="s_ylw-pushpin_hl2">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Placemark>
+				<name>Padampuri 2.02 Ha</name>
+				<styleUrl>#m_ylw-pushpin1</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								82.54885538318096,20.82721401203635,0 82.55035082744257,20.8272140041216,0 82.55050081227617,20.82701226393431,0 82.55250471775088,20.82688501000484,0 82.55222305092026,20.8275865933956,0 82.54879928882497,20.82755260216487,0 82.54885538318096,20.82721401203635,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Padampuri 3 Acres.kml</name>
+			<StyleMap id="m_ylw-pushpin2">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#s_ylw-pushpin1</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+				</Pair>
+			</StyleMap>
+			<StyleMap id="inline13">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#inline03</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#inline5</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="inline03">
+				<LineStyle>
+					<color>ffff55aa</color>
+					<width>2</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Style id="s_ylw-pushpin_hl1">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Style id="s_ylw-pushpin1">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Style id="inline5">
+				<LineStyle>
+					<color>ffff55aa</color>
+					<width>2</width>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Padampuri 3 Acres</name>
+				<open>1</open>
+				<Placemark>
+					<name>1</name>
+					<LookAt>
+						<longitude>82.55079444444443</longitude>
+						<latitude>20.82626111111111</latitude>
+						<altitude>0</altitude>
+						<heading>2.186631343506167e-14</heading>
+						<tilt>0</tilt>
+						<range>999.9999999988054</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin2</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55079444444445,20.82626111111112,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>2</name>
+					<LookAt>
+						<longitude>82.55247222222222</longitude>
+						<latitude>20.82610277777778</latitude>
+						<altitude>0</altitude>
+						<heading>2.782985346280577e-15</heading>
+						<tilt>0</tilt>
+						<range>999.9999999979797</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin2</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55247222222221,20.82610277777778,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>3</name>
+					<LookAt>
+						<longitude>82.552325</longitude>
+						<latitude>20.82545277777778</latitude>
+						<altitude>0</altitude>
+						<heading>1.311978806103701e-14</heading>
+						<tilt>0</tilt>
+						<range>999.9999999988784</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin2</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.552325,20.82545277777778,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>4</name>
+					<LookAt>
+						<longitude>82.55078333333334</longitude>
+						<latitude>20.82559166666667</latitude>
+						<altitude>0</altitude>
+						<heading>-1.590277340731758e-15</heading>
+						<tilt>0</tilt>
+						<range>999.9999999993606</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin2</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55078333333333,20.82559166666666,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>5</name>
+					<LookAt>
+						<longitude>82.55084444444445</longitude>
+						<latitude>20.82599166666667</latitude>
+						<altitude>0</altitude>
+						<heading>1.391492673140288e-14</heading>
+						<tilt>0</tilt>
+						<range>999.9999999986906</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin2</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55084444444445,20.82599166666667,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>6</name>
+					<LookAt>
+						<longitude>82.55076388888888</longitude>
+						<latitude>20.82613055555555</latitude>
+						<altitude>0</altitude>
+						<heading>-1.590277340731758e-15</heading>
+						<tilt>0</tilt>
+						<range>1000.000000000697</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin2</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>82.55076388888888,20.82613055555555,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Padampuri 3 Acres</name>
+					<styleUrl>#inline13</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									82.55076701199809,20.82613136773791,0 82.55084595456583,20.82599286164103,0 82.55078520021519,20.82559831767907,0 82.55232156534873,20.82546078470062,0 82.55247114476471,20.82610924542756,0 82.55079012091511,20.82626724473508,0 82.55076701199809,20.82613136773791,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+		</Document>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Placemark>
+<name>Akshay Vinimay Pvt. Ltd. Project Site</name>
+<description>12B, Beliaghata Road, Kolkata - 700010</description>
+<Point>
+<coordinates>88.37866097688675,22.56503201938354,0</coordinates>
+</Point>
+</Placemark>
+</kml>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hanuman Nagar.kml</name>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline12">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Hanuman Nagar</name>
+		<styleUrl>#inline30</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				72.85385884158217,19.30174963155468,0 72.8544592889406,19.30198438397118,0 72.85461156708496,19.30213318982537,0 72.85558007403274,19.30246691731156,0 72.85559021409722,19.30235257266969,0 72.85554901038522,19.30192206656819,0 72.85567753897537,19.30180422577912,0 72.85583167286552,19.30156448960465,0 72.85578688953166,19.30153221701245,0 72.85541085547327,19.30174054146757,0 72.85516487562722,19.30178157851135,0 72.85486267938013,19.30182293604188,0 72.85478018083521,19.301800780236,0 72.85463660678666,19.30179389725684,0 72.85457750108463,19.30172399103384,0 72.85446599081502,19.30170191777659,0 72.85436281864101,19.3013562513003,0 72.85394184897896,19.3012385011776,0 72.85385884158217,19.30174963155468,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
+2.85457750108463,19.30172399103384,0 72.85446599081502,19.30170191777659,0 72.85436281864101,19.3013562

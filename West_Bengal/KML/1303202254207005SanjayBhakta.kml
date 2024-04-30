@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Sanjay Bhakta.kml</name>
+	<StyleMap id="m_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed17">
+	</Style>
+	<Style id="inline8">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline15">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed9">
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline13">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline16">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed6">
+	</Style>
+	<Style id="failed23">
+	</Style>
+	<Style id="failed">
+	</Style>
+	<Style id="failed24">
+	</Style>
+	<StyleMap id="failed22">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline6">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline22</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed14">
+	</Style>
+	<StyleMap id="inline2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline21">
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed3">
+	</Style>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="failed25">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed23</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline17">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline22">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Sanjay Bhakta</name>
+		<open>1</open>
+		<Document>
+			<name>Sanjay Bhakta 10 km.kml</name>
+			<open>1</open>
+			<StyleMap id="stylemap_id0">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#style0</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#style</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="style">
+				<IconStyle>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Style id="style0">
+				<IconStyle>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+			</Style>
+			<Placemark>
+				<name>Circle</name>
+				<description><![CDATA[radius 10 km<P>Generated by <a href='http://kml4earth.appspot.com/'>Kml4Earth</a>]]></description>
+				<Style>
+					<IconStyle>
+						<Icon>
+						</Icon>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>2</width>
+					</LineStyle>
+				</Style>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						87.93499467354452,23.2133536575803,0 87.93391319529432,23.22681220592845,0 87.93067292211553,23.23997139455675,0 87.92534564822603,23.25253714151179,0 87.91804989653242,23.26422854814411,0 87.90894831390466,23.27478419169389,0 87.89824406736979,23.2839679877946,0 87.88617631905188,23.29157448991474,0 87.87301487970029,23.29743350506229,0 87.85905416055451,23.30141392028319,0 87.84460656050476,23.30342665226097,0 87.82999543949522,23.30342665226097,0 87.81554783944549,23.30141392028319,0 87.80158712029972,23.29743350506229,0 87.78842568094811,23.29157448991474,0 87.77635793263022,23.2839679877946,0 87.76565368609535,23.27478419169389,0 87.75655210346756,23.26422854814411,0 87.74925635177397,23.25253714151179,0 87.74392907788447,23.23997139455675,0 87.74068880470568,23.22681220592845,0 87.73960732645546,23.2133536575803,0 87.74070815734068,23.19989643423687,0 87.74396606359595,23.18674110289106,0 87.74930768423242,23.17418140276196,0 87.75661322157272,23.16249769521472,0 87.76571915924504,23.15195071891408,0 87.7764219432499,23.14277578810462,0 87.78848254140712,23.13517756159741,0 87.80163177828439,23.12932549705807,0 87.8155763268837,23.12535008984593,0 87.83000522514192,23.12333997829136,0 87.84459677485808,23.12333997829136,0 87.85902567311631,23.12535008984593,0 87.87297022171561,23.12932549705807,0 87.88611945859287,23.13517756159741,0 87.89818005675011,23.14277578810462,0 87.90888284075496,23.15195071891408,0 87.91798877842727,23.16249769521472,0 87.92529431576756,23.17418140276196,0 87.93063593640405,23.18674110289106,0 87.93389384265932,23.19989643423687,0 87.93499467354452,23.2133536575803,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Sanjay Bhakta Sand Mining</name>
+				<styleUrl>#stylemap_id0</styleUrl>
+				<Point>
+					<coordinates>87.837301,23.213384,0</coordinates>
+				</Point>
+			</Placemark>
+		</Document>
+		<Placemark>
+			<name>D</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#failed22</styleUrl>
+			<Point>
+				<coordinates>87.83643611111111,23.21246666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#failed2</styleUrl>
+			<Point>
+				<coordinates>87.83762222222222,23.21210277777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#failed25</styleUrl>
+			<Point>
+				<coordinates>87.8382361111111,23.21430277777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>A</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#failed1</styleUrl>
+			<Point>
+				<coordinates>87.83694166666666,23.21453888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sanjay Bhakt mining Area</name>
+			<styleUrl>#m_ylw-pushpin2</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83640307725636,23.21245144526022,0 87.83766644716478,23.21209953375836,0 87.83822446360809,23.21434098178943,0 87.8369342189734,23.21457028555388,0 87.83640307725636,23.21245144526022,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NH2</name>
+			<open>1</open>
+			<styleUrl>#inline0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.83819654016705,23.21429638530589,27.96386572143515 87.84600556614946,23.22575741656574,33.69735209272631 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>SH 8</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.83762738987861,23.21215394809718,0 87.84753403812721,23.20959009144037,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Burdwan Town</name>
+			<open>1</open>
+			<styleUrl>#inline1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.83822450391115,23.21411760017,28.95650000747525 87.86134217615077,23.23225683029197,36.91717164232656 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Burdwan Medical Collage &amp; Hospital</name>
+			<open>1</open>
+			<styleUrl>#inline14</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.83793745943781,23.21445418161989,27.90635025260045 87.85617226431415,23.24388277113524,35.8286016447107 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>B.C.C.u - RSBY Empannelled Hospital</name>
+			<open>1</open>
+			<styleUrl>#inline7</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.83798436599241,23.21439053832146,27.9295478083423 87.85968155256752,23.24122083473374,36.04026603979093 87.85945992015239,23.2411066635164,36.04026603979093 87.85946264259759,23.24127151157564,36.04026603979093 87.85950001553867,23.2414368740402,36.04026603979093 87.85957339696209,23.24166939145323,36.04026603979093 87.85957577223759,23.2418028529432,36.04026603979093 87.85976083456353,23.24231293272348,36.04026603979093 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Kisholoy Children Hospital</name>
+			<styleUrl>#inline2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.83786573566037,23.21302317985234,0 87.88012557055933,23.22405663156894,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Solana Masjid</name>
+			<open>1</open>
+			<styleUrl>#inline5</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					87.837525990166,23.21213482353082,28.71335357858003 87.89249078814272,23.19222692005628,30.37746807928112 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

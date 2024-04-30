@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Rampur Chak.kml</name>
+	<StyleMap id="inline516">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline07</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline217</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_R3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_R20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_R3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline1712">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline274</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline552</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline217">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_R20">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin181">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin122</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin72</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline274">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline552">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin34">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin122">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_R3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin241">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin221</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin34</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin72">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin221">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline07">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Rampur Chak</name>
+		<Placemark>
+			<name>300*50</name>
+			<styleUrl>#inline1712</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.01489258811083,20.4795989306742,0 80.01526607144643,20.479877709742,0 80.01406065796704,20.48085275272701,0 80.01354391968012,20.48196369117969,0 80.01313722555318,20.48171340384221,0 80.0136525712642,20.48059864641421,0 80.01489258811083,20.4795989306742,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Rampur Chak</name>
+			<description>L= 300m
+W= 50m
+D= 1.0m
+A= 15000 sqm/ 1.5 Ha
+Q= 15000 cum/ 5300 Brass</description>
+			<LookAt>
+				<longitude>80.01535153057938</longitude>
+				<latitude>20.4817486342168</latitude>
+				<altitude>0</altitude>
+				<heading>-34.27679917737031</heading>
+				<tilt>24.73593918410119</tilt>
+				<range>931.9964229335636</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_R3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.01442301574966,20.48031306224769,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>80.01542890208901</longitude>
+				<latitude>20.48011506157539</latitude>
+				<altitude>0</altitude>
+				<heading>-34.27676467269488</heading>
+				<tilt>20.73373720942685</tilt>
+				<range>156.5438484227087</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin241</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.01526666666666,20.47987777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>80.01443153101846</longitude>
+				<latitude>20.48107204341243</latitude>
+				<altitude>0</altitude>
+				<heading>-34.27711646758723</heading>
+				<tilt>20.7151187776047</tilt>
+				<range>149.5716105139971</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin181</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.01405833333334,20.48085555555555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>80.01374147063694</longitude>
+				<latitude>20.4820248390754</latitude>
+				<altitude>0</altitude>
+				<heading>-34.27735754273057</heading>
+				<tilt>20.80505069575033</tilt>
+				<range>135.5759429877399</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin181</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.01354166666667,20.48196388888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>80.01327217266572</longitude>
+				<latitude>20.4817919988199</latitude>
+				<altitude>0</altitude>
+				<heading>-34.27752175493842</heading>
+				<tilt>20.80505577079893</tilt>
+				<range>137.1665585801425</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin181</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.01313888888889,20.48171388888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP5</name>
+			<LookAt>
+				<longitude>80.01365022850767</longitude>
+				<latitude>20.48073841817388</latitude>
+				<altitude>0</altitude>
+				<heading>-34.27739442636027</heading>
+				<tilt>24.73304765228162</tilt>
+				<range>162.6080598823855</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin181</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.01365555555556,20.48059722222222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP6</name>
+			<LookAt>
+				<longitude>80.01486206452699</longitude>
+				<latitude>20.48013715502307</latitude>
+				<altitude>0</altitude>
+				<heading>-34.27697048657903</heading>
+				<tilt>24.7333684624333</tilt>
+				<range>247.9610655827167</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin181</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.01489166666667,20.47960277777777,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Haulage Road</name>
+			<description>L= 921 m
+W= 3.5m</description>
+			<styleUrl>#inline516</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.00591891542395,20.48050930447635,0 80.00617961543586,20.48046603918352,0 80.00678253074032,20.48033941745224,0 80.00739225317338,20.48022670639568,0 80.00766214535135,20.48018314989929,0 80.00787486510322,20.48012316760957,0 80.00797279934794,20.4799607436256,0 80.00803768824727,20.47973115479864,0 80.00812818589529,20.47949661085261,0 80.0082146181303,20.47941325404304,0 80.00838396416165,20.47942015975259,0 80.00875613786789,20.47952444257145,0 80.00912067529977,20.47964330777662,0 80.00952564138851,20.47988560544791,0 80.01006021786648,20.47995608551014,0 80.01033489710841,20.47996917356024,0 80.0107194924945,20.47998339986989,0 80.01128434801527,20.47984083001019,0 80.01195999599392,20.47966633475509,0 80.0124555654824,20.47950869121518,0 80.01289799090867,20.47938464621919,0 80.01336836626619,20.47937098238619,0 80.0139762614297,20.47953523926675,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

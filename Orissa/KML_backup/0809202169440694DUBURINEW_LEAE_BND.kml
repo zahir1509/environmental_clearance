@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="DUBURI NEW_LEAE_BND">
+	<name>DUBURI NEW_LEAE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>DUBURI NEW_LEAE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>DUBURI NEW_LEAE_BND</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.580601,20.091612,0 85.580596,20.09152,0 85.580676,20.091497,0 85.58063199999999,20.091349,0 85.58057599999999,20.091252,0 85.580409,20.091172,0 85.580287,20.091209,0 85.58024899999999,20.091227,0 85.580187,20.091168,0 85.580067,20.091296,0 85.579908,20.091303,0 85.579796,20.091168,0 85.57974400000001,20.091109,0 85.579644,20.091022,0 85.57950599999999,20.090923,0 85.579431,20.090878,0 85.579171,20.090926,0 85.578936,20.090749,0 85.578728,20.090758,0 85.578487,20.090706,0 85.57818,20.090601,0 85.57781300000001,20.090982,0 85.57774499999999,20.091031,0 85.57770600000001,20.091186,0 85.577697,20.091302,0 85.57777400000001,20.091551,0 85.577916,20.091644,0 85.578002,20.091675,0 85.578014,20.091717,0 85.57812699999999,20.091774,0 85.57826799999999,20.091807,0 85.57874700000001,20.09184,0 85.578924,20.091877,0 85.578993,20.091919,0 85.57905,20.091922,0 85.579132,20.091944,0 85.57948,20.091856,0 85.57971499999999,20.09178,0 85.579768,20.09159,0 85.580214,20.091592,0 85.580601,20.091612,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

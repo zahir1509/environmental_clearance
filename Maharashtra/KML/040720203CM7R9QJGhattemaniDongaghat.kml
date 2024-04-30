@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ghattemani Donga ghat.kml</name>
+	<Style id="sh_G2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="inline1147">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline287">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin63">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin63">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline454">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline362">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline288">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline454</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1147</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_G2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_G2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_G2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_G2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin62">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin63</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin63</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline071">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline362</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline287</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Ghattemani Donga ghat</name>
+		<open>1</open>
+		<Placemark>
+			<name>BP1</name>
+			<LookAt>
+				<longitude>80.36337549574346</longitude>
+				<latitude>21.53240770370051</latitude>
+				<altitude>0</altitude>
+				<heading>-12.84723442938542</heading>
+				<tilt>28.54365839239818</tilt>
+				<range>177.4611502679297</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin62</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.36296944444445,21.532225,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP2</name>
+			<LookAt>
+				<longitude>80.36258495592126</longitude>
+				<latitude>21.53284053998476</latitude>
+				<altitude>0</altitude>
+				<heading>-13.52440480001998</heading>
+				<tilt>2.722250467496048</tilt>
+				<range>137.5939780606257</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin62</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.36219166666666,21.5329,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP3</name>
+			<LookAt>
+				<longitude>80.36297065925291</longitude>
+				<latitude>21.53318461328637</latitude>
+				<altitude>0</altitude>
+				<heading>-13.52427446878756</heading>
+				<tilt>2.72227839395349</tilt>
+				<range>202.8051901468864</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin62</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.36235277777777,21.53306944444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>110*25</name>
+			<styleUrl>#inline288</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.36235378691249,21.53306905960215,0 80.36219206236558,21.53290092632008,0 80.36296835881005,21.53222493926969,0 80.36312669102753,21.53239646352907,0 80.36235378691249,21.53306905960215,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BP4</name>
+			<LookAt>
+				<longitude>80.36324371513852</longitude>
+				<latitude>21.53269724552849</latitude>
+				<altitude>0</altitude>
+				<heading>-13.52468045080165</heading>
+				<tilt>25.86760273156796</tilt>
+				<range>128.5354978313503</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin62</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.363125,21.53239444444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ghattemani (Donga ghat)</name>
+			<description>L= 110m
+W= 45m
+D= 0.50m
+A= 2750 sqm / 0.27 Ha
+Q= 1375 cum / 486 Brass</description>
+			<LookAt>
+				<longitude>80.3630607392967</longitude>
+				<latitude>21.53271951360534</latitude>
+				<altitude>0</altitude>
+				<heading>-13.52475118702772</heading>
+				<tilt>26.36907104100633</tilt>
+				<range>195.4495915678263</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_G2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>80.36268923785251,21.53266547210851,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Haulage Road</name>
+			<description>L= 357m
+W= 3.5m</description>
+			<styleUrl>#inline071</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					80.36257555413468,21.53242543772944,0 80.36252911473441,21.53204673672344,0 80.36237880084453,21.53179518803303,0 80.36209535209687,21.53161677758419,0 80.36167879267356,21.53136556928787,0 80.36135226551272,21.53096671102878,0 80.36108451511473,21.53067622876301,0 80.36090586567472,21.53047090968104,0 80.36084297828047,21.53031428167603,0 80.36079476459749,21.53009983973031,0 80.36071425191233,21.52987341123832,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

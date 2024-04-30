@@ -1,0 +1,219 @@
+---
+title: "Odisha EC Analysis"
+author: "Anutubh Agnihotri and Pranav Gupta"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(ec_detailed_timelineho = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+library(data.table)
+```
+
+## Change Username 
+
+```{r}
+user <- "agnihotri"
+#user <- "prana"
+#user <- "hp"
+```
+
+## Loading Files
+
+```{r}
+ec_detailed_timeline_timeline <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final_Timeline"))
+```
+
+```{r}
+
+ec_detailed_timeline <- NULL
+
+for(i in 1:length(ec_detailed_timeline_timeline)){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final_Timeline/",ec_detailed_timeline_timeline[i]))
+  add$csv <- i
+  ec_detailed_timeline <- dplyr::bind_rows(ec_detailed_timeline,add)
+}
+
+table(duplicated(ec_detailed_timeline$Proposal.Number))
+
+ec_detailed_timeline$Proposal<-ec_detailed_timeline$Proposal.No.
+ec_detailed_timeline$st_code <- sub("^[^/]*/([^/]*)/.*$", "\\1", ec_detailed_timeline$Proposal)
+table(ec_detailed_timeline$st_code)
+
+```
+
+## Adding variables
+
+```{r}
+table(ec_detailed_timeline$st_code)
+
+table(grepl("SIA/CG/", ec_detailed_timeline$Proposal))
+
+ec_detailed_timeline <- ec_detailed_timeline %>%
+  mutate(
+    state1 = case_when(st_code == 'AP' ~ "Andhra_Pradesh", 
+                    st_code =='BR' ~ "Bihar", 
+                    st_code =='CG' ~ "Chattisgarh", 
+                    st_code =='GJ' ~ "Gujarat",
+                    st_code =='HP' ~ "Himachal_Pradesh",
+                    st_code =='HR' ~ "Haryana",
+                    st_code =='JH' ~ "Jharkhand",
+                    st_code =='KA' ~ "Karnataka", 
+                    st_code =='KL' ~ "Kerala", 
+                    st_code =='MH' ~ "Maharashtra",
+                    st_code =='MP' ~ "Madhya_Pradesh",
+                    st_code =='OR' ~ "Odisha",
+                    st_code =='PB' ~ "Punjab",
+                    st_code =='RJ' ~ "Rajasthan",
+                    st_code =='TG' ~ "Telangana",  
+                    st_code =='UP' ~ "Uttar_Pradesh", 
+                    st_code =='WB' ~ "West_Bengal",
+                    st_code =='TN' ~ "Tamil_Nadu", 
+                    TRUE ~ "Other"))
+
+
+table(ec_detailed_timeline$state1)
+```
+
+```{r}
+ec_detailed_timeline <- ec_detailed_timeline %>% filter(state1 != "Other")
+```
+
+## Removing Duplication
+
+```{r}
+
+ec_detailed_timeline$duplicate <- duplicated(ec_detailed_timeline$Proposal)
+
+table(ec_detailed_timeline$duplicate)
+
+ec_detailed_timeline<-ec_detailed_timeline%>%
+  filter(!duplicated(Proposal.Number))
+
+```
+
+## Divide Time into Different Components 
+
+```{r}
+##Create Variables that Divide the Overall time for process EC
+##into the following components
+
+# Applying the function to the input vector
+
+#Time taken between SEIAA and SEAC
+
+ec_detailed_timeline$Accepted.by.SEIAA.and.forwarded.to.SEAC <- ec_detailed_timeline$Accepted.by.SEIAA.and.forwarded.to.SEAC %>% dmy()
+
+ec_detailed_timeline$Accepted.by.SEAC <- ec_detailed_timeline$Accepted.by.SEAC %>% dmy()
+
+#Time taken to Grant 
+ec_detailed_timeline$time_SEIAA_SEAC <- as.duration(ec_detailed_timeline$Accepted.by.SEAC - ec_detailed_timeline$Accepted.by.SEIAA.and.forwarded.to.SEAC)/ddays(1)
+
+summary(ec_detailed_timeline$time_SEIAA_SEAC)
+
+#Time taken to Grant 
+ec_detailed_timeline$EC_Letter_Uploaded <- ec_detailed_timeline$EC.Letter.Uploaded.On.EC.Granted %>% dmy()
+
+
+ec_detailed_timeline$submit<-ec_detailed_timeline$Submitted.by.Proponent%>%
+  dmy()
+  
+
+ec_detailed_timeline$time_submit_seiaa<-as.duration(ec_detailed_timeline$Accepted.by.SEIAA.and.forwarded.to.SEAC - ec_detailed_timeline$submit)/ddays(1)
+
+ec_detailed_timeline$grant<-ec_detailed_timeline$EC.Letter.Uploaded.On.EC.Granted%>%
+  dmy()
+
+
+ec_detailed_timeline$time_SEAC_Grant <- as.duration(ec_detailed_timeline$grant - ec_detailed_timeline$Accepted.by.SEAC)/ddays(1)
+
+
+ec_detailed_timeline$time_total_detailed<-as.duration(ec_detailed_timeline$grant-ec_detailed_timeline$submit)/ddays()
+
+summary(ec_detailed_timeline$time_total_detailed)
+
+summary(ec_detailed_timeline$time_submit_seiaa)
+which(ec_detailed_timeline$time_submit_seiaa<0)
+
+summary(ec_detailed_timeline$time_SEIAA_SEAC)
+
+which(ec_detailed_timeline$time_SEIAA_SEAC<0)
+
+summary(ec_detailed_timeline$time_SEAC_Grant)
+
+which(ec_detailed_timeline$time_SEAC_Grant<0)
+```
+
+```{r date-detailed}
+
+ec_detailed_timeline<-ec_detailed_timeline%>%
+  select(-state1)
+
+write.csv(ec_detailed_timeline,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Detailed_Timeline_All_States.csv"))
+
+```
+
+
+
+
+
+
+```{r plots}
+ggplot(filter(ec_detailed_timeline,time_SEIAA_SEAC>0&time>0), aes(x = time_SEIAA_SEAC, y = time)) +
+  geom_point(fill = "skyblue", width = 0.5) +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Time Taken between SEIAA and SEAC to Approve",
+       y = "Overall Time") +
+  theme_minimal()
+
+ec_detailed_timeline$time_seac_percent<-ec_detailed_timeline$time_SEIAA_SEAC/ec_detailed_timeline$time
+
+summary(ec_detailed_timeline$time_seac_percent)
+
+ggplot(filter(ec_detailed_timeline,time_seac_percent<1&time>0), aes(time_seac_percent)) +
+  geom_histogram() +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Time Taken by SEAC to Approve",
+       y = "Count") +
+  theme_minimal()
+```
+
+
+
+```{r read-ec-and-merge}
+
+ggplot(filter(ec_detailed_timeline,time_seac_percent<1&time>0), aes(x = Category_Simplified, y = time_seac_percent)) +
+  geom_boxplot(fill = "skyblue", color = "darkblue", outlier.shape = NA) +
+  labs(x = "Group", y = "Time Taken by SEAC as Percentage", title = "Box Plot") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+
+ggplot(filter(ec_detailed_timeline,time_submit_seiaa>0&time>0), aes(x = time_submit_seiaa, y = time)) +
+  geom_point(fill = "skyblue", width = 0.5) +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Time Taken by seiaa to Approve",
+       y = "Overall Time") +
+  theme_minimal()
+
+```

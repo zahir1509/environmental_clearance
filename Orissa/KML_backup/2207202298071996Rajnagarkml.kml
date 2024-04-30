@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Rajnagar kml.kml</name>
+	<open>1</open>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl200">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin200">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Rajnagar Snd Bed</name>
+		<styleUrl>#m_ylw-pushpin200</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				87.21195275853417,21.80583863180226,0 87.21205587610301,21.80848660562526,0 87.21442489718173,21.80847749129286,0 87.21362736724615,21.80572792702529,0 87.21195275853417,21.80583863180226,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>A</name>
+		<LookAt>
+			<longitude>87.21220174644893</longitude>
+			<latitude>21.80699109726658</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0005651253439845292</heading>
+			<tilt>35.43632069363439</tilt>
+			<range>668.1847098788919</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>87.21205833333333,21.80848611111111,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>B</name>
+		<LookAt>
+			<longitude>87.21304806194306</longitude>
+			<latitude>21.80790531239423</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0007697608291021875</heading>
+			<tilt>25.85291292238317</tilt>
+			<range>655.71347061583</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>87.21442500000001,21.80847777777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>C</name>
+		<LookAt>
+			<longitude>87.21304806194306</longitude>
+			<latitude>21.80790531239423</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0007697608291021875</heading>
+			<tilt>25.85291292238317</tilt>
+			<range>655.71347061583</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>87.21362777777777,21.80572777777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>D</name>
+		<LookAt>
+			<longitude>87.21375198079558</longitude>
+			<latitude>21.80752628812539</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0004422944705819191</heading>
+			<tilt>27.42456060802562</tilt>
+			<range>838.0323869742926</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>87.21195277777778,21.80583888888889,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

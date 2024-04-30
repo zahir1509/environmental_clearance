@@ -1,0 +1,471 @@
+---
+title: "Environment"
+author: "Pranav Gupta"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+```
+
+```{r}
+user <- "agnihotri"
+#user <- "anust"
+```
+
+```{r}
+ec_files <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final"))
+```
+
+```{r}
+ec <- NULL
+for(i in 1:length(ec_files)){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files[i]))
+  add$csv <- i
+  ec <- rbind(ec,add)
+}
+
+#bih <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files[1]))
+
+#ec <- ec %>% filter(State %in% c("Haryana","Orissa","Uttar Pradesh","Jharkhand","Karnataka","Rajasthan","Kerala"))
+```
+
+
+```{r}
+odisha_main_data<-read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/merged_maindata.csv"),stringsAsFactors = F)
+
+odisha_data_delisted<-odisha_main_data%>%
+  filter(Status=="Delisted")
+
+odisha_data_granted_offline<-odisha_main_data%>%
+  filter(Status=="EC Granted - Processed offline")
+
+
+```
+
+```{r}
+#creating state based on code
+ec$state1 <- ifelse(grepl("SIA/BR/", ec$Proposal), "Bihar",
+                          ifelse(grepl("SIA/KL/", ec$Proposal), "Kerala", ifelse(grepl("SIA/KA/", ec$Proposal), "Karnataka", ifelse(grepl("SIA/HR/", ec$Proposal), "Haryana",ifelse(grepl("SIA/JH/", ec$Proposal), "Jharkhand",ifelse(grepl("SIA/OR/", ec$Proposal), "Odisha", ifelse(grepl("SIA/RJ/", ec$Proposal), "Rajasthan",ifelse(grepl("SIA/UP/", ec$Proposal), "UP", "Other"))))))))
+
+table(ec$state_correct)
+
+ec <- ec %>% filter(state1 != "Other") 
+```
+
+
+## Build
+```{r}
+grant_ec <- ec %>% filter(Status %in% c("EC Granted","EC Granted - Processed offline")) %>% distinct()
+```
+
+```{r}
+grant_ec$duplicate <- duplicated(grant_ec$Proposal)
+table(grant_ec$duplicate)
+```
+##Simplify the Categories of Projects 
+
+```{r}
+grant_ec$Category_Simplified <- ifelse(grepl('INFRA',grant_ec$Category),'Infrastructure',
+                                    ifelse(grepl('Industrial',grant_ec$Category),'Industrial',
+                                    ifelse(grant_ec$Category=='Non-Coal Mining','Non-Coal Mining','Other')))
+
+table(grant_ec$Category_Simplified)
+
+```
+
+
+Fix STate Name 
+
+```{r odisha}
+
+grant_ec$State[grepl('/OR/',grant_ec$Proposal)]='Orissa'
+
+
+grant_ec$State[grepl('/UP/',grant_ec$Proposal)]='Uttar Pradesh'
+
+table(grant_ec$state1)
+
+```
+
+
+```{r}
+extract_after_colon <- function(input) {
+  split_string <- strsplit(input, ":")
+  extracted_text <- sapply(split_string, function(x) trimws(x[2]))
+  return(extracted_text)
+}
+
+# Applying the function to the input vector
+grant_ec$submit <- extract_after_colon(grant_ec$Date_1) %>% dmy()
+grant_ec$grant <- extract_after_colon(grant_ec$Date_2) %>% dmy()
+
+#Time taken to Grant 
+grant_ec$time <- as.duration(grant_ec$grant - grant_ec$submit)/ddays(1)
+```
+
+
+```{r}
+summary(grant_ec$time)
+
+#Exclude if length  less than 0
+
+grant_ec <- grant_ec %>% filter(time >=0) #Some obs have negative grant time
+```
+
+
+```{r extract-year}
+#Year of Submission
+#grant_ec$submit_year<-(gsub('^([0-9][0-9][0-9][0-9]).*','\\1',grant_ec$submit))
+grant_ec$submit_year <- year(grant_ec$submit)
+
+#Year-Month of Submission
+grant_ec$submit_year_mon<-as.yearmon(grant_ec$submit)
+```
+
+
+```{r}
+density_year <- ggplot(grant_ec, aes(x = submit_year)) +
+  geom_bar() +
+  theme_minimal() + facet_wrap(~state1) + ggtitle('EC Granted by Year') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+
+
+print(density_year)
+```
+
+## Descriptives
+
+```{r}
+density_year_non_coal_mining <- ggplot(filter(grant_ec,Category=='Non-Coal Mining'), aes(x = submit_year)) +
+  geom_bar(fill = "skyblue", color = "darkblue", alpha = 0.5) +
+  theme_minimal() + facet_wrap(~state1) + ggtitle('Non Coal Mining Projects (EC)') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+print(density_year_non_coal_mining)
+```
+
+```{r}
+density_year_infra <- ggplot(filter(grant_ec,grepl('INFRA',Category)), aes(x = submit_year)) +
+  geom_bar(fill = "skyblue", color = "darkblue", alpha = 0.5) +
+  theme_minimal() + facet_wrap(~state1) + ggtitle('INFRA Projects') 
+
+print(density_year_infra)
+```
+
+
+```{r}
+density_ec_all_odisha <- ggplot(filter(grant_ec,State=='Orissa'), aes(x = submit_year)) +
+  geom_bar(fill = "skyblue", color = "darkblue", alpha = 0.5) +
+  theme_minimal() + facet_wrap(~Category_Simplified) + ggtitle('ODISHA Projects (EC)') 
+
+print(density_ec_all_odisha)
+```
+
+```{r}
+density_year_infra_orissa <- ggplot(filter(grant_ec,State=='Orissa'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('May 2019'), linetype="dashed", 
+             color = "black", size=1)+
+  geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
+  theme_minimal() + ggtitle('Odisha Projects Around Elections (EC)')  +facet_wrap(~Category_Simplified)
+
+print(density_year_infra_orissa)
+```
+
+```{r}
+density_year_infra_haryana <- ggplot(filter(grant_ec,State=='Haryana'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('Oct 2019'), linetype="dashed", 
+             color = "black", size=1)+
+  geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
+  theme_minimal() + ggtitle('Haryana Projects Around Elections')  +facet_wrap(~Category_Simplified)
+
+print(density_year_infra_haryana)
+```
+
+```{r}
+density_year_infra_up <- ggplot(filter(grant_ec,State=='Haryana'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('March 2017'), linetype="dashed", 
+             color = "black", size=1)+
+  geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
+  theme_minimal() + ggtitle('UP  Projects Around Elections (EC)')  +facet_wrap(~Category_Simplified)
+
+print(density_year_infra_up)
+```
+
+
+```{r}
+density_time <- ggplot(grant_ec, aes(x = time)) +
+  geom_density(fill = "skyblue", color = "darkblue", alpha = 0.5) +
+  theme_minimal()
+
+print(density_time)
+```
+
+```{r}
+ggplot(grant_ec, aes(x = Category)) +
+  geom_bar(aes(y = (..count..)/sum(..count..)), fill = "skyblue", color = "darkblue") +
+  labs(x = "Category", y = "Percentage", title = "Category - EC granted") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+```{r}
+ggplot(grant_ec, aes(x = Category, y = time)) +
+  geom_boxplot(fill = "skyblue", color = "darkblue", outlier.shape = NA) +
+  labs(x = "Group", y = "Value", title = "Box Plot") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+```{r}
+type <- grant_ec %>% group_by(Category_Simplified,state1) %>% summarise(avg = mean(time),sd = sd(time), count = n())
+type$cd <- type$sd/type$avg
+```
+```{r}
+infra_time <- type %>% ggplot(aes(x =state1, y = avg)) +  geom_bar(stat = "identity", fill = "steelblue") +
+  theme(axis.text.x = element_text(angle = 180, vjust = 0.5, hjust = 1))+
+  facet_wrap(~Category_Simplified)+
+  labs(x = "State", y = "Avg time",title = "Average time for Infra projects") +theme_minimal()+
+ theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+print(infra_time)
+```
+
+```{r}
+infra_time <- type %>% filter(Category_Simplified=="Infrastructure") %>% ggplot(aes(x =state1, y = avg)) +  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(x = "State", y = "Avg time",title = "Average time for Infra projects") +
+  theme_minimal()
+
+print(infra_time)
+```
+
+
+
+```{r}
+mining_time <- type %>% filter(Category_Simplified=="Non-Coal Mining") %>% ggplot(aes(x =state1, y = avg)) +  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(x = "State", y = "Avg time",title = "Avg - Non coal mining") +
+  theme_minimal()
+
+print(mining_time)
+```
+
+```{r}
+ind_time <- type %>% filter(Category_Simplified=="Industrial") %>% ggplot(aes(x =state1, y = avg)) +  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(x = "State", y = "Avg time",title = "Avg - Industrial") +
+  theme_minimal()
+
+print(ind_time)
+```
+
+
+#District Analysis 
+
+## Build
+
+```{r}
+code <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/district_lgd.csv")) 
+grant_ec <- left_join(grant_ec,code,by="District")
+```
+
+```{r}
+dist <- grant_ec %>% group_by(census2011,state1) %>% summarise(avg = mean(time),sd = sd(time), count = n(),most = names(table(Category))[which.max(table(Category))])
+dist$cd <- dist$sd/dist$avg
+dist$census2011 <- sprintf("%03d", dist$census2011)
+dist$census2011 <- as.character(dist$census2011)
+```
+
+```{r}
+# Shape file
+dist_shp <- st_read(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/shrug_map/district.shp"))
+dist_shp$census2011 <- dist_shp$pc11_d_id
+dist_shp <- left_join(dist_shp,dist,by="census2011")
+shp_har <- dist_shp %>% filter(pc11_s_id %in% c("06"))
+shp_or <- dist_shp %>% filter(pc11_s_id %in% c("21"))
+shp_up <- dist_shp %>% filter(pc11_s_id %in% c("09"))
+```
+
+## Maps Odisha
+
+```{r}
+time_or <- ggplot(shp_or)+
+geom_sf(aes(fill = avg)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(60,250))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Avg Time - Odisha", fill = "Days")+ theme(plot.title = element_text(hjust = .5))
+
+print(time_or)
+```
+
+```{r}
+count_or <- ggplot(shp_or)+
+geom_sf(aes(fill = count)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(0,200))+## clean map theme from cowplot
+theme_map()+
+labs(title = "No. of Projects - Odisha", fill = "Count")+ theme(plot.title = element_text(hjust = .5))
+
+print(count_or)
+```
+
+
+```{r}
+cd_or <- ggplot(shp_or)+
+geom_sf(aes(fill = cd)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(0,1.5))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Coeff. of Dev. - Odisha", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(cd_or)
+```
+
+```{r}
+most_or <- ggplot(shp_or)+
+geom_sf(aes(fill = most)) +
+## custom gradient 
+scale_fill_manual(values = c("red", "blue", "green", "orange","skyblue"), na.value = "grey") +## clean map theme from cowplot
+theme_map()+
+labs(title = "Categories - Odisha", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(most_or)
+```
+
+## Maps - Haryana
+
+```{r}
+time_har <- ggplot(shp_har)+
+geom_sf(aes(fill = avg)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(80,999))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Avg Time - Haryana", fill = "Days")+ theme(plot.title = element_text(hjust = .5))
+
+print(time_har)
+```
+
+```{r}
+count_har <- ggplot(shp_har)+
+geom_sf(aes(fill = count)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(1,270))+## clean map theme from cowplot
+theme_map()+
+labs(title = "No. of Projects - Haryana", fill = "Count")+ theme(plot.title = element_text(hjust = .5))
+
+print(count_har)
+```
+
+
+```{r}
+cd_har <- ggplot(shp_har)+
+geom_sf(aes(fill = cd)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(0,1.5))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Coeff. of Dev. - Haryana", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(cd_har)
+```
+
+```{r}
+most_har <- ggplot(shp_har)+
+geom_sf(aes(fill = most)) +
+## custom gradient 
+scale_fill_manual(values = c("red", "blue", "green", "orange","skyblue"), na.value = "grey") +## clean map theme from cowplot
+theme_map()+
+labs(title = "Categories - Haryana", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(most_har)
+```
+
+## Maps - UP
+
+```{r}
+time_up <- ggplot(shp_up)+
+geom_sf(aes(fill = avg)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(80,999))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Avg Time - UP", fill = "Days")+ theme(plot.title = element_text(hjust = .5))
+
+print(time_up)
+```
+
+```{r}
+count_up <- ggplot(shp_up)+
+geom_sf(aes(fill = count)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(1,270))+## clean map theme from cowplot
+theme_map()+
+labs(title = "No. of Projects - UP", fill = "Count")+ theme(plot.title = element_text(hjust = .5))
+
+print(count_up)
+```
+
+```{r}
+cd_up <- ggplot(shp_up)+
+geom_sf(aes(fill = cd)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(0,1.5))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Coeff. of Dev. - UP", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(cd_up)
+```
+
+```{r}
+most_up <- ggplot(shp_up)+
+geom_sf(aes(fill = most)) +
+## custom gradient 
+scale_fill_manual(values = c("red", "blue", "green", "orange","skyblue"), na.value = "grey") +## clean map theme from cowplot
+theme_map()+
+labs(title = "Categories - UP", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(most_up)
+```
+
+#Economic Census
+
+```{r}
+ec13 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/ec13.csv"))
+ec13$census2011 <- ec13$pc11_district_id
+ec13$census2011 <- sprintf("%03d", ec13$census2011)
+ec13$census2011 <- as.character(ec13$census2011)
+
+dist <- left_join(dist,ec13,by="census2011")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7f55ff</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7f55ff</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>Supershakti</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.31694672894301,23.51647297617478,0 87.31692186953772,23.51634445811892,0 87.31685218531378,23.51618755497927,0 87.31676918865956,23.51604280144088,0 87.31650671421615,23.51570591091787,0 87.31627174401014,23.51535016194997,0 87.31604577463264,23.51505350598877,0 87.31579985286406,23.51470375400853,0 87.31549054315681,23.51422528141033,0 87.31564830251379,23.51412536205479,0 87.31582675162329,23.5140638778203,0 87.31603969863807,23.51396984925414,0 87.31631105312226,23.51380160330412,0 87.31653562792273,23.51370738178027,0 87.31673001695116,23.51362107139359,0 87.31685125719895,23.51365063760746,0 87.31695783041718,23.5135683683249,0 87.31711081524902,23.51350196585462,0 87.31715683808103,23.51353936908511,0 87.31720114095712,23.51369389549417,0 87.31729571402599,23.51377742497327,0 87.31738229853458,23.51396437770081,0 87.31746633449207,23.5140542135358,0 87.31757219218484,23.51419439211732,0 87.31769131614018,23.51433520605734,0 87.31773200933947,23.51438873977145,0 87.31777350642022,23.51445833369135,0 87.31783724130895,23.51455199799515,0 87.31788006637936,23.51463971258347,0 87.31797126667917,23.5147906707925,0 87.31805677507431,23.51492127425659,0 87.31817949712874,23.51504391928255,0 87.31826994898962,23.51517793019215,0 87.31831126625447,23.51529177374648,0 87.31835081064065,23.51542015846975,0 87.31846590461767,23.51562329518166,0 87.3172511211548,23.51629410049654,0 87.31694672894301,23.51647297617478,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Supershakti Metaliks Ltd</name>
+			<LookAt>
+				<longitude>87.31708895848432</longitude>
+				<latitude>23.51451513434958</latitude>
+				<altitude>0</altitude>
+				<heading>0.0003246703405564522</heading>
+				<tilt>28.71779806689955</tilt>
+				<range>560.1956546044291</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.31680285710688,23.51499814108514,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
+eToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-

@@ -27,49 +27,26 @@ library(lfe)
 library(expss)
 library(lubridate)
 library(zoo)
+library(ggthemes)
 ```
 
 ```{r}
-user <- "prana"
+#user <- "agnihotri"
 #user <- "anust"
+user <- "prana"
 ```
 
 ```{r}
-ec_files <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final"))
-```
+ec<-readRDS(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/EC_All_States.rds"))
 
-```{r}
-ec <- NULL
-for(i in 1:length(ec_files)){
-  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files[i]))
-  add$csv <- i
-  ec <- rbind(ec,add)
-}
-
-#bih <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files[1]))
-
-#ec <- ec %>% filter(State %in% c("Haryana","Orissa","Uttar Pradesh","Jharkhand","Karnataka","Rajasthan","Kerala"))
-```
-
-
-```{r}
-#table(ec$Status)
-```
-
-```{r}
-#creating state based on code
-ec$state1 <- ifelse(grepl("SIA/BR/", ec$Proposal), "Bihar",
-                          ifelse(grepl("SIA/KL/", ec$Proposal), "Kerala", ifelse(grepl("SIA/KA/", ec$Proposal), "Karnataka", ifelse(grepl("SIA/HR/", ec$Proposal), "Haryana",ifelse(grepl("SIA/JH/", ec$Proposal), "Jharkhand",ifelse(grepl("SIA/OR/", ec$Proposal), "Odisha", ifelse(grepl("SIA/RJ/", ec$Proposal), "Rajasthan",ifelse(grepl("SIA/UP/", ec$Proposal), "UP", "Other"))))))))
-
-table(ec$state_correct)
-
-ec <- ec %>% filter(state1 != "Other") 
+ec$submit_year<-format(as.Date(ec$submit_date, format="%d/%m/%Y"),"%Y")
 ```
 
 
 ## Build
 ```{r}
 grant_ec <- ec %>% filter(Status %in% c("EC Granted","EC Granted - Processed offline")) %>% distinct()
+
 ```
 
 ```{r}
@@ -79,28 +56,13 @@ table(grant_ec$duplicate)
 ##Simplify the Categories of Projects 
 
 ```{r}
-grant_ec$Category_Simplified <- ifelse(grepl('INFRA',grant_ec$Category),'Infrastructure',
-                                    ifelse(grepl('Industrial',grant_ec$Category),'Industrial',
-                                    ifelse(grant_ec$Category=='Non-Coal Mining','Non-Coal Mining','Other')))
 
 table(grant_ec$Category_Simplified)
 
 ```
 
-```{r}
-extract_after_colon <- function(input) {
-  split_string <- strsplit(input, ":")
-  extracted_text <- sapply(split_string, function(x) trimws(x[2]))
-  return(extracted_text)
-}
 
-# Applying the function to the input vector
-grant_ec$submit <- extract_after_colon(grant_ec$Date_1) %>% dmy()
-grant_ec$grant <- extract_after_colon(grant_ec$Date_2) %>% dmy()
 
-#Time taken to Grant 
-grant_ec$time <- as.duration(grant_ec$grant - grant_ec$submit)/ddays(1)
-```
 
 
 ```{r}
@@ -125,7 +87,9 @@ grant_ec$submit_year_mon<-as.yearmon(grant_ec$submit)
 ```{r}
 density_year <- ggplot(grant_ec, aes(x = submit_year)) +
   geom_bar() +
-  theme_minimal() + facet_wrap(~State) + ggtitle('EC Granted')
+  theme_minimal()  + ggtitle('EC Granted by Year') + 
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
+
 
 print(density_year)
 ```
@@ -135,7 +99,8 @@ print(density_year)
 ```{r}
 density_year_non_coal_mining <- ggplot(filter(grant_ec,Category=='Non-Coal Mining'), aes(x = submit_year)) +
   geom_bar(fill = "skyblue", color = "darkblue", alpha = 0.5) +
-  theme_minimal() + facet_wrap(~State) + ggtitle('Non Coal Mining Projects (EC)') 
+  theme_minimal() + facet_wrap(~state1) + ggtitle('Non Coal Mining Projects (EC)') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 
 print(density_year_non_coal_mining)
 ```
@@ -143,31 +108,37 @@ print(density_year_non_coal_mining)
 ```{r}
 density_year_infra <- ggplot(filter(grant_ec,grepl('INFRA',Category)), aes(x = submit_year)) +
   geom_bar(fill = "skyblue", color = "darkblue", alpha = 0.5) +
-  theme_minimal() + facet_wrap(~State) + ggtitle('INFRA Projects') 
+  theme_minimal() + facet_wrap(~state1) + ggtitle('INFRA Projects') 
 
 print(density_year_infra)
 ```
 
 
 ```{r}
-density_ec_all_odisha <- ggplot(filter(grant_ec,State=='Orissa'), aes(x = submit_year)) +
-  geom_bar(fill = "skyblue", color = "darkblue", alpha = 0.5) +
-  theme_minimal() + facet_wrap(~Category_Simplified) + ggtitle('ODISHA Projects (EC)') 
 
-print(density_ec_all_odisha)
+library(ggthemes)
+
+density_all_submitted <- ggplot(filter(ec,submit_year<2024), aes(x = submit_year)) +
+  geom_bar(fill = "skyblue", color = "darkblue", alpha = 0.5) +
+    ggtitle('Projects Submitted') + theme_economist()
+
+print(density_all_submitted)
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/MPSA_2024/Figures/applications_submitted.eps"))
+
 ```
 
 ```{r}
-density_year_infra_orissa <- ggplot(filter(grant_ec,State=='Orissa'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('May 2019'), linetype="dashed", 
+density_year_all <- ggplot(grant_ec, aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('May 2019'), linetype="dashed", 
              color = "black", size=1)+
   geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
   theme_minimal() + ggtitle('Odisha Projects Around Elections (EC)')  +facet_wrap(~Category_Simplified)
 
-print(density_year_infra_orissa)
+print(density_year_all)
 ```
 
 ```{r}
-density_year_infra_haryana <- ggplot(filter(grant_ec,State=='Haryana'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('Oct 2019'), linetype="dashed", 
+density_year_infra_haryana <- ggplot(filter(grant_ec,state1=='Rajasthan'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('Oct 2019'), linetype="dashed", 
              color = "black", size=1)+
   geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
   theme_minimal() + ggtitle('Haryana Projects Around Elections')  +facet_wrap(~Category_Simplified)
@@ -176,7 +147,7 @@ print(density_year_infra_haryana)
 ```
 
 ```{r}
-density_year_infra_up <- ggplot(filter(grant_ec,State=='Haryana'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('March 2017'), linetype="dashed", 
+density_year_infra_up <- ggplot(filter(grant_ec,state1=='Haryana'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('March 2017'), linetype="dashed", 
              color = "black", size=1)+
   geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
   theme_minimal() + ggtitle('UP  Projects Around Elections (EC)')  +facet_wrap(~Category_Simplified)
@@ -188,24 +159,27 @@ print(density_year_infra_up)
 ```{r}
 density_time <- ggplot(grant_ec, aes(x = time)) +
   geom_density(fill = "skyblue", color = "darkblue", alpha = 0.5) +
-  theme_minimal()
+  theme_minimal() + scale_x_log10()
 
 print(density_time)
 ```
 
 ```{r}
-ggplot(grant_ec, aes(x = Category)) +
+ggplot(grant_ec, aes(x = Category_Simplified)) +
   geom_bar(aes(y = (..count..)/sum(..count..)), fill = "skyblue", color = "darkblue") +
   labs(x = "Category", y = "Percentage", title = "Category - EC granted") +
-  theme_minimal() +
+  theme_economist() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/MPSA_2024/Figures/applications_category_wise.eps"))
+
 ```
 
 ```{r}
-ggplot(grant_ec, aes(x = Category, y = time)) +
+ggplot(grant_ec, aes(x = Category_Simplified, y = time)) +
   geom_boxplot(fill = "skyblue", color = "darkblue", outlier.shape = NA) +
   labs(x = "Group", y = "Value", title = "Box Plot") +
-  theme_minimal() +
+  theme_minimal() + scale_y_log10() + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
 ```
 
@@ -217,17 +191,15 @@ type$cd <- type$sd/type$avg
 infra_time <- type %>% ggplot(aes(x =state1, y = avg)) +  geom_bar(stat = "identity", fill = "steelblue") +
   theme(axis.text.x = element_text(angle = 180, vjust = 0.5, hjust = 1))+
   facet_wrap(~Category_Simplified)+
-  labs(x = "State", y = "Avg time",title = "Average time for Infra projects") +
-   
-  theme_minimal()
-
+  labs(x = "State", y = "Avg time",title = "Average time for projects") +theme_minimal()+
+ theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 print(infra_time)
 ```
 
 ```{r}
 infra_time <- type %>% filter(Category_Simplified=="Infrastructure") %>% ggplot(aes(x =state1, y = avg)) +  geom_bar(stat = "identity", fill = "steelblue") +
   labs(x = "State", y = "Avg time",title = "Average time for Infra projects") +
-  theme_minimal()
+  theme_minimal() +theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
 
 print(infra_time)
 ```
@@ -237,7 +209,7 @@ print(infra_time)
 ```{r}
 mining_time <- type %>% filter(Category_Simplified=="Non-Coal Mining") %>% ggplot(aes(x =state1, y = avg)) +  geom_bar(stat = "identity", fill = "steelblue") +
   labs(x = "State", y = "Avg time",title = "Avg - Non coal mining") +
-  theme_minimal()
+  theme_minimal() + theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
 
 print(mining_time)
 ```
@@ -247,7 +219,7 @@ ind_time <- type %>% filter(Category_Simplified=="Industrial") %>% ggplot(aes(x 
   labs(x = "State", y = "Avg time",title = "Avg - Industrial") +
   theme_minimal()
 
-print(ind_time)
+print(ind_time) + theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
 ```
 
 
@@ -416,6 +388,66 @@ labs(title = "Categories - UP", fill = "CD")+ theme(plot.title = element_text(hj
 
 print(most_up)
 ```
+
+# State Scatter
+
+```{r}
+state_ind <- ec %>% filter(year %in% c(2018:2023) & Category_Simplified == "Industrial") %>% group_by(state1) %>% summarise(count=n(),time=mean(time2,na.rm=T)) %>% rename(state=state1)
+
+
+state_inf <- ec %>% filter(year %in% c(2018:2023) & Category_Simplified != "Infrastructure") %>% group_by(state1) %>% summarise(count=n(),time=mean(time2,na.rm=T)) %>% rename(state=state1)
+
+
+state_mine <- ec %>% filter(year %in% c(2018:2023) & Category_Simplified != "Non-Coal Mining") %>% group_by(state1) %>% summarise(count=n(),time=mean(time2,na.rm=T)) %>% rename(state=state1)
+
+```
+
+```{r}
+library(ggrepel)
+
+ggplot(state_ind, aes(x = count, y = time, label = substr(state, 1, 3))) +  # Map aesthetics
+  geom_point(color="red") +                                    # Add scatter points
+geom_label_repel(max.overlaps = Inf,size=2) + 
+  geom_hline(yintercept = median(state_ind$time), linetype = "dashed", color = "black") +  # Add horizontal line at Y median
+  geom_vline(xintercept = median(state_ind$count), linetype = "dashed", color = "black") +  # Add vertical line at X median
+# Add labels with a slight nudge
+  theme_minimal() +                                 # Use a minimal theme
+  labs(x = "Applications", y = "Time",title = "Industrial")  # Add labels and title
+
+ggsave("C:/Users/prana/Desktop/ind.png")
+
+```
+
+```{r}
+ggplot(state_inf, aes(x = count, y = time, label = substr(state, 1, 3))) +  # Map aesthetics
+  geom_point(color="red") +                                    # Add scatter points
+geom_label_repel(max.overlaps = Inf,size=2) + 
+  geom_hline(yintercept = median(state_inf$time), linetype = "dashed", color = "black") +  # Add horizontal line at Y median
+  geom_vline(xintercept = median(state_inf$count), linetype = "dashed", color = "black") +  # Add vertical line at X median
+# Add labels with a slight nudge
+  theme_minimal() +                                 # Use a minimal theme
+  labs(x = "Applications", y = "Time",title = "Infrastructure")  # Add labels and title
+
+ggsave("C:/Users/prana/Desktop/inf.png")
+
+```
+
+
+```{r}
+ggplot(state_mine, aes(x = count, y = time, label = substr(state, 1, 3))) +  # Map aesthetics
+  geom_point(color="red") +                                    # Add scatter points
+geom_label_repel(max.overlaps = Inf,size=2) + 
+  geom_hline(yintercept = median(state_mine$time), linetype = "dashed", color = "black") +  # Add horizontal line at Y median
+  geom_vline(xintercept = median(state_mine$count), linetype = "dashed", color = "black") +  # Add vertical line at X median
+# Add labels with a slight nudge
+  theme_minimal() +                                 # Use a minimal theme
+  labs(x = "Applications", y = "Time",title = "Non-Coal Mining")  # Add labels and title
+
+ggsave("C:/Users/prana/Desktop/mine.png")
+```
+
+
+
 
 #Economic Census
 

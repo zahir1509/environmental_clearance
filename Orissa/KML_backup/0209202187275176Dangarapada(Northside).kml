@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Dangarapada ( North side )">
+	<name>Dangarapada ( North side )</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Dangarapada ( North side )</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>DANGARAPADA NEW BULDING STONE(NORTH SIDE)_5.00AC</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								85.510307,20.100551,0 85.510267,20.100648,0 85.51020699999999,20.100695,0 85.51013500000001,20.100702,0 85.509204,20.101302,0 85.510025,20.102411,0 85.510454,20.102051,0 85.510749,20.101827,0 85.51114200000001,20.101591,0 85.511098,20.101336,0 85.51073599999999,20.100966,0 85.510307,20.100551,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Kurli Stone Quarry.kml</name>
+	<StyleMap id="failed">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed0">
+	</Style>
+	<Style id="failed1">
+	</Style>
+	<Placemark>
+		<name>Kurli Stone Quarry</name>
+		<styleUrl>#failed</styleUrl>
+		<Point>
+			<coordinates>82.97700610801111,18.42665241772706,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

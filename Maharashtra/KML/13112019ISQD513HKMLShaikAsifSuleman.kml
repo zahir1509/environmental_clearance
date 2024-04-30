@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>shaik Asif shaik Suleman (Buldhana).kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2.3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>shaik Asif shaik Suleman (Buldhana)</name>
+		<open>1</open>
+		<Placemark>
+			<name>shaik Asif shaik Suleman (Buldhana) BP 1</name>
+			<LookAt>
+				<longitude>76.0204786398899</longitude>
+				<latitude>20.37842149071326</latitude>
+				<altitude>0</altitude>
+				<heading>0.002613728300854571</heading>
+				<tilt>17.55852168556485</tilt>
+				<range>4851.844278680374</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>76.01959722222222,20.37430555555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP 2</name>
+			<LookAt>
+				<longitude>76.02064382233287</longitude>
+				<latitude>20.37384868754891</latitude>
+				<altitude>0</altitude>
+				<heading>0.004274497066105783</heading>
+				<tilt>30.00128894132094</tilt>
+				<range>286.8609827476849</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>76.02008888888889,20.37413611111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP 3</name>
+			<LookAt>
+				<longitude>76.02034866718677</longitude>
+				<latitude>20.37392240063547</latitude>
+				<altitude>0</altitude>
+				<heading>0.003761129686304158</heading>
+				<tilt>26.83072544176182</tilt>
+				<range>193.4862687711074</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>76.02034866718677,20.37587777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BP 4</name>
+			<LookAt>
+				<longitude>76.02098432949444</longitude>
+				<latitude>20.37460285315268</latitude>
+				<altitude>0</altitude>
+				<heading>0.004108380780730054</heading>
+				<tilt>27.91554993841766</tilt>
+				<range>514.6103574955796</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>76.02018611111112,20.37601666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Path</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					76.01959710308907,20.37430646047234,0 76.02008882548928,20.37413628294098,0 76.02034871820673,20.37587769563663,0 76.02018586387644,20.37601645105799,0 76.01959710308907,20.37430646047234,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

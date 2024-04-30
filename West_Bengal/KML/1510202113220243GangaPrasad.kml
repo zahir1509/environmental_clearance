@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ganga Prasad.kml</name>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_shaded_dot">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="inline110">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline73</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_shaded_dot24">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="failed7">
+	</Style>
+	<StyleMap id="inline111">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline74</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline93</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_shaded_dot00">
+		<IconStyle>
+			<color>ffff0000</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff0000</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="ms_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline115">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline90</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_shaded_dot1">
+		<IconStyle>
+			<color>ff7f00ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff7f00ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_grn-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="inline11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline72</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline91</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline74">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed">
+	</Style>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline35">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot26">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="ms_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline90">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="failed26">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed25</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline7">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline26</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline93">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_shaded_dot3">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="inline72">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline73">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_shaded_dot5">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="failed6">
+	</Style>
+	<Style id="s_ylw-pushpin_hl12">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_shaded_dot">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_shaded_dot4">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin14">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7f00ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_shaded_dot0">
+		<IconStyle>
+			<color>ff7f00ff</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff7f00ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_shaded_dot8">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="failed4">
+	</Style>
+	<Style id="failed5">
+	</Style>
+	<Style id="sn_shaded_dot0">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline91">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="failed25">
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed1">
+	</Style>
+	<StyleMap id="msn_shaded_dot11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_shaded_dot">
+		<IconStyle>
+			<color>ffff0000</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ffff0000</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="inline17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline22">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline35</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed46">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin7">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="inline26">
+		<LineStyle>
+			<color>ff00ff55</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_grn-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed19">
+	</Style>
+	<Style id="sh_grn-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_shaded_dot9">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<scale>0.945455</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff55</color>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Ganga Prasad</name>
+		<visibility>0</visibility>
+		<open>1</open>
+		<Placemark>
+			<name>10 Km Ganga Prasad</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#inline3</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.72598834378815,26.81132006679712,113.2520603462009 88.72185947801171,26.80440498843318,110.9835811245956 88.71707158933653,26.79783726075892,110.2077407598452 88.71166118193021,26.79166680582847,110.9265888907851 88.70566947182789,26.78594051812766,111.6217066020046 88.69914207211649,26.78070190974107,115.4444380348151 88.6921286454766,26.77599078131707,119.9955901018712 88.68468252673456,26.77184292127064,114.7799065006919 88.67686031828005,26.76828983544905,123.9867704550474 88.66872146138718,26.76535850925661,122.4793127905211 88.66032778663701,26.76307120399126,111.3772111069062 88.65174304677757,26.7614452888914,125.7011728485157 88.6430324354728,26.76049311012698,124.5068511349325 88.63426209548346,26.76022189769655,120.2446083616856 88.62549861989206,26.76063371091274,110.8068774825853 88.61680855002878,26.76172542287598,105.6229721893208 88.60825787377624,26.76348874405013,108.550988079744 88.59991152792939,26.76591028476726,110.7040613584688 88.59183290825979,26.76897165620334,115.1431561423296 88.58408339088379,26.77264960908452,123.3139175415373 88.57672186846145,26.77691620910538,131.1907554514941 88.56980430465498,26.78173904777019,138.7137083968912 88.56338331015645,26.78708148710556,134.741415273633 88.55750774345174,26.79290293644008,129.385465913817 88.55222233932255,26.79915915920725,123.6736079172006 88.54756736790223,26.80580260750041,119.3227771147442 88.54357832689256,26.81278278189785,120.0986930481622 88.54028566932249,26.82004661388186,122.6440206433446 88.53771456898131,26.82753886799955,123.0643766117749 88.53588472539526,26.8352025607578,128.2704923803781 88.5348102099338,26.84297939310991,130.5690918490087 88.5344993543366,26.85081019327939,132.7457560472884 88.53495468264119,26.85863536657834,138.7677435730383 88.53617288717027,26.8663953488137,145.7093788744852 88.53814484890742,26.87403105983591,160.8438758747912 88.54085570225239,26.88148435377285,282.1773133321299 88.54428494380434,26.888698462505,229.7517448621913 88.54840658447938,26.89561842897902,278.3319671070375 88.55318934392493,26.90219152702407,331.4314985563857 88.55859688585619,26.90836766442901,414.9517538302567 88.56458809260812,26.9140997661588,435.8971616092728 88.57111737687583,26.91934413473341,445.7437551803496 88.57813502830928,26.9240607849626,457.9462879431272 88.58558759233627,26.9282137504232,473.5968231421739 88.59341827831771,26.93177135928001,481.7127948497815 88.60156739388854,26.93470647728747,520.3197778378825 88.60997280211538,26.93699671606269,554.1901184518441 88.61857039790429,26.93862460499057,581.4494432294966 88.62729459992661,26.93957772540635,569.2751733183478 88.63607885419491,26.9398488059967,530.3789669206601 88.64485614532069,26.9394357786664,489.6655051522258 88.65355951141714,26.93834179442876,447.4444941556851 88.66212255857927,26.93657519919455,404.0373069729666 88.6704799708769,26.93414946965063,359.7745275982874 88.67856801183559,26.93108310973483,314.9929380841685 88.68632501345469,26.92739950852451,340.247768339865 88.69369184892041,26.92312676065966,399.2118890252334 88.70061238531356,26.91829745071569,363.72313196734 88.70703391278404,26.91294840322208,324.7248102376837 88.71290754686699,26.90712040029062,282.5138843138378 88.71818860084421,26.90085786906666,237.4117276059507 88.7228369253091,26.89420854144849,226.4014741166229 88.72681721236805,26.88722308872989,223.1714747810503 88.73009926220691,26.87995473401055,172.7829191768902 88.73265821006068,26.87245884538211,149.4228597120256 88.73447471194854,26.86479251303956,143.6908697714336 88.73553508786794,26.85701411358084,138.1222652567661 88.73583142148314,26.84918286484684,131.9481606741561 88.73536161568344,26.84135837471514,126.8138591236408 88.73412940373271,26.83360018729645,122.737275680393 88.73214431607128,26.82596732999088,119.8163465799341 88.72942160316734,26.81851786484329,115.9945025588571 88.72598834378815,26.81132006679712,113.2520603462009 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>A</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#failed46</styleUrl>
+			<Point>
+				<coordinates>88.63394444444445,26.85083333333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.63388888869787</longitude>
+				<latitude>26.85083333271835</latitude>
+				<altitude>0</altitude>
+				<heading>-8.626876882601364e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.000062210763</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.63644444444445,26.85085555555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.63394444234238</longitude>
+				<latitude>26.8508338031469</latitude>
+				<altitude>0</altitude>
+				<heading>-2.824844030089316e-09</heading>
+				<tilt>45.00000046981358</tilt>
+				<range>1000.073897185284</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed26</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.63650000000001,26.84946388888888,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.63394444234238</longitude>
+				<latitude>26.8508338031469</latitude>
+				<altitude>0</altitude>
+				<heading>-2.824844030089316e-09</heading>
+				<tilt>45.00000046981358</tilt>
+				<range>1000.073897185284</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed14</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.63388888888889,26.84952777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ganga Prasad Mining Area</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.63394444234238</longitude>
+				<latitude>26.8508338031469</latitude>
+				<altitude>0</altitude>
+				<heading>-2.824844030089316e-09</heading>
+				<tilt>45.00000046981358</tilt>
+				<range>1000.073897185284</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.63515833333334,26.85002777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ganga Prasad Mining Area</name>
+			<visibility>0</visibility>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							88.63388692994963,26.84953621262168,0 88.63650644924171,26.84946704128615,0 88.63644860941795,26.85086854106567,0 88.63394243328666,26.8508382282356,0 88.63388692994963,26.84953621262168,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NH 31 at1.3 Km Road distance</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#inline0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.63600193771011,26.85079731689315,146.7278719119539 88.63560724492584,26.86365495882814,160.9550834109154 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>NH 31 at1.3 Km Road distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.63612680509981</longitude>
+				<latitude>26.86303068306301</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01635436663177368</heading>
+				<tilt>23.83782804431773</tilt>
+				<range>638.2016445727755</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.63559000999994,26.8636010803154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Apalchand Foreast area ant 3.6 Km Aerial Distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.65464400947536</longitude>
+				<latitude>26.85352490145189</latitude>
+				<altitude>0</altitude>
+				<heading>-0.008056024994258514</heading>
+				<tilt>23.51262014786053</tilt>
+				<range>14009.55667695947</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot11</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.63667833285281,26.81550539736327,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Apalchand Foreast area ant 3.6 Km Aerial Distance</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<styleUrl>#inline17</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.63560320135711,26.84958186314095,146.0952369268681 88.63685634562671,26.81672104979001,132.847139772756 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Odhlabari Road at 2 Km Road Distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#inline115</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.63390100793647,26.85038370929863,0 88.62186213156181,26.85036358908731,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Odhlabari Road at 2 Km Road Distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.63360761495281</longitude>
+				<latitude>26.8566484555808</latitude>
+				<altitude>0</altitude>
+				<heading>-3.765047212940157</heading>
+				<tilt>23.23031806669373</tilt>
+				<range>3894.70966585894</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#ms_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.62196515729013,26.85026525004353,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bagrakot Railway station at 7 Km Road distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.60807077384212</longitude>
+				<latitude>26.86667027843557</latitude>
+				<altitude>0</altitude>
+				<heading>0.01020178686733104</heading>
+				<tilt>0.8631037955315536</tilt>
+				<range>7464.381388098343</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#ms_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.58554392066642,26.87030840017295,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bagrakot Railway station at 7 Km Road distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#inline110</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.58550860925028,26.87029550493462,0 88.63395109736892,26.85080666918757,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Ghidh River at Km distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.61470852703644</longitude>
+				<latitude>26.85742358608934</latitude>
+				<altitude>0</altitude>
+				<heading>-0.007183004841551609</heading>
+				<tilt>16.41329352726811</tilt>
+				<range>2685.882272950476</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.61036213481806,26.86226564938565,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ghish River at 2.7 Km distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#inline111</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.61038760057228,26.86235248058262,0 88.63389397143777,26.85079327402268,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Teesta River at 9.2 Km distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#inline11</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.55715175156892,26.80254163848219,0 88.63390735686355,26.84955889675313,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Teesta River at 9.2 Km distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.56981894347759</longitude>
+				<latitude>26.80793894942583</latitude>
+				<altitude>0</altitude>
+				<heading>0.03523215503865428</heading>
+				<tilt>4.683722213098826</tilt>
+				<range>3489.657903822222</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.5571312926438,26.80255246262741,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Odlabari Town at 1.4 km distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.62316321207619</longitude>
+				<latitude>26.85545320323156</latitude>
+				<altitude>0</altitude>
+				<heading>-3.209246493660345</heading>
+				<tilt>5.235170463910571</tilt>
+				<range>3191.336697649517</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.62291994584371,26.85892001648591,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Odlabari Town at 1.4 km distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.62298516667107,26.85895405402549,0 88.63393279666064,26.85076205874918,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Odlabari BHPC Hospital at 1.7 Km distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.6260711686274</longitude>
+				<latitude>26.86393670101198</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001663794097062034</heading>
+				<tilt>21.78405041692288</tilt>
+				<range>533.2281336475597</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot26</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.62609393454369,26.86431786438446,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Odlabari BHPC Hospital at 1.7 Km distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.62609392678304,26.86431241279116,0 88.63391683652296,26.85085894275377,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Tea Garden Hospital at 7.8 Kmdistance</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.70589042278917,26.81996449606162,0 88.63638844091616,26.84945518047384,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Tea Garden Hospital at 7.8 Kmdistance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.69277899984387</longitude>
+				<latitude>26.81647285507982</latitude>
+				<altitude>0</altitude>
+				<heading>0.05657741950210982</heading>
+				<tilt>9.431768644538458</tilt>
+				<range>4483.263921481974</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot26</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.70598567379132,26.81996494902996,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Don Bosco School at 1.6 Km Distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.61903220789291,26.84326237670629,0 88.63384698322128,26.84960949663321,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Don Bosco School at 1.6 Km Distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.62118568296164</longitude>
+				<latitude>26.84288267004695</latitude>
+				<altitude>0</altitude>
+				<heading>-0.009904704012984119</heading>
+				<tilt>10.26807496446227</tilt>
+				<range>1325.688269133323</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot26</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.61903164808942,26.84326782066026,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Shiv Temple at 3.4 km Distance</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin3</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					88.63610717902027,26.84945362645027,0 88.66308665413047,26.8302156566158,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Shiv Temple at 3.4 km Distance</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>88.64520171098081</longitude>
+				<latitude>26.84701480619819</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001123145607365767</heading>
+				<tilt>4.40095485345007</tilt>
+				<range>9170.816552622535</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_shaded_dot5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>88.66308665413047,26.8302156566158,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

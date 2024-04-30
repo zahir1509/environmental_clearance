@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="KAIPADAR_KA__LEASE_BND" id="KAIPADAR_KA__LEASE_BND">
+	<SimpleField name="tessellate" type="int"></SimpleField>
+</Schema>
+<Folder><name>KAIPADAR_KA__LEASE_BND</name>
+  <Placemark>
+	<name>KAIPADAR NEW BULDING STONE(KA)_7.500AC</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#KAIPADAR_KA__LEASE_BND">
+		<SimpleData name="tessellate">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>85.564151,20.110342 85.562848,20.110527 85.562662,20.11056 85.562212,20.110634 85.562037,20.110814 85.561564,20.110998 85.561564,20.112172 85.562974,20.112145 85.562974,20.110993 85.563395,20.11095 85.563856,20.110865 85.564295,20.110714 85.564151,20.110342</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

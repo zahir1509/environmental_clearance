@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GPS device</name>
+	<open>1</open>
+	<snippet>Created Mon Aug 15 16:33:20 2022</snippet>
+	<LookAt>
+		<gx:TimeSpan>
+			<begin>2022-08-15T11:02:14Z</begin>
+			<end>2022-08-15T11:03:00Z</end>
+		</gx:TimeSpan>
+		<longitude>82.563694</longitude>
+		<latitude>18.830903</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>1300</range>
+	</LookAt>
+	<Style id="waypoint_h301">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin329">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin324</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl334</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="waypoint301">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n301</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h301</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_n301">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl335">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin324">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl334">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin328">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin325</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl335</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin325">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>001</name>
+			<TimeStamp><when>2022-08-15T11:02:14Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint301</styleUrl>
+			<Point>
+				<coordinates>82.56352800000001,18.830611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>002</name>
+			<TimeStamp><when>2022-08-15T11:02:28Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint301</styleUrl>
+			<Point>
+				<coordinates>82.563361,18.830861,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>003</name>
+			<TimeStamp><when>2022-08-15T11:02:46Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint301</styleUrl>
+			<Point>
+				<coordinates>82.563889,18.831194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>004</name>
+			<TimeStamp><when>2022-08-15T11:03:00Z</when>
+</TimeStamp>
+			<styleUrl>#waypoint301</styleUrl>
+			<Point>
+				<coordinates>82.56402799999999,18.831056,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Padmapur Stone Quarry</name>
+		<styleUrl>#m_ylw-pushpin329</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				82.56353224500772,18.83060812958789,0 82.5633622284296,18.83086424011664,0 82.56388815935428,18.83118893276856,0 82.56403049653592,18.83105512290494,0 82.56353224500772,18.83060812958789,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark>
+		<name>Padmapur Stone Quarry</name>
+		<LookAt>
+			<gx:TimeSpan>
+				<begin>2022-08-15T11:02:14Z</begin>
+				<end>2022-08-15T11:03:00Z</end>
+			</gx:TimeSpan>
+			<longitude>82.56361691463388</longitude>
+			<latitude>18.83087123311392</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0003374754815104733</heading>
+			<tilt>27.86337269476503</tilt>
+			<range>260.1633866489241</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin328</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>82.5636169146339,18.83087123311392,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

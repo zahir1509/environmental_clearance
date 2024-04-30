@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Lachhipur Block Boundary.kmz</name>
+	<open>1</open>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Lachhipur Co-ordinates</name>
+		<open>1</open>
+		<Document id="Lachhipur_Quartz_Mine" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+			<name>Lachhipur Quartz Mine</name>
+			<open>1</open>
+			<Snippet maxLines="0"></Snippet>
+			<StyleMap id="PolyStyle00">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#PolyStyle001</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#PolyStyle000</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="PolyStyle000">
+				<LabelStyle>
+					<color>00000000</color>
+					<scale>0</scale>
+				</LabelStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<color>00ffffff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="PolyStyle001">
+				<LabelStyle>
+					<color>00000000</color>
+					<scale>0</scale>
+				</LabelStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>3</width>
+				</LineStyle>
+				<PolyStyle>
+					<color>00ffffff</color>
+				</PolyStyle>
+			</Style>
+			<Folder id="FeatureLayer0">
+				<name>Lachhipur Quartz Mine</name>
+				<open>1</open>
+				<Snippet maxLines="0"></Snippet>
+				<Placemark id="ID_00000">
+					<name>0</name>
+					<Snippet maxLines="0"></Snippet>
+					<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Area</td>
+
+<td>2.383823</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+					<styleUrl>#PolyStyle00</styleUrl>
+					<MultiGeometry>
+						<Polygon>
+							<outerBoundaryIs>
+								<LinearRing>
+									<coordinates>
+										86.73540277800005,23.1040611110001,0 86.73546913557138,23.10404262708484,0 86.73556187127092,23.10402007694898,0 86.73579746131041,23.10394488596293,0 86.73607341537122,23.10387304844473,0 86.73641501566949,23.10375800032347,0 86.73670654182686,23.10365003810558,0 86.73685359688359,23.10359590956823,0 86.73693989021024,23.10356438516906,0 86.73724491670639,23.10348900895351,0 86.73765277800005,23.10456666700003,0 86.73589722200008,23.10510555600008,0 86.73575795082124,23.10481476403181,0 86.73566867083524,23.10441131665752,0 86.73561726935048,23.1042716513517,0 86.73552301362375,23.10411374980926,0 86.73547131469354,23.1041260914628,0 86.73543719822587,23.10413177041601,0 86.73540277800005,23.1040611110001,0 
+									</coordinates>
+								</LinearRing>
+							</outerBoundaryIs>
+						</Polygon>
+					</MultiGeometry>
+				</Placemark>
+			</Folder>
+		</Document>
+		<Placemark>
+			<name>A</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>77.20138282755947</longitude>
+				<latitude>28.56091545887154</latitude>
+				<altitude>0</altitude>
+				<heading>-8.210020632819651e-06</heading>
+				<tilt>0</tilt>
+				<range>11007822.46916861</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.73540277777778,23.10406111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>77.20138282755947</longitude>
+				<latitude>28.56091545887154</latitude>
+				<altitude>0</altitude>
+				<heading>-8.210020632819651e-06</heading>
+				<tilt>0</tilt>
+				<range>11007822.46916861</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.73589722222222,23.10510555555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>C</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>77.20138282755947</longitude>
+				<latitude>28.56091545887154</latitude>
+				<altitude>0</altitude>
+				<heading>-8.210020632819651e-06</heading>
+				<tilt>0</tilt>
+				<range>11007822.46916861</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.73733333333334,23.10348333333334,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>D</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>77.20138282755947</longitude>
+				<latitude>28.56091545887154</latitude>
+				<altitude>0</altitude>
+				<heading>-8.210020632819651e-06</heading>
+				<tilt>0</tilt>
+				<range>11007822.46916861</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.73765277777778,23.10456666666667,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

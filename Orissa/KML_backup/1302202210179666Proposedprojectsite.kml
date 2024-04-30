@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Placemark>
+	<name>Proposed project site</name>
+	<LookAt>
+		<longitude>85.82989207208121</longitude>
+		<latitude>19.8143802167436</latitude>
+		<altitude>0</altitude>
+		<heading>2.819144457356798</heading>
+		<tilt>21.56240914079168</tilt>
+		<range>1229.677478742404</range>
+		<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+	</LookAt>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>runtime://clone381#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>runtime://clone381#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Point>
+		<gx:drawOrder>1</gx:drawOrder>
+		<coordinates>85.83015833333333,19.81525833333333,0</coordinates>
+	</Point>
+</Placemark>
+</kml>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GETARANI_RAIKELA.kml</name>
+	<Style id="PolyStyle0012171">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="PolyStyle0012172">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#PolyStyle001217</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#PolyStyle0012171</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="PolyStyle001217">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>GETARANI_RAIKELA</name>
+		<Snippet maxLines="0"></Snippet>
+		<styleUrl>#PolyStyle0012172</styleUrl>
+		<MultiGeometry>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.17875100000001,21.876499,0 85.18045600000001,21.875427,0 85.181735,21.874391,0 85.182982,21.873419,0 85.184324,21.872378,0 85.18459,21.872182,0 85.183678,21.870746,0 85.183739,21.870605,0 85.18398999999999,21.870554,0 85.184324,21.870432,0 85.18476800000001,21.87079,0 85.183825,21.869761,0 85.182973,21.86909,0 85.182692,21.868791,0 85.181741,21.867702,0 85.181425,21.867404,0 85.179389,21.865569,0 85.17893100000001,21.865132,0 85.17812000000001,21.86588,0 85.17760800000001,21.866362,0 85.176796,21.867401,0 85.17621800000001,21.867826,0 85.175978,21.868578,0 85.17563300000001,21.869459,0 85.175787,21.870764,0 85.176287,21.872138,0 85.177311,21.873231,0 85.177108,21.873965,0 85.177549,21.874927,0 85.17875100000001,21.876499,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

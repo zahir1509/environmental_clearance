@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>Temporary Places</name>
+	<open>1</open>
+	<Document>
+		<name>KNP DEVELOPER-BOUNDARY LINE.kml</name>
+		<Style id="sh_ylw-pushpin72">
+			<IconStyle>
+				<scale>1.3</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>4.4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff000000</color>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<StyleMap id="msn_ylw-pushpin0">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#sn_ylw-pushpin00</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#sh_ylw-pushpin72</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="sn_ylw-pushpin00">
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>4.4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff000000</color>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<Placemark>
+			<name>KNP DEVELOPER-BOUNDARY LINE</name>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							84.84581643307892,19.31848914234558,0 84.84613448921775,19.31843757868419,0 84.84625797567783,19.31839932765733,0 84.84657626586673,19.3182998964411,0 84.84703586681155,19.31812395755582,0 84.84703096911936,19.31810451892989,0 84.84706161245873,19.31809608006525,0 84.84769259057561,19.31790979856899,0 84.84779334926817,19.31811767485226,0 84.84786545942065,19.3181003245208,0 84.84790807766602,19.31818559340134,0 84.84799068647503,19.31819398736366,0 84.84809515082246,19.31824918858838,0 84.84808754779267,19.31831693464449,0 84.84808617321413,19.31850856799112,0 84.84812952749942,19.31856946370421,0 84.84812818810002,19.31863539248258,0 84.84808927508706,19.31868149663761,0 84.84802217046396,19.31875273234877,0 84.84799701940572,19.31887437080384,0 84.84798012870959,19.31906240767701,0 84.84776752651206,19.31909689322303,0 84.84759356134673,19.31912837124225,0 84.84737440928963,19.31907011015252,0 84.84726560312515,19.31905913036955,0 84.84712487231958,19.31908267948657,0 84.846706281392,19.31917359004082,0 84.84662216600121,19.31898891799577,0 84.84636222227182,19.31905569483572,0 84.84613791123452,19.31908761547334,0 84.84612258886256,19.31901672794756,0 84.84579073587788,19.3190357556629,0 84.84579180316308,19.31895678765665,0 84.8458021267501,19.3188508078124,0 84.84580786007727,19.31873926039639,0 84.8458176378399,19.31856917658604,0 84.84581643307892,19.31848914234558,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Document>
+	<Document>
+		<name>KNP DEVELOPERS.kml</name>
+		<Style id="sn_ylw-pushpin6">
+			<IconStyle>
+				<color>ffff00ff</color>
+				<scale>0.1</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<color>ff7f00ff</color>
+				<scale>1.3</scale>
+			</LabelStyle>
+		</Style>
+		<StyleMap id="msn_ylw-pushpin26">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#sn_ylw-pushpin6</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#sh_ylw-pushpin4</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="sh_ylw-pushpin4">
+			<IconStyle>
+				<color>ffff00ff</color>
+				<scale>0.118182</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<color>ff7f00ff</color>
+				<scale>1.3</scale>
+			</LabelStyle>
+		</Style>
+		<Placemark>
+			<name>KNP DEVELOPERS</name>
+			<LookAt>
+				<longitude>84.84944054152362</longitude>
+				<latitude>19.32165022014553</latitude>
+				<altitude>0</altitude>
+				<heading>1.591309071582021</heading>
+				<tilt>0</tilt>
+				<range>4834.845961256852</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin26</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>84.84514617882275,19.31851445239039,0</coordinates>
+			</Point>
+		</Placemark>
+	</Document>
+</Folder>
+</kml>
+SeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin26</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>84.84514617882275,19.31851445

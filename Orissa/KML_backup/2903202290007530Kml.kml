@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>kaudola sand bed II.kml</name>
+	<Style id="failed3">
+	</Style>
+	<Style id="failed">
+	</Style>
+	<StyleMap id="failed13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>kaudola sand bed II</name>
+		<open>1</open>
+		<styleUrl>#failed13</styleUrl>
+		<Point>
+			<coordinates>82.67716111111112,19.62390833333333,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

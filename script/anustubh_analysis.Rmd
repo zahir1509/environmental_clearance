@@ -1,0 +1,1074 @@
+---
+title: "Environment Clearance Odisha"
+author: "Anustubh Agnihotri"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+```
+
+```{r}
+#user <- "prana"
+user <- "agnihotri"
+
+```
+
+## Analysis Plan 
+
+1. Look at the three datasets for Odisha -  EC Level, Detailed Timeline, and Detailed EC Report 
+2. For the Tehsil shp file create an alignment variable 
+3. Merge the data with the Tehsil Shp File
+4. Do some basic descriptives 
+
+
+## Odisha Files
+
+```{r}
+
+#Same as Main Data 
+ec_odisha <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Orissa_ec_additional_data.csv")) %>% distinct()
+
+ec_odisha_main <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/merged_maindata.csv")) %>% distinct()
+
+#RA downloaded the additional data 
+missing_parivesh_main<-read.csv('C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Orissa_ec_maindata_parivesh_missing.csv',stringsAsFactors = F)
+
+ec_odisha_main_missing<-ec_odisha_main%>%
+  filter(Proposal%in%missing_parivesh_main$Proposal.No.)
+
+##Create a separate data frame for the missing data
+ec_odisha_main_not_missing<-ec_odisha_main%>%
+  filter(!Proposal%in%missing_parivesh_main$Proposal.No.)
+
+#Use the form data from parivesh to add Tehsil and District 
+missing_parivesh_form_data<-read.csv('C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Orissa_ec_formdata_parivesh_missing.csv',stringsAsFactors = F)
+
+missing_parivesh_form_data<-missing_parivesh_form_data%>%
+  select(District.Name,Tehsil.Name,Proposal.No.)
+
+ec_odisha_main_missing$Proposal.No.<-ec_odisha_main_missing$Proposal
+
+ec_odisha_main_missing<-dplyr::left_join(ec_odisha_main_missing,missing_parivesh_form_data,by='Proposal.No.')
+
+ec_odisha_main_missing$District<-ec_odisha_main_missing$District.Name
+ec_odisha_main_missing$Tehsil<-ec_odisha_main_missing$Tehsil.Name
+
+ec_odisha_main_missing <- select(ec_odisha_main_missing, -c(District.Name,Tehsil.Name,Proposal.No.))  
+
+#Create a final dataset 
+#which will be used by DEOs to add location data manually 
+temp<-bind_rows(ec_odisha_main_missing, ec_odisha_main_not_missing)
+
+ec_odisha_main<-temp
+
+write.csv(ec_odisha_main,'C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/merged_maindata_with_parivesh1.csv')
+```
+
+
+```{r read}
+#read the file where RA has manually entered Tehsil 
+
+ec_odisha_main<-read.csv('C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/merged_maindata_with_parivesh_ra.csv')
+
+```
+
+#Timeline Has Different components
+
+```{r timeline}
+#Timeline data 
+ec_detailed_timeline_odisha<-read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/merged_timelinedata.csv")) %>% distinct()
+
+#Missingnes 
+length(which(ec_detailed_timeline_odisha$Accepted.by.SEIAA.and.forwarded.to.SEAC==""))
+
+#Overlapping Proposal Numbers 
+table(ec_odisha$Proposal%in%ec_detailed_timeline_odisha$Proposal.Number)
+
+#Parivesh missing data downloaded by RA
+missing_parivesh_timeline<-read.csv('C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Orissa_ec_timelinedata_parivesh_missing.csv',stringsAsFactors = F)
+
+ec_odisha_timeline_missing<-ec_detailed_timeline_odisha%>%
+  filter(Proposal.Number%in%missing_parivesh_timeline$Proposal.Number)
+
+ec_odisha_main_select<-ec_odisha_main%>%
+  select(Proposal,Status)%>%
+  ungroup()
+
+table(ec_detailed_timeline_odisha$Proposal.Number%in%ec_odisha_main_select$Proposal)
+
+ec_odisha_main_select<-ec_odisha_main_select%>%
+  rename(Proposal.Number=Proposal)
+
+ec_detailed_timeline_odisha<-ec_detailed_timeline_odisha%>%
+  ungroup()
+
+ec_detailed_timeline_odisha_status<-inner_join(ec_detailed_timeline_odisha,ec_odisha_main_select,by='Proposal.Number')
+
+write.csv(ec_detailed_timeline_odisha_status,'C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/ec_detailed_timeline_odisha_status.csv')
+
+
+```
+
+
+```{r form-2}
+ec_form2_odisha <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/merged_form2data.csv")) %>% distinct()
+
+##Missingness in Form2?
+length(which(ec_form2_odisha$Name.of.the.Company==""))
+
+#Lot of Missing                                       
+table(ec_odisha$Proposal%in%ec_form2_odisha$Proposal.Number)
+
+```
+
+
+## Types of Projects 
+
+- 60% of the applications were granted EC 
+
+```{r}
+
+ec_odisha_main$Status_Simplified <- ifelse(grepl('EC Granted',ec_odisha_main$Status),'EC Granted',
+                                    ifelse(grepl('Delisted',ec_odisha_main$Status),'Delisted',
+                                           ifelse(grepl('Rejected',ec_odisha_main$Status),'Rejected',
+                                    ifelse(ec_odisha_main$Status=='WithdrawEC','Withdrawn','Other'))))
+
+
+ec_odisha_main$Category_Simplified <- ifelse(grepl('INFRA',ec_odisha_main$Category),'INFRA',
+                                    ifelse(grepl('Industrial',ec_odisha_main$Category),'Industrial',
+                                    ifelse(ec_odisha_main$Category=='Non-Coal Mining','Non-Coal Mining','Other')))
+
+```
+
+
+
+
+```{r descriptives}
+ec_odisha_main%>%
+  group_by(Status_Simplified)%>%
+  count()%>%
+  arrange(-n)%>%
+  ungroup()%>%
+  mutate(Percent=round(n*100/sum(n),0))
+
+
+
+ec_odisha_main%>%
+  group_by(Category_Simplified,Status_Simplified)%>%
+  count()%>%
+  ungroup()%>%
+    group_by(Category_Simplified)%>%
+  mutate(Percent=round(n*100/sum(n),0))%>%
+  ungroup()
+
+```
+
+
+## Location of Projects 
+
+- 10% of the applications do not have District/Tehsil 
+
+- Can this be recovered from Form 2?
+
+```{r}
+ec_odisha_main%>%
+  group_by(District)%>%
+  count()%>%
+  arrange(-n)%>%
+  ungroup()%>%
+  mutate(Percent=round(n*100/sum(n),0))
+  
+```
+
+## Get Dates 
+
+
+```{r}
+
+#For the projects that were delisted or withdrawn 
+#Date 2 is when EC was filed
+#Date 1 is actually the date on which TOR was submitted
+index_with_tor<-which(grepl('TOR',ec_odisha_main$Date_1))
+
+ec_odisha_main$Date_1[index_with_tor]<-ec_odisha_main$Date_2[index_with_tor]
+
+ec_odisha_main$Date_2[index_with_tor]<-"NA"
+
+#Write Function For Extracting Date 
+extract_after_colon <- function(input) {
+  split_string <- strsplit(input, ":")
+  extracted_text <- sapply(split_string, function(x) trimws(x[2]))
+  return(extracted_text)
+}
+
+
+# Applying the function to the input vector
+ec_odisha_main$submit <- extract_after_colon(ec_odisha_main$Date_1) %>% dmy()
+ec_odisha_main$grant <- extract_after_colon(ec_odisha_main$Date_2) %>% dmy()
+
+#Time taken to Grant 
+ec_odisha_main$time <- as.duration(ec_odisha_main$grant - ec_odisha_main$submit)/ddays(1)
+
+
+
+```
+
+
+-------------------------------------------------------
+
+
+```{r}
+summary(ec_odisha_main$time)
+```
+
+
+```{r extract-year}
+#Year of Submission
+ec_odisha_main$submit_year<-(gsub('^([0-9][0-9][0-9][0-9]).*','\\1',ec_odisha_main$submit))
+ec_odisha_main$submit_year <- year(ec_odisha_main$submit)
+
+#Year-Month of Submission
+ec_odisha_main$submit_year_mon<-as.yearmon(ec_odisha_main$submit)
+
+ec_odisha_main_summary<-ec_odisha_main%>%
+  group_by(Category_Simplified,Status_Simplified,submit_year_mon,submit_year)%>%
+  summarise(n=n())
+
+ggplot(filter(ec_odisha_main_summary,Category_Simplified=='Non-Coal Mining'), aes(x = submit_year_mon, y = n)) +
+  geom_point(fill = "skyblue", width = 0.5)  +
+  labs(title = "Summary Of Application Type",
+       x = "Time",
+       y = "N") +
+  theme_minimal()+ 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Tilting x-axis labels by 45 degrees
+facet_wrap(~Status_Simplified)
+```
+
+
+```{r}
+density_year_mining <- ggplot(filter(ec_odisha_main_summary,Category_Simplified=='Non-Coal Mining'), aes(x = submit_year)) +
+  geom_bar() +
+  theme_minimal() + facet_wrap(~Category_Simplified) + ggtitle('EC Granted (Non-Coal Mining)')
+
+print(density_year_mining)+facet_wrap(~Status_Simplified)
+
+
+density_year_infra <- ggplot(filter(ec_odisha_main_summary,Category_Simplified=='INFRA'), aes(x = submit_year)) +
+  geom_bar() +
+  theme_minimal() + facet_wrap(~Category_Simplified) + ggtitle('EC Granted (INFRA)')
+
+print(density_year_infra)+facet_wrap(~Status_Simplified)
+
+density_year_industrial <- ggplot(filter(ec_odisha_main_summary,Category_Simplified=='Industrial'), aes(x = submit_year)) +
+  geom_bar() +
+  theme_minimal() + facet_wrap(~Category_Simplified) + ggtitle('EC Granted (Industrial)')
+
+print(density_year_industrial)+facet_wrap(~Status_Simplified)
+```
+
+
+
+
+
+-------------------------------------------------
+
+
+
+
+
+
+## Limit to EC Granted 
+
+```{r}
+grant_ec <- ec_odisha_main %>% filter(Status %in% c("EC Granted","EC Granted - Processed offline")) %>% distinct()
+
+```
+
+## Look for Duplicates
+
+```{r}
+grant_ec$duplicate <- duplicated(grant_ec$Proposal)
+table(grant_ec$duplicate)
+```
+
+## How many location identifiers are missing? 
+
+```{r}
+grant_ec%>%
+  group_by(District)%>%
+  count()%>%
+  arrange(-n)%>%
+  ungroup()%>%
+  mutate(Percent=round(n*100/sum(n),0))
+```
+
+##Simplify the Categories of Projects 
+
+- 68% are non-coal mining projects 
+
+```{r}
+
+grant_ec%>%
+  group_by(Category_Simplified)%>%
+  count()%>%
+  arrange(-n)%>%
+  ungroup()%>%
+  mutate(Percent=round(n*100/sum(n),0))
+
+```
+
+
+
+```{r}
+summary(grant_ec$time)
+
+#Exclude if length  less than 0
+
+grant_ec <- grant_ec %>% filter(time >=0) #Some obs have negative grant time
+
+grant_ec_summary<-grant_ec%>%
+  filter(!is.na(time))%>%
+  group_by(Category_Simplified)%>%
+  summarise(mean=mean(time),
+            sd=sd(time))
+
+ggplot(grant_ec_summary, aes(x = Category_Simplified, y = mean)) +
+  geom_point(fill = "skyblue", width = 0.5) +
+  geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width = 0.2, color = "black", size = 0.7) +
+  geom_text(aes(label = round(mean, 2)), vjust = -0.5, size = 3) +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Project Category",
+       y = "Mean") +
+  theme_minimal()
+```
+
+
+```{r extract-year}
+#Year of Submission
+grant_ec$submit_year<-(gsub('^([0-9][0-9][0-9][0-9]).*','\\1',grant_ec$submit))
+grant_ec$submit_year <- year(grant_ec$submit)
+
+#Year-Month of Submission
+grant_ec$submit_year_mon<-as.yearmon(grant_ec$submit)
+
+grant_ec_summary<-grant_ec%>%
+  filter(!is.na(time))%>%
+  group_by(Category_Simplified,submit_year)%>%
+  summarise(mean=mean(time),
+            sd=sd(time),
+            n=n())
+
+ggplot(filter(grant_ec_summary,Category_Simplified!='Other'), aes(x = submit_year, y = mean)) +
+  geom_point(fill = "skyblue", width = 0.5) +
+  geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width = 0.2, color = "black", size = 0.7) +
+  geom_text(aes(label = round(mean, 2)), vjust = -0.5, size = 3) +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Project Category",
+       y = "Mean") +
+  theme_minimal()+ 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Tilting x-axis labels by 45 degrees
+facet_wrap(~Category_Simplified)
+```
+
+
+```{r}
+density_year <- ggplot(grant_ec, aes(x = submit_year)) +
+  geom_bar() +
+  theme_minimal() + facet_wrap(~Category_Simplified) + ggtitle('EC Granted')
+
+print(density_year)
+```
+
+
+## Descriptives
+
+
+
+
+
+
+
+```{r}
+density_year_infra_orissa <- ggplot(filter(grant_ec,State=='Orissa'), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('May 2019'), linetype="dashed", 
+             color = "black", size=1)+
+  geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
+  theme_minimal() + ggtitle('Odisha Projects Around Elections (EC)')  +facet_wrap(~Category_Simplified)
+
+print(density_year_infra_orissa)
+```
+
+
+
+
+
+
+```{r}
+ggplot(grant_ec, aes(x = Category)) +
+  geom_bar(aes(y = (..count..)/sum(..count..)), fill = "skyblue", color = "darkblue") +
+  labs(x = "Category", y = "Percentage", title = "Category - EC granted") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+```{r}
+ggplot(grant_ec, aes(x = Category, y = time)) +
+  geom_boxplot(fill = "skyblue", color = "darkblue", outlier.shape = NA) +
+  labs(x = "Group", y = "Value", title = "Box Plot") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+
+
+
+
+##Look at Political Alignment 
+
+```{r}
+alignment <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Odisha_Tehsil_AC_Aligned.csv"),
+                             stringsAsFactors = F)
+
+
+library(tidyverse)
+library(stringdist)
+
+
+# Define a function for fuzzy matching
+fuzzy_match <- function(string1, string2) {
+  # Calculate the Jaro-Winkler distance between two strings
+  dist <- stringdist::stringdist(string1, string2, method = "lcs")
+  # Return TRUE if the distance is below a certain threshold, indicating a match
+  return(min(dist))  # Adjust the threshold as needed
+}
+
+ec_odisha_main_filter_tehsil<-ec_odisha_main%>%
+  filter(Tehsil!='')
+ec_odisha_main_filter_tehsil$District_Tehsil<-tolower(trimws(paste(ec_odisha_main_filter_tehsil$District,ec_odisha_main_filter_tehsil$Tehsil,sep=' ')))
+alignment$District_Tehsil<-tolower(trimws(paste(alignment$Dist_Nam_1,alignment$Tehsil,sep=' ')))
+
+
+temp<-fuzzy_match(ec_odisha_main_filter_tehsil$District_Tehsil[1],alignment$District_Tehsil)
+
+ec_odisha_main_filter_tehsil$District_Tehsil[1]
+
+# Use rowwise() and mutate() to apply the fuzzy_match function row-wise
+matrix_matches<-stringdist::stringdistmatrix(ec_odisha_main_filter_tehsil$District_Tehsil,
+                                                              alignment$District_Tehsil,method='lcs')
+
+min_value_matrix_matches<-apply(matrix_matches,1,min)
+table(min_value_matrix_matches)
+
+min_index_list<-apply(matrix_matches,1,which.min)
+
+ec_odisha_main_filter_tehsil$TUID<-NA
+ec_odisha_main_filter_tehsil$District_matched<-NA
+ec_odisha_main_filter_tehsil$Tehsil_matched<-NA
+ec_odisha_main_filter_tehsil$Matched_distance<-NA
+
+ec_odisha_main_filter_tehsil$District_matched=
+  sapply(1:length(min_index_list), 
+         function(x){alignment$Dist_Nam_1[min_index_list[x]]})
+
+ec_odisha_main_filter_tehsil$Tehsil_matched=
+  sapply(1:length(min_index_list), 
+         function(x){alignment$Tehsil[min_index_list[x]]})
+
+ec_odisha_main_filter_tehsil$tuid=
+  sapply(1:length(min_index_list), 
+         function(x){alignment$tuid[min_index_list[x]]})
+
+
+ec_odisha_main_filter_tehsil$Matched_distance=
+  sapply(1:length(min_index_list), function(x){min_value_matrix_matches[x]})
+
+
+
+```
+
+
+##Merge at Tehsil Level 
+
+
+
+```{r}
+
+library(lfe)
+
+ec_odisha_main_filter_tehsil <- left_join(ec_odisha_main_filter_tehsil,alignment,by="tuid")
+
+ec_odisha_main_filter_tehsil$Deslisted<-ifelse(ec_odisha_main_filter_tehsil$Status_Simplified=='Delisted',1,0)
+ec_odisha_main_filter_tehsil$Rejected<-ifelse(ec_odisha_main_filter_tehsil$Status_Simplified=='Rejected',1,0)
+ec_odisha_main_filter_tehsil$Withdrawn<-ifelse(ec_odisha_main_filter_tehsil$Status_Simplified=='Withdrawn',1,0)
+
+
+table(ec_odisha_main_filter_tehsil$Deslisted)
+
+
+
+summary(felm(Deslisted~Per_Pop_Aligned|Category_Simplified|0|0,data=filter(ec_odisha_main_filter_tehsil,Matched_distance<5)))
+
+
+summary(felm(Deslisted~Per_Pop_Aligned|Category_Simplified+submit_year|0|0,data=filter(ec_odisha_main_filter_tehsil,Matched_distance<5)))
+
+summary(felm(Deslisted~Per_Pop_Aligned|submit_year|0|0,data=filter(ec_odisha_main_filter_tehsil,grepl('TAHASILDAR',ec_odisha_main_filter_tehsil$Company)&Matched_distance<5)))
+
+ec_odisha_main_filter_tehsil_mining<-filter(ec_odisha_main_filter_tehsil,Category_Simplified=='Non-Coal Mining')
+
+
+summary(felm(Deslisted~Per_Pop_Aligned|submit_year|0|0,data=filter(ec_odisha_main_filter_tehsil_mining,Status_Simplified!='Other')))
+
+summary(felm(Deslisted~Per_Pop_Aligned|0|0|0,data=filter(ec_odisha_main_filter_tehsil_mining,submit_year>2019)))
+
+
+ec_odisha_main_filter_tehsil_mining$Tehsildar<-ifelse(grepl('TAHASILDAR',ec_odisha_main_filter_tehsil_mining$Company),1,0)
+
+ec_odisha_main_filter_tehsil_mining$Sand<-ifelse(grepl('sand',tolower(ec_odisha_main_filter_tehsil_mining$Proposal.Name)),1,0)
+
+table(ec_odisha_main_filter_tehsil_mining$Sand)
+table(ec_odisha_main_filter_tehsil_mining$Tehsildar)
+
+
+
+summary(felm(Deslisted~Per_Pop_Aligned|0|0|0,data=filter(ec_odisha_main_filter_tehsil_mining,Status_Simplified!='Other')))
+
+
+
+summary(felm(Deslisted~Sand|0|0|tuid,data=filter(ec_odisha_main_filter_tehsil_mining,Status_Simplified!='Other'&submit_year<2019)))
+
+
+summary(felm(Deslisted~Tehsildar|submit_year|0|0,data=filter(ec_odisha_main_filter_tehsil_mining)))
+```
+
+##Merge at Tehsil Level 
+
+
+
+```{r}
+
+grant_ec_filter_tehsil<-ec_odisha_main_filter_tehsil%>%
+  filter(Status %in% c("EC Granted","EC Granted - Processed offline")) %>% distinct()
+```
+
+
+## Detailed Timing 
+
+```{r}
+
+##Merge Detailed Timeline Dataset with EC Granted dataset 
+table(grant_ec_filter_tehsil$Proposal%in%ec_detailed_timeline_odisha$Proposal.Number)
+grant_ec_filter_tehsil$Proposal.Number<-grant_ec_filter_tehsil$Proposal
+
+table(duplicated(paste(ec_detailed_timeline_odisha$Proposal.Number,ec_detailed_timeline_odisha$Project.Name)))
+
+
+grant_ec_filter_tehsil<-dplyr::left_join(grant_ec_filter_tehsil,ec_detailed_timeline_odisha,by='Proposal.Number')
+
+
+##Create Variables that Divide the Overall time for process EC
+##into the following components
+
+# Applying the function to the input vector
+
+#Time taken between SEIAA and SEAC
+
+grant_ec_filter_tehsil$Accepted.by.SEIAA.and.forwarded.to.SEAC <- grant_ec_filter_tehsil$Accepted.by.SEIAA.and.forwarded.to.SEAC %>% dmy()
+
+grant_ec_filter_tehsil$Accepted.by.SEAC <- grant_ec_filter_tehsil$Accepted.by.SEAC %>% dmy()
+
+#Time taken to Grant 
+grant_ec_filter_tehsil$time_SEIAA_SEAC <- as.duration(grant_ec_filter_tehsil$Accepted.by.SEAC - grant_ec_filter_tehsil$Accepted.by.SEIAA.and.forwarded.to.SEAC)/ddays(1)
+
+summary(grant_ec_filter_tehsil$time_SEIAA_SEAC)
+
+#Time taken to Grant 
+grant_ec_filter_tehsil$EC_Letter_Uploaded <- grant_ec_filter_tehsil$EC.Letter.Uploaded.On.EC.Granted %>% dmy()
+
+
+grant_ec_filter_tehsil$time_submit_seiaa<-as.duration(grant_ec_filter_tehsil$Accepted.by.SEIAA.and.forwarded.to.SEAC - grant_ec_filter_tehsil$submit)/ddays(1)
+
+grant_ec_filter_tehsil$time_SEAC_Grant <- as.duration(grant_ec_filter_tehsil$grant - grant_ec_filter_tehsil$Accepted.by.SEAC)/ddays(1)
+
+summary(grant_ec_filter_tehsil$time)
+summary(grant_ec_filter_tehsil$time_submit_seiaa)
+which(grant_ec_filter_tehsil$time_submit_seiaa<0)
+
+summary(grant_ec_filter_tehsil$time_SEIAA_SEAC)
+
+which(grant_ec_filter_tehsil$time_SEIAA_SEAC<0)
+
+summary(grant_ec_filter_tehsil$time_SEAC_Grant)
+
+which(grant_ec_filter_tehsil$time_SEAC_Grant<0)
+
+
+
+```
+
+
+
+
+```{r plots}
+ggplot(filter(grant_ec_filter_tehsil,time_SEIAA_SEAC>0&time>0), aes(x = time_SEIAA_SEAC, y = time)) +
+  geom_point(fill = "skyblue", width = 0.5) +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Time Taken between SEIAA and SEAC to Approve",
+       y = "Overall Time") +
+  theme_minimal()
+
+grant_ec_filter_tehsil$time_seac_percent<-grant_ec_filter_tehsil$time_SEIAA_SEAC/grant_ec_filter_tehsil$time
+
+summary(grant_ec_filter_tehsil$time_seac_percent)
+
+ggplot(filter(grant_ec_filter_tehsil,time_seac_percent<1&time>0), aes(time_seac_percent)) +
+  geom_histogram() +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Time Taken by SEAC to Approve",
+       y = "Count") +
+  theme_minimal()
+
+ggplot(filter(grant_ec_filter_tehsil,time_seac_percent<1&time>0), aes(x = Category_Simplified, y = time_seac_percent)) +
+  geom_boxplot(fill = "skyblue", color = "darkblue", outlier.shape = NA) +
+  labs(x = "Group", y = "Time Taken by SEAC as Percentage", title = "Box Plot") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+
+ggplot(filter(grant_ec_filter_tehsil,time_submit_seiaa>0&time>0), aes(x = time_submit_seiaa, y = time)) +
+  geom_point(fill = "skyblue", width = 0.5) +
+  labs(title = "Summary Of Processing Time (EC Granted)",
+       x = "Time Taken by seiaa to Approve",
+       y = "Overall Time") +
+  theme_minimal()
+
+```
+
+
+
+
+
+```{r}
+density_year_infra_orissa <- ggplot(filter(grant_ec_filter_tehsil,time_seac_percent<1), aes(x = submit_year_mon, y = time_seac_percent)) +geom_vline(xintercept = as.yearmon('May 2019'), linetype="dashed", 
+             color = "black", size=1)+
+  geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
+  theme_minimal() + ggtitle('Odisha Projects Around Elections (EC)')  +facet_wrap(~Category_Simplified)
+
+print(density_year_infra_orissa)
+
+
+```
+
+
+```{r}
+
+
+grant_ec_filter_tehsil_non_coal<-grant_ec_filter_tehsil%>%
+  filter(Category_Simplified=='Non-Coal Mining')
+
+grant_ec_filter_tehsil_non_coal$Tehsildar<-ifelse(grepl('TAHASILDAR',grant_ec_filter_tehsil_non_coal$Company),1,0)
+
+table(grant_ec_filter_tehsil_non_coal$Tehsildar)
+
+
+density_year_infra_orissa <- ggplot(filter(grant_ec_filter_tehsil_non_coal,time>0&submit_year>2019), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('May 2019'), linetype="dashed", 
+             color = "black", size=1)+
+  geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
+  theme_minimal() + ggtitle('Odisha Projects Around Elections (EC)')+
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Tilting x-axis labels by 45 degrees
+facet_wrap(~Tehsildar)
+
+print(density_year_infra_orissa)
+
+grant_ec_filter_tehsil_non_coal$Tehsildar_Factor=as.factor(grant_ec_filter_tehsil_non_coal$Tehsildar)
+
+ggplot(filter(grant_ec_filter_tehsil_non_coal,time>0&submit_year>2019), aes(x=time, fill=Tehsildar_Factor)) +
+  geom_density(alpha=0.24) + # alpha for transparency to see overlap
+  labs(title="Non Coal Mining Post 2019",
+       x="Value",
+       y="Density") +
+  theme_minimal() # Using a minimal theme for aesthetics
+```
+
+#Analysis All Categories
+
+```{r analysis}
+library(lfe)
+
+summary(felm(time~Per_Pop_Aligned|0|0|0,data=grant_ec_filter_tehsil))
+
+summary(felm(time~Per_Pop_Aligned|Category_Simplified|0|0,data=grant_ec_filter_tehsil))
+
+summary(felm(time~Per_Pop_Aligned|Category_Simplified|0|tuid,data=grant_ec_filter_tehsil))
+
+summary(felm(time~Per_Pop_Aligned|Category_Simplified+submit_year|0|0,data=grant_ec_filter_tehsil))
+
+summary(felm(time~Per_Pop_Aligned|Category_Simplified+submit_year|0|tuid,data=grant_ec_filter_tehsil))
+
+summary(felm(time_SEIAA_SEAC~Per_Pop_Aligned|Category_Simplified+submit_year|0|tuid,data=grant_ec_filter_tehsil))
+
+summary(felm(time_SEAC_Grant~Per_Pop_Aligned|Category_Simplified+submit_year|0|tuid,data=grant_ec_filter_tehsil))
+
+```
+
+
+
+```{r mining}
+summary(felm(time_SEIAA_SEAC~Per_Pop_Aligned|submit_year|0|0,data=filter(grant_ec_filter_tehsil,grepl('TAHASILDAR',grant_ec_filter_tehsil$Company))))
+
+grant_ec_filter_tehsil_mining<-filter(grant_ec_filter_tehsil,Category_Simplified=='Non-Coal Mining')
+
+
+summary(felm(time_SEAC_Grant~Per_Pop_Aligned|submit_year|0|0,data=filter(grant_ec_filter_tehsil_mining,!grepl('TAHASILDAR',grant_ec_filter_tehsil_mining$Company))))
+
+summary(felm(time_submit_seiaa~Per_Pop_Aligned|submit_year|0|0,data=filter(grant_ec_filter_tehsil_mining)))
+
+summary(felm(time_SEIAA_SEAC~Per_Pop_Aligned|submit_year|0|0,data=filter(grant_ec_filter_tehsil_mining)))
+
+summary(felm(time_SEAC_Grant~Per_Pop_Aligned|submit_year|0|0,data=filter(grant_ec_filter_tehsil_mining)))
+
+summary(felm(time~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining)))
+
+```
+
+
+
+
+
+```{r post-election}
+
+summary(felm(time~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,submit_year>2019)))
+
+summary(felm(time_submit_seiaa~Per_Pop_Aligned|0|0|tuid,data=filter(grant_ec_filter_tehsil_mining,submit_year>2019)))
+
+summary(felm(time_SEIAA_SEAC~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,submit_year>2019)))
+
+summary(felm(time_SEAC_Grant~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,submit_year>2019)))
+
+
+```
+
+
+```{r robust}
+summary(felm(time~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,submit_year<2020)))
+
+summary(felm(time_submit_seiaa~Per_Pop_Aligned|0|0|tuid,data=filter(grant_ec_filter_tehsil_mining,submit_year<2020)))
+
+summary(felm(time_SEIAA_SEAC~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,submit_year<2020)))
+
+summary(felm(time_SEAC_Grant~Per_Pop_Aligned|0|0|tuid,data=filter(grant_ec_filter_tehsil_mining,submit_year<2020)))
+
+```
+
+
+
+
+```{r sand}
+grant_ec_filter_tehsil_mining$Tehsildar<-ifelse(grepl('TAHASILDAR',grant_ec_filter_tehsil_mining$Company),1,0)
+
+table(grant_ec_filter_tehsil_mining$Tehsildar)
+round(prop.table(xtabs(~grant_ec_filter_tehsil_mining$Tehsildar+grant_ec_filter_tehsil_mining$submit_year),2),2)
+
+
+
+grant_ec_filter_tehsil_mining$Sand<-ifelse(grepl('sand',tolower(grant_ec_filter_tehsil_mining$Proposal.Name)),1,0)
+
+table(grant_ec_filter_tehsil_mining$Sand)
+round(prop.table(xtabs(~grant_ec_filter_tehsil_mining$Sand+grant_ec_filter_tehsil_mining$submit_year),2),2)
+
+
+summary(felm(time~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,Sand==1)))
+
+summary(felm(time~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,Sand==1&time>0)))
+
+summary(felm(time_SEIAA_SEAC~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,Tehsildar==0)))
+
+summary(felm(time_SEAC_Grant~Per_Pop_Aligned|0|0|0,data=filter(grant_ec_filter_tehsil_mining,time_SEAC_Grant>0&submit_year>2020)))
+
+summary(felm(log(1+time_SEIAA_SEAC)~Per_Area_Aligned+Tehsildar|0|0|0,data=filter(grant_ec_filter_tehsil_mining,submit_year>2020&Sand==1)))
+
+summary(felm(time_SEIAA_SEAC~Sand+Tehsildar+Per_Pop_Aligned|submit_year|0|tuid,data=filter(grant_ec_filter_tehsil_mining,time_SEAC_Grant>0)))
+
+
+
+summary(felm(time_SEAC_Grant~Sand|submit_year|0|tuid,data=filter(grant_ec_filter_tehsil_mining,time_SEAC_Grant>0)))
+
+
+
+```
+
+```{r}
+density_year_infra_orissa <- ggplot(filter(grant_ec_filter_tehsil_mining,Sand==1), aes(x = submit_year_mon, y = time)) +geom_vline(xintercept = as.yearmon('May 2019'), linetype="dashed", 
+             color = "black", size=1)+
+  geom_point(fill = "skyblue", color = "darkblue", alpha = 0.5) + scale_x_yearmon()+
+  theme_minimal() + ggtitle('Odisha Sand Mining Projects Around Elections (EC)')+facet_wrap(~Tehsildar)
+
+print(density_year_infra_orissa)
+```
+
+
+
+#Location of Firm/Applicant and Processing Time
+
+- Are firms located closer to the city of Bhubaneswar more likely to get faster approval?
+- Insider Outsider? 
+- Only for Form 2 1138 projects get lat long for project firm location
+- Then use distance to calculate distance from Bhubaneswar? 
+- Also distance from Project 
+- run regression to see if distance predicts anything 
+
+```{r ggmap-zip}
+install.packages("ggmap")
+library(ggmap)
+register_google
+
+register_google(key = "AIzaSyBUOxkob_AsOFbmLRpfE2fE2sqzpnpHElY")
+
+# Example Indian zip code
+indian_zip_code <- "761107"
+
+# Geocode the zip code
+location <- geocode(indian_zip_code)
+
+# Print latitude and longitude
+print(location$lon)
+print(location$lat)
+
+
+ec_form2_odisha_pincode<-ec_form2_odisha%>%
+  dplyr::filter(!is.na(Pincode))
+
+ec_form2_odisha_pincode$firm_lon<-NA
+ ec_form2_odisha_pincode$firm_lat<-NA
+
+ for(i in 1:nrow(ec_form2_odisha_pincode)){
+  print(i)
+  location <- geocode(as.character(ec_form2_odisha_pincode$Pincode[i]))
+ ec_form2_odisha_pincode$firm_lon[i]=location$lon
+ ec_form2_odisha_pincode$firm_lat[i]=location$lat
+}
+
+write.csv(ec_form2_odisha_pincode,'C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Orissa/Backups/ec_form2_odisha_pincode.csv')
+
+```
+
+#distance from capital city
+
+```{r distance}
+library(geosphere)
+library(dplyr)
+
+
+
+get_geo_distance = function(long1, lat1, long2, lat2, units = "miles") {
+  
+  distance_m = distm(c(long1, lat1), c(long2, lat2), fun = distHaversine)
+  if (units == "km") {
+    distance = distance_m / 1000.0;
+  }
+  else if (units == "miles") {
+    distance = distance_m / 1609.344
+  }
+  else {
+    distance = distance_m
+    # This will return in meter as same way as distHaversine function. 
+  }
+  distance
+}
+#bhubaneswar
+#
+ec_form2_odisha_pincode$lat_bbsr<-20.261599
+ec_form2_odisha_pincode$lon_bbsr<-85.836685
+distm(c(lon1, lat1), c(lon2, lat2), fun = distHaversine)
+
+
+get_geo_distance(ec_form2_odisha_pincode$firm_lon[1],ec_form2_odisha_pincode$firm_lat[1],ec_form2_odisha_pincode$lon_bbsr[1],ec_form2_odisha_pincode$lat_bbsr[1],units='km')
+
+ec_form2_odisha_pincode<-ec_form2_odisha_pincode %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(dist_from_bbsr= get_geo_distance(firm_lon,firm_lat,lon_bbsr,lat_bbsr,units='km'))
+
+summary(ec_form2_odisha_pincode$dist_from_bbsr)
+
+
+
+```
+
+```{r analysis}
+
+#Delisted
+ec_form2_odisha_pincode_select<-ec_form2_odisha_pincode%>%
+  select(Proposal,dist_from_bbsr)
+
+library(lfe)
+
+ec_odisha_main_filter_tehsil_pincode <- left_join(ec_odisha_main_filter_tehsil,ec_form2_odisha_pincode_select,by="Proposal")
+
+
+table(ec_odisha_main_filter_tehsil_pincode$Deslisted)
+table(is.na(ec_odisha_main_filter_tehsil_pincode$dist_from_bbsr))
+
+
+
+
+summary(felm(Deslisted~dist_from_bbsr|0|0|0,data=filter(ec_odisha_main_filter_tehsil_pincode,Matched_distance<5)))
+
+
+summary(felm(Deslisted~dist_from_bbsr|Category_Simplified+submit_year|0|0,data=filter(ec_odisha_main_filter_tehsil_pincode,Matched_distance<5)))
+
+
+ec_odisha_main_filter_tehsil_pincode_mining_pincode<-filter(ec_odisha_main_filter_tehsil_pincode,Category_Simplified=='Non-Coal Mining')
+
+
+summary(felm(Deslisted~dist_from_bbsr|submit_year|0|0,data=filter(ec_odisha_main_filter_tehsil_pincode_mining_pincode_pincode,Status_Simplified!='Other')))
+
+summary(felm(Deslisted~dist_from_bbsr|0|0|0,data=filter(ec_odisha_main_filter_tehsil_pincode_mining_pincode,submit_year>2019)))
+
+
+ec_odisha_main_filter_tehsil_pincode_mining_pincode$Tehsildar<-ifelse(grepl('TAHASILDAR',ec_odisha_main_filter_tehsil_pincode_mining_pincode$Company),1,0)
+
+ec_odisha_main_filter_tehsil_pincode_mining_pincode$Sand<-ifelse(grepl('sand',tolower(ec_odisha_main_filter_tehsil_pincode_mining_pincode$Proposal.Name)),1,0)
+
+table(ec_odisha_main_filter_tehsil_pincode_mining_pincode$Sand)
+table(ec_odisha_main_filter_tehsil_pincode_mining_pincode$Tehsildar)
+
+
+
+summary(felm(Deslisted~dist_from_bbsr|0|0|0,data=filter(ec_odisha_main_filter_tehsil_pincode_mining_pincode,Status_Simplified!='Other')))
+
+
+
+
+
+summary(felm(Deslisted~dist_from_bbsr|submit_year|0|0,data=filter(ec_odisha_main_filter_tehsil_pincode_mining_pincode)))
+```
+#Analysis All Categories
+
+```{r analysis}
+library(lfe)
+ec_form2_odisha_pincode_select<-ungroup(ec_form2_odisha_pincode_select)
+table(ec_form2_odisha_pincode_select$Proposal%in%grant_ec_filter_tehsil$Proposal)
+
+temp<-inner_join(grant_ec_filter_tehsil,ec_form2_odisha_pincode_select,by="Proposal")
+
+temp<-temp%>%
+  filter(!duplicated(Proposal))
+temp$distance<-temp$dist_from_bbsr
+
+summary(felm(time~dist_from_bbsr|0|0|0,data=temp))
+
+summary(felm(time~dist_from_bbsr|Category_Simplified|0|0,data=temp))
+
+summary(felm(time~dist_from_bbsr|Category_Simplified|0|tuid,data=temp))
+
+summary(felm(time~dist_from_bbsr|Category_Simplified+submit_year|0|0,data=temp))
+
+summary(felm(time~dist_from_bbsr|Category_Simplified+submit_year|0|tuid,data=temp))
+
+summary(felm(time_SEIAA_SEAC~dist_from_bbsr|Category_Simplified+submit_year|0|tuid,data=temp))
+
+summary(felm(time_SEAC_Grant~dist_from_bbsr|Category_Simplified+submit_year|0|tuid,data=temp))
+
+```
+
+
+## Maps Odisha
+
+```{r}
+time_or <- ggplot(shp_or)+
+geom_sf(aes(fill = avg)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(60,250))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Avg Time - Odisha", fill = "Days")+ theme(plot.title = element_text(hjust = .5))
+
+print(time_or)
+```
+
+```{r}
+count_or <- ggplot(shp_or)+
+geom_sf(aes(fill = count)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(0,200))+## clean map theme from cowplot
+theme_map()+
+labs(title = "No. of Projects - Odisha", fill = "Count")+ theme(plot.title = element_text(hjust = .5))
+
+print(count_or)
+```
+
+
+```{r}
+cd_or <- ggplot(shp_or)+
+geom_sf(aes(fill = cd)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(0,1.5))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Coeff. of Dev. - Odisha", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(cd_or)
+```
+
+```{r}
+most_or <- ggplot(shp_or)+
+geom_sf(aes(fill = most)) +
+## custom gradient 
+scale_fill_manual(values = c("red", "blue", "green", "orange","skyblue"), na.value = "grey") +## clean map theme from cowplot
+theme_map()+
+labs(title = "Categories - Odisha", fill = "CD")+ theme(plot.title = element_text(hjust = .5))
+
+print(most_or)
+```
+
+## Maps - Haryana
+
+```{r}
+time_har <- ggplot(shp_har)+
+geom_sf(aes(fill = avg)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(80,999))+## clean map theme from cowplot
+theme_map()+
+labs(title = "Avg Time - Haryana", fill = "Days")+ theme(plot.title = element_text(hjust = .5))
+
+print(time_har)
+```
+
+```{r}
+count_har <- ggplot(shp_har)+
+geom_sf(aes(fill = count)) +
+## custom gradient 
+scale_fill_gradientn(colors = rcartocolor::carto_pal(name = "BluYl", n =7),limits=c(1,270))+## clean map theme from cowplot
+theme_map()+
+labs(title = "No. of Projects - Haryana", fill = "Count")+ theme(plot.title = element_text(hjust = .5))
+
+print(count_har)
+```
+
+
+
+
+
+
+
+
+
+
+

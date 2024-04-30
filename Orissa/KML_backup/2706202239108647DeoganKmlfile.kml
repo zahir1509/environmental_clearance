@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Deogam Kml file.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>Lease Boundary</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							84.86819316539093,19.62948264675664,0 84.8678781285444,19.62929992462219,0 84.8678733813237,19.629177659742,0 84.86787851330671,19.62907127367414,0 84.86805498381615,19.62899853781357,0 84.86826631385989,19.62869898321123,0 84.86869656115793,19.62865922953413,0 84.86901419818396,19.62868600170754,0 84.86901182292576,19.62899595007102,0 84.86837830769262,19.6289960185399,0 84.86837796573202,19.62938424028725,0 84.86819316539093,19.62948264675664,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Document>
+			<name>GPS device</name>
+			<snippet>Created Mon Jun 20 12:09:08 2022</snippet>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2021-05-28T09:35:33Z</begin>
+					<end>2021-05-28T09:43:37Z</end>
+				</gx:TimeSpan>
+				<longitude>84.868444</longitude>
+				<latitude>19.629078</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<range>1300</range>
+			</LookAt>
+			<Style id="waypoint_h">
+				<IconStyle>
+					<scale>1.2</scale>
+					<Icon>
+						<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+					</Icon>
+				</IconStyle>
+			</Style>
+			<StyleMap id="waypoint">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#waypoint_n</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#waypoint_h</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="waypoint_n">
+				<IconStyle>
+					<Icon>
+						<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+					</Icon>
+				</IconStyle>
+			</Style>
+			<Folder>
+				<name>Waypoints</name>
+				<Placemark>
+					<name>1</name>
+					<TimeStamp><when>2021-05-28T09:35:33Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.86837800000001,19.629383,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>10</name>
+					<TimeStamp><when>2021-05-28T09:43:09Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.867878,19.629306,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>11</name>
+					<TimeStamp><when>2021-05-28T09:43:37Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.868194,19.629489,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>2</name>
+					<TimeStamp><when>2021-05-28T09:38:46Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.868381,19.629003,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>3</name>
+					<TimeStamp><when>2021-05-28T09:39:15Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.86901400000001,19.629,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>4</name>
+					<TimeStamp><when>2021-05-28T09:39:44Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.86901400000001,19.628694,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>5</name>
+					<TimeStamp><when>2021-05-28T09:40:14Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.868697,19.628667,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>6</name>
+					<TimeStamp><when>2021-05-28T09:40:39Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.868267,19.628706,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>7</name>
+					<TimeStamp><when>2021-05-28T09:41:12Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.868056,19.629006,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>8</name>
+					<TimeStamp><when>2021-05-28T09:41:58Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.867878,19.629078,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>9</name>
+					<TimeStamp><when>2021-05-28T09:42:40Z</when>
+</TimeStamp>
+					<styleUrl>#waypoint</styleUrl>
+					<Point>
+						<coordinates>84.867875,19.629183,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Document>
+	</Folder>
+</Document>
+</kml>

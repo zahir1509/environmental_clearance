@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>LERGAON.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0055ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0055ff</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>LERGAON</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						82.84082656072994,21.05024123372246,0 82.84090024842185,21.05018891555559,0 82.84099171373761,21.0500854841349,0 82.84104329705708,21.05002810107929,0 82.84106958640557,21.05001546379637,0 82.84108969680996,21.05001552072138,0 82.84138437063476,21.05040354890265,0 82.84155080277674,21.05075283641655,0 82.84167311328503,21.05119992207269,0 82.84174842048873,21.05160503126773,0 82.84195271530255,21.05219677809039,0 82.8422633543381,21.05287472654537,0 82.84167666341234,21.05350354883133,0 82.84140997992495,21.05333014252782,0 82.84136223880989,21.05303012128593,0 82.84117572172252,21.05306576386368,0 82.8410987490964,21.05294893177907,0 82.84101420390236,21.05306000705965,0 82.84097243963279,21.05314849589321,0 82.84094808190815,21.05302258806246,0 82.84100769725011,21.05291894271619,0 82.84109861013232,21.05282036368929,0 82.84077434824935,21.05253380902407,0 82.84041056443063,21.05230827068811,0 82.84025022226359,21.05214996971648,0 82.84002206407986,21.05177393842903,0 82.83973835014655,21.05129224768582,0 82.84082656072994,21.05024123372246,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

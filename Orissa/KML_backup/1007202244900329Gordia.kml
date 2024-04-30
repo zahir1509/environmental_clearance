@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Gordia.kml</name>
+	<Style id="s_ylw-pushpin35">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin36">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin35</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl44</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl44">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Gordia</name>
+		<styleUrl>#m_ylw-pushpin36</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				85.66426564508622,20.82083049482896,0 85.6643934754138,20.82132337488875,0 85.6645319581128,20.8218759965554,0 85.66470239732989,20.8225779756246,0 85.6650486189981,20.82246346916074,0 85.66532559491883,20.82238381262589,0 85.66589552421605,20.82228424183142,0 85.66626837413244,20.82220458417653,0 85.66671579440585,20.82216475476024,0 85.66714723615782,20.82206518183436,0 85.66758400593001,20.8219606297536,0 85.6674455113225,20.82151753807504,0 85.66726973252464,20.82088028348685,0 85.66707797759341,20.82016834994273,0 85.66639620201732,20.82033264774281,0 85.66566648961731,20.82049694152043,0 85.66479828866768,20.82071101539857,0 85.66426564508622,20.82083049482896,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

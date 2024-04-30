@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="RETAINED_BND" id="RETAINED_BND">
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="MINES_NAME" type="string"></SimpleField>
+	<SimpleField name="AREA_Ha" type="string"></SimpleField>
+	<SimpleField name="Id" type="string"></SimpleField>
+	<SimpleField name="FID" type="string"></SimpleField>
+	<SimpleField name="Field_1" type="string"></SimpleField>
+</Schema>
+<Folder><name>RETAINED_BND</name>
+  <Placemark>
+	<name>NANGALSILA IRON ORE MINES</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#RETAINED_BND">
+		<SimpleData name="altitudeMode">clampToGround</SimpleData>
+		<SimpleData name="MINES_NAME">NANGALSILA IRON ORE MINES</SimpleData>
+		<SimpleData name="AREA_Ha">45.333</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="Field_1">NANGALSILA IRON ORE MINES</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>86.2243882877164,22.1611631213531 86.2227320994903,22.1611571319895 86.2202924265,22.1610890500098 86.2189553752303,22.1610615751349 86.2165610752523,22.1582052781783 86.2149417964337,22.1565526466179 86.2158926662064,22.1558593612691 86.2161364062085,22.1560691773051 86.2159860040952,22.1562050722779 86.2162349972877,22.1561826999545 86.216365408542,22.1558932517524 86.2162779200376,22.1557152361272 86.2174493222193,22.1548702576229 86.2179169784462,22.1550378101986 86.217924726426,22.1558118082625 86.2179749578019,22.1558792153621 86.2180714493484,22.1558060526415 86.2181227895838,22.1550356080833 86.2191644092948,22.1555122707475 86.2213110557265,22.156396001793 86.2242589683224,22.1560797833948 86.2243882877164,22.1611631213531</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

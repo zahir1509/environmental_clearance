@@ -1,0 +1,406 @@
+---
+title: "Additional Code"
+author: "Pranav Gupta"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+ec_additional <- NULL
+
+ec_files_additional_data<-ec_files[which(grepl("additional_data",ec_files))]
+
+for(i in 1:length(ec_files_additional_data)){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files_additional_data[i]),stringsAsFactors = F)
+  print(colnames(add)[1])
+  add$csv <- i
+  ec_additional <- dplyr::bind_rows(ec_additional,add)
+}
+
+colnames(ec_additional)[1]='Proposal.No.'
+
+table(duplicated(ec_additional$Proposal.No.))
+
+ec_additional$st_code <- sub("^[^/]*/([^/]*)/.*$", "\\1", ec_additional$Proposal.No.)
+table(ec_additional$st_code)
+
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+```
+
+
+```{r}
+
+
+ec_additional$Proposal.No.<-ec_additional$Proposal
+
+ec<-dplyr::bind_rows(ec_main,ec_additional)
+table(duplicated(ec$Proposal))
+
+table(is.na(ec$Proposal))
+
+#Bind main and Additional
+
+
+```
+
+#RDD Package
+
+```{r rdd}
+
+library(rdd)
+library(tidyverse)  # ggplot(), %>%, mutate(), and friends
+#library(broom)  # Convert models to data frames
+library(rdrobust)  # For robust nonparametric regression discontinuity
+library(rddensity)  # For nonparametric regression discontinuity density tests
+library(modelsummary)  # Create side-by-side regression tables
+library(rddtools)
+
+DCdensity(submit_cycle$submit_week, 0, bin = NULL, bw = NULL, verbose = FALSE,
+  plot = TRUE, ext.out = FALSE, htest = FALSE)
+
+rdd_data(submit_cycle$count, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(submit_cycle$delisted_percent, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+
+ggplot(submit_cycle, aes(x=submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "No. of applications") 
+
+
+submit_cycle %>% 
+  ggplot(aes(x = submit_week, y = count)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)+ggtitle("Number of Non-Coal Mining Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_elec_cycle.png"))
+
+submit_cycle %>% 
+  ggplot(aes(x = submit_week, y = delisted)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)+ggtitle("Number of Non-Coal Mining Projects Delisted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/delisted_count_elec_cycle.png"))
+
+submit_cycle %>% 
+  ggplot(aes(x = submit_week, y = delisted_percent)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)+ggtitle("Number of Non-Coal Mining Projects Delisted as Percent of Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/delisted_percent_count_elec_cycle.png"))
+
+```
+
+#RDD Package
+
+```{r rdd}
+
+library(dplyr)
+library(ggplot2)
+library(rddtools)
+library(magrittr)
+
+submit_cycle$count_logged<-log(submit_cycle$count+1)
+submit_cycle$delisted_logged<-log(submit_cycle$delisted+1)
+
+DCdensity(submit_cycle$submit_week, 0, bin = NULL, bw = NULL, verbose = FALSE,
+  plot = TRUE, ext.out = FALSE, htest = FALSE)
+
+
+rdd_data(submit_cycle$count_logged, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(submit_cycle$count_logged, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+rdd_data(submit_cycle$delisted_percent,
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate",order=2) %>% 
+  summary()
+
+submit_cycle$Post<-ifelse(submit_cycle$pre=="Post",1,0)
+
+submit_cycle %>%
+  select(submit_week, count_logged,Post) %>%
+  ggplot(aes(x = submit_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_elec_cycle_rdd.png"))
+
+submit_cycle %>%
+  select(submit_week, count_logged,Post) %>%
+ ggplot(aes(x = submit_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.2) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count (Logged) RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_logged_elec_cycle_rdd.png"))
+
+submit_cycle %>%
+  select(submit_week, delisted_logged,Post) %>%
+  ggplot(aes(x = submit_week, y = delisted_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "delisted",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_elec_cycle_rdd.png"))
+
+submit_cycle %>%
+  select(submit_week, delisted_logged,Post) %>%
+ ggplot(aes(x = submit_week, y = delisted_logged, color = as.factor(Post))) +
+  geom_point(alpha=.2) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "delisted",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count (Logged) RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_logged_elec_cycle_rdd.png"))
+```
+
+
+#RDD Package
+
+```{r rdd}
+
+library(dplyr)
+library(ggplot2)
+library(rddtools)
+library(magrittr)
+
+grant_n_cycle$count_logged<-log(grant_n_cycle$count+1)
+
+DCdensity(grant_n_cycle$grant_week, 0, bin = NULL, bw = NULL, verbose = FALSE,
+  plot = TRUE, ext.out = FALSE, htest = FALSE)
+
+
+rdd_data(grant_n_cycle$count_logged, 
+         grant_n_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(grant_n_cycle$count_logged, 
+         grant_n_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+rdd_data(grant_n_cycle$count_logged, 
+         grant_n_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate",order=2) %>% 
+  summary()
+
+grant_n_cycle$Post<-ifelse(grant_n_cycle$pre=="Post",1,0)
+
+grant_n_cycle %>%
+  select(grant_week, count_logged,Post) %>%
+  ggplot(aes(x = grant_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")
+
+grant_n_cycle %>%
+  select(grant_week, count_logged,Post) %>%
+ ggplot(aes(x = grant_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")
+
+```
+
+
+#RDD Package
+
+```{r rdd}
+
+
+library(dplyr)
+library(ggplot2)
+library(rddtools)
+library(magrittr)
+
+rdd_data(grant_cycle$time, 
+         grant_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(grant_cycle$time, 
+         grant_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+rdd_data(grant_cycle$time, 
+         grant_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate",order=2) %>% 
+  summary()
+
+grant_cycle$Post<-ifelse(grant_cycle$pre=="Post",1,0)
+
+grant_cycle %>%
+  select(grant_week, time,Post) %>%
+  ggplot(aes(x = grant_week, y = time, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "Time",
+       x = "Distance from Election")
+
+grant_cycle %>%
+  select(grant_week, time,Post) %>%
+ ggplot(aes(x = grant_week, y = time, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "Time",
+       x = "Distance from Election")
+
+```
+
+```{r}
+grant_n_cycle %>% 
+  ggplot(aes(x = grant_week, y = count)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)
+```
+
+```{r}
+grant_n_cycle$Post<-ifelse(grant_n_cycle$pre=="Post",1,0)
+
+mod2 <- felm(count~grant_week*Post|state+grant_year|0|0,data=grant_n_cycle)
+summary(mod2)
+```
+
+```{r}
+ggplot(submit_cycle, aes(x=submit_week, y = delisted_percent)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("Percent of Projects Delisted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_percent_elec_cycle.png"))
+
+ggplot(submit_cycle, aes(x=submit_week, y = delisted)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Delisted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_count_elec_cycle.png"))
+```
+
+
+```{r}
+mod1_50 <- felm(count~tau|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod1_50)
+mod2_50 <- felm(count~tau+tausq|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod2_50)
+```
+
+
+```{r}
+mod1_delisted <- felm(delisted~tau|state|0|0,data=submit_cycle)
+summary(mod1_delisted)
+mod2_delisted <- felm(delisted~tau+tausq|state|0|0,data=submit_cycle)
+summary(mod2_delisted)
+```
+```{r}
+mod1_delisted_50 <- felm(delisted~tau|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod1_delisted_50)
+
+mod2_delisted_50 <- felm(delisted~tau+tausq|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod2_delisted_50)
+```
+
+
+```{r}
+mod1 <- felm(delisted_percent~tau|state|0|0,data=submit_cycle)
+summary(mod1)
+
+mod2 <- felm(delisted_percent~tau+tausq|state|0|0,data=submit_cycle)
+summary(mod2)
+```
+
+
+
+
+
+
+
+
+
+

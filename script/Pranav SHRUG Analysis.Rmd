@@ -1,0 +1,311 @@
+---
+title: "Pranav SHRUG Analysis"
+output: html_document
+date: "2024-02-24"
+---
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+```
+
+
+#Change Username 
+
+```{r}
+#user <- "agnihotri"
+#user <- "prana"
+user <- "hp"
+```
+
+#Loading Files
+
+```{r}
+ec_files <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final"))
+```
+
+```{r}
+ec <- NULL
+for(i in 1:8){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files[i]))
+  add$csv <- i
+  ec <- rbind(ec,add)
+}
+```
+
+# Adding variables
+
+## State 
+
+```{r}
+ec$state1 <- ifelse(grepl("SIA/BR/", ec$Proposal), "Bihar",
+                          ifelse(grepl("SIA/KL/", ec$Proposal), "Kerala", ifelse(grepl("SIA/KA/", ec$Proposal), "Karnataka", ifelse(grepl("SIA/HR/", ec$Proposal), "Haryana",ifelse(grepl("SIA/JH/", ec$Proposal), "Jharkhand",ifelse(grepl("SIA/OR/", ec$Proposal), "Odisha", ifelse(grepl("SIA/RJ/", ec$Proposal), "Rajasthan",ifelse(grepl("SIA/UP/", ec$Proposal), "UP", "Other"))))))))
+```
+
+```{r}
+ec <- ec %>% filter(state1 != "Other")
+```
+
+
+## Duplicates
+
+```{r}
+#ec$duplicate <- duplicated(ec$Proposal)
+#table(ec$duplicate)
+#table(ec$duplicate,ec$state1)
+#dup <- ec %>% filter(duplicate==T)
+
+ec <- ec %>% select(Proposal,Date_1,Date_2,Category,Status,state1,District,Tehsil) %>% distinct()
+ec$duplicate <- duplicated(ec$Proposal)
+table(ec$duplicate)
+```
+
+
+```{r}
+ec$Category_Simplified <- ifelse(grepl('INFRA',ec$Category),'Infrastructure',
+                                    ifelse(grepl('Industrial',ec$Category),'Industrial',
+                                    ifelse(ec$Category=='Non-Coal Mining','Non-Coal Mining','Other')))
+
+table(ec$Category_Simplified)
+
+```
+
+## Dates
+
+```{r}
+extract_after_colon <- function(input) {
+  split_string <- strsplit(input, ":")
+  extracted_text <- sapply(split_string, function(x) trimws(x[2]))
+  return(extracted_text)
+}
+
+# Applying the function to the input vector
+ec$submit <- extract_after_colon(ec$Date_1) %>% dmy()
+
+ec$grant <- extract_after_colon(ec$Date_2) %>% dmy()
+
+ec$submit_date <- ifelse(!is.na(ec$submit), ec$submit, ec$grant) %>% as.Date()
+
+table(ec$submit==ec$submit_date)
+```
+
+```{r}
+#Time taken to Grant 
+ec$time <- as.duration(ec$grant - ec$submit)/ddays(1)
+ec$time2 <- as.numeric(ec$grant - ec$submit_date)
+ec$time2[ec$time2==0] <- NA
+summary(ec$time)
+summary(ec$time2)
+
+#sum(ec$time ==0,na.rm = T)
+
+ec$year <- year(ec$submit_date)
+ec <- ec %>% filter(year>2014)
+```
+
+```{r}
+grant_ec <- ec %>% filter(Status %in% c("EC Granted","EC Granted - Processed offline")) %>% distinct()
+
+code <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/district_lgd.csv")) 
+grant_ec <- left_join(grant_ec,code,by="District")
+```
+```{r}
+ec13 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/ec13.csv"))
+ec13$census2011 <- ec13$pc11_district_id
+ec13$census2011 <- sprintf("%03d", ec13$census2011)
+ec13$census2011 <- as.numeric(ec13$census2011)
+
+grant_ec <- left_join(grant_ec,ec13,by="census2011")
+table(grant_ec$state1)
+```
+```{r}
+elecfiles <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd"))
+```
+
+
+```{r}
+e1.1 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[1])) %>% filter(Year %in% c(2015))
+e1.1$inc <- ifelse(e1.1$Party %in% c("INC","JD(U)","RJD"),1,0)
+
+e1.2 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[1])) %>% filter(Year %in% c(2015))
+e1.2$Year <- 2017
+e1.2$inc <- ifelse(e1.2$Party %in% c("BJP","JD(U)","LJP"),1,0)
+
+e2.1 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[1])) %>% filter(Year %in% c(2020))
+e2.1$inc <- ifelse(e2.1$Party %in% c("BJP","JD(U)"),1,0)
+
+e2.2 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[1])) %>% filter(Year %in% c(2020))
+e2.2$Year <- 2022
+e2.2$inc <- ifelse(e2.2$Party %in% c("RJD","JD(U)"),1,0)
+
+e3 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[2])) %>% filter(Year %in% c(2014))
+e3$inc <- ifelse(e3$Party == "BJP",1,0)
+
+e4 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[2])) %>% filter(Year %in% c(2019))
+e4$inc <- ifelse(e4$Party %in% c("BJP","JNJP"),1,0)
+
+e5 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[3])) %>% filter(Year %in% c(2014))
+e5$inc <- ifelse(e5$Party %in% c("BJP","AJSUP"),1,0)
+
+e6 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[3])) %>% filter(Year %in% c(2019))
+e6$inc <- ifelse(e6$Party %in% c("INC","JMM"),1,0)
+
+e7 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[4])) %>% filter(Year %in% c(2013))
+e7$inc <- ifelse(e7$Party == "INC",1,0)
+
+e8.1 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[4])) %>% filter(Year %in% c(2018))
+e8.1$inc <- ifelse(e8.1$Party %in% c("INC","JD(S)"),1,0)
+
+e8.2 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[4])) %>% filter(Year %in% c(2018))
+e8.2$Year <- 2019
+e8.2$inc <- ifelse(e8.2$Party == "BJP",1,0)
+
+e9 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[4])) %>% filter(Year %in% c(2023))
+e9$inc <- ifelse(e9$Party == "INC",1,0)
+
+e10.1 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[5])) %>% filter(Year %in% c(2011))
+e10.1$inc <- ifelse(e10.1$Party %in% c("INC"),1,0)
+
+e10.2 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[5])) %>% filter(Year %in% c(2016,2021))
+e10.2$inc <- ifelse(e10.2$Party %in% c("CPI","CPIM","RSP"),1,0)
+
+e11 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[6])) %>% filter(Year %in% c(2014,2019))
+e11$inc <- ifelse(e11$Party == "BJD",1,0)
+
+e12 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[7])) %>% filter(Year %in% c(2013))
+e12$inc <- ifelse(e12$Party == "BJP",1,0)
+
+e13 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[7])) %>% filter(Year %in% c(2018))
+e13$inc <- ifelse(e13$Party == "INC",1,0)
+
+e14 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[8])) %>% filter(Year %in% c(2012))
+e14$inc <- ifelse(e14$Party == "SP",1,0)
+
+e15 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[8])) %>% filter(Year %in% c(2017))
+e15$inc <- ifelse(e15$Party == "BJP",1,0)
+
+e16 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/tcpd/",elecfiles[8])) %>% filter(Year %in% c(2022))
+e16$inc <- ifelse(e16$Party == "BJP",1,0)
+
+elec <- rbind(e1.1,e1.2,e2.1,e2.2,e3,e4,e5,e6,e7,e8.1,e8.2,e9,e10.1,e10.2,e11,e12,e13,e14,e15,e16)
+
+distelec <- elec %>% filter(inc ==1) %>% group_by(District_Name,Year) %>% summarise(incvote=sum(Votes))
+disttot <- elec %>% filter(Position==1) %>% group_by(District_Name,Year) %>% summarise(tot=sum(Valid_Votes))
+
+distelec <- left_join(distelec,disttot,by=c("District_Name","Year"))
+distelec$propinc <- 100*distelec$incvote/distelec$tot
+summary(distelec$propinc)
+#distelec <- unique(elec$District_Name) %>% data.frame()
+#write.csv(distelec,paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/distelec.csv"))
+```
+
+```{r}
+elec_code <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Election/distelec.csv"))
+
+elec <- left_join(distelec,elec_code,by="District_Name") 
+elec <- elec %>% filter(census2011 !=0)
+elec <- rename(elec,elecyear=Year)
+
+elec <- elec %>% group_by(census2011,elecyear) %>% summarise(incvote=sum(propinc)) 
+
+```
+
+```{r}
+table(grant_ec$state1)
+table(grant_ec$year)
+grant_ec$elecyear <- 0
+
+grant_ec$elecyear[grant_ec$state1=="Bihar"& grant_ec$year %in% c(2015,2016)] <- 2015
+grant_ec$elecyear[grant_ec$state1=="Bihar"& grant_ec$year %in% c(2017:2019)] <- 2017
+grant_ec$elecyear[grant_ec$state1=="Bihar"& grant_ec$year %in% c(2020:2021)] <- 2020
+grant_ec$elecyear[grant_ec$state1=="Bihar"& grant_ec$year > 2021] <- 2022
+
+grant_ec$elecyear[grant_ec$state1=="Haryana"& grant_ec$year %in% c(2014:2018)] <- 2014
+grant_ec$elecyear[grant_ec$state1=="Haryana"& grant_ec$year > 2018] <- 2019
+
+grant_ec$elecyear[grant_ec$state1=="Jharkhand"& grant_ec$year %in% c(2014:2018)] <- 2014
+grant_ec$elecyear[grant_ec$state1=="Jharkhand"& grant_ec$year > 2018] <- 2019
+
+grant_ec$elecyear[grant_ec$state1=="Karnataka"& grant_ec$year %in% c(2015:2017)] <- 2013
+grant_ec$elecyear[grant_ec$state1=="Karnataka"& grant_ec$year %in% c(2018)] <- 2018
+grant_ec$elecyear[grant_ec$state1=="Karnataka"& grant_ec$year %in% c(2019:2022)] <- 2019
+grant_ec$elecyear[grant_ec$state1=="Karnataka"& grant_ec$year > 2022] <- 2023
+
+grant_ec$elecyear[grant_ec$state1=="Jharkhand"& grant_ec$year %in% c(2014:2018)] <- 2014
+grant_ec$elecyear[grant_ec$state1=="Jharkhand"& grant_ec$year > 2018] <- 2019
+
+grant_ec$elecyear[grant_ec$state1=="Kerala"& grant_ec$year %in% c(2015)] <- 2011
+grant_ec$elecyear[grant_ec$state1=="Kerala"& grant_ec$year %in% c(2016:2020)] <- 2016
+grant_ec$elecyear[grant_ec$state1=="Kerala"& grant_ec$year > 2020] <- 2021
+
+grant_ec$elecyear[grant_ec$state1=="Odisha"& grant_ec$year %in% c(2014:2018)] <- 2014
+grant_ec$elecyear[grant_ec$state1=="Odisha"& grant_ec$year > 2018] <- 2019
+
+
+grant_ec$elecyear[grant_ec$state1=="Rajasthan"& grant_ec$year %in% c(2013:2017)] <- 2013
+grant_ec$elecyear[grant_ec$state1=="Rajasthan"& grant_ec$year > 2017] <- 2018
+
+
+grant_ec$elecyear[grant_ec$state1=="UP"& grant_ec$year %in% c(2015:2016)] <- 2012
+grant_ec$elecyear[grant_ec$state1=="UP"& grant_ec$year %in% c(2017:2021)] <- 2017
+grant_ec$elecyear[grant_ec$state1=="UP"& grant_ec$year > 2021] <- 2022
+
+table(grant_ec$elecyear)
+
+grant_ec$election <- interaction(grant_ec$census2011,grant_ec$elecyear)
+```
+
+```{r}
+elec$election <- interaction(elec$census2011,elec$elecyear)
+length(unique(elec$election))
+grant_ec2 <- left_join(grant_ec,elec, by=c("census2011","election"))
+```
+
+```{r}
+vcf <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/vcf11.csv")) %>% rename(census2011=pc11_district_id) %>% filter(year==2020) %>% select(-c("year"))
+grant_ec2 <- left_join(grant_ec2,vcf, by="census2011")
+```
+
+```{r}
+pm25 <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/pm25.csv")) %>% rename(census2011=pc11_district_id) %>% filter(year==2020) %>% select(-c("year"))
+grant_ec2 <- left_join(grant_ec2,pm25, by="census2011")
+```
+
+
+
+
+
+
+
+```{r}
+mod1 <- felm(time2~Category_Simplified+incvote+vcf_mean+pm25_mean|year+state1|0|state1,data = grant_ec2)
+summary(mod1)
+
+mod2 <- felm(time2~incvote+vcf_mean+pm25_mean|year+state1|0|state1,data = grant_ec2,subset = Category_Simplified== "Non-Coal Mining")
+
+summary(mod2)
+
+
+
+```
+
+
+
+

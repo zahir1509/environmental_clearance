@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML.kml</name>
+	<StyleMap id="default0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default115</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl1">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="default115">
+	</Style>
+	<Placemark>
+		<name>Tulunda Stone Quarry</name>
+		<open>1</open>
+		<styleUrl>#default0</styleUrl>
+		<Point>
+			<coordinates>83.64908333333334,20.66336111111111,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

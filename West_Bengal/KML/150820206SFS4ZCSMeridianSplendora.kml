@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Umakanta Sen Lean, Meridian Splendora.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Untitled Path</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				88.3902933516916,22.61463069937941,0 88.39116204199763,22.61438370860504,0 88.39126887653623,22.61468325708978,0 88.39098750302659,22.61484715519839,0 88.39094971136751,22.61501851974303,0 88.39024377920545,22.61531955112732,0 88.39008218965594,22.61488358966415,0 88.39025123072763,22.61482366233757,0 88.39027366300918,22.61463852586006,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
+39094971136751,22.61501851974303,0 88.39024377920545,22.61531955112732,0 88.39008218965594,22.61488358966415,0 88.39025123072763,22.61482366233757,0 88.39027366300918,22.61463852586006,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>

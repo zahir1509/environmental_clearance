@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Babeghati-II Stone Quarry.kml</name>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Babeghati-II Stone Quarry</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				82.6468175809014,20.66397932628829,0 82.64704413005148,20.66431110143158,0 82.64688923231097,20.66440678156338,0 82.64696938469939,20.66460632089704,0 82.6470352101631,20.66470839980483,0 82.64713607349935,20.66478906890829,0 82.64720822101587,20.66485227694167,0 82.64725167251373,20.66492088895185,0 82.64732540829795,20.66497082276577,0 82.64743790984966,20.66495286009006,0 82.64756203765009,20.66496158964741,0 82.64770646416692,20.66496651724588,0 82.64822557239127,20.66480384212468,0 82.64819315941384,20.66452485147249,0 82.64794783412474,20.66422632662967,0 82.64784076776652,20.66414401076621,0 82.6477829997128,20.66406581125614,0 82.64767791274718,20.66395541361865,0 82.64761394212174,20.66386535984902,0 82.64755312996141,20.66380446252754,0 82.64747530221696,20.66371673022483,0 82.6468175809014,20.66397932628829,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

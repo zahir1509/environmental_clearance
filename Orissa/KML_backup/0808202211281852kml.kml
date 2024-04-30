@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Bhagabanpur Final.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Bhagabanpur</name>
+		<styleUrl>#inline0</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						84.73774575247987,19.34144588508294,0 84.73719980940776,19.34126997087557,0 84.73576976452175,19.34063036878489,0 84.73564534259908,19.3398559555823,0 84.73653484681732,19.33902440573104,0 84.73681609241083,19.33889673783441,0 84.73704831201916,19.3390346694143,0 84.7366377398106,19.33960405067405,0 84.73698109031625,19.3396626606242,0 84.73718129701452,19.34032176508022,0 84.73753298560045,19.34012835455617,0 84.73751985152842,19.33981820527356,0 84.73790937276304,19.33979128324807,0 84.73801373922764,19.34000249559511,0 84.73858184774642,19.34028845670906,0 84.73866229928763,19.34068713496093,0 84.73774575247987,19.34144588508294,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

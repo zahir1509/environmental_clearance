@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>MN ONHP 2018  4.csv</name>
+	<open>1</open>
+	<Schema name="MN 4-10" id="S_MN_4_10_DID">
+		<SimpleField type="double" name="_0_664"><displayName>&lt;b&gt;20.664&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="unnamed"><displayName>&lt;b&gt;&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="_6_50099997"><displayName>&lt;b&gt;86.50099997&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="pointStyleMap3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="normPointStyle3">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="pointStyleMap1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hlightPointStyle0">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="pointStyleMap0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hlightPointStyle2">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle4">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle2">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="normPointStyle0">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="hlightPointStyle1">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hlightPointStyle3">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="normPointStyle1">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff55</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="pointStyleMap4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hlightPointStyle4">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<color>ff7fff55</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>20.664</b></td><td>$[MN 4-10/_0_664]</td></tr>
+  <tr><td><b></b></td><td>$[MN 4-10/unnamed]</td></tr>
+  <tr><td><b>86.50099997</b></td><td>$[MN 4-10/_6_50099997]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7fff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fff55</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="pointStyleMap2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff55</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Folder id="layer 0">
+		<name>MN ONHP 2018 4</name>
+		<Placemark>
+			<name>2</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_MN_4_10_DID">
+					<SimpleData name="_0_664">20.664</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+					<SimpleData name="_6_50099997">86.166</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>86.16599999999998,20.66399997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>3</name>
+			<styleUrl>#pointStyleMap4</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_MN_4_10_DID">
+					<SimpleData name="_0_664">21.002</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+					<SimpleData name="_6_50099997">86.166</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>86.16599994000002,21.00200000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>4</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_MN_4_10_DID">
+					<SimpleData name="_0_664">21.002</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+					<SimpleData name="_6_50099997">86.0015</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>86.00149996999998,21.00199996999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>5</name>
+			<styleUrl>#pointStyleMap3</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_MN_4_10_DID">
+					<SimpleData name="_0_664">21.3308</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+					<SimpleData name="_6_50099997">86.0015</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>86.00150002999999,21.33079994000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>6</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_MN_4_10_DID">
+					<SimpleData name="_0_664">21.333</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+					<SimpleData name="_6_50099997">86.4988</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>86.49877153000001,21.33301825000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_MN_4_10_DID">
+					<SimpleData name="_0_664">20.664</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+					<SimpleData name="_6_50099997">86.501</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>86.50099997000001,20.664,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MN ONHP 2018  4</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Path</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					86.50099347600283,20.66403196331468,0 86.16600166385062,20.66401939167523,0 86.16633031041275,21.00214397150054,0 86.00154431789908,21.00195752263383,0 86.0011529938507,21.33106153831703,0 86.49876236484803,21.33301499202121,0 86.50099347600283,20.66403196331468,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

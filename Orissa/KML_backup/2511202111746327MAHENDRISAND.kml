@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="MAHENDRI_LEASE_BND">
+	<name>MAHENDRI_LEASE_BND</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>MAHENDRI_LEASE_BND</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								82.421144,19.452315,0 82.42120799999999,19.452011,0 82.42115200000001,19.451763,0 82.420744,19.451331,0 82.420625,19.451175,0 82.420481,19.450893,0 82.420025,19.450767,0 82.419299,19.450479,0 82.41895700000001,19.450251,0 82.418603,19.450095,0 82.417907,19.450017,0 82.41712699999999,19.450155,0 82.41612499999999,19.450365,0 82.415567,19.450485,0 82.41496100000001,19.450137,0 82.41448699999999,19.449987,0 82.414265,19.449957,0 82.413312,19.450329,0 82.41255,19.449957,0 82.412412,19.449717,0 82.411959,19.44898,0 82.41154400000001,19.448534,0 82.41101399999999,19.448106,0 82.410303,19.447571,0 82.40992,19.447361,0 82.409764,19.447251,0 82.40962500000001,19.447449,0 82.40980399999999,19.447559,0 82.410115,19.447756,0 82.410856,19.448278,0 82.411321,19.448663,0 82.411737,19.449105,0 82.41219,19.449885,0 82.412646,19.450305,0 82.41294600000001,19.450443,0 82.41330000000001,19.450479,0 82.41403699999999,19.450245,0 82.414373,19.450191,0 82.414973,19.450407,0 82.415537,19.450659,0 82.41585499999999,19.450647,0 82.416557,19.450461,0 82.417247,19.450323,0 82.417745,19.450293,0 82.418273,19.450305,0 82.41904700000001,19.450605,0 82.419569,19.450971,0 82.419785,19.451079,0 82.420265,19.451277,0 82.420637,19.451511,0 82.420835,19.451811,0 82.42078100000001,19.452225,0 82.421144,19.452315,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								82.40794,19.444442,0 82.408109,19.44423,0 82.40821099999999,19.443882,0 82.407965,19.443551,0 82.407588,19.443276,0 82.407355,19.443152,0 82.407293,19.443214,0 82.407183,19.443495,0 82.40756,19.443533,0 82.40784600000001,19.4437,0 82.40787899999999,19.443967,0 82.407636,19.444354,0 82.40794,19.444442,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

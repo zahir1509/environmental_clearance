@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Aashiana KML odisha.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Aashiana KML odisha</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						85.83597653803095,20.36260103918101,0 85.83608829319165,20.36270562248759,0 85.83626487630664,20.36285310023572,0 85.83635830099104,20.36294089550345,0 85.83646898347469,20.36307223448066,0 85.83657714166945,20.36322407191503,0 85.83646969002832,20.363323361343,0 85.83637844320258,20.3634098155428,0 85.83632134303872,20.36348410560659,0 85.83626861532601,20.36354105734401,0 85.8362196628823,20.36359576586314,0 85.83617180698153,20.3636169870035,0 85.83606620462544,20.36365399151883,0 85.8359697022926,20.36368391560334,0 85.83592965353789,20.36370093673783,0 85.83589590796541,20.36371937413899,0 85.83585172557027,20.36373976277272,0 85.83576538582088,20.36380557847535,0 85.83568674705276,20.36388361185181,0 85.83557012248295,20.36393938736197,0 85.83542581026178,20.36396079089127,0 85.83534066307772,20.36397327451197,0 85.8352704457386,20.36381217178504,0 85.83523567883998,20.36374480110758,0 85.835287522794,20.36356066566045,0 85.8353511417225,20.36333752443246,0 85.8353951457299,20.3631433262849,0 85.8354189966466,20.36307598356061,0 85.83543886621518,20.36304558891447,0 85.83552146965017,20.36296895662446,0 85.83561123737549,20.36287432060761,0 85.83576289539231,20.36275029627914,0 85.83597653803095,20.36260103918101,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

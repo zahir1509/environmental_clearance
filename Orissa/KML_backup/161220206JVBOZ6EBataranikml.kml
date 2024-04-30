@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Batarani kml.kml</name>
+    <Style id="PolyStyle00">
+      <LabelStyle>
+        <color>00000000</color>
+        <scale>0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>00ffffff</color>
+      </PolyStyle>
+    </Style>
+    <Placemark id="ID_00000">
+      <name>0</name>
+      <Snippet maxLines="0">
+      </Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Area</td>
+
+<td>65.75187</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							85.44607703298831,22.01579889745283,0 85.44522876324993,22.01445021068924,0 85.44496026750488,22.01252575844474,0 85.44605267135594,22.01231523830606,0 85.44632081365552,22.01125985368953,0 85.44459501176473,22.00829282745129,0 85.44521141933456,22.00709723658396,0 85.44506828443923,22.00594972599787,0 85.44394902570181,22.00403194945037,0 85.44316103052408,22.00268456726978,0 85.44375407270442,22.00234778861125,0 85.4445232785761,22.00073192844497,0 85.44286239091379,21.99927657438412,0 85.44193192689423,21.99851463518989,0 85.44186169127507,21.99780156600212,0 85.44315792825178,21.99866821995015,0 85.44408022652276,21.99928477476176,0 85.44454855881725,21.99959794617856,0 85.44466852623744,21.99967815165951,0 85.44486047559802,21.99980647665966,0 85.44542345205775,22.00018255813994,0 85.44577603900002,22.00065949289244,0 85.44648282462495,22.0016161214376,0 85.44723651152371,22.0026362179156,0 85.44783452475934,22.00415417167704,0 85.44865696518099,22.0071467429894,0 85.44884050924999,22.00771671126999,0 85.44919422075435,22.00949248430321,0 85.44921919155195,22.01109180137082,0 85.44916220301852,22.01183319082477,0 85.44891617367827,22.01397140262198,0 85.44876612271156,22.01589131136514,0 85.44871124715394,22.01675418444089,0 85.44653907119961,22.01656971881733,0 85.44607703298831,22.01579889745283,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <id>IA/OR/MIN/74136/2018</id>
+      <id2>18313</id2>
+      <id3>Pno_Inserted</id3>
+    </Placemark>
+  </Document>
+</kml>

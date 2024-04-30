@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="plot" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>plot</name>
+	<open>1</open>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle003">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffe65c00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin187">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl208">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin217">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin187</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl208</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="FeatureLayer0">
+		<name>plot</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>area_ac</td>
+
+<td>5.074</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>area_ha</td>
+
+<td>2.053</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle003</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								84.58824622979489,19.67349282844601,0 84.58823909141199,19.67236853312073,0 84.59000941040028,19.67238280988682,0 84.59000941040028,19.67284323559148,0 84.58983095082482,19.67314661686964,0 84.58907071303338,19.67351067440358,0 84.58824622979489,19.67349282844601,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00001">
+			<name>0</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>area_ac</td>
+
+<td>2.793</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>area_ha</td>
+
+<td>1.13</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle003</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								84.5674117697273,19.6608571447797,0 84.56827194488096,19.66109628061082,0 84.5688679998629,19.66167805882662,0 84.56894652207615,19.66181725729558,0 84.56740824067185,19.66179940257644,0 84.5674117697273,19.6608571447797,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>Untitled Placemark</name>
+		<LookAt>
+			<gx:TimeStamp><when>2019-11-25T08:40:57Z</when>
+</gx:TimeStamp>
+			<longitude>84.58864792567819</longitude>
+			<latitude>19.67257074396317</latitude>
+			<altitude>0</altitude>
+			<heading>4.869207852536812</heading>
+			<tilt>4.919167118041629</tilt>
+			<range>427.5510903202803</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin217</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>84.58862777777777,19.67329166666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Placemark</name>
+		<LookAt>
+			<gx:TimeStamp><when>2019-11-25T08:40:57Z</when>
+</gx:TimeStamp>
+			<longitude>84.58864792567819</longitude>
+			<latitude>19.67257074396317</latitude>
+			<altitude>0</altitude>
+			<heading>4.869207852536812</heading>
+			<tilt>4.919167118041629</tilt>
+			<range>427.5510903202803</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin217</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>84.58960277777777,19.67316944444445,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Placemark</name>
+		<LookAt>
+			<gx:TimeStamp><when>2019-11-25T08:40:57Z</when>
+</gx:TimeStamp>
+			<longitude>84.58864792567819</longitude>
+			<latitude>19.67257074396317</latitude>
+			<altitude>0</altitude>
+			<heading>4.869207852536812</heading>
+			<tilt>4.919167118041629</tilt>
+			<range>427.5510903202803</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin217</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>84.59052777777778,19.67219166666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Placemark</name>
+		<LookAt>
+			<gx:TimeStamp><when>2019-11-25T08:40:57Z</when>
+</gx:TimeStamp>
+			<longitude>84.58864792567819</longitude>
+			<latitude>19.67257074396317</latitude>
+			<altitude>0</altitude>
+			<heading>4.869207852536812</heading>
+			<tilt>4.919167118041629</tilt>
+			<range>427.5510903202803</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin217</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>84.58855,19.67202222222222,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,1218 @@
+---
+title: "Odisha EC Analysis"
+author: "Anutubh Agnihotri and Pranav Gupta"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+library(data.table)
+```
+
+
+#Change Username 
+
+```{r}
+user <- "agnihotri"
+#user <- "prana"
+#user <- "hp"
+```
+
+#Loading Files
+
+```{r}
+ec_files <- list.files(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final"))
+```
+
+#Load Additional Data Files
+```{r}
+
+```
+
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+ec_additional <- NULL
+
+ec_files_additional_data<-ec_files[which(grepl("additional_data",ec_files))]
+
+for(i in 1:length(ec_files_additional_data)){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files_additional_data[i]),stringsAsFactors = F)
+  print(colnames(add)[1])
+  add$csv <- i
+  ec_additional <- dplyr::bind_rows(ec_additional,add)
+}
+
+colnames(ec_additional)[1]='Proposal.No.'
+
+table(duplicated(ec_additional$Proposal.No.))
+
+ec_additional$st_code <- sub("^[^/]*/([^/]*)/.*$", "\\1", ec_additional$Proposal.No.)
+table(ec_additional$st_code)
+
+
+
+
+#Load Main Data Files
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+ec_main <- NULL
+
+ec_files_main_data<-ec_files[which(grepl("maindata",ec_files))]
+
+for(i in 1:length(ec_files_main_data)){
+  add <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Final/",ec_files_main_data[i]))
+  add$csv <- i
+  ec_main <- dplyr::bind_rows(ec_main,add)
+}
+
+table(duplicated(ec_main$Proposal.No.))
+
+ec_main$Proposal<-ec_main$Proposal.No.
+ec_main$st_code <- sub("^[^/]*/([^/]*)/.*$", "\\1", ec_main$Proposal.No.)
+table(ec_main$st_code)
+
+ec <- ec_main
+```
+
+```{r}
+##There are two formats. One called additional data which will slowly be replaced by main data as
+#more data is added based on the new script.
+
+
+
+```
+
+
+ec_additional$Proposal.No.<-ec_additional$Proposal
+
+ec<-dplyr::bind_rows(ec_main,ec_additional)
+table(duplicated(ec$Proposal))
+
+table(is.na(ec$Proposal))
+
+#Bind main and Additional
+
+
+# Adding variables
+
+## State 
+
+```{r}
+
+table(ec$st_code)
+
+table(grepl("SIA/CG/", ec$Proposal))
+
+ec <- ec %>%
+  mutate(
+    state1 = case_when(st_code == 'AP' ~ "Andhra_Pradesh", 
+                    st_code =='BR' ~ "Bihar", 
+                    st_code =='CG' ~ "Chattisgarh", 
+                    st_code =='GJ' ~ "Gujarat",
+                    st_code =='HP' ~ "Himachal_Pradesh",
+                    st_code =='HR' ~ "Haryana",
+                    st_code =='JH' ~ "Jharkhand",
+                    st_code =='KA' ~ "Karnataka", 
+                    st_code =='KL' ~ "Kerala", 
+                    st_code =='MH' ~ "Maharashtra",
+                    st_code =='MP' ~ "Madhya_Pradesh",
+                    st_code =='OR' ~ "Odisha",
+                    st_code =='PB' ~ "Punjab",
+                    st_code =='RJ' ~ "Rajasthan",
+                    st_code =='TG' ~ "Telangana",  
+                    st_code =='UP' ~ "Uttar_Pradesh", 
+                    st_code =='WB' ~ "West_Bengal",
+                    st_code =='TN' ~ "Tamil_Nadu", 
+                    TRUE ~ "Other"))
+
+
+table(ec$state1)
+```
+
+
+
+```{r}
+ec <- ec %>% filter(state1 != "Other")
+```
+
+
+## Duplicates
+
+```{r}
+ec$duplicate <- duplicated(ec$Proposal,ec$Proposal.Name)
+table(ec$duplicate)
+table(ec$duplicate,ec$state1)
+
+```
+
+
+```{r}
+ec <- ec %>% select(Proposal,Proposal.Name,Date_1,Date_2,Category,Status,state1,District,Tehsil) %>% distinct()
+ec$duplicate <- duplicated(ec$Proposal)
+table(ec$duplicate)
+```
+
+## Simplify the Categories of Projects 
+
+```{r}
+ec$Category_Simplified <- ifelse(grepl('INFRA',ec$Category),'Infrastructure',
+                                    ifelse(grepl('Industrial',ec$Category),'Industrial',
+                                    ifelse(ec$Category=='Non-Coal Mining','Non-Coal Mining','Other')))
+
+table(ec$Category_Simplified)
+
+ec$Status_Simplified <- ifelse(grepl('EC Granted',ec$Status),'EC Granted',
+                                    ifelse(grepl('Delisted',ec$Status),'Delisted',
+                                           ifelse(grepl('Rejected',ec$Status),'Rejected',
+                                    ifelse(ec$Status=='WithdrawEC','Withdrawn','Other'))))
+
+table(ec$Status_Simplified)
+
+ec$Delisted<-ifelse(ec$Status_Simplified=='Delisted',1,0)
+ec$Rejected<-ifelse(ec$Status_Simplified=='Rejected',1,0)
+ec$Withdrawn<-ifelse(ec$Status_Simplified=='Withdrawn',1,0)
+
+
+table(ec$Delisted)
+ec%>%
+  group_by(state1)%>%
+  summarise(Delisted=sum(Delisted),
+            Total=n(),
+            Percent=Delisted/Total)
+
+
+
+```
+## Dates
+
+```{r}
+extract_after_colon <- function(input) {
+  split_string <- strsplit(input, ":")
+  extracted_text <- sapply(split_string, function(x) trimws(x[2]))
+  return(extracted_text)
+}
+
+#For the projects that were delisted or withdrawn 
+#Date 2 is when EC was filed
+#Date 1 is actually the date on which TOR was submitted
+index_with_tor<-which(grepl('TOR',ec$Date_1))
+
+ec$Date_1[index_with_tor]<-ec$Date_2[index_with_tor]
+
+ec$Date_2[index_with_tor]<-"NA"
+
+
+# Applying the function to the input vector
+ec$submit <- extract_after_colon(ec$Date_1) %>% dmy()
+
+sum(is.na(ec$submit))
+
+ec$grant <- extract_after_colon(ec$Date_2) %>% dmy()
+
+sum(is.na(ec$grant))
+
+ec$submit_date <- ifelse(!is.na(ec$submit), ec$submit, ec$grant) %>% as.Date()
+
+table(ec$submit==ec$submit_date)
+```
+
+```{r}
+#Time taken to Grant 
+ec$time <- as.duration(ec$grant - ec$submit)/ddays(1)
+ec$time2 <- as.numeric(ec$grant - ec$submit_date)
+ec$time2[ec$time2<=0] <- NA
+summary(ec$time)
+summary(ec$time2)
+
+#sum(ec$time ==0,na.rm = T)
+
+ec$year <- year(ec$submit_date)
+table(ec$year)
+ec <- ec %>% filter(year>2014)
+```
+
+## Election Dates
+
+```{r}
+elec <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/election_date.csv"))
+colnames(elec)[1]='state1'
+
+
+ec <- left_join(ec,elec,by='state1')
+```
+
+
+```{r}
+ec$elec1 <- ymd(ec$elec1)
+ec$elec2 <- ymd(ec$elec2)
+ec$elec3 <- ymd(ec$elec3)
+
+ec$res1 <- ymd(ec$res1)
+ec$res2 <- ymd(ec$res2)
+ec$res3 <- ymd(ec$res3)
+
+ec$elecyear1 <- year(ec$res1)
+ec$elecyear2 <- year(ec$res2)
+ec$elecyear3 <- year(ec$res3)
+
+
+```
+
+# Electoral Cyles in Submission
+
+```{r}
+#Distance - days/weeks from all elections
+ec$submit_diff1 <- as.duration(ec$submit_date - ec$res1)/ddays(1) 
+ec$submit_week1 <- as.duration(ec$submit_date - ec$res1)/dweeks(1) 
+ec$submit_diff2 <- as.duration(ec$submit_date - ec$res2)/ddays(1) 
+ec$submit_week2 <- as.duration(ec$submit_date - ec$res2)/dweeks(1) 
+ec$submit_diff3 <- as.duration(ec$submit_date - ec$res3)/ddays(1) 
+ec$submit_week3 <- as.duration(ec$submit_date - ec$res3)/dweeks(1) 
+
+summary(ec$submit_diff3)
+
+#Identifying closest election
+
+ec$submit_diff_abs <- with(ec,pmin(abs(ec$submit_diff1),abs(ec$submit_diff2),abs(ec$submit_diff3),na.rm = T))
+
+summary(ec$submit_diff_abs)
+
+ec <- ec %>% mutate(
+  submit_diff = case_when(submit_diff_abs == abs(submit_diff1) ~ submit_diff1,
+                         submit_diff_abs == abs(submit_diff2) ~ submit_diff2,
+                         submit_diff_abs == abs(submit_diff3) ~ submit_diff3)
+  )
+
+summary(ec$submit_diff)
+
+
+ec$submit_week_abs <- with(ec,pmin(abs(ec$submit_week1),abs(ec$submit_week2),abs(ec$submit_week3),na.rm = T))
+
+summary(ec$submit_week_abs)
+
+ec <- ec %>% mutate(
+  submit_week = case_when(submit_week_abs == abs(submit_week1) ~ submit_week1,
+                         submit_week_abs == abs(submit_week2) ~ submit_week2,
+                         submit_week_abs == abs(submit_week3) ~ submit_week3)
+  )
+
+summary(ec$submit_week)
+
+#Round off week
+ec$submit_week <- round(ec$submit_week,0)
+
+##Adding election year for the closest delta
+
+ec <- ec %>% mutate(
+  elec_date = case_when(submit_week_abs == abs(submit_week1) ~ as.Date(res1),
+                         submit_week_abs == abs(submit_week2) ~ as.Date(res2),
+                         submit_week_abs == abs(submit_week3) ~ as.Date(res3))
+  )
+
+table(ec$elec_date)
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+
+#Identifying Pre-Post
+## aa - aren't there two pre posts here because there are two cycles. 
+ec$submit_pre <- ifelse(ec$submit_week<0,"Before","After")
+```
+
+
+##Limiting Analysis to Non-Coal Mining for Now
+
+```{r}
+#submit_subset <- ec %>% filter(Category_Simplified=='Non-Coal Mining') %>% filter(inrange(submit_week,-100,100)==T) %>% group_by(state1,submit_week,elec_date) %>% summarise(count=n(), delisted=sum(Delisted)) %>% rename(state=state1)
+
+submit_subset <- ec %>% filter(Category_Simplified=='Non-Coal Mining') %>% filter(inrange(submit_week,-100,100)==T) %>% group_by(state1,submit_week,state_elec) %>% summarise(count=n(), delisted=sum(Delisted)) %>% rename(state=state1)
+
+submit_subset<-submit_subset%>%mutate(delisted_percent=delisted/count)
+
+all_weeks = -100:100  # Replace with your actual range of years
+#all_states = unique(ec$state1) # Replace with your actual list of states
+all_elec <- unique(submit_subset$state_elec) 
+
+submit_cycle <- expand.grid(submit_week = all_weeks, state_elec = all_elec)
+
+submit_cycle <- left_join(submit_cycle,submit_subset,by=c("submit_week","state_elec"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+submit_cycle <- left_join(submit_cycle,elec_date,by=c("state_elec"))
+
+#State
+
+submit_cycle$state <- sub("\\..*$", "", submit_cycle$state_elec)
+
+# Calculate new dates by adding weeks
+submit_cycle$week_date <- submit_cycle$elec_date + weeks(submit_cycle$submit_week)
+
+# Extract the year from the new dates
+submit_cycle$submit_year <- year(submit_cycle$week_date)
+
+# Replacing NAs
+
+submit_cycle$count[is.na(submit_cycle$count)] <- 0
+
+summary(submit_cycle$count)
+
+submit_cycle$delisted[is.na(submit_cycle$delisted)] <- 0
+
+summary(submit_cycle$delisted)
+
+submit_cycle$delisted_percent[is.na(submit_cycle$delisted_percent)] <- 0
+
+summary(submit_cycle$delisted_percent)
+
+# Restricting to 2015 onwards
+
+submit_cycle <- submit_cycle %>% filter(submit_year %in% c(2015:2023))
+```
+
+
+
+```{r}
+submit_cycle$pre <- ifelse(submit_cycle$submit_week>0,"Post","Pre")
+
+t.test(submit_cycle$count~submit_cycle$pre)
+
+submit_cycle$tau <- abs(submit_cycle$submit_week+100)
+
+summary(submit_cycle$tau)
+
+submit_cycle$tausq <- abs(submit_cycle$tau)^2
+
+#write.csv(submit_cycle,paste0("C:/Users/",user,"/Desktop/submit.csv"))
+
+```
+
+```{r}
+ggplot(submit_cycle, aes(x=submit_week, y = delisted_percent)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("Percent of Projects Delisted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_percent_elec_cycle.png"))
+
+ggplot(submit_cycle, aes(x=submit_week, y = delisted)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Delisted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_count_elec_cycle.png"))
+
+ggplot(submit_cycle, aes(x=submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "loess", se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_elec_cycle.png"))
+```
+
+
+##Submit Cycle Regressions
+
+```{r}
+mod1 <- felm(count~tau|0|0|0,data=submit_cycle)
+summary(mod1)
+mod2 <- felm(count~tau+tausq|0|0|0,data=submit_cycle)
+summary(mod2)
+mod3 <- felm(count~tau|state|0|0,data=submit_cycle)
+summary(mod3)
+mod4 <- felm(count~tau+tausq|state|0|0,data=submit_cycle)
+summary(mod4)
+mod5 <- felm(count~tau|state+submit_year|0|0,data=submit_cycle)
+summary(mod5)
+mod6 <- felm(count~tau+tausq|state+submit_year|0|0,data=submit_cycle)
+summary(mod6)
+```
+
+##Write Results to Table 
+
+```{r write-submit-cycle}
+
+###################
+####################################################################
+###################TABLE OUTPUT#########################################
+#####################Submit CYcle###########
+###########################################################################
+library(stargazer)
+
+
+
+
+
+
+output_file<-ifelse(Sys.info()['user']=='agnihotri',
+                                                       "C:/Users/agnihotri/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Tables/Submit_Cycle.tex",
+                                                       "C:/Users/prana/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Tables/Submit_Cycle.tex")
+
+note_state<-"The Table presents regression results that examine if distance from elections is predictive of number of projects submitted for environmental clearances. We run both linear and quandratic models and control for "
+
+stargazer(mod1,mod2,mod3,mod4,
+          type="latex",
+          df = FALSE,
+          font.size = "small",
+          no.space = T,
+          dep.var.caption = "Number of Applications (Count)",
+          dep.var.labels = c(''),
+           covariate.labels = c('From Election','From Election Squared','Constant'),
+          add.lines=list(c("State FE","No","No","Yes","Yes"),
+                         c("Year FE","No","No","Yes","Yes")),
+          header = F,
+          column.sep.width = "-7pt",
+          title='Electoral Cycle in Non-Coal Mining Environment Clerances',
+          digits = 5,
+          notes = "Distance from elections predictive of projects submitted",
+          out=output_file)
+
+
+
+```
+
+
+```{r}
+mod1_50 <- felm(count~tau|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod1_50)
+mod2_50 <- felm(count~tau+tausq|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod2_50)
+
+```
+
+
+```{r}
+mod1_delisted <- felm(delisted~tau|state|0|0,data=submit_cycle)
+summary(mod1_delisted)
+mod2_delisted <- felm(delisted~tau+tausq|state|0|0,data=submit_cycle)
+summary(mod2_delisted)
+```
+
+
+```{r}
+mod1_delisted_50 <- felm(delisted~tau|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod1_delisted_50)
+
+mod2_delisted_50 <- felm(delisted~tau+tausq|state|0|0,data=filter(submit_cycle,submit_week>-51&submit_week<51))
+summary(mod2_delisted_50)
+```
+
+
+```{r}
+mod1 <- felm(delisted_percent~tau|state|0|0,data=submit_cycle)
+summary(mod1)
+
+mod2 <- felm(delisted_percent~tau+tausq|state|0|0,data=submit_cycle)
+summary(mod2)
+```
+
+#RDD Package
+
+```{r rdd}
+
+library(rdd)
+library(tidyverse)  # ggplot(), %>%, mutate(), and friends
+#library(broom)  # Convert models to data frames
+library(rdrobust)  # For robust nonparametric regression discontinuity
+library(rddensity)  # For nonparametric regression discontinuity density tests
+library(modelsummary)  # Create side-by-side regression tables
+library(rddtools)
+
+DCdensity(submit_cycle$submit_week, 0, bin = NULL, bw = NULL, verbose = FALSE,
+  plot = TRUE, ext.out = FALSE, htest = FALSE)
+
+rdd_data(submit_cycle$count, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(submit_cycle$delisted_percent, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+
+ggplot(submit_cycle, aes(x=submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "No. of applications") 
+
+
+submit_cycle %>% 
+  ggplot(aes(x = submit_week, y = count)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)+ggtitle("Number of Non-Coal Mining Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_elec_cycle.png"))
+
+submit_cycle %>% 
+  ggplot(aes(x = submit_week, y = delisted)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)+ggtitle("Number of Non-Coal Mining Projects Delisted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/delisted_count_elec_cycle.png"))
+
+submit_cycle %>% 
+  ggplot(aes(x = submit_week, y = delisted_percent)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)+ggtitle("Number of Non-Coal Mining Projects Delisted as Percent of Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/delisted_percent_count_elec_cycle.png"))
+
+```
+
+#RDD Package
+
+```{r rdd}
+
+library(dplyr)
+library(ggplot2)
+library(rddtools)
+library(magrittr)
+
+submit_cycle$count_logged<-log(submit_cycle$count+1)
+submit_cycle$delisted_logged<-log(submit_cycle$delisted+1)
+
+DCdensity(submit_cycle$submit_week, 0, bin = NULL, bw = NULL, verbose = FALSE,
+  plot = TRUE, ext.out = FALSE, htest = FALSE)
+
+
+rdd_data(submit_cycle$count_logged, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(submit_cycle$count_logged, 
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+rdd_data(submit_cycle$delisted_percent,
+         submit_cycle$submit_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate",order=2) %>% 
+  summary()
+
+submit_cycle$Post<-ifelse(submit_cycle$pre=="Post",1,0)
+
+submit_cycle %>%
+  select(submit_week, count_logged,Post) %>%
+  ggplot(aes(x = submit_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_elec_cycle_rdd.png"))
+
+submit_cycle %>%
+  select(submit_week, count_logged,Post) %>%
+ ggplot(aes(x = submit_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.2) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count (Logged) RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_logged_elec_cycle_rdd.png"))
+
+submit_cycle %>%
+  select(submit_week, delisted_logged,Post) %>%
+  ggplot(aes(x = submit_week, y = delisted_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "delisted",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_elec_cycle_rdd.png"))
+
+submit_cycle %>%
+  select(submit_week, delisted_logged,Post) %>%
+ ggplot(aes(x = submit_week, y = delisted_logged, color = as.factor(Post))) +
+  geom_point(alpha=.2) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "delisted",
+       x = "Distance from Election")+ggtitle("Submitted Projects Count (Logged) RD")
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_delisted_logged_elec_cycle_rdd.png"))
+```
+
+# Electoral Cyles in Granting of Licenses
+
+```{r}
+ec$grant_diff1 <- as.duration(ec$grant - ec$res1)/ddays(1) 
+ec$grant_week1 <- as.duration(ec$grant - ec$res1)/dweeks(1) 
+
+ec$grant_diff2 <- as.duration(ec$grant - ec$res2)/ddays(1) 
+ec$grant_week2 <- as.duration(ec$grant - ec$res2)/dweeks(1) 
+
+ec$grant_diff3 <- as.duration(ec$grant - ec$res3)/ddays(1) 
+ec$grant_week3 <- as.duration(ec$grant - ec$res3)/dweeks(1) 
+
+#Identifying closest election
+
+ec$grant_diff_abs <- with(ec,pmin(abs(ec$grant_diff1),abs(ec$grant_diff2),abs(ec$grant_diff3),na.rm = T))
+
+summary(ec$grant_diff_abs)
+
+ec <- ec %>% mutate(
+  grant_diff = case_when(grant_diff_abs == abs(grant_diff1) ~ grant_diff1,  grant_diff_abs == abs(grant_diff2) ~ grant_diff2, grant_diff_abs == abs(grant_diff3) ~ grant_diff3))
+
+summary(ec$grant_diff)
+
+ec$grant_week_abs <- with(ec,pmin(abs(ec$grant_week1),abs(ec$grant_week2),abs(ec$grant_week3),na.rm = T))
+
+summary(ec$grant_week_abs)
+
+ec <- ec %>% mutate(
+  grant_week = case_when(grant_week_abs == abs(grant_week1) ~ grant_week1,
+                         grant_week_abs == abs(grant_week2) ~ grant_week2,
+                         grant_week_abs == abs(grant_week3) ~ grant_week3)
+  )
+
+summary(ec$grant_week)
+
+#Round off week
+ec$grant_week <- round(ec$grant_week,0)
+
+##Adding election year for the closest delta
+
+ec <- ec %>% mutate(
+  elec_date = case_when(grant_week_abs == abs(grant_week1) ~ as.Date(res1),
+                         grant_week_abs == abs(grant_week2) ~ as.Date(res2),
+                         grant_week_abs == abs(grant_week3) ~ as.Date(res3)))
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+
+#Identifying Pre-Post
+## aa - aren't there two pre posts here because there are two cycles. 
+ec$grant_pre <- ifelse(ec$grant_week<0,"Before","After")
+
+```
+
+
+```{r}
+grant_n_subset <- ec %>% filter(Category_Simplified=='Non-Coal Mining') %>% filter(inrange(grant_week,-100,100)==T) %>% group_by(state1,grant_week,state_elec) %>% summarise(count=n()) %>% rename(state=state1)
+
+
+all_weeks = -100:100  # Replace with your actual range of years
+#all_states = unique(ec$state1) # Replace with your actual list of states
+all_elec <- unique(submit_subset$state_elec) 
+
+grant_n_cycle <- expand.grid(grant_week = all_weeks, state_elec = all_elec)
+
+grant_n_cycle <- left_join(grant_n_cycle,grant_n_subset,by=c("grant_week","state_elec"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+grant_n_cycle <- left_join(grant_n_cycle,elec_date,by=c("state_elec"))
+
+
+#State
+
+grant_n_cycle$state <- sub("\\..*$", "", grant_n_cycle$state_elec)
+
+
+# Calculate new dates by adding weeks
+grant_n_cycle$week_date <- grant_n_cycle$elec_date + weeks(grant_n_cycle$grant_week)
+
+# Extract the year from the new dates
+grant_n_cycle$grant_year <- year(grant_n_cycle$week_date)
+
+#Replacing NAs
+
+grant_n_cycle$count[is.na(grant_n_cycle$count)] <- 0
+
+grant_n_cycle$pre <- ifelse(grant_n_cycle$grant_week>0,"Post","Pre")
+
+t.test(grant_n_cycle$count~grant_n_cycle$pre)
+
+grant_n_cycle$tau <- abs(grant_n_cycle$grant_week+100)
+
+summary(grant_n_cycle$tau)
+
+grant_n_cycle$tausq <- abs(grant_n_cycle$tau)^2
+
+grant_n_cycle <- grant_n_cycle %>% filter(grant_year %in% c(2015:2023))
+```
+
+```{r}
+#mod1 <- summary(lm(count~tau+tausq,data=submit_cycle))
+mod1 <- felm(count~tau+tausq|state+grant_year|0|0,data=grant_n_cycle)
+summary(mod1)
+
+grant_n_cycle$Post<-ifelse(grant_n_cycle$pre=="Post",1,0)
+
+mod2 <- felm(count~grant_week*Post|state+grant_year|0|0,data=grant_n_cycle)
+summary(mod2)
+```
+
+```{r}
+ggplot(grant_n_cycle, aes(x=grant_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "No. of applications") 
+
+
+grant_n_cycle %>% 
+  ggplot(aes(x = grant_week, y = count)) + 
+  geom_point() + scale_y_log10()+
+  geom_vline(xintercept = 0, color = "red", size = 1, linetype = "dashed") + 
+  annotate("text", x = 20.4, y = 105, label = "Election Date",
+           size=4) +
+  labs(y = "Count",
+       x = "Time to Elections")+facet_wrap(~state)
+```
+
+#RDD Package
+
+```{r rdd}
+
+library(dplyr)
+library(ggplot2)
+library(rddtools)
+library(magrittr)
+
+grant_n_cycle$count_logged<-log(grant_n_cycle$count+1)
+
+DCdensity(grant_n_cycle$grant_week, 0, bin = NULL, bw = NULL, verbose = FALSE,
+  plot = TRUE, ext.out = FALSE, htest = FALSE)
+
+
+rdd_data(grant_n_cycle$count_logged, 
+         grant_n_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(grant_n_cycle$count_logged, 
+         grant_n_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+rdd_data(grant_n_cycle$count_logged, 
+         grant_n_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate",order=2) %>% 
+  summary()
+
+grant_n_cycle$Post<-ifelse(grant_n_cycle$pre=="Post",1,0)
+
+grant_n_cycle %>%
+  select(grant_week, count_logged,Post) %>%
+  ggplot(aes(x = grant_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")
+
+grant_n_cycle %>%
+  select(grant_week, count_logged,Post) %>%
+ ggplot(aes(x = grant_week, y = count_logged, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "count",
+       x = "Distance from Election")
+
+```
+
+# Electoral Cyles in Time Taken for Licenses Granted
+
+```{r}
+
+ec_detailed_timeline<-read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Detailed_Timeline_All_States.csv"))
+
+table(ec$Proposal%in%ec_detailed_timeline$Proposal.Number)
+
+ec$Proposal.Number<-ec$Proposal
+
+ec<-dplyr::left_join(ec,ec_detailed_timeline,by='Proposal.Number')
+
+ec$St
+grant_cycle <- ec %>% filter(inrange(grant_week,-100,100)==T&time>0&Category_Simplified!="Other") 
+
+summary(grant_cycle$time)
+
+grant_cycle$pre <- ifelse(grant_cycle$grant_week>0,"Post","Pre")
+
+t.test(grant_cycle$time~grant_cycle$pre)
+
+grant_cycle$tau <- abs(grant_cycle$grant_week+100)
+
+summary(grant_cycle$tau)
+
+grant_cycle$tausq <- abs(grant_cycle$tau)^2
+
+
+ec_covariates_sub_dist<-read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Proposal_Sub_distirct_codes.csv"),
+                                 stringsAsFactors = F)
+
+
+```
+
+```{r}
+mod1 <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=grant_cycle)
+
+summary(mod1)
+
+mod2 <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=grant_cycle,subset = Category_Simplified== "Non-Coal Mining")
+summary(mod2)
+
+
+mod2 <- felm(time_SEIAA_SEAC~tau+tausq|year+state1|0|0,data=grant_cycle,subset = Category_Simplified== "Non-Coal Mining")
+summary(mod2)
+
+
+```
+
+
+
+#RDD Package
+
+```{r rdd}
+
+
+library(dplyr)
+library(ggplot2)
+library(rddtools)
+library(magrittr)
+
+rdd_data(grant_cycle$time, 
+         grant_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "same") %>% 
+  summary()
+
+rdd_data(grant_cycle$time, 
+         grant_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+rdd_data(grant_cycle$time, 
+         grant_cycle$grant_week, cutpoint = 0) %>% 
+  rdd_reg_lm(slope = "separate",order=2) %>% 
+  summary()
+
+grant_cycle$Post<-ifelse(grant_cycle$pre=="Post",1,0)
+
+grant_cycle %>%
+  select(grant_week, time,Post) %>%
+  ggplot(aes(x = grant_week, y = time, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "Time",
+       x = "Distance from Election")
+
+grant_cycle %>%
+  select(grant_week, time,Post) %>%
+ ggplot(aes(x = grant_week, y = time, color = as.factor(Post))) +
+  geom_point(alpha=.1) +
+  geom_smooth(method = "lm",
+              formula = y ~ x + I(x ^ 2),
+              se = FALSE) +
+  scale_color_brewer(palette = "Accent") +
+  guides(color = FALSE) +
+  geom_vline(xintercept = 0, color = "red",
+    size = 1, linetype = "dashed") +
+  labs(y = "Time",
+       x = "Distance from Election")
+
+```
+
+
+```{r}
+ggplot(grant_cycle, aes(x=grant_week, y = time)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "Time") + facet_wrap(~Category_Simplified)
+```
+
+# PBCs in Submission
+
+```{r}
+#Distance - days/weeks from all elections
+ec$pbc_submit_week1 <- as.duration(ec$submit_date - ec$res1)/dweeks(1) 
+ec$pbc_submit_week2 <- as.duration(ec$submit_date - ec$res2)/dweeks(1) 
+ec$pbc_submit_week3 <- as.duration(ec$submit_date - ec$res3)/dweeks(1) 
+
+summary(ec$pbc_submit_week3)
+
+ec$pbc_submit_week3<-ifelse(is.na(ec$pbc_submit_week3),999,ec$pbc_submit_week3)
+summary(ec$pbc_submit_week3)
+
+
+
+##This is introducing NAs
+#Identifying closest election
+
+ec <- ec %>% mutate(pbc_submit_week = case_when(inrange(pbc_submit_week1,0,270) ~ pbc_submit_week1, inrange(pbc_submit_week2,0,270) ~ pbc_submit_week2, inrange(pbc_submit_week3,0,270) ~ pbc_submit_week3))
+
+summary(ec$pbc_submit_week)
+
+#Round off week
+ec$pbc_submit_week <- round(ec$pbc_submit_week,0)
+
+##Adding election year for the closest delta
+
+
+ec <- ec %>% mutate(elec_date = case_when(inrange(pbc_submit_week1,0,270) ~ as.Date(res1), inrange(pbc_submit_week2,0,270) ~ as.Date(res2), inrange(pbc_submit_week3,0,270) ~ as.Date(res3)))
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+```
+
+
+```{r}
+pbc_submit_subset <- ec %>% filter(Category_Simplified=='Non-Coal Mining') %>% group_by(state1,pbc_submit_week,state_elec) %>% summarise(count=n(),delisted=sum(Delisted)) %>% rename(state=state1)
+
+all_weeks = 0:270  # Replace with your actual range of years
+#all_states = unique(ec$state1) # Replace with your actual list of states
+all_elec <- unique(pbc_submit_subset$state_elec) 
+
+pbc_submit_cycle <- expand.grid(pbc_submit_week = all_weeks, state_elec = all_elec)
+
+pbc_submit_cycle <- left_join(pbc_submit_cycle,pbc_submit_subset,by=c("pbc_submit_week","state_elec"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+pbc_submit_cycle <-left_join(pbc_submit_cycle,elec_date,by=c("state_elec"))
+
+#State
+
+pbc_submit_cycle$state <- sub("\\..*$", "", pbc_submit_cycle$state_elec)
+
+# Calculate new dates by adding weeks
+pbc_submit_cycle$week_date <- pbc_submit_cycle$elec_date + weeks(pbc_submit_cycle$pbc_submit_week)
+
+# Extract the year from the new dates
+pbc_submit_cycle$submit_year <- year(pbc_submit_cycle$week_date)
+
+# Replacing NAs
+
+pbc_submit_cycle$count[is.na(pbc_submit_cycle$count)] <- 0
+
+summary(pbc_submit_cycle$count)
+
+# Restricting to 2015 onwards
+pbc_submit_cycle <- pbc_submit_cycle %>% filter(submit_year %in% c(2015:2024))
+```
+
+
+
+```{r}
+pbc_submit_cycle$tau <- pbc_submit_cycle$pbc_submit_week
+
+summary(pbc_submit_cycle$tau)
+
+pbc_submit_cycle$tausq <- (pbc_submit_cycle$tau)^2
+
+#write.csv(submit_cycle,paste0("C:/Users/",user,"/Desktop/submit.csv"))
+
+```
+
+```{r}
+ggplot(pbc_submit_cycle, aes(x=pbc_submit_week, y = count+1)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "loess", se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Submitted")
+
+ggplot(pbc_submit_cycle, aes(x=pbc_submit_week, y = delisted)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "loess", se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Delisted")
+
+
+ggplot(pbc_submit_cycle, aes(x=pbc_submit_week, y = delisted/count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "loess", se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Delisted")
+
+```
+
+ 
+```{r}
+mod1 <- felm(count~tau|state+submit_year|0|0,data=pbc_submit_cycle)
+summary(mod1)
+
+
+mod2 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle)
+summary(mod2)
+
+
+
+mod1_log <- felm(log(count+1)~tau|state+submit_year|0|0,data=pbc_submit_cycle)
+summary(mod1_log)
+
+
+mod2_log <- felm(log(count+1)~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle)
+summary(mod2_log)
+```
+
+# PBC in Granted
+
+```{r}
+ec$pbc_grant_week1 <- as.duration(ec$grant - ec$res1)/dweeks(1)
+ec$pbc_grant_week2 <- as.duration(ec$grant - ec$res2)/dweeks(1)
+ec$pbc_grant_week3 <- as.duration(ec$grant - ec$res3)/dweeks(1) 
+
+#Identifying closest election
+
+ec <- ec %>% mutate(pbc_grant_week = case_when(inrange(pbc_grant_week1,0,270) ~ pbc_grant_week1, inrange(pbc_grant_week2,0,270) ~ pbc_grant_week2, inrange(pbc_grant_week3,0,270) ~ pbc_grant_week3))
+
+summary(ec$pbc_grant_week)
+
+#Round off week
+ec$pbc_grant_week <- round(ec$pbc_grant_week,0)
+
+##Adding election year for the closest delta
+
+ec <- ec %>% mutate(elec_date = case_when(inrange(pbc_grant_week1,0,270) ~ as.Date(res1), inrange(pbc_grant_week2,0,270) ~ as.Date(res2), inrange(pbc_grant_week3,0,270) ~ as.Date(res3)))
+
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+
+```
+
+
+```{r}
+pbc_grant_n_subset <- ec %>% filter(Category_Simplified=='Non-Coal Mining') %>%  group_by(state1,pbc_grant_week,state_elec) %>% summarise(count=n()) %>% rename(state=state1)
+
+all_weeks = 0:270  # Replace with your actual range of years
+#all_states = unique(ec$state1) # Replace with your actual list of states
+all_elec <- unique(submit_subset$state_elec) 
+
+pbc_grant_n_cycle <- expand.grid(pbc_grant_week = all_weeks, state_elec = all_elec)
+
+pbc_grant_n_cycle <- left_join(pbc_grant_n_cycle,pbc_grant_n_subset,by=c("pbc_grant_week","state_elec"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+pbc_grant_n_cycle <- left_join(pbc_grant_n_cycle,elec_date,by=c("state_elec"))
+
+
+#State
+
+pbc_grant_n_cycle$state <- sub("\\..*$", "", pbc_grant_n_cycle$state_elec)
+
+# Calculate new dates by adding weeks
+pbc_grant_n_cycle$week_date <- pbc_grant_n_cycle$elec_date + weeks(pbc_grant_n_cycle$pbc_grant_week)
+
+
+# Extract the year from the new dates
+pbc_grant_n_cycle$grant_year <- year(pbc_grant_n_cycle$week_date)
+
+#Replacing NAs
+
+pbc_grant_n_cycle$count[is.na(pbc_grant_n_cycle$count)] <- 0
+
+pbc_grant_n_cycle$tau <- pbc_grant_n_cycle$pbc_grant_week
+
+summary(pbc_grant_n_cycle$tau)
+
+pbc_grant_n_cycle$tausq <- abs(pbc_grant_n_cycle$tau)^2
+
+```
+
+```{r}
+#mod1 <- summary(lm(count~tau+tausq,data=submit_cycle))
+mod1 <- felm(count~tau+tausq|state+grant_year|0|0,data=pbc_grant_n_cycle)
+summary(mod1)
+```
+
+```{r}
+ggplot(pbc_grant_n_cycle, aes(x=pbc_grant_week, y = count+1)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "loess", se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/electoral_cycle_grant_from_election.png"))
+```
+
+
+```{r}
+ggplot(pbc_grant_n_cycle, aes(x=pbc_grant_week, y = count+1)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "loess", se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ scale_y_log10()+
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/electoral_cycle_grant_from_election.png"))
+```

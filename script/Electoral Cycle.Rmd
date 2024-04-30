@@ -1,0 +1,1134 @@
+---
+title: "Electoral CYcle Analysis"
+author: "Anutubh Agnihotri and Pranav Gupta"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(data.table)
+library(sf)
+library(tidyverse)
+library(cowplot)
+library(patchwork)
+library(lfe)
+library(expss)
+library(lubridate)
+library(zoo)
+library(data.table)
+```
+
+## Change Username 
+
+```{r}
+#user <- "agnihotri"
+user <- "prana"
+#user <- "hp"
+```
+
+## Loading Files
+
+```{r load-ec}
+
+#ec<-read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/EC_All_States.csv"),
+#             stringsAsFactors = F)
+
+ec<-readRDS(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/EC_All_States.rds"))
+
+```
+
+```{r}
+next_elec <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/next_elec.csv"))
+```
+
+
+
+```{r}
+#submit_subset <- ec %>% filter(Category_Simplified=='Non-Coal Mining') %>% filter(inrange(submit_week,-100,100)==T) %>% group_by(state1,submit_week,state_elec) %>% summarise(count=n(), delisted=sum(Delisted)) %>% rename(state=state1)
+
+submit_subset <- ec %>% filter(inrange(submit_week,-100,100)==T & Category_Simplified != "Other") %>% group_by(state1,submit_week,state_elec,Category_Simplified) %>% summarise(count=n(), delisted=sum(Delisted)) %>% rename(state=state1,Category=Category_Simplified)
+
+submit_subset<-submit_subset%>%mutate(delisted_percent=delisted/count)
+
+all_weeks = -100:100  # Replace with your actual range of years
+
+all_elec <- unique(submit_subset$state_elec) 
+
+all_cat <- unique(submit_subset$Category) 
+
+submit_cycle <- expand.grid(submit_week = all_weeks, state_elec = all_elec,Category=all_cat)
+
+submit_cycle <- left_join(submit_cycle,submit_subset,by=c("submit_week","state_elec","Category"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+submit_cycle <- left_join(submit_cycle,elec_date,by=c("state_elec"))
+
+#State
+
+submit_cycle$state <- sub("\\..*$", "", submit_cycle$state_elec)
+
+# Calculate new dates by adding weeks
+submit_cycle$week_date <- submit_cycle$elec_date + weeks(submit_cycle$submit_week)
+
+# Extract the year from the new dates
+submit_cycle$submit_year <- year(submit_cycle$week_date)
+
+# Replacing NAs
+
+submit_cycle$count[is.na(submit_cycle$count)] <- 0
+
+summary(submit_cycle$count)
+
+submit_cycle$delisted[is.na(submit_cycle$delisted)] <- 0
+
+summary(submit_cycle$delisted)
+
+submit_cycle$delisted_percent[is.na(submit_cycle$delisted_percent)] <- 0
+
+summary(submit_cycle$delisted_percent)
+
+# Restricting to 2015 onwards
+
+submit_cycle <- submit_cycle %>% filter(submit_year %in% c(2015:2023))
+```
+
+
+```{r}
+submit_cycle$tau <- abs(submit_cycle$submit_week+100)
+
+summary(submit_cycle$tau)
+
+submit_cycle$tausq <- abs(submit_cycle$tau)^2
+```
+
+
+
+```{r}
+grant_n_subset <- ec %>% filter(inrange(grant_week,-100,100)==T & Category_Simplified != "Other") %>% group_by(state1,grant_week,state_elec,Category_Simplified) %>% summarise(count=n()) %>% rename(state=state1,Category=Category_Simplified)
+
+
+all_weeks = -100:100  # Replace with your actual range of years
+#all_states = unique(ec$state1) # Replace with your actual list of states
+all_elec <- unique(submit_subset$state_elec) 
+
+all_cat <- unique(submit_subset$Category) 
+
+grant_n_cycle <- expand.grid(grant_week = all_weeks, state_elec = all_elec,Category=all_cat)
+
+grant_n_cycle <- left_join(grant_n_cycle,grant_n_subset,by=c("grant_week","state_elec","Category"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+grant_n_cycle <- left_join(grant_n_cycle,elec_date,by=c("state_elec"))
+
+#State
+
+grant_n_cycle$state <- sub("\\..*$", "", grant_n_cycle$state_elec)
+
+
+# Calculate new dates by adding weeks
+grant_n_cycle$week_date <- grant_n_cycle$elec_date + weeks(grant_n_cycle$grant_week)
+
+# Extract the year from the new dates
+grant_n_cycle$grant_year <- year(grant_n_cycle$week_date)
+
+#Replacing NAs
+
+grant_n_cycle$count[is.na(grant_n_cycle$count)] <- 0
+
+grant_n_cycle$pre <- ifelse(grant_n_cycle$grant_week>0,"Post","Pre")
+
+t.test(grant_n_cycle$count~grant_n_cycle$pre)
+
+grant_n_cycle$tau <- abs(grant_n_cycle$grant_week+100)
+
+summary(grant_n_cycle$tau)
+
+grant_n_cycle$tausq <- abs(grant_n_cycle$tau)^2
+
+grant_n_cycle <- grant_n_cycle %>% filter(grant_year %in% c(2015:2023))
+```
+
+## Electoral Cyles in Time Taken for Licenses Granted
+
+```{r}
+grant_cycle <- ec %>% filter(inrange(grant_week,-100,100)==T&time>0&Category_Simplified!="Other") 
+
+summary(grant_cycle$time)
+
+grant_cycle$pre <- ifelse(grant_cycle$grant_week>0,"Post","Pre")
+
+t.test(grant_cycle$time~grant_cycle$pre)
+
+grant_cycle$tau <- abs(grant_cycle$grant_week+100)
+
+summary(grant_cycle$tau)
+
+grant_cycle$tausq <- abs(grant_cycle$tau)^2
+```
+
+## PBCs in Submission
+
+```{r}
+#Distance - days/weeks from all elections
+ec$pbc_submit_week1 <- as.duration(ec$submit_date - ec$res1)/dweeks(1) 
+ec$pbc_submit_week2 <- as.duration(ec$submit_date - ec$res2)/dweeks(1) 
+ec$pbc_submit_week3 <- as.duration(ec$submit_date - ec$res3)/dweeks(1) 
+
+summary(ec$pbc_submit_week3)
+
+#Identifying closest election
+
+ec <- ec %>% mutate(pbc_submit_week = case_when(inrange(pbc_submit_week1,0,270) ~ pbc_submit_week1, inrange(pbc_submit_week2,0,270) ~ pbc_submit_week2, inrange(pbc_submit_week3,0,270) ~ pbc_submit_week3))
+
+summary(ec$pbc_submit_week)
+
+#Round off week
+ec$pbc_submit_week <- round(ec$pbc_submit_week,0)
+
+##Adding election year for the closest delta
+
+ec <- ec %>% mutate(elec_date = case_when(inrange(pbc_submit_week1,0,270) ~ as.Date(res1), inrange(pbc_submit_week2,0,270) ~ as.Date(res2), inrange(pbc_submit_week3,0,270) ~ as.Date(res3)))
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+```
+
+
+```{r}
+pbc_submit_subset <- ec %>% filter(Category_Simplified != "Other") %>% group_by(state1,pbc_submit_week,state_elec,Category_Simplified) %>% summarise(count=n(),Delisted=sum(Delisted),Sand=sum(Sand)) %>% rename(state=state1,Category=Category_Simplified)
+
+all_weeks = 0:270  # Replace with your actual range of years
+#all_states = unique(ec$state1) # Replace with your actual list of states
+all_elec <- unique(ec$state_elec) 
+
+all_cat <- unique(pbc_submit_subset$Category)
+
+pbc_submit_cycle <- expand.grid(pbc_submit_week = all_weeks, state_elec = all_elec,Category=all_cat)
+
+pbc_submit_cycle <- left_join(pbc_submit_cycle,pbc_submit_subset,by=c("pbc_submit_week","state_elec","Category"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+pbc_submit_cycle <-left_join(pbc_submit_cycle,elec_date,by=c("state_elec"))
+
+#State
+
+pbc_submit_cycle$state <- sub("\\..*$", "", pbc_submit_cycle$state_elec)
+
+# Calculate new dates by adding weeks
+pbc_submit_cycle$week_date <- pbc_submit_cycle$elec_date + weeks(pbc_submit_cycle$pbc_submit_week)
+
+# Extract the year from the new dates
+pbc_submit_cycle$submit_year <- year(pbc_submit_cycle$week_date)
+
+# Replacing NAs
+
+pbc_submit_cycle$count[is.na(pbc_submit_cycle$count)] <- 0
+pbc_submit_cycle$Delisted[is.na(pbc_submit_cycle$Delisted)] <- 0
+pbc_submit_cycle$Sand[is.na(pbc_submit_cycle$Sand)] <- 0
+
+summary(pbc_submit_cycle$count)
+summary(pbc_submit_cycle$Delisted)
+summary(pbc_submit_cycle$Sand)
+
+# Restricting to 2015 onwards
+pbc_submit_cycle <- pbc_submit_cycle %>% filter(submit_year %in% c(2015:2024))
+
+pbc_submit_cycle <- left_join(pbc_submit_cycle,next_elec,by="state_elec")
+
+pbc_submit_cycle$next_elec <- ymd(pbc_submit_cycle$next_elec)
+
+pbc_submit_cycle$check <- as.duration(pbc_submit_cycle$next_elec - pbc_submit_cycle$week_date)/dweeks(1) 
+
+pbc_submit_cycle$check[is.na(pbc_submit_cycle$check)] <- 0
+
+pbc_submit_cycle <- pbc_submit_cycle %>% filter(check>=0)
+```
+
+
+
+```{r}
+pbc_submit_cycle$tau <- pbc_submit_cycle$pbc_submit_week
+
+summary(pbc_submit_cycle$tau)
+
+pbc_submit_cycle$tausq <- (pbc_submit_cycle$tau)^2
+
+#write.csv(submit_cycle,paste0("C:/Users/",user,"/Desktop/submit.csv"))
+
+```
+
+
+## PBC in No. of Licenses Granted
+
+```{r}
+ec$pbc_grant_week1 <- as.duration(ec$grant - ec$res1)/dweeks(1)
+ec$pbc_grant_week2 <- as.duration(ec$grant - ec$res2)/dweeks(1)
+ec$pbc_grant_week3 <- as.duration(ec$grant - ec$res3)/dweeks(1) 
+
+#Identifying closest election
+
+ec <- ec %>% mutate(pbc_grant_week = case_when(inrange(pbc_grant_week1,0,270) ~ pbc_grant_week1, inrange(pbc_grant_week2,0,270) ~ pbc_grant_week2, inrange(pbc_grant_week3,0,270) ~ pbc_grant_week3))
+
+summary(ec$pbc_grant_week)
+
+#Round off week
+ec$pbc_grant_week <- round(ec$pbc_grant_week,0)
+
+##Adding election year for the closest delta
+
+ec <- ec %>% mutate(elec_date = case_when(inrange(pbc_grant_week1,0,270) ~ as.Date(res1), inrange(pbc_grant_week2,0,270) ~ as.Date(res2), inrange(pbc_grant_week3,0,270) ~ as.Date(res3)))
+
+
+##State election
+
+ec$state_elec <- paste0(ec$state1,'.',year(ec$elec_date))
+
+```
+
+
+```{r}
+pbc_grant_n_subset <- ec %>% filter(Category_Simplified != 'Other') %>%  group_by(state1,pbc_grant_week,state_elec,Category_Simplified) %>% summarise(count=n(),Delisted=sum(Delisted),Sand=sum(Sand)) %>% rename(state=state1,Category=Category_Simplified)
+
+all_weeks = 0:270  # Replace with your actual range of years
+#all_states = unique(ec$state1) # Replace with your actual list of states
+all_elec <- unique(pbc_grant_n_subset$state_elec) 
+
+all_cat <- unique(pbc_grant_n_subset$Category)
+
+pbc_grant_n_cycle <- expand.grid(pbc_grant_week = all_weeks, state_elec = all_elec,Category = all_cat)
+
+pbc_grant_n_cycle <- left_join(pbc_grant_n_cycle,pbc_grant_n_subset,by=c("pbc_grant_week","state_elec","Category"))
+
+elec_date <- ec %>% select(state_elec,elec_date) %>% distinct()
+
+pbc_grant_n_cycle <- left_join(pbc_grant_n_cycle,elec_date,by=c("state_elec"))
+
+
+#State
+
+pbc_grant_n_cycle$state <- sub("\\..*$", "", pbc_grant_n_cycle$state_elec)
+
+# Calculate new dates by adding weeks
+pbc_grant_n_cycle$week_date <- pbc_grant_n_cycle$elec_date + weeks(pbc_grant_n_cycle$pbc_grant_week)
+
+
+# Extract the year from the new dates
+pbc_grant_n_cycle$grant_year <- year(pbc_grant_n_cycle$week_date)
+
+#Replacing NAs
+
+pbc_grant_n_cycle$count[is.na(pbc_grant_n_cycle$count)] <- 0
+pbc_grant_n_cycle$Delisted[is.na(pbc_grant_n_cycle$Delisted)] <- 0
+pbc_grant_n_cycle$Sand[is.na(pbc_grant_n_cycle$Sand)] <- 0
+
+pbc_grant_n_cycle$tau <- pbc_grant_n_cycle$pbc_grant_week
+
+summary(pbc_grant_n_cycle$tau)
+
+pbc_grant_n_cycle$tausq <- abs(pbc_grant_n_cycle$tau)^2
+
+pbc_grant_n_cycle <- pbc_grant_n_cycle %>% filter(grant_year %in% c(2015:2024))
+
+pbc_grant_n_cycle <- left_join(pbc_grant_n_cycle,next_elec,by="state_elec")
+
+pbc_grant_n_cycle$next_elec <- ymd(pbc_grant_n_cycle$next_elec)
+
+pbc_grant_n_cycle$check <- as.duration(pbc_grant_n_cycle$next_elec - pbc_grant_n_cycle$week_date)/dweeks(1) 
+
+pbc_grant_n_cycle$check[is.na(pbc_grant_n_cycle$check)] <- 0
+
+pbc_grant_n_cycle <- pbc_grant_n_cycle %>% filter(check>=0)
+```
+```{r}
+pbc_submit_cycle$grant_date <- pbc_submit_cycle$week_date + 91
+pbc_submit_cycle$code <- interaction(pbc_submit_cycle$state_elec,pbc_submit_cycle$Category)
+merge_submit <- pbc_submit_cycle %>% select(code,grant_date,count) %>% rename(count_submit = count)
+pbc_grant_n_cycle$grant_date <- pbc_grant_n_cycle$week_date
+pbc_grant_n_cycle$code <- interaction(pbc_grant_n_cycle$state_elec,pbc_grant_n_cycle$Category)
+#pbc_grant_n_cycle <- left_join(pbc_grant_n_cycle,merge_submit,by=c("state_elec","grant_date","Category"))
+pbc_grant_n_cycle <- left_join(pbc_grant_n_cycle,merge_submit,by=c("code","grant_date"))
+#test <- left_join(pbc_grant_n_cycle,merge_submit,by=c("code"))
+
+sum(pbc_grant_n_cycle$count_submit,na.rm = T)
+```
+
+
+## PBC in Time Taken
+
+```{r}
+pbc_time_cycle <- ec %>% filter(time>0&Category_Simplified!="Other") 
+
+summary(pbc_time_cycle$time)
+
+pbc_time_cycle$tau <- pbc_time_cycle$pbc_grant_week
+
+summary(pbc_time_cycle$tau)
+
+pbc_time_cycle$tausq <- abs(pbc_time_cycle$tau)^2
+```
+
+
+### Variables for Heterogeneity
+
+#Zonal
+```{r}
+grant_n_cycle <- grant_n_cycle %>%
+  mutate(zone = case_when(state%in%c("Andhra_Pradesh","Karnataka","Kerala","Telangana","Tamil_Nadu")~"South",
+                       state%in%c("Jharkhand","West_Bengal","Odisha")~"East",
+                       state%in%c("Maharashtra","Gujarat")~"West", 
+                       state%in%c("Chattisgarh","Madhya_Pradesh")~"Central", 
+                       TRUE ~ "North"))
+
+submit_cycle <- submit_cycle %>%
+  mutate(zone = case_when(state%in%c("Andhra_Pradesh","Karnataka","Kerala","Telangana","Tamil_Nadu")~"South",
+                       state%in%c("Jharkhand","West_Bengal","Odisha")~"East",
+                       state%in%c("Maharashtra","Gujarat")~"West", 
+                       state%in%c("Chattisgarh","Madhya_Pradesh")~"Central", 
+                       TRUE ~ "North"))
+```
+
+```{r}
+grant_n_cycle <- grant_n_cycle %>%
+  mutate(income = case_when(state%in%              c("Jharkhand","West_Bengal","Odisha","Bihar","Uttar_Pradesh","Chattisgarh","Madhya_Pradesh","Rajasthan")~"Low", 
+                           TRUE ~ "High"))
+
+
+submit_cycle <- submit_cycle %>%
+  mutate(income = case_when(state%in%                 c("Jharkhand","West_Bengal","Odisha","Bihar","Uttar_Pradesh","Chattisgarh","Madhya_Pradesh","Rajasthan")~"Low", 
+                            TRUE ~ "High"))
+```
+
+
+```{r}
+pbc_grant_n_cycle <- pbc_grant_n_cycle %>%
+  mutate(zone = case_when(state%in%c("Andhra_Pradesh","Karnataka","Kerala","Telangana","Tamil_Nadu")~"South",
+                       state%in%c("Jharkhand","West_Bengal","Odisha")~"East",
+                       state%in%c("Maharashtra","Gujarat")~"West", 
+                       state%in%c("Chattisgarh","Madhya_Pradesh")~"Central", 
+                       TRUE ~ "North"))
+
+pbc_submit_cycle <- pbc_submit_cycle %>%
+  mutate(zone = case_when(state%in%c("Andhra_Pradesh","Karnataka","Kerala","Telangana","Tamil_Nadu")~"South",
+                       state%in%c("Jharkhand","West_Bengal","Odisha")~"East",
+                       state%in%c("Maharashtra","Gujarat")~"West", 
+                       state%in%c("Chattisgarh","Madhya_Pradesh")~"Central", 
+                       TRUE ~ "North"))
+```
+
+```{r}
+pbc_grant_n_cycle <- pbc_grant_n_cycle %>%
+  mutate(income = case_when(state%in%              c("Jharkhand","West_Bengal","Odisha","Bihar","Uttar_Pradesh","Chattisgarh","Madhya_Pradesh","Rajasthan")~"Low", 
+                           TRUE ~ "High"))
+
+
+pbc_submit_cycle <- pbc_submit_cycle %>%
+  mutate(income = case_when(state%in%                 c("Jharkhand","West_Bengal","Odisha","Bihar","Uttar_Pradesh","Chattisgarh","Madhya_Pradesh","Rajasthan")~"Low", 
+                            TRUE ~ "High"))
+```
+
+```{r}
+pbc_time_cycle <- pbc_time_cycle %>%
+  mutate(zone = case_when(state1%in%c("Andhra_Pradesh","Karnataka","Kerala","Telangana","Tamil_Nadu")~"South",
+                       state1%in%c("Jharkhand","West_Bengal","Odisha")~"East",
+                       state1%in%c("Maharashtra","Gujarat")~"West", 
+                       state1%in%c("Chattisgarh","Madhya_Pradesh")~"Central", 
+                       TRUE ~ "North"))
+
+
+```
+
+```{r}
+pbc_time_cycle <- pbc_time_cycle %>%
+  mutate(income = case_when(state1%in%              c("Jharkhand","West_Bengal","Odisha","Bihar","Uttar_Pradesh","Chattisgarh","Madhya_Pradesh","Rajasthan")~"Low", 
+                           TRUE ~ "High"))
+
+
+```
+
+
+# Analysis
+
+## Electoral Cycle: Submission
+
+### Graph
+
+```{r}
+ggplot(submit_cycle, aes(x=submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "loess", se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ 
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Submitted")+
+  facet_wrap(~Category)
+
+#ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_elec_cycle.png"))
+```
+
+```{r}
+ggplot(submit_cycle, aes(x=submit_week, y = count+1)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+  
+labs(x = "Weeks to/since Election",y = "No. of applications") +ggtitle("No of Projects Submitted")+
+  facet_wrap(~Category)
+
+
+#ggsave(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/Environmental_Clearance_Paper_Ideas/Figures/submit_count_elec_cycle.png"))
+```
+### Model 
+
+```{r}
+mod1 <- felm(count~tau+tausq+Category|state+submit_year|0|0,data=submit_cycle)
+summary(mod1)
+
+mod2 <- felm(count~tau+tausq|state+submit_year|0|0,data=submit_cycle,subset = Category == "Non-Coal Mining")
+summary(mod2)
+```
+
+
+### Model High Income
+
+```{r}
+mod1_high_income <- felm(count~tau+tausq+Category|state+submit_year|0|0,data=filter(submit_cycle,income=="High"))
+
+summary(mod1_high_income)
+
+mod2_high_income <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(submit_cycle,income=="High"&Category == "Non-Coal Mining"))
+
+summary(mod2_high_income)
+```
+
+
+
+## Electoral Cycles: Clearances Granted
+
+### Plot
+
+```{r}
+ggplot(grant_n_cycle, aes(x=grant_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "No. of applications") 
+```
+
+```{r}
+ggplot(grant_n_cycle, aes(x=grant_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+
+labs(x = "Weeks to/since Election",y = "No. of applications") 
+```
+
+### Model
+
+```{r}
+mod1 <- felm(count~tau+tausq+Category|state+grant_year|0|0,data=grant_n_cycle)
+summary(mod1)
+
+mod2 <- felm(count~tau+tausq|state+grant_year|0|0,data=grant_n_cycle,subset = Category == "Non-Coal Mining")
+summary(mod2)
+```
+## Electoral Cycle: Time Taken
+
+### Plot
+
+```{r}
+ggplot(grant_cycle, aes(x=grant_week, y = time)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks to/since Election",y = "Time") + facet_wrap(~Category_Simplified)
+```
+### Model (Time)
+
+```{r}
+mod1 <- felm(time~tau+tausq+Category_Simplified|year+state1|0|0,data=grant_cycle)
+
+summary(mod1)
+
+mod2 <- felm(time~tau+tausq|year+state1|0|0,data=grant_cycle,subset = Category_Simplified== "Non-Coal Mining")
+
+summary(mod2)
+```
+
+
+
+```{r}
+mod1 <- felm(log(1+time)~tau+tausq+Category_Simplified|year+state1|0|0,data=grant_cycle)
+summary(mod1)
+
+mod2 <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=grant_cycle,subset = Category_Simplified== "Non-Coal Mining")
+summary(mod2)
+```
+
+## PBC in Submission
+
+### Plot
+
+```{r}
+
+ggplot(pbc_submit_cycle, aes(x=pbc_submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+
+labs(x = "Weeks since Election",y = "No. of applications (Logged)") +ggtitle("No of Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_submit.eps")
+)
+
+
+
+ggplot(pbc_submit_cycle, aes(x=pbc_submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+scale_y_log10()+
+labs(x = "Weeks since Election",y = "No. of applications (Logged)") +ggtitle("No of Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_submit_logged.eps")
+)
+
+```
+
+### Plot
+
+```{r}
+
+ggplot(filter(pbc_submit_cycle, income=="High"), aes(x=pbc_submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+
+labs(x = "Weeks since Election",y = "No. of applications (Logged)") +ggtitle("No of Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_submit_low.eps")
+)
+
+
+
+ggplot(filter(pbc_submit_cycle, income=="Low"), aes(x=pbc_submit_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+scale_y_log10()+
+labs(x = "Weeks since Election",y = "No. of applications (Logged)") +ggtitle("No of Projects Submitted")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_submit_logged_low.eps")
+)
+
+```
+
+### Model
+
+```{r}
+
+library(stargazer)
+
+mod1 <- felm(count~tau+tausq+Category|state+submit_year|0|0,data=pbc_submit_cycle)
+summary(mod1)
+
+mod2 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Non-Coal Mining")
+summary(mod2)
+
+mod3 <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(pbc_submit_cycle,Category== "Industrial"))
+summary(mod3)
+
+mod4 <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(pbc_submit_cycle,Category== "Infrastructure"))
+summary(mod4)
+
+stargazer(mod1,mod2,mod3,mod4,type = 'latex', title = "Political Business Cycle in Project Submission",
+           covariate.labels = c('Weeks From Election','From Election Squared','Infrastructure',"Non-Coal Mining"),
+          add.lines = list(c("Sample", "Full", "Non-Coal Mining","Industrial","Infrastructure"),
+                           c("State FE","Yes","Yes","Yes","Yes"),
+                         c("Year FE","Yes","Yes","Yes","Yes")),
+          dep.var.caption = "Number of Applications Received (Count)",
+          no.space = TRUE,
+          font.size = "footnotesize", 
+          label = 'submit_cycle',
+          notes = "Observations aggregated to the week from election level. Each observarion is state-week-category",
+          out = paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_submit.tex"))
+```
+
+### Model Low Income
+
+```{r}
+mod1_low_income <- felm(count~tau+tausq+Category|state+submit_year|0|0,data=filter(pbc_submit_cycle,income=="Low"))
+
+summary(mod1_low_income)
+
+mod1_high_income <- felm(count~tau+tausq+Category|state+submit_year|0|0,data=filter(pbc_submit_cycle,income=="High"))
+
+summary(mod1_high_income)
+
+mod2_low_income <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(pbc_submit_cycle,income=="Low"&Category == "Non-Coal Mining"))
+
+summary(mod2_low_income)
+
+mod2_high_income <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(pbc_submit_cycle,income=="High"&Category == "Non-Coal Mining"))
+
+summary(mod2_high_income)
+
+
+mod3_low_income <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(submit_cycle,income=="Low"&Category == "Industrial"))
+
+summary(mod3_low_income)
+
+mod3_high_income <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(submit_cycle,income=="High"&Category == "Industrial"))
+
+summary(mod3_high_income)
+
+mod3_low_income <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(submit_cycle,income=="Low"&Category == "Infrastructure"))
+
+summary(mod3_low_income)
+
+mod3_high_income <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(submit_cycle,income=="High"&Category == "Infrastructure"))
+
+summary(mod3_high_income)
+
+```
+
+### Model (Sand)
+
+```{r}
+mod1 <- felm(Sand~tau+tausq+Category|state+submit_year|0|0,data=pbc_submit_cycle)
+summary(mod1)
+
+mod2 <- felm(Sand~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Non-Coal Mining")
+summary(mod2)
+
+#stargazer(mod1,mod2,type = 'latex', title = "Political Business Cycle in Projects Submitted",
+#          add.lines = list(c("Sample", "Full", "Non-Coal Mining"))
+#,out = paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_submit.tex"))
+```
+## PBC in Grant
+
+### Plot
+
+```{r}
+
+ggplot(pbc_grant_n_cycle, aes(x=pbc_grant_week, y = Sand)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks since Election",y = "No. of applications") +ggtitle("No of Projects Cleared")
+
+
+ggplot(pbc_grant_n_cycle, aes(x=pbc_grant_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks since Election",y = "No. of applications") +ggtitle("No of Projects Cleared")
+
+
+ggplot(pbc_grant_n_cycle, aes(x=pbc_grant_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+
+labs(x = "Weeks since Election",y = "No. of applications") +ggtitle("No of Projects Cleared")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_grant.eps"))
+
+
+
+ggplot(filter(pbc_grant_n_cycle,income=='Low'), aes(x=pbc_grant_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+
+labs(x = "Weeks since Election",y = "No. of applications") +ggtitle("No of Projects Cleared")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_grant_low_income.eps"))
+
+
+ggplot(filter(pbc_grant_n_cycle,income=='High'), aes(x=pbc_grant_week, y = count)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+ facet_wrap(~Category)+
+labs(x = "Weeks since Election",y = "No. of applications") +ggtitle("No of Projects Cleared")
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_grant_high_income.eps"))
+
+```
+
+### Model
+
+```{r}
+mod1_grant <- felm(count~tau+tausq+Category+count_submit|state+grant_year|0|0,data=pbc_grant_n_cycle)
+summary(mod1_grant)
+
+mod2_grant <- felm(count~tau+tausq+count_submit|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Non-Coal Mining")
+summary(mod2_grant)
+
+mod3_grant <- felm(count~tau+tausq+count_submit|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Industrial")
+summary(mod3_grant)
+
+mod4_grant <- felm(count~tau+tausq+count_submit|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Infrastructure")
+summary(mod4_grant)
+
+
+
+#stargazer(mod1,mod2,type = 'latex', title = "Political Business Cycle in Clearances Granted",
+  #        add.lines = list(c("Sample", "Full", "Non-Coal Mining"))
+#,out = "C:/Users/prana/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_grant.tex")
+
+
+stargazer(mod1_grant,mod2_grant,mod3_grant,mod4_grant,type = 'latex', title = "Political Business Cycle in Clearances Granted",
+           covariate.labels = c('Weeks From Election','From Election Squared','Infrastructure',"Non-Coal Mining"),
+          add.lines = list(c("Sample", "Full", "Non-Coal Mining","Industrial","Infrastructure"),
+                           c("State FE","Yes","Yes","Yes","Yes"),
+                         c("Year FE","Yes","Yes","Yes","Yes")),
+          dep.var.caption = "Number of Applications Granted (Count)",
+          no.space = TRUE,
+          font.size = "footnotesize", 
+          label = 'grant_cycle',
+          notes = "Observations aggregated to the week from election level. Each observarion is state-week-category",
+          out = paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_grant.tex"))
+```
+
+
+
+### Model Heterogeneity
+
+```{r}
+mod1_grant_low <- felm(count~tau+tausq+Category|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='Low'))
+
+summary(mod1_grant_low)
+
+mod1_grant_high <- felm(count~tau+tausq+Category|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='High'))
+
+summary(mod1_grant_high)
+
+mod2_grant_low <- felm(count~tau+tausq|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='Low'&Category== "Non-Coal Mining"))
+
+summary(mod2_grant_low)
+
+mod2_grant_high <- felm(count~tau+tausq|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='High'&Category== "Non-Coal Mining"))
+
+summary(mod2_grant_high)
+
+mod3_grant_low <- felm(count~tau+tausq|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='Low'&Category== "Industrial"))
+
+summary(mod3_grant_low)
+
+mod3_grant_high <- felm(count~tau+tausq|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='High'&Category== "Industrial"))
+
+summary(mod3_grant_high)
+
+mod4_grant_low <- felm(count~tau+tausq|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='Low'&Category== "Infrastructure"))
+
+summary(mod4_grant_low)
+
+mod4_grant_high <- felm(count~tau+tausq|state+grant_year|0|0,data=filter(pbc_grant_n_cycle,income=='High'&Category== "Infrastructure"))
+
+summary(mod4_grant_high)
+
+stargazer(mod1_grant_high,mod2_grant_high,mod3_grant_high,mod4_grant_high,type = 'latex', title = "Political Business Cycle in Clearances Granted (High Income States)",
+           covariate.labels = c('Weeks From Election','From Election Squared','Infrastructure',"Non-Coal Mining"),
+          add.lines = list(c("Sample", "Full", "Non-Coal Mining","Industrial","Infrastructure"),
+                           c("State FE","Yes","Yes","Yes","Yes"),
+                         c("Year FE","Yes","Yes","Yes","Yes")),
+          dep.var.caption = "Number of Applications Granted (Count)",
+          no.space = TRUE,
+          font.size = "footnotesize", 
+          label = 'grant_cycle_low',
+          notes = "Observations aggregated to the week from election level. Each observarion is state-week-category",
+          out = paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_grant_high_income.tex"))
+
+
+stargazer(mod1_grant_low,mod2_grant_low,mod3_grant_low,mod4_grant_low,type = 'latex', title = "Political Business Cycle in Clearances Granted (Low Income States)",
+           covariate.labels = c('Weeks From Election','From Election Squared','Infrastructure',"Non-Coal Mining"),
+          add.lines = list(c("Sample", "Full", "Non-Coal Mining","Industrial","Infrastructure"),
+                           c("State FE","Yes","Yes","Yes","Yes"),
+                         c("Year FE","Yes","Yes","Yes","Yes")),
+          dep.var.caption = "Number of Applications Granted (Count)",
+          no.space = TRUE,
+          font.size = "footnotesize", 
+          label = 'grant_cycle_high',
+          notes = "Observations aggregated to the week from election level. Each observarion is state-week-category",
+          out = paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_grant_low_income.tex"))
+```
+
+
+
+
+## PBC in Time Taken for Clearance
+
+### Plot Time
+
+```{r}
+ggplot(pbc_time_cycle, aes(x=pbc_grant_week, y = time)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks since Election",y = "Time") + facet_wrap(~Category_Simplified)
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_time.eps"))
+
+
+```
+
+time_submit_seiaa
+### Plot time_submit_seiaa
+
+```{r}
+ggplot(filter(pbc_time_cycle,time_submit_seiaa>0), aes(x=pbc_grant_week, y = time_submit_seiaa)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks since Election",y = "Time") + facet_wrap(~Category_Simplified)
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_time_submit_seiaa.eps"))
+
+
+```
+### Plot Time SEIAA SEAC
+
+```{r}
+ggplot(filter(pbc_time_cycle,time_SEIAA_SEAC>0), aes(x=pbc_grant_week, y = time_SEIAA_SEAC)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks since Election",y = "Time") + facet_wrap(~Category_Simplified)
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_time_SEIAA_seac.eps"))
+
+
+```
+
+
+### Plot Time SEAC Grant
+
+```{r}
+ggplot(filter(pbc_time_cycle,time_SEAC_Grant>0), aes(x=pbc_grant_week, y = time_SEAC_Grant)) + 
+stat_summary(fun= "mean", geom = "point",color="blue")+
+ geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = T,color="red")+
+  geom_vline(xintercept = 0,color="black")+
+labs(x = "Weeks since Election",y = "Time") + facet_wrap(~Category_Simplified)
+
+ggsave(paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_time_seac_grant.eps"))
+
+
+```
+
+
+### Model
+
+```{r}
+mod1_time <- felm(log(1+time)~tau+tausq+Category_Simplified|year+state1|0|0,data=pbc_time_cycle)
+summary(mod1)
+
+mod2_time <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining")
+summary(mod2)
+
+mod3_time <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial")
+summary(mod3)
+
+mod4_time <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Infrastructure")
+summary(mod4)
+
+#stargazer(mod1,mod2,type = 'latex', title = "Political Business Cycle in Time Taken for Clearance",
+#          add.lines = list(c("Sample", "Full", "Non-Coal Mining"))
+#,out = paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Figures/pbc_time1.tex"))
+
+
+stargazer(mod1_time,mod2_time,mod3_time,mod4_time,type = 'latex', title = "Political Business Cycle in Time Taken for Clearance",
+           covariate.labels = c('Weeks From Election','From Election Squared','Infrastructure',"Non-Coal Mining"),
+          add.lines = list(c("Sample", "Full", "Non-Coal Mining","Industrial","Infrastructure"),
+                           c("State FE","Yes","Yes","Yes","Yes"),
+                         c("Year FE","Yes","Yes","Yes","Yes")),
+          dep.var.caption = "Time for Granting Clearance (Logged)",
+          no.space = TRUE,
+          font.size = "footnotesize", 
+          label = 'time_time_cycle',
+          notes = "Observations aggregated to the week from election level. Each observarion is state-week-category",
+          out = paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_time1.tex"))
+```
+
+
+
+
+```{r }
+mod1 <- felm(time~tau+tausq+Category_Simplified|year+state1|0|0,data=pbc_time_cycle)
+summary(mod1)
+
+mod2 <- felm(time~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining")
+summary(mod2)
+
+mod3 <- felm(time~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial")
+summary(mod3)
+
+mod4 <- felm(time~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Infrastructure")
+summary(mod4)
+
+stargazer(mod1,mod2,type = 'latex', title = "Political Business Cycle in Time Taken for Clearance",
+          add.lines = list(c("Sample", "Full", "Non-Coal Mining"))
+,out = "C:/Users/prana/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_time2.tex")
+```
+
+
+```{r}
+mod1 <- felm(log(1+time_SEIAA_SEAC)~tau+tausq+Category_Simplified|year+state1|0|0,data=filter(pbc_time_cycle,time_SEIAA_SEAC>0))
+summary(mod1)
+
+mod2 <- felm(log(1+time_SEIAA_SEAC)~tau+tausq|year+state1|0|0,data=filter(pbc_time_cycle,time_SEIAA_SEAC>0&Category_Simplified== "Non-Coal Mining"))
+summary(mod2)
+
+mod3 <- felm(log(1+time_SEIAA_SEAC)~tau+tausq|year+state1|0|0,data=filter(pbc_time_cycle,time_SEIAA_SEAC>0&Category_Simplified== "Industrial"))
+summary(mod3)
+
+stargazer(mod1,mod2,type = 'latex', title = "Political Business Cycle in Time Taken for Clearance",
+          add.lines = list(c("Sample", "Full", "Non-Coal Mining"))
+,out =paste0("C:/Users/",user,"/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_time_SEIAA_SEAC.tex"))
+```
+
+
+## Models with Heterogeneity
+
+```{r}
+zone <- unique(pbc_grant_n_cycle$zone)
+
+zone_df <- pbc_grant_n_cycle %>% filter(Category=="Non-Coal Mining")
+for(i in 1:length(zone)){
+  print(zone[i])
+  zone_string<-zone[i]
+  zonemod <- felm(Sand~tau+tausq|state+grant_year|0|0,data=filter(zone_df,zone == zone_string))
+print(summary(zonemod))
+}
+#stargazer(mod1,mod2,type = 'latex', title = "Political Business Cycle in Clearances Granted", add.lines = list(c("Sample", "Full", "Non-Coal Mining")) ,out = "C:/Users/prana/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_grant.tex")
+```
+
+
+```{r}
+mod1 <- felm(count~tau+tausq|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Non-Coal Mining" & income=="Low")
+summary(mod1)
+
+mod2 <- felm(count~tau+tausq|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Non-Coal Mining" & income=="High")
+summary(mod2)
+
+
+mod1_sand <- felm(Sand~tau+tausq|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Non-Coal Mining" & income=="Low")
+summary(mod1_sand)
+
+mod2_sand <- felm(Sand~tau+tausq|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Non-Coal Mining" & income=="High")
+summary(mod2_sand)
+
+mod3 <- felm(count~tau+tausq|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Industrial" & income=="Low")
+summary(mod3)
+
+mod4 <- felm(count~tau+tausq|state+grant_year|0|0,data=pbc_grant_n_cycle,subset = Category== "Industrial" & income=="High")
+summary(mod4)
+
+```
+
+
+```{r}
+mod1 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Non-Coal Mining" & income=="Low")
+summary(mod1)
+
+mod2 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Non-Coal Mining" & income=="High")
+summary(mod2)
+
+mod3 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Industrial" & income=="Low")
+summary(mod3)
+
+mod4 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Industrial" & income=="High")
+summary(mod4)
+
+```
+
+
+```{r}
+zone <- unique(pbc_submit_cycle$zone)
+
+zone_df <- pbc_submit_cycle %>% filter(Category=="Non-Coal Mining")
+
+for(i in 1:length(zone)){
+  print(zone[i])
+  zone_string<-zone[i]
+  zonemod <- felm(count~tau+tausq|state+submit_year|0|0,data=filter(zone_df,zone == zone_string))
+print(summary(zonemod))
+}
+#stargazer(mod1,mod2,type = 'latex', title = "Political Business Cycle in Clearances Granted", add.lines = list(c("Sample", "Full", "Non-Coal Mining")) ,out = "C:/Users/prana/Dropbox/Apps/Overleaf/Political_Economy_Environment_Clearances/Tables/pbc_grant.tex")
+```
+
+
+
+```{r}
+
+mod1 <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining" & income=="Low")
+summary(mod1)
+
+mod2 <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining" & income=="High")
+summary(mod2)
+
+mod3 <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial" & income=="Low")
+summary(mod3)
+
+mod4 <- felm(log(1+time)~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial" & income=="High")
+summary(mod4)
+
+```
+
+```{r}
+
+mod1 <- felm(time_SEIAA_SEAC~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining" & income=="Low"&time_SEIAA_SEAC>0)
+summary(mod1)
+
+mod2 <- felm(time_SEIAA_SEAC~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining" & income=="High"&time_SEIAA_SEAC>0)
+summary(mod2)
+
+mod3 <- felm(time_SEIAA_SEAC~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial" & income=="Low"&time_SEIAA_SEAC>0)
+summary(mod3)
+
+mod4 <- felm(time_SEIAA_SEAC~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial" & income=="High"&time_SEIAA_SEAC>0)
+summary(mod4)
+
+```
+
+```{r}
+
+mod1 <- felm(time_submit_seiaa~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining" & income=="Low"&time_submit_seiaa>0)
+summary(mod1)
+
+mod2 <- felm(time_submit_seiaa~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Non-Coal Mining" & income=="High"&time_submit_seiaa>0)
+summary(mod2)
+
+mod3 <- felm(time_submit_seiaa~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial" & income=="Low"&time_submit_seiaa>0)
+summary(mod3)
+
+mod4 <- felm(time_submit_seiaa~tau+tausq|year+state1|0|0,data=pbc_time_cycle,subset = Category_Simplified== "Industrial" & income=="High"&time_submit_seiaa>0)
+summary(mod4)
+
+```
+
+
+### Term - First or Higher
+
+```{r}
+state_elec <- read.csv(paste0("C:/Users/",user,"/Dropbox/agnihotri_gupta/Environment_Clearance/state_elec.csv"))
+
+pbc_submit_cycle <- left_join(pbc_submit_cycle,state_elec,by="state_elec")
+```
+
+```{r}
+mod1 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Non-Coal Mining" & term==1)
+summary(mod1)
+
+mod2 <- felm(count~tau+tausq|state+submit_year|0|0,data=pbc_submit_cycle,subset = Category== "Non-Coal Mining" & term==0)
+summary(mod2)
+```
+
+

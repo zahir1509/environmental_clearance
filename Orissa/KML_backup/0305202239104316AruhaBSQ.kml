@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Aruha BSQ.kml</name>
+	<Style id="PolyStyle0028">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffe65c00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark id="ID_00002">
+		<name>3</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Id</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>ARAE_AC</td>
+
+<td>18.892024</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ARAE_HA</td>
+
+<td>7.645331</td>
+
+</tr>
+
+<tr>
+
+<td>QUARRY_NO</td>
+
+<td>3</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+		<styleUrl>#PolyStyle0028</styleUrl>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							86.10362868513357,20.74670980845014,0 86.10387415377937,20.74666732540783,0 86.1043616702396,20.74982679084308,0 86.10435833489129,20.74982812498246,0 86.10435530723242,20.74982933604588,0 86.10434462427287,20.74983360922943,0 86.1043264184998,20.74984089153844,0 86.1042540363888,20.7498698443814,0 86.10422659238759,20.74988082198121,0 86.10422160408785,20.74988314712663,0 86.10421606823661,20.74988661376727,0 86.10407590530275,20.74998823188474,0 86.10403549378168,20.75000999193293,0 86.10393956091684,20.75006164808656,0 86.10393290050558,20.75006597366224,0 86.1038221823776,20.75015169113993,0 86.10381913747426,20.75015427125334,0 86.10372633849721,20.75023993183169,0 86.10372302926947,20.75024331822454,0 86.10369583982214,20.75027479907697,0 86.10358808367789,20.75039956274748,0 86.10349020308871,20.75049857488551,0 86.10154551892532,20.74839872541144,0 86.10128169473563,20.74811385083046,0 86.10143347319729,20.74806555768515,0 86.10167595466896,20.74802603267806,0 86.101828394834,20.74797363193511,0 86.10200849999535,20.74788144585307,0 86.10209131365121,20.74776840788849,0 86.10214496484133,20.74766172470191,0 86.10217724649425,20.74745419938802,0 86.1022519378572,20.74730443322551,0 86.10230924218968,20.74714804685732,0 86.10252854917115,20.74694188197214,0 86.1026327852743,20.74689979017456,0 86.10267012677576,20.74686081568087,0 86.10269162660006,20.74683689274633,0 86.10279996572154,20.7467632221373,0 86.10300768228569,20.74670000405109,0 86.10317639726776,20.7466778047152,0 86.10334964549116,20.74670971682212,0 86.10335842764306,20.74671050274418,0 86.10350799075928,20.74671050294421,0 86.10362030153362,20.74671050309433,0 86.10362868513357,20.74670980845014,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

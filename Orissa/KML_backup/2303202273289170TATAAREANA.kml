@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>TATA AREANA.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.75320604987154,20.26385309821802,0 85.75318823478422,20.26378343767099,0 85.75352230325886,20.26360764782394,0 85.75350647360538,20.26356034233523,0 85.7538961536933,20.26328732998374,0 85.7539659819835,20.26329677277839,0 85.75456124420278,20.26297911305847,0 85.75450354030302,20.26285623621404,0 85.75490836830532,20.26260742551805,0 85.75504470366977,20.26277545938826,0 85.75666469891769,20.26185939916144,0 85.75719768144926,20.26237424991172,0 85.7576244938783,20.26245915348159,0 85.75803517393419,20.26250097282758,0 85.75825506223954,20.26250494620269,0 85.75870113329077,20.26247132297716,0 85.75913631528596,20.26246620466954,0 85.75925987716076,20.2624617857614,0 85.76028836891133,20.2622578305896,0 85.76085764594531,20.26212912806838,0 85.7608970934272,20.2622971606312,0 85.75936804090645,20.26259580556187,0 85.75933240859361,20.26261207092754,0 85.75919870024595,20.26263773324833,0 85.75910312023737,20.26271631090877,0 85.75726732772088,20.26307767065579,0 85.75532050881284,20.2635009824841,0 85.75449714478454,20.26368157746387,0 85.75354327993627,20.26386759185632,0 85.75316172622315,20.26394887785517,0 85.7531126589232,20.26395999206088,0 85.7531035396449,20.26390292016461,0 85.75310920066904,20.2638848856471,0 85.75310156741509,20.26388230041229,0 85.75320604987154,20.26385309821802,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>TATA AREANA</name>
+			<LookAt>
+				<longitude>85.75748550023152</longitude>
+				<latitude>20.26285416129557</latitude>
+				<altitude>0</altitude>
+				<heading>3.599866068481822</heading>
+				<tilt>25.93951150227864</tilt>
+				<range>1107.494414426495</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>85.75598330129418,20.26290017862955,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
